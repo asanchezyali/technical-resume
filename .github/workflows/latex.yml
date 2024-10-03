@@ -35,25 +35,35 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git commit -m "Update README with PDF link" || echo "No changes to commit"
+          git commit -m "🛸 Update README with PDF link" || echo "No changes to commit"
           git push origin HEAD:main
+
+      - name: List directory contents
+        run: ls -la
 
       - name: Upload PDF to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin technical-resume:technical-resume || git checkout --orphan technical-resume
-          git checkout technical-resume
-          git rm -rf . || true
-          git clean -fxd
-          cp main.pdf . || echo "main.pdf not found, creating empty file"
-          touch main.pdf  # This ensures the file exists even if the copy failed
-          git add main.pdf
-          git commit -m "Update PDF resume" || echo "No changes to commit"
-          git push origin technical-resume --force
+          # Create a new branch
+          git checkout --orphan temp_branch
+          # Remove all files from the old branch
+          git rm -rf .
+          # Check if main.pdf exists and copy it
+          if [ -f "main.pdf" ]; then
+            cp main.pdf ./technical_resume.pdf
+          else
+            echo "main.pdf not found, creating empty file"
+            touch technical_resume.pdf
+          fi
+          # Add and commit the PDF
+          git add technical_resume.pdf
+          git commit -m "🚀 Update PDF resume" || echo "No changes to commit"
+          # Force push to the technical-resume branch
+          git push origin HEAD:technical-resume --force
 
       - name: Upload PDF file as artifact
         uses: actions/upload-artifact@v4
         with:
           name: Technical Resume
-          path: main.pdf
+          path: technical_resume.pdf
