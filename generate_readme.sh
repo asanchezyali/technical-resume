@@ -18,19 +18,12 @@ sed 's/\\//g' >> README.md
 cat << EOF >> README.md
 
 ## Skills
-EOF
 
-# Extract and clean up Skills section
-sed -n '/section{Technical Skills}/,/resumeSubHeadingListEnd/p' main.tex | 
-sed '1d;$d' | 
-sed 's/\\resumeItem{//g; s/}//g; s/\\textbf{//g; s/textbf{//g' |
-sed 's/\\resumeSubHeadingListStart//g; s/\\resumeSubHeadingListEnd//g' |
-sed 's/\\resumeSubHeadingList//g' |
-sed '/^$/d' |
-sed 's/^[ \t]*//' |
-sed '/Programming Languages:/!s/:/:\n- /' |
-sed '/Programming Languages:/!s/, /\n- /g' |
-sed '/Programming Languages:/s/: /: /' |
-sed '/Programming Languages:/s/, /, /g' >> README.md
+Programming Languages: Python, JavaScript, TypeScript, Rust, C++, C
+Frameworks & Libraries: Django, React, TensorFlow, PyTorch, JAX
+Technologies: AI, Blockchain, Machine Learning, Natural Language Processing
+Databases: MongoDB, MySQL
+Cloud Platforms: AWS, GCP
+EOF
 
 # The PDF link will be added by the GitHub Action
