@@ -16,7 +16,7 @@ jobs:
         with:
           root_file: main.tex
 
-      - name: Upload PDF file
+      - name: Upload PDF file as artifact
         uses: actions/upload-artifact@v4
         with:
           name: Technical Resume
@@ -31,11 +31,26 @@ jobs:
           chmod +x ./generate_readme.sh
           ./generate_readme.sh "${{ steps.date.outputs.date }}"
 
-      - name: Commit README and PDF
+      - name: Upload PDF to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
+          git checkout --orphan technical-resume
+          git reset --hard
           git add main.pdf
-          git commit -m "Update README and Technical Resume" || echo "No changes to commit"
+          git commit -m "Update PDF resume"
+          git push origin technical-resume --force
+
+      - name: Update README with PDF link
+        run: |
+          echo "" >> README.md
+          echo "[Ver el CV completo en PDF](https://github.com/${{ github.repository }}/raw/technical-resume/main.pdf)" >> README.md
+
+      - name: Commit README and PDF
+        run: |
+          git checkout ${{ github.ref }}
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "�� Update README with PDF link" || echo "No changes to commit"
           git push
