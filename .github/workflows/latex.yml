@@ -1,40 +1,35 @@
-name: Build LaTeX document and Update README
+name: Build LaTeX document
 on: 
   push:
     paths:
-      - 'resume.tex'
+      - 'main.tex'
 jobs:
-  build_latex_and_update_readme:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
-
+          root_file: main.tex
       - name: Uploading artifact
         uses: actions/upload-artifact@v2
         with:
           name: PDF
           path: main.pdf
-
       - name: Get Time
         id: time
         uses: nanzm/get-time-action@v1.1
         with:
           timeZone: -7
           format: 'YYYY-MM-DD-HH-mm-ss'
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           name: Resume compiled on ${{ steps.time.outputs.time }}
           tag_name: ${{ steps.time.outputs.time }}
-
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
@@ -43,32 +38,46 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./main.pdf
-          asset_name: "resume.pdf"
+          asset_name:  "resume.pdf"
           asset_content_type: application/pdf
-
-      - name: Create and push to resume-compiled branch
+          
+      - name: Install ghostscript
+        run: sudo apt-get update --fix-missing && sudo apt install ghostscript
+      - name: Change ImageMagick security policy
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git checkout -b resume-compiled
+          DQT='"' 
+          SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
+          RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
+          
+          HGT="name=${DQT}height${DQT} value=${DQT}10KP${DQT}"
+          HGTR="name=${DQT}height${DQT} value=${DQT}128Kp${DQT}"
+          
+          WDT="name=${DQT}width${DQT} value=${DQT}10KP${DQT}"
+          WDTR="name=${DQT}width${DQT} value=${DQT}128Kp${DQT}"
+          
+          MAP="name=${DQT}map${DQT} value=${DQT}512MiB${DQT}"
+          MAPR="name=${DQT}map${DQT} value=${DQT}4GiB${DQT}"
+          
+          MEM="name=${DQT}memory${DQT} value=${DQT}256MiB${DQT}"
+          MEMR="name=${DQT}memory${DQT} value=${DQT}2GiB${DQT}"
+          
+          sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
+          sudo sed -i "s/$HGT/$HGTR/" /etc/ImageMagick-6/policy.xml
+          sudo sed -i "s/$WDT/$WDTR/" /etc/ImageMagick-6/policy.xml
+          sudo sed -i "s/$MAP/$MAPR/" /etc/ImageMagick-6/policy.xml
+          sudo sed -i "s/$MEM/$MEMR/" /etc/ImageMagick-6/policy.xml
+          
+      - name: Convert PDF to PNG
+        run: convert -density 900 -background white -alpha off main.pdf -resize 25% -quality 90 -colorspace RGB resume.png
+      - name: Commit PNG
+        id: commit
+        run: |
+          git config --local user.email "action[bot]@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resume.png
           git add main.pdf
-          git commit -m "[bot] updated resume pdf"
-          git push origin resume-compiled --force
-
-      - name: Update README in main branch
-        run: |
-          git checkout main
-          echo "# My Resume" > README.md
-          echo "" >> README.md
-          echo "Last updated: ${{ steps.time.outputs.time }}" >> README.md
-          echo "" >> README.md
-          echo "[View the latest version of my resume](https://github.com/${{ github.repository }}/raw/resume-compiled/main.pdf)" >> README.md
-          git add README.md
-          git commit -m "[bot] updated README with latest resume link"
-          git push origin main
-
-      - name: Update main branch
+          git commit -m "[bot] updated png and pdf"
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
