@@ -3,6 +3,8 @@ on: [push]
 jobs:
   build_latex_and_readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
@@ -15,7 +17,7 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
+          name: Technical Resume
           path: main.pdf
 
       - name: Get current date
@@ -24,7 +26,7 @@ jobs:
 
       - name: Extract information from LaTeX
         run: |
-          echo "# Antonio Sánchez Mil - CV" > README.md
+          echo "# Antonio Sánchez Mil - Technical Resume" > README.md
           echo "" >> README.md
           echo "Last updated: ${{ steps.date.outputs.date }}" >> README.md
           echo "" >> README.md
@@ -34,24 +36,13 @@ jobs:
           echo "## Skills" >> README.md
           sed -n '/section{Technical Skills}/,/resumeSubHeadingListEnd/p' main.tex | sed '1d;$d' | sed 's/\\resumeItem{//g; s/}//g; s/\\textbf{//g; s/textbf{//g' >> README.md
           echo "" >> README.md
-          echo "For more details, please see the [full CV](https://github.com/${{ github.repository }}/releases/latest/download/main.pdf)." >> README.md
+          echo "For the full Technical Resume, please check the latest artifact in the Actions tab." >> README.md
 
-      - name: Create Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: main.pdf
-          name: CV updated on ${{ steps.date.outputs.date }}
-          tag_name: v${{ steps.date.outputs.date }}
-          body: |
-            Automated CV update
-            
-            [Download CV](https://github.com/${{ github.repository }}/releases/latest/download/main.pdf)
-
-      - name: Commit README
+      - name: Commit README and PDF
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git commit -m "Update README with latest CV info" || echo "No changes to commit"
+          git add main.pdf
+          git commit -m "Update README and Technical Resume" || echo "No changes to commit"
           git push
