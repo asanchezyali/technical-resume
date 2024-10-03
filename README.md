@@ -7,11 +7,29 @@ Senior full stack software developer with a strong mathematical background and e
 
 
 ## Skills
-\resumeSubHeadingList
-Programming Languages: Python, JavaScript, TypeScript, Rust, C++, C
-Frameworks \& Libraries: Django, React, TensorFlow, PyTorch, JAX
-Technologies: AI, Blockchain, Machine Learning, Natural Language Processing
-Databases: MongoDB, MySQL
-Cloud Platforms: AWS, GCP
+Programming Languages:
+-  Python
+- JavaScript
+- TypeScript
+- Rust
+- C++
+- C
+Frameworks \& Libraries:
+-  Django
+- React
+- TensorFlow
+- PyTorch
+- JAX
+Technologies:
+-  AI
+- Blockchain
+- Machine Learning
+- Natural Language Processing
+Databases:
+-  MongoDB
+- MySQL
+Cloud Platforms:
+-  AWS
+- GCP
 
 For the full Technical Resume, please check the latest artifact in the Actions tab.
