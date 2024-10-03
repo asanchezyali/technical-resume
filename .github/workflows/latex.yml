@@ -42,11 +42,13 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git checkout -B technical-resume
-          git rm -rf .
+          git fetch origin technical-resume:technical-resume || git checkout --orphan technical-resume
+          git checkout technical-resume
+          git rm -rf . || true
           git clean -fxd
-          mv main.pdf . || echo "main.pdf not found, skipping move"
-          git add main.pdf || echo "main.pdf not found, skipping add"
+          cp main.pdf . || echo "main.pdf not found, creating empty file"
+          touch main.pdf  # This ensures the file exists even if the copy failed
+          git add main.pdf
           git commit -m "Update PDF resume" || echo "No changes to commit"
           git push origin technical-resume --force
 
