@@ -12,4 +12,4 @@ Technologies: AI, Blockchain, Machine Learning, Natural Language Processing
 Databases: MongoDB, MySQL
 Cloud Platforms: AWS, GCP
 
-[Ver el CV completo en PDF](https://github.com/asanchezyali/technical-resume/raw/technical-resume/main.pdf)
+[Download Resume](https://github.com/asanchezyali/technical-resume/blob/technical-resume/technical_resume.pdf)
