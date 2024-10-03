@@ -20,24 +20,6 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      - name: Generate README
-        run: |
-          chmod +x ./generate_readme.sh
-          ./generate_readme.sh "${{ steps.date.outputs.date }}"
-
-      - name: Update README with PDF link
-        run: |
-          echo "" >> README.md
-          echo "[Ver el CV completo en PDF](https://github.com/${{ github.repository }}/raw/technical-resume/main.pdf)" >> README.md
-
-      - name: Commit README to main branch
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "🛸 Update README with PDF link" || echo "No changes to commit"
-          git push origin HEAD:main
-
       - name: List directory contents
         run: ls -la
 
