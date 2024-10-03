@@ -8,12 +8,14 @@ Senior full stack software developer with a strong mathematical background and e
 
 Programming Languages: Python, JavaScript, TypeScript, Rust, C++, C
 
-Frameworks & Libraries: Django, React, TensorFlow, PyTorch, JAX
+Frameworks & Libraries: Django, FastAPI, Flask, React.js, Next.js, TensorFlow, PyTorch, JAX
 
 Technologies: AI, Blockchain, Machine Learning, Natural Language Processing
 
 Databases: MongoDB, MySQL
 
 Cloud Platforms: AWS, GCP
+
+DevOps: GitHub Actions, Docker, Docker Compose
 
 [Download Resume](https://github.com/asanchezyali/technical-resume/blob/technical-resume/technical_resume.pdf)
