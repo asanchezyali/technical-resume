@@ -25,8 +25,11 @@ sed -n '/section{Technical Skills}/,/resumeSubHeadingListEnd/p' main.tex |
 sed '1d;$d' | 
 sed 's/\\resumeItem{//g; s/}//g; s/\\textbf{//g; s/textbf{//g' |
 sed 's/\\resumeSubHeadingListStart//g; s/\\resumeSubHeadingListEnd//g' |
+sed 's/\\resumeSubHeadingList//g' |
 sed '/^$/d' |
-sed 's/^[ \t]*//' >> README.md
+sed 's/^[ \t]*//' |
+sed 's/:/:\n- /' |
+sed 's/, /\n- /g' >> README.md
 
 # Add footer
 echo "" >> README.md
