@@ -28,9 +28,9 @@ sed 's/\\resumeSubHeadingListStart//g; s/\\resumeSubHeadingListEnd//g' |
 sed 's/\\resumeSubHeadingList//g' |
 sed '/^$/d' |
 sed 's/^[ \t]*//' |
-sed 's/:/:\n- /' |
-sed 's/, /\n- /g' >> README.md
+sed '/Programming Languages:/!s/:/:\n- /' |
+sed '/Programming Languages:/!s/, /\n- /g' |
+sed '/Programming Languages:/s/: /: /' |
+sed '/Programming Languages:/s/, /, /g' >> README.md
 
-# Add footer
-echo "" >> README.md
-echo "For the full Technical Resume, please check the latest artifact in the Actions tab." >> README.md
+# The PDF link will be added by the GitHub Action
