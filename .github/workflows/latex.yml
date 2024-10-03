@@ -16,12 +16,6 @@ jobs:
         with:
           root_file: main.tex
 
-      - name: Upload PDF file as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Technical Resume
-          path: main.pdf
-
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -31,11 +25,23 @@ jobs:
           chmod +x ./generate_readme.sh
           ./generate_readme.sh "${{ steps.date.outputs.date }}"
 
+      - name: Update README with PDF link
+        run: |
+          echo "" >> README.md
+          echo "[Ver el CV completo en PDF](https://github.com/${{ github.repository }}/raw/technical-resume/main.pdf)" >> README.md
+
+      - name: Commit README to main branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "�� Update README with PDF link" || echo "No changes to commit"
+          git push origin HEAD:main
+
       - name: Upload PDF to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin
           git checkout -B technical-resume
           git rm -rf .
           git clean -fxd
@@ -44,16 +50,8 @@ jobs:
           git commit -m "Update PDF resume" || echo "No changes to commit"
           git push origin technical-resume --force
 
-      - name: Update README with PDF link
-        run: |
-          git checkout ${{ github.ref }}
-          echo "" >> README.md
-          echo "[Ver el CV completo en PDF](https://github.com/${{ github.repository }}/raw/technical-resume/main.pdf)" >> README.md
-
-      - name: Commit README and PDF
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "�� Update README with PDF link" || echo "No changes to commit"
-          git push
+      - name: Upload PDF file as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Technical Resume
+          path: main.pdf
