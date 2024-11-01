@@ -1,7 +1,7 @@
-# Alejandro Sánchez Yalí - Sr. Full Stack Developer
+# Alejandro Sánchez Yalí - Full Stack Software Developer
 
 ## Summary
-Senior full stack software developer with a strong mathematical background and extensive experience in software development, artificial intelligence, and blockchain technologies. Proficient in Python, JavaScript, Rust, C++, and C. Passionate about exploring new ideas and contributing to innovative projects in computer science and mathematics.
+I'm a software developer with a background in mathematics and experience in both traditional software development and projects involving AI and blockchain, skilled in developing both frontend and backend solutions. I work on a variety of applications, including AI-driven models and decentralized solutions.
 
 
 ## Skills
