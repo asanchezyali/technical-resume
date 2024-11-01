@@ -9,7 +9,6 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
         with:
-          # Asegurarse de obtener todo el historial
           fetch-depth: 0
 
       - name: Compile LaTeX document
@@ -46,12 +45,9 @@ jobs:
             touch technical_resume.pdf
           fi
           
-          # Obtener el hash corto del último commit de main
-          COMMIT_HASH=$(git rev-parse --short HEAD)
-          
-          # Añadir y hacer commit del PDF con fecha y hash
+          # Añadir y hacer commit del PDF con fecha
           git add technical_resume.pdf
-          git commit -m "📄 Update PDF resume - ${{ steps.date.outputs.date }} (${COMMIT_HASH})" || echo "No changes to commit"
+          git commit -m "🚀 Update PDF resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           
           # Push al branch (sin --force para mantener historial)
           git push origin technical-resume
