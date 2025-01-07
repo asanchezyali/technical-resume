@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Define custom colors
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Custom section formatting
+\titleformat{\section}
+{\Large\bfseries\color{sectioncolor}}
+{}{0em}
+{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Custom commands for entries
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newcommand{\entryList}{\begin{itemize}[leftmargin=*,nosep]}
+\newcommand{\entryListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
+\textbf{\Large Frontend Developer | React Specialist}\\[0.5em]
+\small
+\faEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\faLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\faGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\faGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+\section{Summary}
+Frontend Developer with 5 years of experience building responsive and performant web applications. Specialized in React ecosystem and modern frontend architectures. Strong focus on component-driven development, testing practices, and UI/UX implementation. Experienced in leading frontend initiatives and integrating modern technologies to deliver exceptional user experiences.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Core:} JavaScript, TypeScript, HTML5, CSS3
+  \item \textbf{Frontend Frameworks:} React.js, Next.js, Svelte
+  \item \textbf{State Management:} Redux, Zustand
+  \item \textbf{UI Libraries:} Shadcn UI, Ant Design
+  \item \textbf{Styling:} Tailwind CSS, SASS
+  \item \textbf{Build Tools:} Vite, Webpack
+  \item \textbf{Testing:} Vitest, Jest, TDD methodologies
+  \item \textbf{Type Safety:} Zod, TypeScript
+  \item \textbf{Version Control:} Git, GitHub
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Frontend Developer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote Job - Canada/EEUU}
+\begin{itemize}[leftmargin=*]
+    \item Led frontend development using React and Next.js, implementing responsive designs and modern UI patterns
+    \item Implemented robust testing strategies using Vitest and Jest, following TDD principles
+    \item Built reusable component libraries using Shadcn UI and custom components
+    \item Optimized application performance through efficient state management with Redux and Zustand
+\end{itemize}
+
+\resumeSubheading
+{Professor}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Conducted workshops on modern frontend development practices and testing methodologies
+    \item Mentored students in web development projects focusing on React and modern JavaScript
+\end{itemize}
+
+\resumeSubheading
+{Full-stack Developer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Developed responsive web interfaces using React and modern CSS frameworks
+    \item Implemented frontend testing strategies using Jest and TDD methodologies
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus - AI Image Generation Platform \faExternalLink}}
+    \begin{itemize}
+        \item Built a responsive frontend using React, Tailwind CSS, and Shadcn UI components
+        \item Implemented complex state management using Zustand and type-safe forms with Zod
+        \item Created comprehensive test suites using Vitest and React Testing Library
+    \end{itemize}
+    
+    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy - Interactive AI Avatar \faExternalLink}}
+    \begin{itemize}
+        \item Developed modern UI using Next.js, custom SVG components, and dynamic animations
+        \item Implemented state management with Redux and type validation using Zod
+        \item Built responsive layouts using SASS and modern CSS features
+    \end{itemize}
+
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \faExternalLink}}
+    \begin{itemize}
+        \item Created interactive 3D experiences using Three.js and React Three Fiber
+        \item Implemented responsive design patterns with Tailwind CSS
+        \item Built comprehensive test coverage using Vitest and TDD approach
+    \end{itemize}
+\end{itemize}
+
+\section{Technical Writing}
+\begin{itemize}[leftmargin=*]    
+    \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai-avatars/20240703DigitalHuman}{Revolutionizing Animation: Building Digital Humans with React}} (Jul 2024)
+    \begin{itemize}
+        \item Technical guide on implementing interactive UIs with React and modern frontend tools
+    \end{itemize}
+    
+    \href{https://www.asanchezyali.com/}{View more articles \faExternalLink}
+\end{itemize}
+
+\section{Conference Talks}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Modern Frontend Architecture: React, Vite, and Testing - PyCon \faYoutube}} (2024)
+    \begin{itemize}
+        \item Presented strategies for building scalable frontend applications
+        \item Discussed testing methodologies and component-driven development
+    \end{itemize}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Master in Mathematics}{Sep 2013}
+{Universidad de Antioquia}{Medellín, Colombia}
+
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Oct 2009}
+{Universidad de Antioquia}{Medellín, Colombia}
+\end{itemize}
+\end{document}
