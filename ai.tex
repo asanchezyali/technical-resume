@@ -30,10 +30,6 @@
 
 % Custom commands for entries
 \newcommand{\resumeItem}[1]{\item #1}
-
-\newcommand{\entryList}{\begin{itemize}[leftmargin=*,nosep]}
-\newcommand{\entryListEnd}{\end{itemize}}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}
   \item[]
@@ -44,14 +40,11 @@
   \vspace{-5pt}
 }
 
-\clubpenalty=1000
-\widowpenalty=1000
-
 \begin{document}
 
 \begin{center}
 \textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
-\textbf{\Large Full Stack Software Developer | AI/ML}\\[0.5em]
+\textbf{\Large Artificial Intelligence Engineer}\\[0.5em]
 \small
 \faEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
 \faLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
@@ -60,16 +53,16 @@
 \end{center}
 
 \section{Summary}
-I'm a Software Developer with over 5 years of experience creating robust and efficient solutions across frontend and backend applications. With a strong background in mathematics, I specialize in integrating emerging technologies into real-world projects to deliver innovative and impactful results.
+Machine Learning Engineer with a strong mathematical foundation and 5+ years of software development experience. Combining academic background in mathematics with practical expertise in AI/ML technologies and full-stack development to build scalable ML solutions. Experienced in integrating LLMs and other AI services into production applications.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Languages:} Python, JavaScript, TypeScript, Rust, C
-  \item \textbf{Frontend:} React.js, Next.js
-  \item \textbf{Backend:} Django, FastAPI, Flask, RESTful APIs
-  \item \textbf{AI/ML Integration:} LangChain, LangGraph, ScrapeGraph, Whisper, LLMs, TensorFlow/PyTorch
-  \item \textbf{Databases:} PostgreSQL, MongoDB
-  \item \textbf{Cloud/DevOps:} AWS, GCP, Docker, GitHub Actions, CI/CD pipelines
+  \item \textbf{ML/AI:} TensorFlow, PyTorch, LangChain, LangGraph, Whisper, LLMs
+  \item \textbf{Languages:} Python, TypeScript, JavaScript
+  \item \textbf{ML Tools:} NumPy, Pandas, Scikit-learn, JAX, Flax
+  \item \textbf{Development:} React.js, Next.js, FastAPI, RESTful APIs
+  \item \textbf{Cloud/MLOps:} AWS, Docker, CI/CD pipelines
+  \item \textbf{Mathematics:} Category Theory, Linear Algebra, Statistics
 \end{itemize}
 
 \section{Experience}
@@ -78,73 +71,52 @@ I'm a Software Developer with over 5 years of experience creating robust and eff
 {Full-stack Developer}{Apr 2021 -- Aug 2024}
 {Monadical}{Remote Job - Canada/EEUU}
 \begin{itemize}[leftmargin=*]
-    \item Developed and maintained full-stack applications using Python, Django, and React, focusing on scalable architectures
     \item Built and integrated AI services for information retrieval using large language models
-    \item Designed and implemented RESTful APIs for data-intensive applications
+    \item Developed scalable backend systems for ML model deployment using Python and FastAPI
+    \item Created frontend interfaces for AI applications using React and TypeScript
 \end{itemize}
 
 \resumeSubheading
 {Professor}{Jan 2010 -- Oct 2021}
 {Universidad de Antioquia}{Medellín, Colombia}
 \begin{itemize}[leftmargin=*]
-    \item Taught advanced courses in Machine Learning, focusing on practical implementations with Numpy, Pandas, TensorFlow, PyTorch and Scikit-learn
+    \item Taught advanced courses in Machine Learning, focusing on practical implementations with NumPy, Pandas, TensorFlow, PyTorch and Scikit-learn
     \item Mentored research projects in Category Theory and ML applications
+    \item Developed curriculum for mathematics and machine learning courses
+\end{itemize}
 \end{itemize}
 
-\resumeSubheading
-{Full-stack Developer}{Aug 2018 -- Oct 2020}
-{BCFort}{Medellín, Colombia}
-\begin{itemize}[leftmargin=*]
-    \item Led development of blockchain solutions with Ethereum and Hyperledger
-    \item Managed cloud infrastructure on AWS, GCP, and IBM Cloud
-\end{itemize}
-\end{itemize}
-\newpage
 \section{Featured Projects}
 \begin{itemize}[leftmargin=*]
     \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus - AI Image Generation Platform \faExternalLink}}
     \begin{itemize}
-        \item Contributed to building a full-stack open-source platform for AI image generation using Python, React, and stable diffusion models
-        \item Implemented RESTful APIs and scalable architecture for handling ML model integrations
-        \item Developed infrastructure as code using Docker, Kubernetes, and AWS services
+        \item Implemented ML model integrations and scalable architecture for AI image generation
+        \item Developed infrastructure for handling ML model deployments using Docker and AWS
     \end{itemize}
     
     \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy - Interactive AI Avatar \faExternalLink}}
     \begin{itemize}
-        \item Built a Next.js-based talking avatar using Azure Cognitive Services and OpenAI API
-        \item Implemented text-to-speech synthesis with synchronized lip movements using Azure's viseme generation
-        \item Created seamless integration between OpenAI's language models and Azure's speech services
+        \item Integrated OpenAI's language models with Azure's speech services
+        \item Implemented text-to-speech synthesis with synchronized lip movements
     \end{itemize}
-
-    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \faExternalLink}}
+       \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \faExternalLink}}
     \begin{itemize}
         \item Engineered a conversational AI system integrating Open AI GPT, Whisper, and Eleven Labs
         \item Implemented real-time lip synchronization creating seamless human-AI interaction
     \end{itemize}
 \end{itemize}
 
-
 \section{Technical Writing}
 \begin{itemize}[leftmargin=*]
-
     \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot}{Zero-Shot Text Classification}} (Sep 2024)
     \begin{itemize}
         \item Analysis of modern approaches to zero-shot learning in NLP
-    \end{itemize} 
+    \end{itemize}
     
     \item \textbf{\href{https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms}{Neural Networks as DAGs of Parameterized Computational Programs}} (Aug 2024)
     \begin{itemize}
         \item In-depth exploration of neural networks from a differentiable programming perspective
     \end{itemize}
-    
-
-    
-    \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai-avatars/20240703DigitalHuman}{Revolutionizing Animation: Building Digital Humans with LLMs}} (Jul 2024)
-    \begin{itemize}
-        \item Technical guide on implementing AI-powered digital avatars
-    \end{itemize}
-    
-    \href{https://www.asanchezyali.com/}{View more articles \faExternalLink}
 \end{itemize}
 
 \section{Conference Talks}
@@ -166,4 +138,5 @@ I'm a Software Developer with over 5 years of experience creating robust and eff
 {B.Sc. in Teaching Mathematics and Physics}{Oct 2009}
 {Universidad de Antioquia}{Medellín, Colombia}
 \end{itemize}
+
 \end{document}
