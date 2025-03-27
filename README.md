@@ -5,14 +5,13 @@
 [![Calendar](https://img.shields.io/badge/Calendar-Let's%20Connect-blue?style=flat&logo=google-calendar)](https://cal.com/asanchezyali/full-time-opportunities)
 [![Email](https://img.shields.io/badge/Email-asanchezyali%40gmail.com-red?style=flat&logo=gmail)](mailto:asanchezyali@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-asanchezyali-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/asanchezyali)
-[![GitHub](https://img.shields.io/badge/GitHub-asanchezyali-black?style=flat&logo=github)](https://github.com/asanchezyali)
 [![Website](https://img.shields.io/badge/Website-asanchezyali.com-green?style=flat&logo=safari)](https://asanchezyali.com)
 
-## �� Summary
+## 📋 Summary
 
 I'm a Software Engineer with over 5 years of experience creating robust and efficient solutions across frontend and backend applications. With a strong background in mathematics, I specialize in integrating emerging technologies into real-world projects to deliver innovative and impactful results.
 
-## ��️ Technical Skills
+## 🛠️ Technical Skills
 
 - **Languages:** **Python** (7+ years), **JavaScript** / **TypeScript** (5+ years), C (2+ years), Rust (1+ years)
 - **Frontend:** React.js, Next.js (6+ years)
@@ -21,7 +20,7 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 - **Databases:** PostgreSQL, MongoDB
 - **Cloud/DevOps:** AWS, GCP, Docker, GitHub Actions, CI/CD pipelines
 
-## ��‍�� Experience
+## 👨‍💻 Experience
 
 ### Full-stack Developer
 **Monadical - Canada/EEUU** | Remote | Apr 2021 - Aug 2024
@@ -46,7 +45,7 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 - Managed cloud infrastructure on AWS, GCP, and IBM Cloud including logging and monitoring solutions
 - **Duration with Python & JavaScript:** 2+ years continuous experience
 
-## �� Featured Projects
+## 🚀 Featured Projects
 
 ### [Morpheus - AI Image Generation Platform](https://github.com/Monadical-SAS/Morpheus)
 - Contributed to building a full-stack open-source platform for AI image generation using Python, React, and stable diffusion models
@@ -70,13 +69,13 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 
 [View more articles](https://www.asanchezyali.com/)
 
-## �� Conference Talks
+## 🎤 Conference Talks
 
 ### [Scaling Learning Models: Parallelism Strategies in JAX with Flax - PyCon](https://www.youtube.com/watch?v=m4hP1soE414) (2024)
 - Presented strategies for scaling machine learning models using JAX and Flax
 - Discussed parallel computing techniques for efficient model training
 
-## �� Education
+## 🎓 Education
 
 ### Master in Mathematics
 **Universidad de Antioquia** | Medellín, Colombia | Aug 2010 - Sep 2013
