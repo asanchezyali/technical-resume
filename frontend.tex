@@ -44,6 +44,14 @@
   \vspace{-5pt}
 }
 
+% Fix for FontAwesome warnings - protect icons from becoming bold
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+
 \clubpenalty=1000
 \widowpenalty=1000
 
@@ -53,30 +61,30 @@
 \textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
 \textbf{\Large Frontend Developer | React, Web3 \& AI Integration Specialist}\\[0.5em]
 \small
-\faCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
 
 \vspace{1em}
-\faEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
-\faLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
-\faGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
-\faGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
 \end{center}
 
 \section{Summary}
-Frontend Developer with 5 years of experience building responsive and performant web applications. Specialized in React ecosystem and modern frontend architectures, with expertise in Web3 and AI integrations. Strong focus on creating interactive user experiences through component-driven development, advanced testing practices, and seamless integration of emerging technologies.
+Frontend Developer with 5 years of experience building responsive and performant web applications. Specialized in \textbf{React} ecosystem and modern frontend architectures, with expertise in Web3 and AI integrations. Strong focus on creating interactive user experiences through component-driven development, advanced testing practices, and seamless integration of emerging technologies.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Core:} JavaScript, TypeScript, HTML5, CSS3
-  \item \textbf{Frontend Frameworks:} React.js, Next.js, Svelte
+  \item \textbf{Core:} \textbf{JavaScript} (5+ years), \textbf{TypeScript} (5+ years), HTML5, CSS3
+  \item \textbf{Frontend Frameworks:} \textbf{React.js} (6+ years), \textbf{Next.js} (5+ years), Svelte
   \item \textbf{Web3 \& AI:} Web3.js, LangChain Integration, OpenAI API Integration
   \item \textbf{E-commerce:} Shopify, GraphQL, REST APIs
   \item \textbf{State Management:} Redux, Zustand
   \item \textbf{UI Libraries:} Shadcn UI, Ant Design
-  \item \textbf{Styling:} Tailwind CSS, SASS
+  \item \textbf{Styling:} \textbf{Tailwind CSS}, SASS
   \item \textbf{Build Tools:} Vite, Webpack
   \item \textbf{Testing:} Vitest, Jest, TDD methodologies
-  \item \textbf{Type Safety:} Zod, TypeScript
+  \item \textbf{Type Safety:} Zod, \textbf{TypeScript}
   \item \textbf{Version Control:} Git, GitHub
 \end{itemize}
 
@@ -86,7 +94,7 @@ Frontend Developer with 5 years of experience building responsive and performant
 {Frontend Developer}{Apr 2021 -- Aug 2024}
 {Monadical}{Remote Job - Canada/EEUU}
 \begin{itemize}[leftmargin=*]
-\item Led frontend development across projects using React and Next.js, implementing responsive designs and modern UI patterns for multiple web applications
+\item Led frontend development across projects using \textbf{React} and \textbf{Next.js}, implementing responsive designs and modern UI patterns for multiple web applications
 \item Developed frontend integrations with AI services using LangChain and OpenAI API across various products
 \item Implemented comprehensive testing strategies using Vitest and Jest, following TDD principles throughout multiple codebases
 \item Built and maintained reusable component libraries using Shadcn UI and custom components shared across team projects
@@ -97,31 +105,31 @@ Frontend Developer with 5 years of experience building responsive and performant
 {Frontend Developer}{Aug 2018 -- Oct 2020}
 {BCFort}{Medellín, Colombia}
 \begin{itemize}[leftmargin=*]
-    \item Built decentralized application (dApp) frontends using React and Web3.js
+    \item Built decentralized application (dApp) frontends using \textbf{React} and Web3.js
     \item Developed interactive UIs for blockchain applications with Ethereum integration
 \end{itemize}
 \end{itemize}
 
 \section{Featured Projects}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus - AI Image Generation Platform \faExternalLink}}
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus - AI Image Generation Platform \normalfaExternalLink}}
     \begin{itemize}
-        \item Built a responsive frontend using React, Tailwind CSS, and Shadcn UI components
+        \item Built a responsive frontend using \textbf{React}, \textbf{Tailwind CSS}, and Shadcn UI components
         \item Implemented complex state management using Zustand and type-safe forms with Zod
         \item Created comprehensive test suites using Vitest and React Testing Library
     \end{itemize}
     
-    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy - Interactive AI Avatar \faExternalLink}}
+    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy - Interactive AI Avatar \normalfaExternalLink}}
     \begin{itemize}
-        \item Developed modern UI using Next.js, custom SVG components, and dynamic animations
+        \item Developed modern UI using \textbf{Next.js}, custom SVG components, and dynamic animations
         \item Implemented state management with Redux and type validation using Zod
         \item Built responsive layouts using SASS and modern CSS features
     \end{itemize}
 
-    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \faExternalLink}}
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \normalfaExternalLink}}
     \begin{itemize}
-        \item Created interactive 3D experiences using Three.js and React Three Fiber
-        \item Implemented responsive design patterns with Tailwind CSS
+        \item Created interactive 3D experiences using Three.js and \textbf{React} Three Fiber
+        \item Implemented responsive design patterns with \textbf{Tailwind CSS}
         \item Built comprehensive test coverage using Vitest and TDD approach
     \end{itemize}
 \end{itemize}
@@ -130,10 +138,10 @@ Frontend Developer with 5 years of experience building responsive and performant
 \begin{itemize}[leftmargin=*]    
     \item \textbf{\href{https://www.asanchezyali.com/blog/ai-avatars/20240703DigitalHuman}{Revolutionizing Animation: Building Digital Humans with React}} (Jul 2024)
     \begin{itemize}
-        \item Technical guide on implementing interactive UIs with React and modern frontend tools
+        \item Technical guide on implementing interactive UIs with \textbf{React} and modern frontend tools
     \end{itemize}
     
-    \href{https://www.asanchezyali.com/}{View more articles \faExternalLink}
+    \href{https://www.asanchezyali.com/}{View more articles \normalfaExternalLink}
 \end{itemize}
 
 \section{Education}

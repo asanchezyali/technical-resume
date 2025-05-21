@@ -26,7 +26,7 @@
 {\Large\bfseries\color{sectioncolor}}
 {}{0em}
 {\uppercase}[\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
 
 % Custom commands for entries
 \newcommand{\resumeItem}[1]{\item #1}
@@ -59,12 +59,12 @@
 \begin{document}
 
 \begin{center}
-\textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
-\textbf{\Large Full Stack Software Engineer | AI/ML}\\[0.5em]
+\textbf{\Huge Alejandro Sánchez Yalí}\\[0.2em]
+\textbf{\Large Full Stack Software Engineer | AI/ML}\\[0.4em]
 \small
 \normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
 
-\vspace{1em}
+\vspace{0.8em}
 \normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
 \normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
 \normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
@@ -75,7 +75,7 @@
 I'm a Software Engineer with over 5 years of experience creating robust and efficient solutions across frontend and backend applications. With a strong background in mathematics, I specialize in integrating emerging technologies into real-world projects to deliver innovative and impactful results.
 
 \section{Technical Skills}
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=0pt]
   \item \textbf{Languages:} \textbf{Python} (7+ years), \textbf{JavaScript} / \textbf{TypeScript}(5+ years), C (2+ years), Rust (1+ years).
   \item \textbf{Frontend:} React.js, Next.js (6+ years).
   \item \textbf{Backend:} Django, FastAPI, Flask, Node.js, Next.js, GraphQL,  RESTful APIs (5+ years).
@@ -85,11 +85,20 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 \end{itemize}
 
 \section{Experience}
-\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
+\resumeSubheading
+{Independent IT Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Provide end-to-end software development and technical solutions for business applications
+    \item Key projects: sports club management system (React.js, Nest.js, Stripe), medical clinic scheduling system, AI agent development for PiAgents, and LinguaCode (teaching technical English through programming)
+    \item \textbf{Technical stack:} React.js, Nest.js, Python, FastAPI, Docker, Django, Node.js, and Stripe
+\end{itemize}
+
 \resumeSubheading
 {Full-stack Developer}{Apr 2021 -- Aug 2024}
 {Monadical - Canada/EEUU}{Remote}
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=0pt]
     \item Developed and maintained full-stack applications using \textbf{Python}(Django), and \textbf{JavaScript} / \textbf{TypeScript} (React.js and Next.js), focusing on scalable architectures
     \item Built AI services using large language models with \textbf{Python}; designed RESTful APIs
     \item Created custom Django ORM extensions and ETL pipelines in \textbf{Python}
@@ -99,7 +108,7 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 \resumeSubheading
 {Professor}{Jan 2010 -- Oct 2021}
 {Universidad de Antioquia}{Medellín, Colombia}
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=0pt]
     \item Taught Machine Learning (2018-2021) using \textbf{Python}, NumPy, Pandas, TensorFlow
     \item Created curriculum on \textbf{Python} for data science; mentored \textbf{Python}-based projects in Category Theory and ML applications
     \item \textbf{Duration teaching Python:} 3+ years (2018 - 2021)
@@ -108,54 +117,56 @@ I'm a Software Engineer with over 5 years of experience creating robust and effi
 \resumeSubheading
 {Full-stack Developer}{Aug 2018 -- Oct 2020}
 {BCFort}{Medellín, Colombia}
-\begin{itemize}[leftmargin=*, topsep=0pt, parsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=*, topsep=0pt, parsep=0pt, itemsep=0pt]
     \item Developed blockchain solutions with Ethereum and Solidity using \textbf{JavaScript} / \textbf{TypeScript} and \textbf{Python}
     \item Built backend with \textbf{Python} (Django) and frontend with \textbf{JavaScript} / \textbf{TypeScript} (React)
     \item Managed cloud infrastructure on AWS, GCP, and IBM Cloud including logging and monitoring solutions
     \item \textbf{Duration with Python \& JavaScript:} 2+ years continuous experience
 \end{itemize}
 \end{itemize}
-\newpage
+
 \section{Featured Projects}
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+    \item \textbf{\href{https://github.com/asanchezyali/linguacode}{LinguaCode - Technical English Learning Platform \normalfaExternalLink}}
+    \begin{itemize}[itemsep=0pt]
+        \item Developing an AI-powered platform that teaches technical English through programming
+        \item Implementing interactive coding exercises with real-time feedback and language learning components
+        \item Utilizing NLP and LLMs to provide contextual language instruction within programming contexts
+    \end{itemize}
+
     \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus - AI Image Generation Platform \normalfaExternalLink}}
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt]
         \item Contributed to building a full-stack open-source platform for AI image generation using Python, React, and stable diffusion models
         \item Implemented RESTful APIs and scalable architecture for handling ML model integrations
         \item Developed infrastructure as code using Docker, Kubernetes, and AWS services
     \end{itemize}
     
     \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy - Interactive AI Avatar \normalfaExternalLink}}
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt]
         \item Built a Next.js-based talking avatar using Azure Cognitive Services and OpenAI API
         \item Implemented TTS synthesis with synchronized lip movements using Azure's viseme generation
         \item Created seamless integration between OpenAI's language models and Azure's speech services
     \end{itemize}
 
     \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human - Interactive AI Avatar \normalfaExternalLink}}
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt]
         \item Engineered a conversational AI system integrating Open AI GPT, Whisper, and Eleven Labs
         \item Implemented real-time lip synchronization creating seamless human-AI interaction
     \end{itemize}
 \end{itemize}
 
-
 \section{Technical Writing}
-\begin{itemize}[leftmargin=*]
-
+\begin{itemize}[leftmargin=*, itemsep=0pt]
     \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot}{Zero-Shot Text Classification}} (Sep 2024)
-
     \item \textbf{\href{https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms}{Neural Networks as DAGs of Parameterized Computational Programs}} (Aug 2024)
-
     \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai-avatars/20240703DigitalHuman}{Revolutionizing Animation: Building Digital Humans with LLMs}} (Jul 2024)
-
     \href{https://www.asanchezyali.com/}{View more articles \normalfaExternalLink}
 \end{itemize}
 
 \section{Conference Talks}
 \begin{itemize}[leftmargin=*]
     \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Scaling Learning Models: Parallelism Strategies in JAX with Flax - PyCon \normalfaYoutube}} (2024)
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt]
         \item Presented strategies for scaling machine learning models using JAX and Flax
         \item Discussed parallel computing techniques for efficient model training
     \end{itemize}
