@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Define custom colors
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Custom section formatting
+\titleformat{\section}
+{\Large\bfseries\color{sectioncolor}}
+{}{0em}
+{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Custom commands for entries
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newcommand{\entryList}{\begin{itemize}[leftmargin=*,nosep]}
+\newcommand{\entryListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+% Fix for FontAwesome warnings - protect icons from becoming bold
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
+\textbf{\Large Frontend Developer | React, Web3 \& AI Integration Specialist}\\[0.5em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{1em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+\section{Summary}
+Frontend Developer with 5+ years of experience building robust, responsive, and performant web applications. Specialized in \textbf{React} and \textbf{Next.js}, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record delivering production-ready UIs, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages:} JavaScript (5+ years), TypeScript (5+ years), Python, HTML5, CSS3, SQL
+  \item \textbf{Frontend:} React.js (6+ years), Next.js (5+ years), Svelte, Tailwind CSS, SASS, Redux, Zustand, Shadcn UI, Ant Design
+  \item \textbf{Web3/Blockchain:} Web3.js, Ethereum, dApp UIs, NFT marketplaces
+  \item \textbf{AI/ML Integration:} LangChain, OpenAI API, LLMs, Whisper
+  \item \textbf{Testing:} Vitest, Jest, TDD, React Testing Library
+  \item \textbf{Build Tools:} Vite, Webpack
+  \item \textbf{Version Control:} Git, GitHub
+  \item \textbf{Cloud/DevOps:} AWS, Docker, CI/CD pipelines
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Frontend Developer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote Job - Canada/EEUU}
+\begin{itemize}[leftmargin=*]
+\item Led frontend development using \textbf{React} and \textbf{Next.js}, implementing responsive designs and modern UI patterns for multiple web applications
+\item Developed frontend integrations with AI/ML services (LangChain, OpenAI API, LLMs, Whisper) across various products
+\item Built and maintained reusable component libraries (Shadcn UI, custom components) shared across team projects
+\item Implemented comprehensive testing strategies (Vitest, Jest, TDD) and advanced state management (Redux, Zustand)
+\item Collaborated with backend teams to deliver scalable, production-ready solutions and deployed apps to AWS/GCP using Docker and CI/CD
+\end{itemize}
+
+\resumeSubheading
+{Frontend Developer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Built decentralized application (dApp) frontends using \textbf{React}, Web3.js, and Ethereum
+    \item Developed interactive UIs for blockchain applications and NFT marketplaces
+    \item Led frontend for analytics and visualization of blockchain transactions
+\end{itemize}
+
+\resumeSubheading
+{Professor}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Taught advanced courses in Machine Learning, Data Science, and Mathematics using Python, NumPy, Pandas, TensorFlow, PyTorch, and Scikit-learn
+    \item Mentored research and student projects in ML, data analysis, and software development
+\end{itemize}
+
+\resumeSubheading
+{Independent IT Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*]
+    \item Delivered end-to-end frontend solutions for business clients using React.js, Next.js, and TypeScript
+    \item Developed and deployed modern UIs for e-commerce, medical scheduling, and AI-powered learning platforms
+    \item Integrated AI/ML services and LLMs into web applications, focusing on user experience and accessibility
+    \item Implemented payment integrations, responsive design, and CI/CD pipelines
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus -- AI Image Generation Platform \normalfaExternalLink}}
+    \begin{itemize}
+        \item Built a responsive frontend using \textbf{React}, \textbf{Tailwind CSS}, and Shadcn UI components
+        \item Implemented complex state management (Zustand, Redux) and type-safe forms (Zod)
+        \item Created comprehensive test suites (Vitest, React Testing Library)
+    \end{itemize}
+    
+    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy -- Interactive AI Avatar \normalfaExternalLink}}
+    \begin{itemize}
+        \item Developed modern UI using \textbf{Next.js}, custom SVG components, and dynamic animations
+        \item Integrated OpenAI API and Azure Cognitive Services for AI-powered avatars
+        \item Implemented state management (Redux, Zustand) and type validation (Zod)
+        \item Built responsive layouts using SASS and modern CSS features
+    \end{itemize}
+
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}}
+    \begin{itemize}
+        \item Created interactive 3D experiences using Three.js and \textbf{React} Three Fiber
+        \item Integrated OpenAI GPT, Whisper, and Eleven Labs for conversational AI
+        \item Implemented responsive design patterns with \textbf{Tailwind CSS} and built comprehensive test coverage (Vitest, TDD)
+    \end{itemize}
+\end{itemize}
+
+\section{Technical Writing}
+\begin{itemize}[leftmargin=*]    
+    \item \textbf{\href{https://www.asanchezyali.com/blog/ai-avatars/20240703DigitalHuman}{Revolutionizing Animation: Building Digital Humans with React}} (Jul 2024)
+    \begin{itemize}
+        \item Technical guide on implementing interactive UIs with \textbf{React} and modern frontend tools
+    \end{itemize}
+    \item \textbf{\href{https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot}{Zero-Shot Text Classification}} (Sep 2024)
+    \item \textbf{\href{https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms}{Neural Networks as DAGs of Parameterized Computational Programs}} (Aug 2024)
+    \item   \href{https://www.asanchezyali.com/}{View more articles \normalfaExternalLink}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Master in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medellín, Colombia}
+
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medellín, Colombia}
+\end{itemize}
+\end{document}
