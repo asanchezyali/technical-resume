@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Define custom colors
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Custom section formatting
+\titleformat{\section}
+{\Large\bfseries\color{sectioncolor}}
+{}{0em}
+{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Custom commands for entries
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newcommand{\entryList}{\begin{itemize}[leftmargin=*,nosep]}
+\newcommand{\entryListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+% Fix for FontAwesome warnings - protect icons from becoming bold
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
+\textbf{\Large AI Engineer | Full Stack | LLMs | AWS}\\[0.5em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{1em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+\section{Summary}
+Full Stack Engineer with 5+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages:} Python (7+ years), JavaScript/TypeScript (5+ years), SQL, Rust, C
+  \item \textbf{Backend:} Node.js, FastAPI, Django REST Framework, Flask, RESTful APIs, GraphQL, Microservices
+  \item \textbf{Frontend:} React.js, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS, Redux, Zustand
+  \item \textbf{AI/ML:} LLMs (OpenAI, LangChain, Whisper), TensorFlow, PyTorch, Scikit-learn
+  \item \textbf{Cloud/DevOps:} AWS (EC2, S3, Lambda), GCP, Docker, Git, GitHub Actions, CI/CD pipelines
+  \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB, DynamoDB
+  \item \textbf{Other:} Performance Optimization, Scalability, Clean Architecture, SOLID principles, Testing (Unit/Integration, TDD)
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Independent IT Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*]
+    \item Designed and delivered fullstack AI-powered applications using Python (FastAPI, Django), Node.js, and React.js
+    \item Integrated LLMs and AI APIs into robust backend services and user-facing features
+    \item Deployed solutions on AWS (EC2, S3, Docker), configured infrastructure, and managed CI/CD pipelines
+    \item Modeled and integrated SQL/NoSQL databases (PostgreSQL, MySQL, MongoDB)
+    \item Worked independently with international clients, delivering scalable, maintainable code
+\end{itemize}
+
+\resumeSubheading
+{Full Stack Developer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote Job - Canada/USA}
+\begin{itemize}[leftmargin=*]
+    \item Developed and maintained enterprise-level applications with Python (FastAPI, Django), Node.js, React.js, and Next.js
+    \item Built and scaled microservices architectures, focusing on performance and reliability
+    \item Integrated LLMs and AI/ML APIs into production systems
+    \item Deployed and managed cloud infrastructure on AWS and GCP using Docker and CI/CD
+    \item Designed and optimized database models and queries (PostgreSQL, MongoDB)
+\end{itemize}
+
+\resumeSubheading
+{Full Stack Developer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Built and maintained fullstack solutions with Python (Django), Node.js, and React.js
+    \item Developed and integrated RESTful APIs and microservices for analytics and blockchain platforms
+    \item Managed cloud infrastructure (AWS, GCP, IBM Cloud) and database integrations
+    \item Ensured application scalability, performance, and reliability through testing and optimization
+\end{itemize}
+
+\resumeSubheading
+{Professor}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Taught advanced courses in Python, Machine Learning, Data Science, and Software Engineering
+    \item Mentored research and student projects, fostering teamwork and technical growth
+    \item Developed curriculum and promoted best practices in programming and mathematics
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus -- AI Image Generation Platform \normalfaExternalLink}}
+    \begin{itemize}
+        \item Fullstack open-source platform for AI image generation using Python (FastAPI), Node.js, React, and microservices
+        \item Integrated LLMs, implemented RESTful APIs, and deployed on AWS with Docker
+    \end{itemize}
+    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy -- Interactive AI Avatar \normalfaExternalLink}}
+    \begin{itemize}
+        \item Built a Next.js-based talking avatar integrating OpenAI API and Azure Cognitive Services
+        \item Developed backend-frontend integration in Python, Node.js, and TypeScript
+    \end{itemize}
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar (+
+        320 Stars on Github )\normalfaExternalLink}}
+    \begin{itemize}
+        \item Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs
+        \item Implemented real-time data processing, microservices, and cloud integration
+    \end{itemize}
+\end{itemize}
+
+\section{Technical blog posts}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://www.asanchezyali.com/blog/ai/20240917ZeroShot}{Zero-Shot Text Classification}} (Sep 2024)
+    \item \textbf{\href{https://www.asanchezyali.com/blog/differentiable-programming/20240923DifferentiablePrograms}{Neural Networks as DAGs of Parameterized Computational Programs}} (Aug 2024)
+    \item \href{https://www.asanchezyali.com/}{View more articles \normalfaExternalLink}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Master in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medellín, Colombia}
+
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medellín, Colombia}
+\end{itemize}
+
+\end{document} 
