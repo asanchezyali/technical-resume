@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Define custom colors
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Custom section formatting
+\titleformat{\section}
+{\Large\bfseries\color{sectioncolor}}
+{}{0em}
+{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Custom commands for entries
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newcommand{\entryList}{\begin{itemize}[leftmargin=*,nosep]}
+\newcommand{\entryListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+% Fix for FontAwesome warnings - protect icons from becoming bold
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge Alejandro Sánchez Yalí}\\[0.3em]
+\textbf{\Large Senior Node.js Fullstack Engineer | React | Scalable Systems}\\[0.5em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{1em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+\section{Summary}
+Senior Fullstack Engineer with 5+ years of experience designing, developing, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in code reviews, refactoring, and mentoring junior developers. Advanced English communication skills and experience working with distributed teams.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages:} JavaScript/TypeScript (5+ years), Python, SQL
+  \item \textbf{Backend:} Node.js, Express, RESTful APIs, Microservices
+  \item \textbf{Frontend:} React.js, Next.js, HTML5, CSS3, Tailwind CSS, Redux, Zustand
+  \item \textbf{DevOps/Cloud:} Docker, AWS, GCP, Git, GitHub Actions, CI/CD pipelines
+  \item \textbf{Testing:} Unit/Integration Testing, TDD, Vitest, Jest
+  \item \textbf{Other:} Performance Optimization, Scalability, Clean Architecture, SOLID, DRY
+  \item \textbf{Soft Skills:} Code Review, Mentoring, Teamwork, Communication, English (Advanced)
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Independent IT Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*]
+    \item Designed and delivered fullstack applications using Node.js, React.js, and TypeScript
+    \item Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security
+    \item Mentored junior developers, supporting their technical growth and ensuring code quality
+    \item Deployed solutions to AWS/GCP using Docker and CI/CD pipelines
+\end{itemize}
+
+\resumeSubheading
+{Full Stack Developer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote Job - Canada/USA}
+\begin{itemize}[leftmargin=*]
+    \item Developed and maintained scalable applications with Node.js, React.js, and Next.js
+    \item Implemented clean, efficient, and reusable code following SOLID and DRY principles
+    \item Conducted code reviews, led refactoring efforts, and improved system scalability and security
+    \item Mentored junior team members and promoted best practices in testing and code quality
+    \item Managed cloud deployments and CI/CD pipelines (AWS, Docker)
+\end{itemize}
+
+\resumeSubheading
+{Full Stack Developer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Built and maintained fullstack solutions with Node.js, React.js, and Python
+    \item Developed and integrated RESTful APIs and microservices for analytics and blockchain platforms
+    \item Ensured application scalability, performance, and reliability through testing and optimization
+\end{itemize}
+
+\resumeSubheading
+{Professor}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medellín, Colombia}
+\begin{itemize}[leftmargin=*]
+    \item Mentored research and student projects, fostering teamwork and technical growth
+    \item Taught advanced mathematics courses and developed elective AI/ML curriculum for Mathematics Institute (1.5 years)
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Morpheus -- AI Image Generation Platform \normalfaExternalLink}}
+    \begin{itemize}
+        \item Fullstack open-source platform using Node.js, React, and microservices
+        \item Implemented RESTful APIs, optimized performance, and led code quality initiatives
+    \end{itemize}
+    \item \textbf{\href{https://github.com/asanchezyali/ai-avatar}{Zippy -- Interactive AI Avatar \normalfaExternalLink}}
+    \begin{itemize}
+        \item Built a Next.js-based interactive avatar with Node.js backend and React frontend
+        \item Led backend-frontend integration and codebase refactoring
+    \end{itemize}
+        \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar (+
+        320 Stars on Github )\normalfaExternalLink}}
+    \begin{itemize}
+        \item Engineered a conversational AI system with Node.js, React, and microservices
+        \item Implemented real-time data processing and system optimization
+    \end{itemize}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{Master in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medellín, Colombia}
+
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medellín, Colombia}
+\end{itemize}
+
+\end{document} 
