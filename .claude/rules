@@ -1,0 +1,209 @@
+# Resume Generator Agent - Claude Code Rules
+
+## Project Overview
+
+This project is an AI-powered resume generator CLI that creates personalized CVs using Claude AI via LiteLLM. The system takes natural language job descriptions and generates tailored LaTeX resumes that compile to PDF.
+
+## Tech Stack
+
+- **Language**: Python 3.11+
+- **LLM Integration**: LiteLLM with Claude API (Anthropic)
+- **Templating**: Jinja2 for LaTeX generation
+- **CLI Framework**: Click + Rich for terminal UI
+- **Document Format**: LaTeX → PDF (pdflatex)
+- **Data Validation**: Pydantic
+- **Testing**: pytest
+
+## Project Structure
+
+```
+resume-agent/
+├── agent.py                    # Main CLI entry point
+├── requirements.txt            # Python dependencies
+├── .env                        # API keys (ANTHROPIC_API_KEY)
+├── data/
+│   └── resume-master.json      # Single source of truth for CV data
+├── templates/
+│   ├── resume.tex.j2           # Jinja2 LaTeX template
+│   └── prompts/                # LLM prompt templates
+├── generated/                  # Output directory for .tex and .pdf files
+├── src/
+│   ├── llm_handler.py          # LiteLLM/Claude integration
+│   ├── data_handler.py         # JSON data management
+│   ├── template_renderer.py    # Jinja2 rendering
+│   ├── latex_compiler.py       # pdflatex compilation
+│   └── filters.py              # Data filtering algorithms
+└── tests/                      # Unit tests
+```
+
+## Key Files
+
+### Existing Resume Templates
+The `*.tex` files in the root directory are existing resume variants for different roles:
+- `AlejandroSanchezYaliAIDeveloper.tex` - AI/ML focused
+- `AlejandroSanchezYaliFullStackDeveloper.tex` - Full Stack focused
+- `AlejandroSanchezYaliPythonDeveloper.tex` - Python focused
+- `main.tex` - Base template
+
+These serve as reference for the Jinja2 template structure.
+
+### LaTeX Template Structure
+All resumes follow this section order:
+1. Header (Name, Title, Contact Links)
+2. Summary (2-3 sentences)
+3. Technical Skills (categorized lists)
+4. Experience (jobs with highlights)
+5. Featured Projects (with GitHub links)
+6. Technical Blog Posts (optional)
+7. Conference Talks (optional)
+8. Education
+
+## Coding Guidelines
+
+### Python Style
+- Use type hints for all function parameters and returns
+- Use Pydantic models for data validation
+- Follow PEP 8 conventions
+- Use `rich` for CLI output formatting
+- Handle errors gracefully with user-friendly messages
+- **NO docstrings** - use `#` line comments only for documentation
+- Keep comments concise and meaningful
+
+### LiteLLM Integration
+```python
+from litellm import completion
+
+# Use structured output for reliable JSON
+response = completion(
+    model="claude-sonnet-4-20250514",
+    messages=[...],
+    response_format={"type": "json_object"}
+)
+```
+
+### LaTeX Escaping
+Always escape special characters before inserting into LaTeX:
+- `&` → `\&`
+- `%` → `\%`
+- `$` → `\$`
+- `#` → `\#`
+- `_` → `\_`
+
+### Jinja2 Templates
+- Use `{{- ... -}}` for whitespace control
+- Create custom filters for LaTeX escaping
+- Use conditional blocks for optional sections (`{% if talks %}`)
+
+## Data Categories
+
+The resume-master.json uses these category tags for filtering:
+- `ai`, `ml`, `llm` - AI/ML related
+- `frontend` - Frontend development
+- `backend` - Backend development
+- `fullstack` - Full stack development
+- `data` - Data engineering/science
+- `blockchain`, `web3` - Blockchain/crypto
+- `cloud`, `devops` - Infrastructure
+- `leadership` - Team leadership/management
+
+## LLM Prompt Guidelines
+
+When creating prompts for Claude:
+1. Request JSON output explicitly
+2. Provide the resume-master.json schema for reference
+3. Ask for specific fields: `job_title`, `summary`, `focus_areas`, `key_skills`
+4. Use low temperature (0.3) for consistent output
+5. Include examples of expected output format
+
+## Testing
+
+Run tests with:
+```bash
+pytest tests/ -v
+```
+
+Key test scenarios:
+- LaTeX escaping edge cases
+- JSON parsing from LLM responses
+- Template rendering with missing optional sections
+- pdflatex compilation success/failure
+
+## Environment Variables
+
+Required in `.env`:
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Optional:
+```
+LITELLM_LOG=DEBUG
+DEFAULT_MODEL=claude-sonnet-4-20250514
+```
+
+## Common Tasks
+
+### Adding a New Skill Category
+1. Add to `resume-master.json` under `skills`
+2. Update the filtering logic in `src/filters.py`
+3. Ensure template handles the new category
+
+### Modifying Template Layout
+1. Edit `templates/resume.tex.j2`
+2. Test compilation with sample data
+3. Verify PDF output formatting
+
+### Changing LLM Model
+Update in `src/llm_handler.py`:
+```python
+self.model = "claude-sonnet-4-20250514"  # or other LiteLLM model ID
+```
+
+## Git Conventions
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with emojis.
+
+### Commit Message Format
+```
+<emoji> <type>(<scope>): <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Emoji + Type Reference
+| Emoji | Type | Description |
+|-------|------|-------------|
+| ✨ | `feat` | New feature |
+| 🐛 | `fix` | Bug fix |
+| 📝 | `docs` | Documentation only |
+| 💄 | `style` | Code style (formatting, no logic change) |
+| ♻️ | `refactor` | Code refactoring |
+| ⚡ | `perf` | Performance improvement |
+| ✅ | `test` | Adding or updating tests |
+| 🔧 | `chore` | Maintenance, configs, dependencies |
+| 🏗️ | `build` | Build system or external dependencies |
+| 👷 | `ci` | CI/CD configuration |
+| 🗑️ | `remove` | Removing code or files |
+| 🚀 | `deploy` | Deployment related |
+
+### Examples
+```
+✨ feat(cli): add interactive resume generation mode
+🐛 fix(template): escape ampersand in company names
+📝 docs: update README with installation instructions
+♻️ refactor(filters): simplify relevance scoring algorithm
+```
+
+### Important Rules
+- **NO Co-Authored-By** - Do not include Claude as co-author
+- Don't commit `.env` files or generated PDFs to version control
+- Keep commits atomic and focused on single changes
+
+## Important Notes
+
+- The `compile_tex.sh` script runs pdflatex twice for proper reference resolution
+- LaTeX requires specific packages: fontawesome, geometry, hyperref, xcolor, enumitem, titlesec
+- Generated files go in `generated/` directory
+- Always validate JSON before passing to template renderer

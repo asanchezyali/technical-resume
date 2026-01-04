@@ -1,0 +1,1077 @@
+{
+  "personal": {
+    "name": "Alejandro Sánchez Yalí",
+    "email": "asanchezyali@gmail.com",
+    "links": {
+      "calendar": "https://cal.com/asanchezyali/full-time-opportunities",
+      "linkedin": "https://www.linkedin.com/in/asanchezyali",
+      "linkedin_handle": "asanchezyali",
+      "github": "https://github.com/asanchezyali",
+      "github_handle": "asanchezyali",
+      "website": "https://asanchezyali.com",
+      "website_display": "asanchezyali.com"
+    }
+  },
+
+  "skills": {
+    "languages": [
+      {
+        "name": "Python",
+        "years": 7,
+        "level": "advanced",
+        "categories": ["backend", "ai", "ml", "data", "fullstack"],
+        "display": "Python (7+ years)"
+      },
+      {
+        "name": "JavaScript",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["frontend", "fullstack", "backend", "node"],
+        "display": "JavaScript (5+ years)"
+      },
+      {
+        "name": "TypeScript",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["frontend", "fullstack", "backend", "node"],
+        "display": "TypeScript (5+ years)"
+      },
+      {
+        "name": "SQL",
+        "years": 5,
+        "level": "intermediate",
+        "categories": ["backend", "data", "database"],
+        "display": "SQL"
+      },
+      {
+        "name": "Rust",
+        "years": 1,
+        "level": "beginner",
+        "categories": ["backend", "systems"],
+        "display": "Rust"
+      },
+      {
+        "name": "C",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["backend", "systems"],
+        "display": "C"
+      },
+      {
+        "name": "HTML5",
+        "years": 6,
+        "level": "advanced",
+        "categories": ["frontend"],
+        "display": "HTML5"
+      },
+      {
+        "name": "CSS3",
+        "years": 6,
+        "level": "advanced",
+        "categories": ["frontend"],
+        "display": "CSS3"
+      }
+    ],
+
+    "frontend": [
+      {
+        "name": "React.js",
+        "years": 6,
+        "level": "advanced",
+        "categories": ["frontend", "fullstack"],
+        "display": "React.js (6+ years)"
+      },
+      {
+        "name": "Next.js",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["frontend", "fullstack"],
+        "display": "Next.js (5+ years)"
+      },
+      {
+        "name": "Svelte",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["frontend"],
+        "display": "Svelte"
+      },
+      {
+        "name": "Tailwind CSS",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["frontend"],
+        "display": "Tailwind CSS"
+      },
+      {
+        "name": "SASS",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["frontend"],
+        "display": "SASS"
+      },
+      {
+        "name": "Redux",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["frontend", "state-management"],
+        "display": "Redux"
+      },
+      {
+        "name": "Zustand",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["frontend", "state-management"],
+        "display": "Zustand"
+      },
+      {
+        "name": "Shadcn UI",
+        "years": 1,
+        "level": "advanced",
+        "categories": ["frontend", "ui"],
+        "display": "Shadcn UI"
+      },
+      {
+        "name": "Ant Design",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["frontend", "ui"],
+        "display": "Ant Design"
+      },
+      {
+        "name": "Three.js",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["frontend", "3d", "graphics"],
+        "display": "Three.js"
+      },
+      {
+        "name": "React Three Fiber",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["frontend", "3d", "graphics"],
+        "display": "React Three Fiber"
+      }
+    ],
+
+    "backend": [
+      {
+        "name": "Django",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["backend", "python", "fullstack"],
+        "display": "Django"
+      },
+      {
+        "name": "Django REST Framework",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["backend", "python", "api"],
+        "display": "Django REST Framework"
+      },
+      {
+        "name": "FastAPI",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["backend", "python", "api"],
+        "display": "FastAPI"
+      },
+      {
+        "name": "Flask",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["backend", "python"],
+        "display": "Flask"
+      },
+      {
+        "name": "Node.js",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["backend", "node", "fullstack"],
+        "display": "Node.js"
+      },
+      {
+        "name": "Express",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["backend", "node"],
+        "display": "Express"
+      },
+      {
+        "name": "NestJS",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["backend", "node"],
+        "display": "NestJS"
+      },
+      {
+        "name": "RESTful APIs",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["backend", "api"],
+        "display": "RESTful APIs"
+      },
+      {
+        "name": "GraphQL",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["backend", "api"],
+        "display": "GraphQL"
+      },
+      {
+        "name": "Microservices",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["backend", "architecture"],
+        "display": "Microservices"
+      }
+    ],
+
+    "ai_ml": [
+      {
+        "name": "TensorFlow",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["ai", "ml", "deep-learning"],
+        "display": "TensorFlow"
+      },
+      {
+        "name": "PyTorch",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["ai", "ml", "deep-learning"],
+        "display": "PyTorch"
+      },
+      {
+        "name": "Scikit-learn",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["ai", "ml", "data"],
+        "display": "Scikit-learn"
+      },
+      {
+        "name": "LangChain",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["ai", "llm"],
+        "display": "LangChain"
+      },
+      {
+        "name": "LangGraph",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "llm"],
+        "display": "LangGraph"
+      },
+      {
+        "name": "OpenAI API",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["ai", "llm"],
+        "display": "OpenAI API"
+      },
+      {
+        "name": "LLMs",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["ai", "llm"],
+        "display": "LLMs"
+      },
+      {
+        "name": "Whisper",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "llm", "speech"],
+        "display": "Whisper"
+      },
+      {
+        "name": "JAX",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "ml", "deep-learning"],
+        "display": "JAX"
+      },
+      {
+        "name": "Flax",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "ml", "deep-learning"],
+        "display": "Flax"
+      },
+      {
+        "name": "ElevenLabs API",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "speech", "tts"],
+        "display": "ElevenLabs API"
+      },
+      {
+        "name": "LiteLLM",
+        "years": 1,
+        "level": "advanced",
+        "categories": ["ai", "llm", "backend"],
+        "display": "LiteLLM"
+      },
+      {
+        "name": "RAG",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["ai", "llm", "retrieval"],
+        "display": "RAG (Retrieval Augmented Generation)"
+      },
+      {
+        "name": "MCP",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["ai", "llm", "integration"],
+        "display": "MCP (Model Context Protocol)"
+      },
+      {
+        "name": "WhatsApp Cloud API",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["integration", "messaging", "backend"],
+        "display": "WhatsApp Cloud API"
+      }
+    ],
+
+    "automation": [
+      {
+        "name": "n8n",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["automation", "workflow", "ai", "integration"],
+        "display": "n8n"
+      }
+    ],
+
+    "blockchain": [
+      {
+        "name": "Web3.js",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["blockchain", "web3", "frontend"],
+        "display": "Web3.js"
+      },
+      {
+        "name": "Ethereum",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["blockchain", "web3"],
+        "display": "Ethereum"
+      },
+      {
+        "name": "Solidity",
+        "years": 1,
+        "level": "beginner",
+        "categories": ["blockchain", "web3", "smart-contracts"],
+        "display": "Solidity"
+      },
+      {
+        "name": "Hyperledger",
+        "years": 1,
+        "level": "beginner",
+        "categories": ["blockchain", "enterprise"],
+        "display": "Hyperledger"
+      }
+    ],
+
+    "data_engineering": [
+      {
+        "name": "Pandas",
+        "years": 6,
+        "level": "advanced",
+        "categories": ["data", "python", "ml"],
+        "display": "Pandas"
+      },
+      {
+        "name": "NumPy",
+        "years": 6,
+        "level": "advanced",
+        "categories": ["data", "python", "ml"],
+        "display": "NumPy"
+      },
+      {
+        "name": "ETL pipelines",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["data", "backend"],
+        "display": "ETL pipelines"
+      },
+      {
+        "name": "BeautifulSoup",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["data", "scraping", "python"],
+        "display": "BeautifulSoup"
+      },
+      {
+        "name": "Selenium",
+        "years": 2,
+        "level": "intermediate",
+        "categories": ["data", "scraping", "testing"],
+        "display": "Selenium"
+      },
+      {
+        "name": "ScrapeGraph",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["data", "scraping", "ai"],
+        "display": "ScrapeGraph"
+      },
+      {
+        "name": "Matplotlib",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["data", "visualization"],
+        "display": "Matplotlib"
+      },
+      {
+        "name": "Seaborn",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["data", "visualization"],
+        "display": "Seaborn"
+      }
+    ],
+
+    "databases": [
+      {
+        "name": "PostgreSQL",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["database", "backend", "sql"],
+        "display": "PostgreSQL"
+      },
+      {
+        "name": "MongoDB",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["database", "backend", "nosql"],
+        "display": "MongoDB"
+      },
+      {
+        "name": "MySQL",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["database", "backend", "sql"],
+        "display": "MySQL"
+      },
+      {
+        "name": "DynamoDB",
+        "years": 1,
+        "level": "beginner",
+        "categories": ["database", "cloud", "nosql"],
+        "display": "DynamoDB"
+      },
+      {
+        "name": "Firebase Realtime Database",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["database", "cloud", "nosql", "real-time"],
+        "display": "Firebase Realtime"
+      }
+    ],
+
+    "cloud_devops": [
+      {
+        "name": "AWS",
+        "years": 4,
+        "level": "intermediate",
+        "categories": ["cloud", "devops"],
+        "display": "AWS"
+      },
+      {
+        "name": "GCP",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["cloud", "devops"],
+        "display": "GCP"
+      },
+      {
+        "name": "Docker",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["devops", "containers"],
+        "display": "Docker"
+      },
+      {
+        "name": "GitHub Actions",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["devops", "ci-cd"],
+        "display": "GitHub Actions"
+      },
+      {
+        "name": "CI/CD pipelines",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["devops", "ci-cd"],
+        "display": "CI/CD pipelines"
+      },
+      {
+        "name": "IBM Cloud",
+        "years": 1,
+        "level": "beginner",
+        "categories": ["cloud"],
+        "display": "IBM Cloud"
+      }
+    ],
+
+    "testing": [
+      {
+        "name": "Vitest",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["testing", "frontend"],
+        "display": "Vitest"
+      },
+      {
+        "name": "Jest",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["testing", "frontend", "backend"],
+        "display": "Jest"
+      },
+      {
+        "name": "React Testing Library",
+        "years": 3,
+        "level": "advanced",
+        "categories": ["testing", "frontend"],
+        "display": "React Testing Library"
+      },
+      {
+        "name": "TDD",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["testing", "methodology"],
+        "display": "TDD"
+      },
+      {
+        "name": "Unit Testing",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["testing"],
+        "display": "Unit Testing"
+      },
+      {
+        "name": "Integration Testing",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["testing"],
+        "display": "Integration Testing"
+      }
+    ],
+
+    "software_engineering": [
+      {
+        "name": "Clean Architecture",
+        "years": 4,
+        "level": "advanced",
+        "categories": ["architecture", "best-practices"],
+        "display": "Clean Architecture"
+      },
+      {
+        "name": "SOLID principles",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["architecture", "best-practices"],
+        "display": "SOLID principles"
+      },
+      {
+        "name": "DRY",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["best-practices"],
+        "display": "DRY"
+      },
+      {
+        "name": "Git",
+        "years": 7,
+        "level": "advanced",
+        "categories": ["devops", "version-control"],
+        "display": "Version Control (Git)"
+      },
+      {
+        "name": "Performance Optimization",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["best-practices"],
+        "display": "Performance Optimization"
+      },
+      {
+        "name": "Scalability",
+        "years": 3,
+        "level": "intermediate",
+        "categories": ["architecture"],
+        "display": "Scalability"
+      },
+      {
+        "name": "Screaming Architecture",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["architecture", "best-practices"],
+        "display": "Screaming Architecture"
+      }
+    ],
+
+    "build_tools": [
+      {
+        "name": "NX",
+        "years": 1,
+        "level": "intermediate",
+        "categories": ["build", "monorepo", "devops"],
+        "display": "NX (Monorepo)"
+      },
+      {
+        "name": "Vite",
+        "years": 2,
+        "level": "advanced",
+        "categories": ["frontend", "build"],
+        "display": "Vite"
+      },
+      {
+        "name": "Webpack",
+        "years": 4,
+        "level": "intermediate",
+        "categories": ["frontend", "build"],
+        "display": "Webpack"
+      }
+    ],
+
+    "mathematics": [
+      {
+        "name": "Category Theory",
+        "years": 5,
+        "level": "advanced",
+        "categories": ["mathematics", "theory"],
+        "display": "Category Theory"
+      },
+      {
+        "name": "Linear Algebra",
+        "years": 10,
+        "level": "expert",
+        "categories": ["mathematics", "ml"],
+        "display": "Linear Algebra"
+      },
+      {
+        "name": "Probability Theory",
+        "years": 10,
+        "level": "expert",
+        "categories": ["mathematics", "ml", "statistics"],
+        "display": "Probability Theory"
+      },
+      {
+        "name": "Statistical Inference",
+        "years": 8,
+        "level": "advanced",
+        "categories": ["mathematics", "statistics", "data"],
+        "display": "Statistical Inference"
+      }
+    ],
+
+    "soft_skills": [
+      {
+        "name": "Communication",
+        "categories": ["soft-skills", "leadership"],
+        "display": "Communication"
+      },
+      {
+        "name": "Teamwork",
+        "categories": ["soft-skills", "leadership"],
+        "display": "Teamwork"
+      },
+      {
+        "name": "Problem Solving",
+        "categories": ["soft-skills"],
+        "display": "Problem Solving"
+      },
+      {
+        "name": "Time Management",
+        "categories": ["soft-skills"],
+        "display": "Time Management"
+      },
+      {
+        "name": "Code Review",
+        "categories": ["soft-skills", "leadership"],
+        "display": "Code Review"
+      },
+      {
+        "name": "Mentoring",
+        "categories": ["soft-skills", "leadership"],
+        "display": "Mentoring"
+      },
+      {
+        "name": "English",
+        "level": "advanced",
+        "categories": ["soft-skills", "language"],
+        "display": "English (Advanced)"
+      }
+    ]
+  },
+
+  "experience": [
+    {
+      "id": "lapzo-2025",
+      "title": "AI Specialist",
+      "company": "Lapzo",
+      "location": "Remote, Mexico",
+      "start_date": "2025-08-01",
+      "end_date": null,
+      "date_range": "Aug 2025 -- Present",
+      "categories": ["ai", "llm", "leadership", "fullstack", "backend", "frontend"],
+      "technologies": ["Python", "LangChain", "LangGraph", "n8n", "Next.js", "NestJS", "Firebase Realtime", "ElevenLabs API", "TypeScript"],
+      "highlights": [
+        {
+          "text": "Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization",
+          "categories": ["leadership", "ai", "architecture"]
+        },
+        {
+          "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation",
+          "categories": ["ai", "llm", "backend", "automation"]
+        },
+        {
+          "text": "Designed and built a Digital Professor system that engages users in real-time conversations and explains course content through interactive slides",
+          "categories": ["ai", "llm", "fullstack", "education"]
+        },
+        {
+          "text": "Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database",
+          "categories": ["fullstack", "frontend", "backend", "real-time"]
+        },
+        {
+          "text": "Integrated ElevenLabs API for natural text-to-speech synthesis in the Digital Professor application",
+          "categories": ["ai", "speech", "integration"]
+        }
+      ]
+    },
+    {
+      "id": "freelance-2024",
+      "title": "Independent IT Consultant",
+      "company": "Freelance",
+      "location": "Remote",
+      "start_date": "2024-08-01",
+      "end_date": "2024-12-31",
+      "date_range": "Aug 2024 -- Dec 2024",
+      "categories": ["ai", "fullstack", "backend", "frontend", "leadership"],
+      "technologies": ["Python", "FastAPI", "Django", "React.js", "Next.js", "Node.js", "NestJS", "TypeScript", "Docker", "AWS", "LangChain", "LiteLLM", "LLMs", "WhatsApp Cloud API", "RAG", "MCP", "NX"],
+      "highlights": [
+        {
+          "text": "Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities",
+          "categories": ["ai", "llm", "backend", "saas", "customer-service"]
+        },
+        {
+          "text": "Designed database architecture and system design for ROCKET CODE's orbit-control platform (workflow automation similar to n8n) using Screaming Architecture in a multi-repo setup with NX",
+          "categories": ["architecture", "backend", "database", "design"]
+        },
+        {
+          "text": "Served as code reviewer for the development team at ROCKET CODE, ensuring code quality and best practices",
+          "categories": ["leadership", "code-review", "mentoring"]
+        },
+        {
+          "text": "Delivered end-to-end web applications for business clients, including frontend (React.js, Next.js, TypeScript) and backend (Python, FastAPI, Django, Node.js, NestJS)",
+          "categories": ["fullstack", "frontend", "backend"]
+        },
+        {
+          "text": "Developed and deployed solutions for sports club management, medical scheduling, and AI-powered learning platforms",
+          "categories": ["fullstack", "ai"]
+        },
+        {
+          "text": "Developed AI agents and technical English learning platforms leveraging Python and LLMs",
+          "categories": ["ai", "llm", "backend"]
+        },
+        {
+          "text": "Integrated LLMs and AI APIs into robust backend services and user-facing features",
+          "categories": ["ai", "llm", "backend"]
+        },
+        {
+          "text": "Deployed solutions on AWS (EC2, S3, Docker), configured infrastructure, and managed CI/CD pipelines",
+          "categories": ["cloud", "devops"]
+        },
+        {
+          "text": "Implemented payment integrations (Stripe), containerization (Docker), and CI/CD pipelines",
+          "categories": ["backend", "devops"]
+        },
+        {
+          "text": "Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security",
+          "categories": ["leadership", "architecture"]
+        },
+        {
+          "text": "Mentored junior developers, supporting their technical growth and ensuring code quality",
+          "categories": ["leadership", "mentoring"]
+        }
+      ]
+    },
+    {
+      "id": "monadical-2021",
+      "title": "Full Stack Developer",
+      "company": "Monadical",
+      "location": "Remote, Canada/US",
+      "start_date": "2021-04-01",
+      "end_date": "2024-08-01",
+      "date_range": "Apr 2021 -- Aug 2024",
+      "categories": ["ai", "fullstack", "backend", "frontend", "leadership"],
+      "technologies": ["Python", "Django", "FastAPI", "React.js", "Next.js", "TypeScript", "Node.js", "Express", "LangChain", "LLMs", "Whisper", "PostgreSQL", "MongoDB", "Docker", "AWS", "GCP"],
+      "highlights": [
+        {
+          "text": "Built and maintained full stack applications using Python (Django, FastAPI), JavaScript/TypeScript (React.js, Next.js)",
+          "categories": ["fullstack", "backend", "frontend"]
+        },
+        {
+          "text": "Designed and implemented RESTful and GraphQL APIs, scalable backend systems, and modern frontend interfaces",
+          "categories": ["backend", "api", "frontend"]
+        },
+        {
+          "text": "Integrated AI/ML services and LLMs into production web apps",
+          "categories": ["ai", "llm", "backend"]
+        },
+        {
+          "text": "Built and integrated AI services for information retrieval using large language models (OpenAI, LangChain, Whisper)",
+          "categories": ["ai", "llm"]
+        },
+        {
+          "text": "Led frontend architecture, reusable component libraries, and advanced testing strategies (Vitest, Jest, TDD)",
+          "categories": ["frontend", "testing", "leadership"]
+        },
+        {
+          "text": "Built and scaled microservices architectures for AI/ML and data-intensive applications",
+          "categories": ["backend", "architecture", "ai"]
+        },
+        {
+          "text": "Designed ETL pipelines and custom Django ORM extensions in Python",
+          "categories": ["data", "backend"]
+        },
+        {
+          "text": "Managed cloud deployments on AWS and GCP, using Docker and CI/CD",
+          "categories": ["cloud", "devops"]
+        },
+        {
+          "text": "Led code reviews, mentored team members, and promoted best practices in testing and code quality",
+          "categories": ["leadership", "mentoring"]
+        }
+      ]
+    },
+    {
+      "id": "bcfort-2018",
+      "title": "Full Stack Developer",
+      "company": "BCFort",
+      "location": "Medellín, Colombia",
+      "start_date": "2018-08-01",
+      "end_date": "2020-10-01",
+      "date_range": "Aug 2018 -- Oct 2020",
+      "categories": ["blockchain", "fullstack", "backend", "frontend", "web3"],
+      "technologies": ["Python", "Django", "Node.js", "React", "Web3.js", "Ethereum", "Solidity", "PostgreSQL", "MongoDB", "AWS", "GCP", "IBM Cloud"],
+      "highlights": [
+        {
+          "text": "Developed blockchain and analytics platforms with Python (Django), Node.js, React, and Web3.js",
+          "categories": ["blockchain", "fullstack", "backend"]
+        },
+        {
+          "text": "Built decentralized app frontends, implemented smart contracts, and managed cloud infrastructure (AWS, GCP, IBM Cloud)",
+          "categories": ["blockchain", "frontend", "cloud"]
+        },
+        {
+          "text": "Led development of blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces",
+          "categories": ["blockchain", "web3", "leadership"]
+        },
+        {
+          "text": "Led data analytics and visualization solutions for blockchain transactions",
+          "categories": ["data", "blockchain", "visualization"]
+        },
+        {
+          "text": "Developed and integrated RESTful APIs and microservices for analytics and blockchain platforms",
+          "categories": ["backend", "api", "architecture"]
+        },
+        {
+          "text": "Managed cloud infrastructure (AWS, GCP, IBM Cloud) and database integrations",
+          "categories": ["cloud", "devops", "database"]
+        }
+      ]
+    },
+    {
+      "id": "professor-2010",
+      "title": "Professor",
+      "company": "Universidad de Antioquia",
+      "location": "Medellín, Colombia",
+      "start_date": "2010-01-01",
+      "end_date": "2021-10-01",
+      "date_range": "Jan 2010 -- Oct 2021",
+      "categories": ["teaching", "ai", "ml", "mathematics", "leadership"],
+      "technologies": ["Python", "NumPy", "Pandas", "TensorFlow", "PyTorch", "Scikit-learn"],
+      "highlights": [
+        {
+          "text": "Taught advanced courses in Machine Learning, Data Science, and Mathematics using Python, NumPy, Pandas, TensorFlow, PyTorch, and Scikit-learn",
+          "categories": ["teaching", "ai", "ml", "data"]
+        },
+        {
+          "text": "Mentored research and student projects in ML, data analysis, and software development",
+          "categories": ["mentoring", "ml", "data"]
+        },
+        {
+          "text": "Developed curriculum for programming, mathematics, and ML",
+          "categories": ["teaching", "curriculum"]
+        },
+        {
+          "text": "Taught advanced mathematics courses and developed elective AI/ML curriculum for Mathematics Institute (1.5 years)",
+          "categories": ["teaching", "mathematics", "ai"]
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "morpheus",
+      "name": "Morpheus -- AI Image Generation Platform",
+      "url": "https://github.com/Monadical-SAS/Morpheus",
+      "categories": ["ai", "ml", "fullstack", "open-source", "backend", "frontend"],
+      "technologies": ["Python", "FastAPI", "React", "Stable Diffusion", "Docker", "AWS"],
+      "stars": 150,
+      "highlights": [
+        {
+          "text": "Full stack open-source platform for AI image generation using Python, React, and stable diffusion models",
+          "categories": ["ai", "fullstack"]
+        },
+        {
+          "text": "Implemented RESTful APIs, ML model integrations, and cloud infrastructure with Docker and AWS",
+          "categories": ["backend", "api", "cloud"]
+        },
+        {
+          "text": "Built a responsive frontend using React, Tailwind CSS, and Shadcn UI components",
+          "categories": ["frontend"]
+        },
+        {
+          "text": "Implemented complex state management (Zustand, Redux) and type-safe forms (Zod)",
+          "categories": ["frontend", "state-management"]
+        }
+      ]
+    },
+    {
+      "id": "zippy",
+      "name": "Zippy -- Interactive AI Avatar",
+      "url": "https://github.com/asanchezyali/ai-avatar",
+      "categories": ["ai", "llm", "frontend", "fullstack"],
+      "technologies": ["Next.js", "TypeScript", "Python", "OpenAI API", "Azure Cognitive Services", "SASS"],
+      "highlights": [
+        {
+          "text": "Built a Next.js-based talking avatar integrating OpenAI API and Azure Cognitive Services",
+          "categories": ["ai", "llm", "frontend"]
+        },
+        {
+          "text": "Developed TTS synthesis and seamless backend-frontend integration in Python and TypeScript",
+          "categories": ["ai", "backend", "frontend"]
+        },
+        {
+          "text": "Developed modern UI using Next.js, custom SVG components, and dynamic animations",
+          "categories": ["frontend"]
+        },
+        {
+          "text": "Implemented state management (Redux, Zustand) and type validation (Zod)",
+          "categories": ["frontend", "state-management"]
+        }
+      ]
+    },
+    {
+      "id": "digital-human",
+      "name": "Digital Human -- Interactive AI Avatar",
+      "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
+      "categories": ["ai", "llm", "frontend", "fullstack", "3d"],
+      "technologies": ["React", "Three.js", "React Three Fiber", "OpenAI GPT", "Whisper", "Eleven Labs", "Tailwind CSS"],
+      "stars": 320,
+      "highlights": [
+        {
+          "text": "Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs",
+          "categories": ["ai", "llm"]
+        },
+        {
+          "text": "Implemented real-time data processing and lip synchronization",
+          "categories": ["ai", "real-time"]
+        },
+        {
+          "text": "Created interactive 3D experiences using Three.js and React Three Fiber",
+          "categories": ["frontend", "3d"]
+        },
+        {
+          "text": "Implemented responsive design patterns with Tailwind CSS and built comprehensive test coverage (Vitest, TDD)",
+          "categories": ["frontend", "testing"]
+        }
+      ]
+    }
+  ],
+
+  "blog_posts": [
+    {
+      "id": "zero-shot",
+      "title": "Zero-Shot Text Classification",
+      "url": "https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot",
+      "date": "Sep 2024",
+      "categories": ["ai", "ml", "nlp"],
+      "description": "Analysis of modern approaches to zero-shot learning in NLP"
+    },
+    {
+      "id": "neural-networks-dags",
+      "title": "Neural Networks as DAGs of Parameterized Computational Programs",
+      "url": "https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms",
+      "date": "Aug 2024",
+      "categories": ["ai", "ml", "deep-learning", "mathematics"],
+      "description": "In-depth exploration of neural networks from a differentiable programming perspective"
+    },
+    {
+      "id": "digital-humans-llms",
+      "title": "Revolutionizing Animation: Building Digital Humans with LLMs",
+      "url": "https://monadical.com/posts/build-a-digital-human-with-large-language-models.html",
+      "alternate_url": "https://www.asanchezyali.com/blog/ai-avatars/20240703DigitalHuman",
+      "date": "Jul 2024",
+      "categories": ["ai", "llm", "frontend", "3d"],
+      "description": "Technical guide on implementing AI-powered digital avatars"
+    }
+  ],
+
+  "talks": [
+    {
+      "id": "pycon-2024",
+      "title": "Scaling Learning Models: Parallelism Strategies in JAX with Flax -- PyCon",
+      "url": "https://www.youtube.com/watch?v=m4hP1soE414",
+      "year": "2024",
+      "event": "PyCon Colombia",
+      "categories": ["ai", "ml", "deep-learning"],
+      "highlights": [
+        "Presented strategies for scaling machine learning models using JAX and Flax",
+        "Discussed parallel computing techniques for efficient model training"
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "id": "masters",
+      "degree": "Master in Mathematics",
+      "institution": "Universidad de Antioquia",
+      "location": "Medellín, Colombia",
+      "start_date": "2010-08-01",
+      "end_date": "2013-09-01",
+      "date_range": "Aug 2010 - Sep 2013",
+      "categories": ["mathematics", "research"]
+    },
+    {
+      "id": "bachelors",
+      "degree": "B.Sc. in Teaching Mathematics and Physics",
+      "institution": "Universidad de Antioquia",
+      "location": "Medellín, Colombia",
+      "start_date": "2004-01-01",
+      "end_date": "2009-10-01",
+      "date_range": "Jan 2004 - Oct 2009",
+      "categories": ["mathematics", "physics", "teaching"]
+    }
+  ],
+
+  "summary_templates": {
+    "fullstack": "Full Stack Developer with 5+ years of experience building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
+    "ai": "Machine Learning Engineer and Data Scientist with 5+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
+    "frontend": "Frontend Developer with 5+ years of experience building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record delivering production-ready UIs, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
+    "backend": "Backend Developer with 5+ years of experience designing, developing, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
+    "node": "Full Stack Software Developer with 5+ years of experience building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability to deliver production-ready APIs, integrate LLMs, and lead technical teams in multidisciplinary environments.",
+    "blockchain": "Full Stack Developer with 5+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in cloud infrastructure and data analytics.",
+    "enterprise": "Full Stack Engineer with 5+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
+    "senior_node": "Senior Fullstack Engineer with 5+ years of experience designing, developing, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in code reviews, refactoring, and mentoring junior developers. Advanced English communication skills and experience working with distributed teams.",
+    "ai_specialist": "AI Specialist with 5+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
+  }
+}
