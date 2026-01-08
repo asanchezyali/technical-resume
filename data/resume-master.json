@@ -12,703 +12,1129 @@
       "website_display": "asanchezyali.com"
     }
   },
-
   "skills": {
     "languages": [
       {
         "name": "Python",
-        "years": 7,
+        "years": 8,
         "level": "advanced",
-        "categories": ["backend", "ai", "ml", "data", "fullstack"],
-        "display": "Python (7+ years)"
+        "categories": [
+          "backend",
+          "ai",
+          "ml",
+          "data",
+          "fullstack"
+        ],
+        "display": "Python (8+ years)",
+        "start_year": 2018
       },
       {
         "name": "JavaScript",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["frontend", "fullstack", "backend", "node"],
-        "display": "JavaScript (5+ years)"
+        "categories": [
+          "frontend",
+          "fullstack",
+          "backend",
+          "node"
+        ],
+        "display": "JavaScript (6+ years)",
+        "start_year": 2020
       },
       {
         "name": "TypeScript",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["frontend", "fullstack", "backend", "node"],
-        "display": "TypeScript (5+ years)"
+        "categories": [
+          "frontend",
+          "fullstack",
+          "backend",
+          "node"
+        ],
+        "display": "TypeScript (6+ years)",
+        "start_year": 2020
       },
       {
         "name": "SQL",
-        "years": 5,
+        "years": 6,
         "level": "intermediate",
-        "categories": ["backend", "data", "database"],
-        "display": "SQL"
+        "categories": [
+          "backend",
+          "data",
+          "database"
+        ],
+        "display": "SQL",
+        "start_year": 2020
       },
       {
         "name": "Rust",
-        "years": 1,
+        "years": 2,
         "level": "beginner",
-        "categories": ["backend", "systems"],
-        "display": "Rust"
+        "categories": [
+          "backend",
+          "systems"
+        ],
+        "display": "Rust",
+        "start_year": 2024
       },
       {
         "name": "C",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["backend", "systems"],
-        "display": "C"
+        "categories": [
+          "backend",
+          "systems"
+        ],
+        "display": "C",
+        "start_year": 2023
       },
       {
         "name": "HTML5",
-        "years": 6,
+        "years": 7,
         "level": "advanced",
-        "categories": ["frontend"],
-        "display": "HTML5"
+        "categories": [
+          "frontend"
+        ],
+        "display": "HTML5",
+        "start_year": 2019
       },
       {
         "name": "CSS3",
-        "years": 6,
+        "years": 7,
         "level": "advanced",
-        "categories": ["frontend"],
-        "display": "CSS3"
+        "categories": [
+          "frontend"
+        ],
+        "display": "CSS3",
+        "start_year": 2019
       }
     ],
-
     "frontend": [
       {
         "name": "React.js",
-        "years": 6,
+        "years": 7,
         "level": "advanced",
-        "categories": ["frontend", "fullstack"],
-        "display": "React.js (6+ years)"
+        "categories": [
+          "frontend",
+          "fullstack"
+        ],
+        "display": "React.js (7+ years)",
+        "start_year": 2019
       },
       {
         "name": "Next.js",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["frontend", "fullstack"],
-        "display": "Next.js (5+ years)"
+        "categories": [
+          "frontend",
+          "fullstack"
+        ],
+        "display": "Next.js (6+ years)",
+        "start_year": 2020
       },
       {
         "name": "Svelte",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["frontend"],
-        "display": "Svelte"
+        "categories": [
+          "frontend"
+        ],
+        "display": "Svelte",
+        "start_year": 2024
       },
       {
         "name": "Tailwind CSS",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["frontend"],
-        "display": "Tailwind CSS"
+        "categories": [
+          "frontend"
+        ],
+        "display": "Tailwind CSS",
+        "start_year": 2022
       },
       {
         "name": "SASS",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["frontend"],
-        "display": "SASS"
+        "categories": [
+          "frontend"
+        ],
+        "display": "SASS",
+        "start_year": 2021
       },
       {
         "name": "Redux",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["frontend", "state-management"],
-        "display": "Redux"
+        "categories": [
+          "frontend",
+          "state-management"
+        ],
+        "display": "Redux",
+        "start_year": 2021
       },
       {
         "name": "Zustand",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["frontend", "state-management"],
-        "display": "Zustand"
+        "categories": [
+          "frontend",
+          "state-management"
+        ],
+        "display": "Zustand",
+        "start_year": 2023
       },
       {
         "name": "Shadcn UI",
-        "years": 1,
+        "years": 2,
         "level": "advanced",
-        "categories": ["frontend", "ui"],
-        "display": "Shadcn UI"
+        "categories": [
+          "frontend",
+          "ui"
+        ],
+        "display": "Shadcn UI",
+        "start_year": 2024
       },
       {
         "name": "Ant Design",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["frontend", "ui"],
-        "display": "Ant Design"
+        "categories": [
+          "frontend",
+          "ui"
+        ],
+        "display": "Ant Design",
+        "start_year": 2023
       },
       {
         "name": "Three.js",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["frontend", "3d", "graphics"],
-        "display": "Three.js"
+        "categories": [
+          "frontend",
+          "3d",
+          "graphics"
+        ],
+        "display": "Three.js",
+        "start_year": 2024
       },
       {
         "name": "React Three Fiber",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["frontend", "3d", "graphics"],
-        "display": "React Three Fiber"
+        "categories": [
+          "frontend",
+          "3d",
+          "graphics"
+        ],
+        "display": "React Three Fiber",
+        "start_year": 2024
+      },
+      {
+        "name": "Zod",
+        "years": 3,
+        "level": "advanced",
+        "categories": [
+          "frontend",
+          "validation",
+          "typescript"
+        ],
+        "display": "Zod",
+        "start_year": 2023
       }
     ],
-
     "backend": [
       {
         "name": "Django",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["backend", "python", "fullstack"],
-        "display": "Django"
+        "categories": [
+          "backend",
+          "python",
+          "fullstack"
+        ],
+        "display": "Django",
+        "start_year": 2020
       },
       {
         "name": "Django REST Framework",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["backend", "python", "api"],
-        "display": "Django REST Framework"
+        "categories": [
+          "backend",
+          "python",
+          "api"
+        ],
+        "display": "Django REST Framework",
+        "start_year": 2021
       },
       {
         "name": "FastAPI",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["backend", "python", "api"],
-        "display": "FastAPI"
+        "categories": [
+          "backend",
+          "python",
+          "api"
+        ],
+        "display": "FastAPI",
+        "start_year": 2022
       },
       {
         "name": "Flask",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["backend", "python"],
-        "display": "Flask"
+        "categories": [
+          "backend",
+          "python"
+        ],
+        "display": "Flask",
+        "start_year": 2022
       },
       {
         "name": "Node.js",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["backend", "node", "fullstack"],
-        "display": "Node.js"
+        "categories": [
+          "backend",
+          "node",
+          "fullstack"
+        ],
+        "display": "Node.js (5+ years)",
+        "start_year": 2021
       },
       {
         "name": "Express",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["backend", "node"],
-        "display": "Express"
+        "categories": [
+          "backend",
+          "node"
+        ],
+        "display": "Express",
+        "start_year": 2021
       },
       {
         "name": "NestJS",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["backend", "node"],
-        "display": "NestJS"
+        "categories": [
+          "backend",
+          "node"
+        ],
+        "display": "NestJS",
+        "start_year": 2023
       },
       {
         "name": "RESTful APIs",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["backend", "api"],
-        "display": "RESTful APIs"
+        "categories": [
+          "backend",
+          "api"
+        ],
+        "display": "RESTful APIs",
+        "start_year": 2020
       },
       {
         "name": "GraphQL",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["backend", "api"],
-        "display": "GraphQL"
+        "categories": [
+          "backend",
+          "api"
+        ],
+        "display": "GraphQL",
+        "start_year": 2023
       },
       {
         "name": "Microservices",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["backend", "architecture"],
-        "display": "Microservices"
+        "categories": [
+          "backend",
+          "architecture"
+        ],
+        "display": "Microservices",
+        "start_year": 2022
+      },
+      {
+        "name": "Stripe",
+        "years": 3,
+        "level": "intermediate",
+        "categories": [
+          "backend",
+          "payments",
+          "integration"
+        ],
+        "display": "Stripe",
+        "start_year": 2023
       }
     ],
-
     "ai_ml": [
       {
         "name": "TensorFlow",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["ai", "ml", "deep-learning"],
-        "display": "TensorFlow"
+        "categories": [
+          "ai",
+          "ml",
+          "deep-learning"
+        ],
+        "display": "TensorFlow",
+        "start_year": 2021
       },
       {
         "name": "PyTorch",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["ai", "ml", "deep-learning"],
-        "display": "PyTorch"
+        "categories": [
+          "ai",
+          "ml",
+          "deep-learning"
+        ],
+        "display": "PyTorch",
+        "start_year": 2022
       },
       {
         "name": "Scikit-learn",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["ai", "ml", "data"],
-        "display": "Scikit-learn"
+        "categories": [
+          "ai",
+          "ml",
+          "data"
+        ],
+        "display": "Scikit-learn",
+        "start_year": 2020
       },
       {
         "name": "LangChain",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["ai", "llm"],
-        "display": "LangChain"
+        "categories": [
+          "ai",
+          "llm"
+        ],
+        "display": "LangChain",
+        "start_year": 2023
       },
       {
         "name": "LangGraph",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "llm"],
-        "display": "LangGraph"
+        "categories": [
+          "ai",
+          "llm"
+        ],
+        "display": "LangGraph",
+        "start_year": 2024
       },
       {
         "name": "OpenAI API",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["ai", "llm"],
-        "display": "OpenAI API"
+        "categories": [
+          "ai",
+          "llm"
+        ],
+        "display": "OpenAI API",
+        "start_year": 2023
       },
       {
         "name": "LLMs",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["ai", "llm"],
-        "display": "LLMs"
+        "categories": [
+          "ai",
+          "llm"
+        ],
+        "display": "LLMs",
+        "start_year": 2023
       },
       {
         "name": "Whisper",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "llm", "speech"],
-        "display": "Whisper"
+        "categories": [
+          "ai",
+          "llm",
+          "speech"
+        ],
+        "display": "Whisper",
+        "start_year": 2024
       },
       {
         "name": "JAX",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "ml", "deep-learning"],
-        "display": "JAX"
+        "categories": [
+          "ai",
+          "ml",
+          "deep-learning"
+        ],
+        "display": "JAX",
+        "start_year": 2024
       },
       {
         "name": "Flax",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "ml", "deep-learning"],
-        "display": "Flax"
+        "categories": [
+          "ai",
+          "ml",
+          "deep-learning"
+        ],
+        "display": "Flax",
+        "start_year": 2024
       },
       {
         "name": "ElevenLabs API",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "speech", "tts"],
-        "display": "ElevenLabs API"
+        "categories": [
+          "ai",
+          "speech",
+          "tts"
+        ],
+        "display": "ElevenLabs API",
+        "start_year": 2024
       },
       {
         "name": "LiteLLM",
-        "years": 1,
+        "years": 2,
         "level": "advanced",
-        "categories": ["ai", "llm", "backend"],
-        "display": "LiteLLM"
+        "categories": [
+          "ai",
+          "llm",
+          "backend"
+        ],
+        "display": "LiteLLM",
+        "start_year": 2024
       },
       {
         "name": "RAG",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["ai", "llm", "retrieval"],
-        "display": "RAG (Retrieval Augmented Generation)"
+        "categories": [
+          "ai",
+          "llm",
+          "retrieval"
+        ],
+        "display": "RAG",
+        "start_year": 2023
       },
       {
         "name": "MCP",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["ai", "llm", "integration"],
-        "display": "MCP (Model Context Protocol)"
+        "categories": [
+          "ai",
+          "llm",
+          "integration"
+        ],
+        "display": "MCP",
+        "start_year": 2024
       },
       {
         "name": "WhatsApp Cloud API",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["integration", "messaging", "backend"],
-        "display": "WhatsApp Cloud API"
+        "categories": [
+          "integration",
+          "messaging",
+          "backend"
+        ],
+        "display": "WhatsApp Cloud API",
+        "start_year": 2024
+      },
+      {
+        "name": "Azure Cognitive Services",
+        "years": 3,
+        "level": "intermediate",
+        "categories": [
+          "ai",
+          "cloud",
+          "speech",
+          "vision"
+        ],
+        "display": "Azure Cognitive Services",
+        "start_year": 2023
       }
     ],
-
     "automation": [
       {
         "name": "n8n",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["automation", "workflow", "ai", "integration"],
-        "display": "n8n"
+        "categories": [
+          "automation",
+          "workflow",
+          "ai",
+          "integration"
+        ],
+        "display": "n8n",
+        "start_year": 2024
       }
     ],
-
     "blockchain": [
       {
         "name": "Web3.js",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["blockchain", "web3", "frontend"],
-        "display": "Web3.js"
+        "categories": [
+          "blockchain",
+          "web3",
+          "frontend"
+        ],
+        "display": "Web3.js",
+        "start_year": 2023
       },
       {
         "name": "Ethereum",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["blockchain", "web3"],
-        "display": "Ethereum"
+        "categories": [
+          "blockchain",
+          "web3"
+        ],
+        "display": "Ethereum",
+        "start_year": 2023
       },
       {
         "name": "Solidity",
-        "years": 1,
+        "years": 2,
         "level": "beginner",
-        "categories": ["blockchain", "web3", "smart-contracts"],
-        "display": "Solidity"
+        "categories": [
+          "blockchain",
+          "web3",
+          "smart-contracts"
+        ],
+        "display": "Solidity",
+        "start_year": 2024
       },
       {
         "name": "Hyperledger",
-        "years": 1,
+        "years": 2,
         "level": "beginner",
-        "categories": ["blockchain", "enterprise"],
-        "display": "Hyperledger"
+        "categories": [
+          "blockchain",
+          "enterprise"
+        ],
+        "display": "Hyperledger",
+        "start_year": 2024
       }
     ],
-
     "data_engineering": [
       {
         "name": "Pandas",
-        "years": 6,
+        "years": 7,
         "level": "advanced",
-        "categories": ["data", "python", "ml"],
-        "display": "Pandas"
+        "categories": [
+          "data",
+          "python",
+          "ml"
+        ],
+        "display": "Pandas",
+        "start_year": 2019
       },
       {
         "name": "NumPy",
-        "years": 6,
+        "years": 7,
         "level": "advanced",
-        "categories": ["data", "python", "ml"],
-        "display": "NumPy"
+        "categories": [
+          "data",
+          "python",
+          "ml"
+        ],
+        "display": "NumPy",
+        "start_year": 2019
       },
       {
         "name": "ETL pipelines",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["data", "backend"],
-        "display": "ETL pipelines"
+        "categories": [
+          "data",
+          "backend"
+        ],
+        "display": "ETL pipelines",
+        "start_year": 2022
       },
       {
         "name": "BeautifulSoup",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["data", "scraping", "python"],
-        "display": "BeautifulSoup"
+        "categories": [
+          "data",
+          "scraping",
+          "python"
+        ],
+        "display": "BeautifulSoup",
+        "start_year": 2022
       },
       {
         "name": "Selenium",
-        "years": 2,
+        "years": 3,
         "level": "intermediate",
-        "categories": ["data", "scraping", "testing"],
-        "display": "Selenium"
+        "categories": [
+          "data",
+          "scraping",
+          "testing"
+        ],
+        "display": "Selenium",
+        "start_year": 2023
       },
       {
         "name": "ScrapeGraph",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["data", "scraping", "ai"],
-        "display": "ScrapeGraph"
+        "categories": [
+          "data",
+          "scraping",
+          "ai"
+        ],
+        "display": "ScrapeGraph",
+        "start_year": 2024
       },
       {
         "name": "Matplotlib",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["data", "visualization"],
-        "display": "Matplotlib"
+        "categories": [
+          "data",
+          "visualization"
+        ],
+        "display": "Matplotlib",
+        "start_year": 2020
       },
       {
         "name": "Seaborn",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["data", "visualization"],
-        "display": "Seaborn"
+        "categories": [
+          "data",
+          "visualization"
+        ],
+        "display": "Seaborn",
+        "start_year": 2021
       }
     ],
-
     "databases": [
       {
         "name": "PostgreSQL",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["database", "backend", "sql"],
-        "display": "PostgreSQL"
+        "categories": [
+          "database",
+          "backend",
+          "sql"
+        ],
+        "display": "PostgreSQL",
+        "start_year": 2020
       },
       {
         "name": "MongoDB",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["database", "backend", "nosql"],
-        "display": "MongoDB"
+        "categories": [
+          "database",
+          "backend",
+          "nosql"
+        ],
+        "display": "MongoDB",
+        "start_year": 2022
       },
       {
         "name": "MySQL",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["database", "backend", "sql"],
-        "display": "MySQL"
+        "categories": [
+          "database",
+          "backend",
+          "sql"
+        ],
+        "display": "MySQL",
+        "start_year": 2022
       },
       {
         "name": "DynamoDB",
-        "years": 1,
+        "years": 2,
         "level": "beginner",
-        "categories": ["database", "cloud", "nosql"],
-        "display": "DynamoDB"
+        "categories": [
+          "database",
+          "cloud",
+          "nosql"
+        ],
+        "display": "DynamoDB",
+        "start_year": 2024
       },
       {
         "name": "Firebase Realtime Database",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["database", "cloud", "nosql", "real-time"],
-        "display": "Firebase Realtime"
+        "categories": [
+          "database",
+          "cloud",
+          "nosql",
+          "real-time"
+        ],
+        "display": "Firebase Realtime Database",
+        "start_year": 2024
       }
     ],
-
     "cloud_devops": [
       {
         "name": "AWS",
-        "years": 4,
+        "years": 5,
         "level": "intermediate",
-        "categories": ["cloud", "devops"],
-        "display": "AWS"
+        "categories": [
+          "cloud",
+          "devops"
+        ],
+        "display": "AWS",
+        "start_year": 2021
       },
       {
         "name": "GCP",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["cloud", "devops"],
-        "display": "GCP"
+        "categories": [
+          "cloud",
+          "devops"
+        ],
+        "display": "GCP",
+        "start_year": 2022
       },
       {
         "name": "Docker",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["devops", "containers"],
-        "display": "Docker"
+        "categories": [
+          "devops",
+          "containers"
+        ],
+        "display": "Docker",
+        "start_year": 2021
       },
       {
         "name": "GitHub Actions",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["devops", "ci-cd"],
-        "display": "GitHub Actions"
+        "categories": [
+          "devops",
+          "ci-cd"
+        ],
+        "display": "GitHub Actions",
+        "start_year": 2022
       },
       {
         "name": "CI/CD pipelines",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["devops", "ci-cd"],
-        "display": "CI/CD pipelines"
+        "categories": [
+          "devops",
+          "ci-cd"
+        ],
+        "display": "CI/CD pipelines",
+        "start_year": 2021
       },
       {
         "name": "IBM Cloud",
-        "years": 1,
+        "years": 2,
         "level": "beginner",
-        "categories": ["cloud"],
-        "display": "IBM Cloud"
+        "categories": [
+          "cloud"
+        ],
+        "display": "IBM Cloud",
+        "start_year": 2024
       }
     ],
-
     "testing": [
       {
         "name": "Vitest",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["testing", "frontend"],
-        "display": "Vitest"
+        "categories": [
+          "testing",
+          "frontend"
+        ],
+        "display": "Vitest",
+        "start_year": 2023
       },
       {
         "name": "Jest",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["testing", "frontend", "backend"],
-        "display": "Jest"
+        "categories": [
+          "testing",
+          "frontend",
+          "backend"
+        ],
+        "display": "Jest",
+        "start_year": 2021
       },
       {
         "name": "React Testing Library",
-        "years": 3,
+        "years": 4,
         "level": "advanced",
-        "categories": ["testing", "frontend"],
-        "display": "React Testing Library"
+        "categories": [
+          "testing",
+          "frontend"
+        ],
+        "display": "React Testing Library",
+        "start_year": 2022
       },
       {
         "name": "TDD",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["testing", "methodology"],
-        "display": "TDD"
+        "categories": [
+          "testing",
+          "methodology"
+        ],
+        "display": "TDD",
+        "start_year": 2021
       },
       {
         "name": "Unit Testing",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["testing"],
-        "display": "Unit Testing"
+        "categories": [
+          "testing"
+        ],
+        "display": "Unit Testing",
+        "start_year": 2020
       },
       {
         "name": "Integration Testing",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["testing"],
-        "display": "Integration Testing"
+        "categories": [
+          "testing"
+        ],
+        "display": "Integration Testing",
+        "start_year": 2021
       }
     ],
-
     "software_engineering": [
       {
         "name": "Clean Architecture",
-        "years": 4,
+        "years": 5,
         "level": "advanced",
-        "categories": ["architecture", "best-practices"],
-        "display": "Clean Architecture"
+        "categories": [
+          "architecture",
+          "best-practices"
+        ],
+        "display": "Clean Architecture",
+        "start_year": 2021
       },
       {
         "name": "SOLID principles",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["architecture", "best-practices"],
-        "display": "SOLID principles"
+        "categories": [
+          "architecture",
+          "best-practices"
+        ],
+        "display": "SOLID principles",
+        "start_year": 2020
       },
       {
         "name": "DRY",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["best-practices"],
-        "display": "DRY"
+        "categories": [
+          "best-practices"
+        ],
+        "display": "DRY",
+        "start_year": 2020
       },
       {
         "name": "Git",
-        "years": 7,
+        "years": 8,
         "level": "advanced",
-        "categories": ["devops", "version-control"],
-        "display": "Version Control (Git)"
+        "categories": [
+          "devops",
+          "version-control"
+        ],
+        "display": "Git",
+        "start_year": 2018
       },
       {
         "name": "Performance Optimization",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["best-practices"],
-        "display": "Performance Optimization"
+        "categories": [
+          "best-practices"
+        ],
+        "display": "Performance Optimization",
+        "start_year": 2022
       },
       {
         "name": "Scalability",
-        "years": 3,
+        "years": 4,
         "level": "intermediate",
-        "categories": ["architecture"],
-        "display": "Scalability"
+        "categories": [
+          "architecture"
+        ],
+        "display": "Scalability",
+        "start_year": 2022
       },
       {
         "name": "Screaming Architecture",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["architecture", "best-practices"],
-        "display": "Screaming Architecture"
+        "categories": [
+          "architecture",
+          "best-practices"
+        ],
+        "display": "Screaming Architecture",
+        "start_year": 2024
       }
     ],
-
     "build_tools": [
       {
         "name": "NX",
-        "years": 1,
+        "years": 2,
         "level": "intermediate",
-        "categories": ["build", "monorepo", "devops"],
-        "display": "NX (Monorepo)"
+        "categories": [
+          "build",
+          "monorepo",
+          "devops"
+        ],
+        "display": "NX",
+        "start_year": 2024
       },
       {
         "name": "Vite",
-        "years": 2,
+        "years": 3,
         "level": "advanced",
-        "categories": ["frontend", "build"],
-        "display": "Vite"
+        "categories": [
+          "frontend",
+          "build"
+        ],
+        "display": "Vite",
+        "start_year": 2023
       },
       {
         "name": "Webpack",
-        "years": 4,
+        "years": 5,
         "level": "intermediate",
-        "categories": ["frontend", "build"],
-        "display": "Webpack"
+        "categories": [
+          "frontend",
+          "build"
+        ],
+        "display": "Webpack",
+        "start_year": 2021
       }
     ],
-
     "mathematics": [
       {
         "name": "Category Theory",
-        "years": 5,
+        "years": 6,
         "level": "advanced",
-        "categories": ["mathematics", "theory"],
-        "display": "Category Theory"
+        "categories": [
+          "mathematics",
+          "theory"
+        ],
+        "display": "Category Theory",
+        "start_year": 2020
       },
       {
         "name": "Linear Algebra",
-        "years": 10,
+        "years": 11,
         "level": "expert",
-        "categories": ["mathematics", "ml"],
-        "display": "Linear Algebra"
+        "categories": [
+          "mathematics",
+          "ml"
+        ],
+        "display": "Linear Algebra",
+        "start_year": 2015
       },
       {
         "name": "Probability Theory",
-        "years": 10,
+        "years": 11,
         "level": "expert",
-        "categories": ["mathematics", "ml", "statistics"],
-        "display": "Probability Theory"
+        "categories": [
+          "mathematics",
+          "ml",
+          "statistics"
+        ],
+        "display": "Probability Theory",
+        "start_year": 2015
       },
       {
         "name": "Statistical Inference",
-        "years": 8,
+        "years": 9,
         "level": "advanced",
-        "categories": ["mathematics", "statistics", "data"],
-        "display": "Statistical Inference"
+        "categories": [
+          "mathematics",
+          "statistics",
+          "data"
+        ],
+        "display": "Statistical Inference",
+        "start_year": 2017
       }
     ],
-
     "soft_skills": [
       {
         "name": "Communication",
-        "categories": ["soft-skills", "leadership"],
+        "categories": [
+          "soft-skills",
+          "leadership"
+        ],
         "display": "Communication"
       },
       {
         "name": "Teamwork",
-        "categories": ["soft-skills", "leadership"],
+        "categories": [
+          "soft-skills",
+          "leadership"
+        ],
         "display": "Teamwork"
       },
       {
         "name": "Problem Solving",
-        "categories": ["soft-skills"],
+        "categories": [
+          "soft-skills"
+        ],
         "display": "Problem Solving"
       },
       {
         "name": "Time Management",
-        "categories": ["soft-skills"],
+        "categories": [
+          "soft-skills"
+        ],
         "display": "Time Management"
       },
       {
         "name": "Code Review",
-        "categories": ["soft-skills", "leadership"],
+        "categories": [
+          "soft-skills",
+          "leadership"
+        ],
         "display": "Code Review"
       },
       {
         "name": "Mentoring",
-        "categories": ["soft-skills", "leadership"],
+        "categories": [
+          "soft-skills",
+          "leadership"
+        ],
         "display": "Mentoring"
       },
       {
         "name": "English",
         "level": "advanced",
-        "categories": ["soft-skills", "language"],
-        "display": "English (Advanced)"
+        "categories": [
+          "soft-skills",
+          "language"
+        ],
+        "display": "English"
       }
     ]
   },
-
   "experience": [
     {
       "id": "lapzo-2025",
@@ -718,28 +1144,68 @@
       "start_date": "2025-08-01",
       "end_date": null,
       "date_range": "Aug 2025 -- Present",
-      "categories": ["ai", "llm", "leadership", "fullstack", "backend", "frontend"],
-      "technologies": ["Python", "LangChain", "LangGraph", "n8n", "Next.js", "NestJS", "Firebase Realtime", "ElevenLabs API", "TypeScript"],
+      "categories": [
+        "ai",
+        "llm",
+        "leadership",
+        "fullstack",
+        "backend",
+        "frontend"
+      ],
+      "technologies": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "n8n",
+        "Next.js",
+        "NestJS",
+        "Firebase Realtime",
+        "ElevenLabs API",
+        "TypeScript"
+      ],
       "highlights": [
         {
           "text": "Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization",
-          "categories": ["leadership", "ai", "architecture"]
+          "categories": [
+            "leadership",
+            "ai",
+            "architecture"
+          ]
         },
         {
           "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation",
-          "categories": ["ai", "llm", "backend", "automation"]
+          "categories": [
+            "ai",
+            "llm",
+            "backend",
+            "automation"
+          ]
         },
         {
           "text": "Designed and built a Digital Professor system that engages users in real-time conversations and explains course content through interactive slides",
-          "categories": ["ai", "llm", "fullstack", "education"]
+          "categories": [
+            "ai",
+            "llm",
+            "fullstack",
+            "education"
+          ]
         },
         {
           "text": "Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database",
-          "categories": ["fullstack", "frontend", "backend", "real-time"]
+          "categories": [
+            "fullstack",
+            "frontend",
+            "backend",
+            "real-time"
+          ]
         },
         {
           "text": "Integrated ElevenLabs API for natural text-to-speech synthesis in the Digital Professor application",
-          "categories": ["ai", "speech", "integration"]
+          "categories": [
+            "ai",
+            "speech",
+            "integration"
+          ]
         }
       ]
     },
@@ -749,54 +1215,120 @@
       "company": "Freelance",
       "location": "Remote",
       "start_date": "2024-08-01",
-      "end_date": "2024-12-31",
-      "date_range": "Aug 2024 -- Dec 2024",
-      "categories": ["ai", "fullstack", "backend", "frontend", "leadership"],
-      "technologies": ["Python", "FastAPI", "Django", "React.js", "Next.js", "Node.js", "NestJS", "TypeScript", "Docker", "AWS", "LangChain", "LiteLLM", "LLMs", "WhatsApp Cloud API", "RAG", "MCP", "NX"],
+      "end_date": null,
+      "date_range": "Aug 2024 -- Present",
+      "categories": [
+        "ai",
+        "fullstack",
+        "backend",
+        "frontend",
+        "leadership"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Django",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "NestJS",
+        "TypeScript",
+        "Docker",
+        "AWS",
+        "LangChain",
+        "LiteLLM",
+        "LLMs",
+        "WhatsApp Cloud API",
+        "RAG",
+        "MCP",
+        "NX"
+      ],
       "highlights": [
         {
           "text": "Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities",
-          "categories": ["ai", "llm", "backend", "saas", "customer-service"]
+          "categories": [
+            "ai",
+            "llm",
+            "backend",
+            "saas",
+            "customer-service"
+          ]
         },
         {
           "text": "Designed database architecture and system design for ROCKET CODE's orbit-control platform (workflow automation similar to n8n) using Screaming Architecture in a multi-repo setup with NX",
-          "categories": ["architecture", "backend", "database", "design"]
+          "categories": [
+            "architecture",
+            "backend",
+            "database",
+            "design"
+          ]
         },
         {
           "text": "Served as code reviewer for the development team at ROCKET CODE, ensuring code quality and best practices",
-          "categories": ["leadership", "code-review", "mentoring"]
+          "categories": [
+            "leadership",
+            "code-review",
+            "mentoring"
+          ]
         },
         {
           "text": "Delivered end-to-end web applications for business clients, including frontend (React.js, Next.js, TypeScript) and backend (Python, FastAPI, Django, Node.js, NestJS)",
-          "categories": ["fullstack", "frontend", "backend"]
+          "categories": [
+            "fullstack",
+            "frontend",
+            "backend"
+          ]
         },
         {
           "text": "Developed and deployed solutions for sports club management, medical scheduling, and AI-powered learning platforms",
-          "categories": ["fullstack", "ai"]
+          "categories": [
+            "fullstack",
+            "ai"
+          ]
         },
         {
           "text": "Developed AI agents and technical English learning platforms leveraging Python and LLMs",
-          "categories": ["ai", "llm", "backend"]
+          "categories": [
+            "ai",
+            "llm",
+            "backend"
+          ]
         },
         {
           "text": "Integrated LLMs and AI APIs into robust backend services and user-facing features",
-          "categories": ["ai", "llm", "backend"]
+          "categories": [
+            "ai",
+            "llm",
+            "backend"
+          ]
         },
         {
           "text": "Deployed solutions on AWS (EC2, S3, Docker), configured infrastructure, and managed CI/CD pipelines",
-          "categories": ["cloud", "devops"]
+          "categories": [
+            "cloud",
+            "devops"
+          ]
         },
         {
           "text": "Implemented payment integrations (Stripe), containerization (Docker), and CI/CD pipelines",
-          "categories": ["backend", "devops"]
+          "categories": [
+            "backend",
+            "devops"
+          ]
         },
         {
           "text": "Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security",
-          "categories": ["leadership", "architecture"]
+          "categories": [
+            "leadership",
+            "architecture"
+          ]
         },
         {
           "text": "Mentored junior developers, supporting their technical growth and ensuring code quality",
-          "categories": ["leadership", "mentoring"]
+          "categories": [
+            "leadership",
+            "mentoring"
+          ]
         }
       ]
     },
@@ -808,44 +1340,99 @@
       "start_date": "2021-04-01",
       "end_date": "2024-08-01",
       "date_range": "Apr 2021 -- Aug 2024",
-      "categories": ["ai", "fullstack", "backend", "frontend", "leadership"],
-      "technologies": ["Python", "Django", "FastAPI", "React.js", "Next.js", "TypeScript", "Node.js", "Express", "LangChain", "LLMs", "Whisper", "PostgreSQL", "MongoDB", "Docker", "AWS", "GCP"],
+      "categories": [
+        "ai",
+        "fullstack",
+        "backend",
+        "frontend",
+        "leadership"
+      ],
+      "technologies": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "LangChain",
+        "LLMs",
+        "Whisper",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker",
+        "AWS",
+        "GCP"
+      ],
       "highlights": [
         {
           "text": "Built and maintained full stack applications using Python (Django, FastAPI), JavaScript/TypeScript (React.js, Next.js)",
-          "categories": ["fullstack", "backend", "frontend"]
+          "categories": [
+            "fullstack",
+            "backend",
+            "frontend"
+          ]
         },
         {
           "text": "Designed and implemented RESTful and GraphQL APIs, scalable backend systems, and modern frontend interfaces",
-          "categories": ["backend", "api", "frontend"]
+          "categories": [
+            "backend",
+            "api",
+            "frontend"
+          ]
         },
         {
           "text": "Integrated AI/ML services and LLMs into production web apps",
-          "categories": ["ai", "llm", "backend"]
+          "categories": [
+            "ai",
+            "llm",
+            "backend"
+          ]
         },
         {
           "text": "Built and integrated AI services for information retrieval using large language models (OpenAI, LangChain, Whisper)",
-          "categories": ["ai", "llm"]
+          "categories": [
+            "ai",
+            "llm"
+          ]
         },
         {
           "text": "Led frontend architecture, reusable component libraries, and advanced testing strategies (Vitest, Jest, TDD)",
-          "categories": ["frontend", "testing", "leadership"]
+          "categories": [
+            "frontend",
+            "testing",
+            "leadership"
+          ]
         },
         {
           "text": "Built and scaled microservices architectures for AI/ML and data-intensive applications",
-          "categories": ["backend", "architecture", "ai"]
+          "categories": [
+            "backend",
+            "architecture",
+            "ai"
+          ]
         },
         {
           "text": "Designed ETL pipelines and custom Django ORM extensions in Python",
-          "categories": ["data", "backend"]
+          "categories": [
+            "data",
+            "backend"
+          ]
         },
         {
           "text": "Managed cloud deployments on AWS and GCP, using Docker and CI/CD",
-          "categories": ["cloud", "devops"]
+          "categories": [
+            "cloud",
+            "devops"
+          ]
         },
         {
           "text": "Led code reviews, mentored team members, and promoted best practices in testing and code quality",
-          "categories": ["leadership", "mentoring"]
+          "categories": [
+            "leadership",
+            "mentoring"
+          ]
         }
       ]
     },
@@ -857,32 +1444,75 @@
       "start_date": "2018-08-01",
       "end_date": "2020-10-01",
       "date_range": "Aug 2018 -- Oct 2020",
-      "categories": ["blockchain", "fullstack", "backend", "frontend", "web3"],
-      "technologies": ["Python", "Django", "Node.js", "React", "Web3.js", "Ethereum", "Solidity", "PostgreSQL", "MongoDB", "AWS", "GCP", "IBM Cloud"],
+      "categories": [
+        "blockchain",
+        "fullstack",
+        "backend",
+        "frontend",
+        "web3"
+      ],
+      "technologies": [
+        "Python",
+        "Django",
+        "Node.js",
+        "React",
+        "Web3.js",
+        "Ethereum",
+        "Solidity",
+        "PostgreSQL",
+        "MongoDB",
+        "AWS",
+        "GCP",
+        "IBM Cloud"
+      ],
       "highlights": [
         {
           "text": "Developed blockchain and analytics platforms with Python (Django), Node.js, React, and Web3.js",
-          "categories": ["blockchain", "fullstack", "backend"]
+          "categories": [
+            "blockchain",
+            "fullstack",
+            "backend"
+          ]
         },
         {
           "text": "Built decentralized app frontends, implemented smart contracts, and managed cloud infrastructure (AWS, GCP, IBM Cloud)",
-          "categories": ["blockchain", "frontend", "cloud"]
+          "categories": [
+            "blockchain",
+            "frontend",
+            "cloud"
+          ]
         },
         {
           "text": "Led development of blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces",
-          "categories": ["blockchain", "web3", "leadership"]
+          "categories": [
+            "blockchain",
+            "web3",
+            "leadership"
+          ]
         },
         {
           "text": "Led data analytics and visualization solutions for blockchain transactions",
-          "categories": ["data", "blockchain", "visualization"]
+          "categories": [
+            "data",
+            "blockchain",
+            "visualization"
+          ]
         },
         {
           "text": "Developed and integrated RESTful APIs and microservices for analytics and blockchain platforms",
-          "categories": ["backend", "api", "architecture"]
+          "categories": [
+            "backend",
+            "api",
+            "architecture"
+          ]
         },
         {
           "text": "Managed cloud infrastructure (AWS, GCP, IBM Cloud) and database integrations",
-          "categories": ["cloud", "devops", "database"]
+          "categories": [
+            "cloud",
+            "devops",
+            "database"
+          ]
         }
       ]
     },
@@ -894,53 +1524,107 @@
       "start_date": "2010-01-01",
       "end_date": "2021-10-01",
       "date_range": "Jan 2010 -- Oct 2021",
-      "categories": ["teaching", "ai", "ml", "mathematics", "leadership"],
-      "technologies": ["Python", "NumPy", "Pandas", "TensorFlow", "PyTorch", "Scikit-learn"],
+      "categories": [
+        "teaching",
+        "ai",
+        "ml",
+        "mathematics",
+        "leadership"
+      ],
+      "technologies": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn"
+      ],
       "highlights": [
         {
           "text": "Taught advanced courses in Machine Learning, Data Science, and Mathematics using Python, NumPy, Pandas, TensorFlow, PyTorch, and Scikit-learn",
-          "categories": ["teaching", "ai", "ml", "data"]
+          "categories": [
+            "teaching",
+            "ai",
+            "ml",
+            "data"
+          ]
         },
         {
           "text": "Mentored research and student projects in ML, data analysis, and software development",
-          "categories": ["mentoring", "ml", "data"]
+          "categories": [
+            "mentoring",
+            "ml",
+            "data"
+          ]
         },
         {
           "text": "Developed curriculum for programming, mathematics, and ML",
-          "categories": ["teaching", "curriculum"]
+          "categories": [
+            "teaching",
+            "curriculum"
+          ]
         },
         {
           "text": "Taught advanced mathematics courses and developed elective AI/ML curriculum for Mathematics Institute (1.5 years)",
-          "categories": ["teaching", "mathematics", "ai"]
+          "categories": [
+            "teaching",
+            "mathematics",
+            "ai"
+          ]
         }
       ]
     }
   ],
-
   "projects": [
     {
       "id": "morpheus",
       "name": "Morpheus -- AI Image Generation Platform",
       "url": "https://github.com/Monadical-SAS/Morpheus",
-      "categories": ["ai", "ml", "fullstack", "open-source", "backend", "frontend"],
-      "technologies": ["Python", "FastAPI", "React", "Stable Diffusion", "Docker", "AWS"],
+      "categories": [
+        "ai",
+        "ml",
+        "fullstack",
+        "open-source",
+        "backend",
+        "frontend"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "React",
+        "Stable Diffusion",
+        "Docker",
+        "AWS"
+      ],
       "stars": 150,
       "highlights": [
         {
           "text": "Full stack open-source platform for AI image generation using Python, React, and stable diffusion models",
-          "categories": ["ai", "fullstack"]
+          "categories": [
+            "ai",
+            "fullstack"
+          ]
         },
         {
           "text": "Implemented RESTful APIs, ML model integrations, and cloud infrastructure with Docker and AWS",
-          "categories": ["backend", "api", "cloud"]
+          "categories": [
+            "backend",
+            "api",
+            "cloud"
+          ]
         },
         {
           "text": "Built a responsive frontend using React, Tailwind CSS, and Shadcn UI components",
-          "categories": ["frontend"]
+          "categories": [
+            "frontend"
+          ]
         },
         {
           "text": "Implemented complex state management (Zustand, Redux) and type-safe forms (Zod)",
-          "categories": ["frontend", "state-management"]
+          "categories": [
+            "frontend",
+            "state-management"
+          ]
         }
       ]
     },
@@ -948,24 +1632,49 @@
       "id": "zippy",
       "name": "Zippy -- Interactive AI Avatar",
       "url": "https://github.com/asanchezyali/ai-avatar",
-      "categories": ["ai", "llm", "frontend", "fullstack"],
-      "technologies": ["Next.js", "TypeScript", "Python", "OpenAI API", "Azure Cognitive Services", "SASS"],
+      "categories": [
+        "ai",
+        "llm",
+        "frontend",
+        "fullstack"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Python",
+        "OpenAI API",
+        "Azure Cognitive Services",
+        "SASS"
+      ],
       "highlights": [
         {
           "text": "Built a Next.js-based talking avatar integrating OpenAI API and Azure Cognitive Services",
-          "categories": ["ai", "llm", "frontend"]
+          "categories": [
+            "ai",
+            "llm",
+            "frontend"
+          ]
         },
         {
           "text": "Developed TTS synthesis and seamless backend-frontend integration in Python and TypeScript",
-          "categories": ["ai", "backend", "frontend"]
+          "categories": [
+            "ai",
+            "backend",
+            "frontend"
+          ]
         },
         {
           "text": "Developed modern UI using Next.js, custom SVG components, and dynamic animations",
-          "categories": ["frontend"]
+          "categories": [
+            "frontend"
+          ]
         },
         {
           "text": "Implemented state management (Redux, Zustand) and type validation (Zod)",
-          "categories": ["frontend", "state-management"]
+          "categories": [
+            "frontend",
+            "state-management"
+          ]
         }
       ]
     },
@@ -973,37 +1682,66 @@
       "id": "digital-human",
       "name": "Digital Human -- Interactive AI Avatar",
       "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
-      "categories": ["ai", "llm", "frontend", "fullstack", "3d"],
-      "technologies": ["React", "Three.js", "React Three Fiber", "OpenAI GPT", "Whisper", "Eleven Labs", "Tailwind CSS"],
+      "categories": [
+        "ai",
+        "llm",
+        "frontend",
+        "fullstack",
+        "3d"
+      ],
+      "technologies": [
+        "React",
+        "Three.js",
+        "React Three Fiber",
+        "OpenAI GPT",
+        "Whisper",
+        "Eleven Labs",
+        "Tailwind CSS"
+      ],
       "stars": 320,
       "highlights": [
         {
           "text": "Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs",
-          "categories": ["ai", "llm"]
+          "categories": [
+            "ai",
+            "llm"
+          ]
         },
         {
           "text": "Implemented real-time data processing and lip synchronization",
-          "categories": ["ai", "real-time"]
+          "categories": [
+            "ai",
+            "real-time"
+          ]
         },
         {
           "text": "Created interactive 3D experiences using Three.js and React Three Fiber",
-          "categories": ["frontend", "3d"]
+          "categories": [
+            "frontend",
+            "3d"
+          ]
         },
         {
           "text": "Implemented responsive design patterns with Tailwind CSS and built comprehensive test coverage (Vitest, TDD)",
-          "categories": ["frontend", "testing"]
+          "categories": [
+            "frontend",
+            "testing"
+          ]
         }
       ]
     }
   ],
-
   "blog_posts": [
     {
       "id": "zero-shot",
       "title": "Zero-Shot Text Classification",
       "url": "https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot",
       "date": "Sep 2024",
-      "categories": ["ai", "ml", "nlp"],
+      "categories": [
+        "ai",
+        "ml",
+        "nlp"
+      ],
       "description": "Analysis of modern approaches to zero-shot learning in NLP"
     },
     {
@@ -1011,7 +1749,12 @@
       "title": "Neural Networks as DAGs of Parameterized Computational Programs",
       "url": "https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms",
       "date": "Aug 2024",
-      "categories": ["ai", "ml", "deep-learning", "mathematics"],
+      "categories": [
+        "ai",
+        "ml",
+        "deep-learning",
+        "mathematics"
+      ],
       "description": "In-depth exploration of neural networks from a differentiable programming perspective"
     },
     {
@@ -1020,11 +1763,15 @@
       "url": "https://monadical.com/posts/build-a-digital-human-with-large-language-models.html",
       "alternate_url": "https://www.asanchezyali.com/blog/ai-avatars/20240703DigitalHuman",
       "date": "Jul 2024",
-      "categories": ["ai", "llm", "frontend", "3d"],
+      "categories": [
+        "ai",
+        "llm",
+        "frontend",
+        "3d"
+      ],
       "description": "Technical guide on implementing AI-powered digital avatars"
     }
   ],
-
   "talks": [
     {
       "id": "pycon-2024",
@@ -1032,14 +1779,17 @@
       "url": "https://www.youtube.com/watch?v=m4hP1soE414",
       "year": "2024",
       "event": "PyCon Colombia",
-      "categories": ["ai", "ml", "deep-learning"],
+      "categories": [
+        "ai",
+        "ml",
+        "deep-learning"
+      ],
       "highlights": [
         "Presented strategies for scaling machine learning models using JAX and Flax",
         "Discussed parallel computing techniques for efficient model training"
       ]
     }
   ],
-
   "education": [
     {
       "id": "masters",
@@ -1049,7 +1799,10 @@
       "start_date": "2010-08-01",
       "end_date": "2013-09-01",
       "date_range": "Aug 2010 - Sep 2013",
-      "categories": ["mathematics", "research"]
+      "categories": [
+        "mathematics",
+        "research"
+      ]
     },
     {
       "id": "bachelors",
@@ -1059,19 +1812,22 @@
       "start_date": "2004-01-01",
       "end_date": "2009-10-01",
       "date_range": "Jan 2004 - Oct 2009",
-      "categories": ["mathematics", "physics", "teaching"]
+      "categories": [
+        "mathematics",
+        "physics",
+        "teaching"
+      ]
     }
   ],
-
   "summary_templates": {
-    "fullstack": "Full Stack Developer with 5+ years of experience building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
-    "ai": "Machine Learning Engineer and Data Scientist with 5+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
-    "frontend": "Frontend Developer with 5+ years of experience building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record delivering production-ready UIs, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
-    "backend": "Backend Developer with 5+ years of experience designing, developing, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
-    "node": "Full Stack Software Developer with 5+ years of experience building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability to deliver production-ready APIs, integrate LLMs, and lead technical teams in multidisciplinary environments.",
-    "blockchain": "Full Stack Developer with 5+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in cloud infrastructure and data analytics.",
-    "enterprise": "Full Stack Engineer with 5+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
-    "senior_node": "Senior Fullstack Engineer with 5+ years of experience designing, developing, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in code reviews, refactoring, and mentoring junior developers. Advanced English communication skills and experience working with distributed teams.",
-    "ai_specialist": "AI Specialist with 5+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
+    "fullstack": "Full Stack Developer with 7+ years of experience building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
+    "ai": "Machine Learning Engineer and Data Scientist with 7+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
+    "frontend": "Frontend Developer with 7+ years of experience building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record delivering production-ready UIs, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
+    "backend": "Backend Developer with 7+ years of experience designing, developing, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
+    "node": "Full Stack Software Developer with 7+ years of experience building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability to deliver production-ready APIs, integrate LLMs, and lead technical teams in multidisciplinary environments.",
+    "blockchain": "Full Stack Developer with 7+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in cloud infrastructure and data analytics.",
+    "enterprise": "Full Stack Engineer with 7+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
+    "senior_node": "Senior Fullstack Engineer with 7+ years of experience designing, developing, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in code reviews, refactoring, and mentoring junior developers. Advanced English communication skills and experience working with distributed teams.",
+    "ai_specialist": "AI Specialist with 7+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
   }
 }
