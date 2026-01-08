@@ -1,0 +1,28 @@
+Senior AI Full Stack Developer
+Company: TechCorp Inc.
+Location: Remote
+
+About the Role:
+We are looking for a Senior AI Full Stack Developer to join our team. You will be responsible for building and maintaining AI-powered applications using modern web technologies.
+
+Requirements:
+- 5+ years of experience in full-stack development
+- Strong proficiency in Python and JavaScript/TypeScript
+- Experience with React, Next.js, and Node.js
+- Experience with AI/ML frameworks (LangChain, OpenAI API, etc.)
+- Experience with cloud platforms (AWS, GCP)
+- Strong understanding of RESTful APIs and microservices
+- Experience with databases (PostgreSQL, MongoDB)
+- Excellent problem-solving skills
+
+Nice to have:
+- Experience with real-time applications
+- Experience with Docker and CI/CD
+- Background in mathematics or data science
+
+Responsibilities:
+- Design and implement AI-powered features
+- Build and maintain full-stack web applications
+- Collaborate with cross-functional teams
+- Mentor junior developers
+- Participate in code reviews
