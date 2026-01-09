@@ -1,0 +1,22 @@
+Senior Python Backend Developer
+Company: DataFlow Systems
+Location: Remote (LATAM)
+
+About Us:
+We are a fast-growing startup building data infrastructure tools.
+
+Requirements:
+- 5+ years of Python development experience
+- Strong experience with Django or FastAPI
+- Experience with PostgreSQL and Redis
+- Knowledge of microservices architecture
+- Experience with Docker and Kubernetes
+- Familiarity with CI/CD pipelines
+- Good communication skills in English
+
+Responsibilities:
+- Design and develop scalable backend services
+- Build and maintain RESTful APIs
+- Optimize database queries and performance
+- Collaborate with frontend team
+- Write clean, maintainable code with tests

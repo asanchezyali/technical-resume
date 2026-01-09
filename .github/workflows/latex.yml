@@ -1,59 +1,97 @@
-name: Build LaTeX document and Generate README
-on: [push]
+name: Build CV and Generate README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/resume-master.json'
+      - 'src/**'
+      - 'templates/**'
+      - '.github/workflows/latex.yml'
+  workflow_dispatch:
+
 jobs:
-  build_latex_and_readme:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Set up Git repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Compile LaTeX document
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate README.md
+        run: uv run python agent.py readme
+
+      - name: Generate complete CV LaTeX
+        run: uv run python agent.py complete -o technical-resume
+
+      - name: Install LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: main.tex
+          root_file: generated/technical-resume.tex
+          working_directory: .
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
-      - name: List directory contents
-        run: ls -la
+      - name: List generated files
+        run: ls -la generated/
+
+      - name: Commit README.md to main
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Check if README.md changed
+          if git diff --quiet README.md; then
+            echo "No changes to README.md"
+          else
+            git add README.md
+            git commit -m "📄 Update README.md - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
+            git push origin main
+          fi
 
       - name: Upload PDF to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # Intentar cambiar a la rama technical-resume si existe
+
+          # Save the PDF
+          cp generated/technical-resume.pdf /tmp/technical_resume.pdf
+
+          # Switch to technical-resume branch
           if git show-ref --verify --quiet refs/remotes/origin/technical-resume; then
             git checkout technical-resume
           else
-            # Si la rama no existe, crear una nueva rama vacía
             git checkout --orphan technical-resume
             git rm -rf .
           fi
-          
-          # Verificar y copiar el PDF
-          if [ -f "main.pdf" ]; then
-            cp main.pdf ./technical_resume.pdf
-          else
-            echo "main.pdf not found, creating empty file"
-            touch technical_resume.pdf
-          fi
-          
-          # Añadir y hacer commit del PDF con fecha
+
+          # Copy PDF back
+          cp /tmp/technical_resume.pdf ./technical_resume.pdf
+
+          # Commit and push
           git add technical_resume.pdf
           git commit -m "🚀 Update PDF resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
-          
-          # Push al branch (sin --force para mantener historial)
           git push origin technical-resume
 
-      - name: Upload PDF file as artifact
+      - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
           name: Technical Resume
-          path: technical_resume.pdf
+          path: generated/technical-resume.pdf
