@@ -70,13 +70,18 @@ jobs:
             git push origin main
           fi
 
-      - name: Upload PDF to technical-resume branch
+      - name: Upload PDF and README to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Save the PDF (now in generated/ directory)
+          # Save files to temp
           cp generated/technical-resume.pdf /tmp/technical_resume.pdf
+          cp README.md /tmp/README.md
+
+          # Clean up untracked/ignored files before switching branches
+          git clean -fdx
+          git checkout -- .
 
           # Switch to technical-resume branch
           if git show-ref --verify --quiet refs/remotes/origin/technical-resume; then
@@ -86,12 +91,13 @@ jobs:
             git rm -rf .
           fi
 
-          # Copy PDF back
+          # Copy files back
           cp /tmp/technical_resume.pdf ./technical_resume.pdf
+          cp /tmp/README.md ./README.md
 
           # Commit and push
-          git add technical_resume.pdf
-          git commit -m "🚀 Update PDF resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
+          git add technical_resume.pdf README.md
+          git commit -m "🚀 Update resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push origin technical-resume
 
       - name: Upload PDF as artifact
