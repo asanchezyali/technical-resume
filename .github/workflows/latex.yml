@@ -39,18 +39,22 @@ jobs:
       - name: Generate complete CV LaTeX
         run: uv run python agent.py complete -o technical-resume
 
-      - name: Install LaTeX
+      - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: generated/technical-resume.tex
-          working_directory: .
+          root_file: technical-resume.tex
+          working_directory: generated
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
       - name: List generated files
-        run: ls -la generated/
+        run: |
+          echo "=== Root directory ==="
+          ls -la
+          echo "=== Generated directory ==="
+          ls -la generated/
 
       - name: Commit README.md to main
         run: |
@@ -71,7 +75,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Save the PDF
+          # Save the PDF (now in generated/ directory)
           cp generated/technical-resume.pdf /tmp/technical_resume.pdf
 
           # Switch to technical-resume branch
