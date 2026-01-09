@@ -8,6 +8,8 @@ from pathlib import Path
 from src.llm_handler import LLMHandler
 from src.latex_compiler import LatexCompiler
 from src.data_loader import load_master_data_with_updated_years, load_template, load_prompt
+from src.markdown_generator import generate_readme
+from src.latex_generator import generate_complete_cv
 
 console = Console()
 
@@ -234,6 +236,55 @@ def compile(tex_file: str):
     else:
         console.print(f"[bold red]Compilation failed:[/]")
         console.print(error_log[:500])
+
+@cli.command()
+@click.option("--output", "-o", default="complete-cv", help="Output filename (without extension)")
+def complete(output: str):
+    # Generate complete CV with all experiences and skills
+    console.print(Panel("[bold]Complete CV Generator[/]", subtitle="From resume-master.json"))
+
+    master_data = load_master_data_with_updated_years()
+    compiler = LatexCompiler()
+
+    console.print("[yellow]Generating complete CV...[/]")
+    tex_content = generate_complete_cv(master_data)
+
+    # Compile with retry on error
+    max_retries = 3
+    for attempt in range(max_retries):
+        success, error_log = compiler.compile(tex_content, output)
+
+        if success:
+            break
+        else:
+            if attempt < max_retries - 1:
+                console.print(f"[yellow]Compilation failed, retrying ({attempt + 2}/{max_retries})...[/]")
+
+    if success:
+        tex_path, pdf_path = compiler.get_output_paths(output)
+        console.print(f"[bold green]Complete CV generated successfully![/]")
+        console.print(f"  [dim]PDF:[/] {pdf_path}")
+        console.print(f"  [dim]TeX:[/] {tex_path}")
+    else:
+        console.print(f"[bold red]Failed to compile LaTeX[/]")
+        console.print(f"[dim]Error:[/] {error_log[:500]}")
+
+@cli.command()
+@click.option("--output", "-o", default="README.md", help="Output filename")
+def readme(output: str):
+    # Generate README.md from master data
+    console.print(Panel("[bold]README Generator[/]", subtitle="From resume-master.json"))
+
+    master_data = load_master_data_with_updated_years()
+
+    console.print("[yellow]Generating README.md...[/]")
+    content = generate_readme(master_data)
+
+    output_path = Path(output)
+    output_path.write_text(content, encoding="utf-8")
+
+    console.print(f"[bold green]README generated successfully![/]")
+    console.print(f"  [dim]File:[/] {output_path}")
 
 if __name__ == "__main__":
     cli()
