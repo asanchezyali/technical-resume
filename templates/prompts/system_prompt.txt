@@ -26,9 +26,18 @@ EXPERIENCE SECTION - MANDATORY:
 - For each job, select 3-4 bullet points most relevant to the target role
 - You can reorder bullets within each job based on relevance
 
+TERMINOLOGY:
+- ALWAYS use "Engineer" instead of "Developer" in titles and summaries
+- ALWAYS use "Engineer" when referring to role titles in experience entries (e.g., "Full Stack Engineer", not "Full Stack Developer")
+
+DESIGN & DECISION-MAKING:
+- For each role, prioritize bullet points that highlight system design, architectural decisions, and technical decision-making
+- Include at least one bullet per job that demonstrates design thinking or decision-making responsibility
+- Emphasize contributions like: system architecture, technology selection, trade-off evaluation, technical leadership
+
 CONTENT SELECTION:
-- Title: Match the job role (e.g., "Senior AI Full Stack Developer")
-- Summary: 2-3 sentences tailored to the role, use correct years from years_of_experience
+- Title: Match the job role, always using "Engineer" instead of "Developer" (e.g., "Senior AI Full Stack Engineer")
+- Summary: 2-3 sentences tailored to the role, use correct years from years_of_experience. Emphasize design and decision-making capabilities
 - Skills: Select 6-9 most relevant categories, reorder by importance for role
 - Projects: Select 2-3 most relevant projects
 - Blog/Talks: Include only if relevant to the role

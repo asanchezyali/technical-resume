@@ -1191,6 +1191,15 @@
           ]
         },
         {
+          "text": "Drove architectural decisions for the AI platform, selecting technology stacks and defining system boundaries for scalable, maintainable solutions",
+          "categories": [
+            "architecture",
+            "design",
+            "leadership",
+            "decision-making"
+          ]
+        },
+        {
           "text": "Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database",
           "categories": [
             "fullstack",
@@ -1272,6 +1281,15 @@
           ]
         },
         {
+          "text": "Led technical design sessions with clients, translating business requirements into system architectures and making key technology decisions for each project",
+          "categories": [
+            "architecture",
+            "design",
+            "leadership",
+            "decision-making"
+          ]
+        },
+        {
           "text": "Delivered end-to-end web applications for business clients, including frontend (React.js, Next.js, TypeScript) and backend (Python, FastAPI, Django, Node.js, NestJS)",
           "categories": [
             "fullstack",
@@ -1324,7 +1342,7 @@
           ]
         },
         {
-          "text": "Mentored junior developers, supporting their technical growth and ensuring code quality",
+          "text": "Mentored junior engineers, supporting their technical growth and ensuring code quality",
           "categories": [
             "leadership",
             "mentoring"
@@ -1334,7 +1352,7 @@
     },
     {
       "id": "monadical-2021",
-      "title": "Full Stack Developer",
+      "title": "Full Stack Engineer",
       "company": "Monadical",
       "location": "Remote, Canada/US",
       "start_date": "2021-04-01",
@@ -1366,6 +1384,14 @@
         "GCP"
       ],
       "highlights": [
+        {
+          "text": "Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability, and maintainability",
+          "categories": [
+            "architecture",
+            "design",
+            "decision-making"
+          ]
+        },
         {
           "text": "Built and maintained full stack applications using Python (Django, FastAPI), JavaScript/TypeScript (React.js, Next.js)",
           "categories": [
@@ -1438,7 +1464,7 @@
     },
     {
       "id": "bcfort-2018",
-      "title": "Full Stack Developer",
+      "title": "Full Stack Engineer",
       "company": "BCFort",
       "location": "Medellín, Colombia",
       "start_date": "2018-08-01",
@@ -1466,6 +1492,15 @@
         "IBM Cloud"
       ],
       "highlights": [
+        {
+          "text": "Designed system architecture for blockchain platforms, making key decisions on smart contract patterns, data models, and service boundaries",
+          "categories": [
+            "architecture",
+            "design",
+            "decision-making",
+            "blockchain"
+          ]
+        },
         {
           "text": "Developed blockchain and analytics platforms with Python (Django), Node.js, React, and Web3.js",
           "categories": [
@@ -1820,14 +1855,14 @@
     }
   ],
   "summary_templates": {
-    "fullstack": "Full Stack Developer with 7+ years of experience building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
+    "fullstack": "Full Stack Engineer with 7+ years of experience designing, architecting, and building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in system design, technical decision-making, integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
     "ai": "Machine Learning Engineer and Data Scientist with 7+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
-    "frontend": "Frontend Developer with 7+ years of experience building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record delivering production-ready UIs, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
-    "backend": "Backend Developer with 7+ years of experience designing, developing, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
-    "node": "Full Stack Software Developer with 7+ years of experience building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability to deliver production-ready APIs, integrate LLMs, and lead technical teams in multidisciplinary environments.",
-    "blockchain": "Full Stack Developer with 7+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in cloud infrastructure and data analytics.",
+    "frontend": "Frontend Engineer with 7+ years of experience designing and building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record in UI/UX design decisions, delivering production-ready interfaces, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
+    "backend": "Backend Engineer with 7+ years of experience designing, architecting, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record in system design, technical decision-making, building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
+    "node": "Full Stack Software Engineer with 7+ years of experience designing, architecting, and building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability in technical decision-making, delivering production-ready APIs, integrating LLMs, and leading technical teams in multidisciplinary environments.",
+    "blockchain": "Full Stack Engineer with 7+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record designing decentralized architectures, building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in technical decision-making, cloud infrastructure, and data analytics.",
     "enterprise": "Full Stack Engineer with 7+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
-    "senior_node": "Senior Fullstack Engineer with 7+ years of experience designing, developing, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in code reviews, refactoring, and mentoring junior developers. Advanced English communication skills and experience working with distributed teams.",
+    "senior_node": "Senior Fullstack Engineer with 7+ years of experience designing, architecting, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in architectural decision-making, code reviews, refactoring, and mentoring junior engineers. Advanced English communication skills and experience working with distributed teams.",
     "ai_specialist": "AI Specialist with 7+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
   }
 }

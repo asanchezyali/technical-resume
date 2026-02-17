@@ -103,3 +103,8 @@ Thumbs.db
 *.temp
 .cache/
 *.log
+
+# Claude Code memory files (keep only root and .claude/)
+**/CLAUDE.md
+!/CLAUDE.md
+!/.claude/**/CLAUDE.md

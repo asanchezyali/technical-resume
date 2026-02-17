@@ -100,7 +100,7 @@ def generate_complete_cv(master_data: dict) -> str:
     links = personal["links"]
     lines.append(r"\begin{center}")
     lines.append(rf"\textbf{{\Huge {escape_latex(personal['name'])}}}\\[0.2em]")
-    lines.append(r"\textbf{\Large Full Stack Developer \& AI Specialist}\\[0.4em]")
+    lines.append(r"\textbf{\Large Full Stack Engineer \& AI Specialist}\\[0.4em]")
     lines.append(r"\small")
     lines.append(rf"\normalfaCalendar\ \href{{{links['calendar']}}}{{\textsc{{Let's Connect}}}}")
     lines.append(r"")

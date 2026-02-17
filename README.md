@@ -1,6 +1,6 @@
 # Alejandro Sánchez Yalí
 
-**Full Stack Developer & AI Specialist**
+**Full Stack Engineer & AI Specialist**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-asanchezyali-blue?logo=linkedin)](https://www.linkedin.com/in/asanchezyali)
 [![GitHub](https://img.shields.io/badge/GitHub-asanchezyali-black?logo=github)](https://github.com/asanchezyali)
@@ -82,6 +82,7 @@ Category Theory, Linear Algebra, Probability Theory, Statistical Inference
 - Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization
 - Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation
 - Designed and built a Digital Professor system that engages users in real-time conversations and explains course content through interactive slides
+- Drove architectural decisions for the AI platform, selecting technology stacks and defining system boundaries for scalable, maintainable solutions
 - Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database
 - Integrated ElevenLabs API for natural text-to-speech synthesis in the Digital Professor application
 
@@ -95,6 +96,7 @@ Category Theory, Linear Algebra, Probability Theory, Statistical Inference
 - Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities
 - Designed database architecture and system design for ROCKET CODE's orbit-control platform (workflow automation similar to n8n) using Screaming Architecture in a multi-repo setup with NX
 - Served as code reviewer for the development team at ROCKET CODE, ensuring code quality and best practices
+- Led technical design sessions with clients, translating business requirements into system architectures and making key technology decisions for each project
 - Delivered end-to-end web applications for business clients, including frontend (React.js, Next.js, TypeScript) and backend (Python, FastAPI, Django, Node.js, NestJS)
 - Developed and deployed solutions for sports club management, medical scheduling, and AI-powered learning platforms
 - Developed AI agents and technical English learning platforms leveraging Python and LLMs
@@ -102,15 +104,16 @@ Category Theory, Linear Algebra, Probability Theory, Statistical Inference
 - Deployed solutions on AWS (EC2, S3, Docker), configured infrastructure, and managed CI/CD pipelines
 - Implemented payment integrations (Stripe), containerization (Docker), and CI/CD pipelines
 - Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security
-- Mentored junior developers, supporting their technical growth and ensuring code quality
+- Mentored junior engineers, supporting their technical growth and ensuring code quality
 
 ---
 
-### Full Stack Developer @ Monadical
+### Full Stack Engineer @ Monadical
 **Apr 2021 -- Aug 2024** | Remote, Canada/US
 
 *Technologies: Python, Django, FastAPI, React.js, Next.js, TypeScript, Node.js, Express, LangChain, LLMs, Whisper, PostgreSQL, MongoDB, Docker, AWS, GCP*
 
+- Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability, and maintainability
 - Built and maintained full stack applications using Python (Django, FastAPI), JavaScript/TypeScript (React.js, Next.js)
 - Designed and implemented RESTful and GraphQL APIs, scalable backend systems, and modern frontend interfaces
 - Integrated AI/ML services and LLMs into production web apps
@@ -123,11 +126,12 @@ Category Theory, Linear Algebra, Probability Theory, Statistical Inference
 
 ---
 
-### Full Stack Developer @ BCFort
+### Full Stack Engineer @ BCFort
 **Aug 2018 -- Oct 2020** | Medellín, Colombia
 
 *Technologies: Python, Django, Node.js, React, Web3.js, Ethereum, Solidity, PostgreSQL, MongoDB, AWS, GCP, IBM Cloud*
 
+- Designed system architecture for blockchain platforms, making key decisions on smart contract patterns, data models, and service boundaries
 - Developed blockchain and analytics platforms with Python (Django), Node.js, React, and Web3.js
 - Built decentralized app frontends, implemented smart contracts, and managed cloud infrastructure (AWS, GCP, IBM Cloud)
 - Led development of blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces
