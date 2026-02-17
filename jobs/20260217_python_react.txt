@@ -1,0 +1,68 @@
+
+Full Stack Engineer (Python / React / AWS)
+
+Client: Finetune Learning
+Location: LATAM – 100% Remote
+Timezone: EST / CST overlap required
+Start Date: ASAP
+
+⸻
+
+🌎 About the Role
+
+Finetune Learning is looking for a Full Stack Engineer to support and enhance an existing production platform.
+
+This role requires strong experience across both backend and frontend development, working closely with U.S.-based teams and non-technical stakeholders.
+
+The ideal candidate is hands-on, detail-oriented, and comfortable working in a fast-moving environment with high ownership.
+
+⸻
+
+🛠 Core Technical Requirements
+
+Backend
+ • Python (FastAPI preferred, Django acceptable)
+ • Experience building APIs and backend services
+ • JSON parsing/manipulation
+ • Writing scripts to manage or migrate data between environments
+
+Frontend
+ • React.js
+ • Next.js
+ • TypeScript / JavaScript
+ • Experience maintaining internal or customer-facing applications
+
+Cloud & Infrastructure
+ • AWS (Lambda, S3, EC2, API Gateway preferred)
+ • Experience deploying and maintaining cloud-based applications
+
+Data
+ • SQL queries for data manipulation and quality checks
+ • Working with database-heavy applications
+
+⸻
+
+🎯 Responsibilities
+ • Design, develop, and maintain features across frontend and backend
+ • Support and improve an existing production system
+ • Write scripts to manage content/data across environments
+ • Collaborate with product and non-technical teams
+ • Ensure data accuracy and system reliability
+ • Identify opportunities to improve processes, automation, and performance
+
+⸻
+
+🧩 Soft Skills
+ • Strong attention to detail
+ • Process-oriented mindset
+ • Ability to prioritize tasks across multiple projects
+ • Comfortable communicating with U.S. stakeholders
+ • Self-starter with strong ownership
+
+⸻
+
+
+✅ Nice to Have
+ • Experience with internal content tools or CMS-like systems
+ • Experience in education or learning platforms
+ • Experience working with distributed teams

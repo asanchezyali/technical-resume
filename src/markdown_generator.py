@@ -15,7 +15,7 @@ def generate_readme(master_data: dict) -> str:
 
     # Header
     lines.append(f"# {personal['name']}\n")
-    lines.append("**Full Stack Developer & AI Specialist**\n")
+    lines.append("**Full Stack Engineer & AI Specialist**\n")
 
     # Badges
     links = personal["links"]
