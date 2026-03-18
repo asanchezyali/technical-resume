@@ -82,7 +82,7 @@ Category Theory, Linear Algebra, Probability Theory, Statistical Inference
 - Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization
 - Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation
 - Designed and built a Digital Professor system that engages users in real-time conversations and explains course content through interactive slides
-- Drove architectural decisions for the AI platform, selecting technology stacks and defining system boundaries for scalable, maintainable solutions
+- Made key architectural decisions for the educational platform, designing the integration between LLM services, ElevenLabs voice synthesis, and real-time communication layers
 - Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database
 - Integrated ElevenLabs API for natural text-to-speech synthesis in the Digital Professor application
 
@@ -176,6 +176,22 @@ Developed TTS synthesis and seamless backend-frontend integration in Python and 
 
 Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs
 Implemented real-time data processing and lip synchronization
+
+---
+
+### [Plixiq -- AI-Powered WhatsApp Agent Platform](https://plixiq.com/)
+*Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, LiteLLM, WhatsApp Cloud API, Docker, Railway*
+
+Built a multi-tenant SaaS platform enabling businesses to deploy AI-powered WhatsApp agents with automatic human escalation
+Designed a modular monolith with DDD bounded contexts (Identity, AgentConfig, Conversation, Escalation, Messaging) and event-driven architecture
+
+---
+
+### [VitaStock -- Medical Supply Chain Management System](https://github.com/Pi-Agents/vitastock)
+*Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Effect.js, Docker, Railway*
+
+Built a full-stack medical supply chain platform for clinics managing inventory, procurement, surgical planning, and supplier relationships
+Designed clean architecture backend with DDD, role-based access control (Admin, Pharmacist, Doctor, Operating Room, Management), and async PostgreSQL
 
 ---
 
