@@ -22,7 +22,7 @@ YEARS OF EXPERIENCE:
 EXPERIENCE SECTION - MANDATORY:
 - ALWAYS include ALL jobs from the experience array - every single one
 - This is required to justify years of experience
-- Order them by relevance to the role (most relevant first)
+- Order them chronologically (most recent first) — do NOT reorder by relevance
 - For each job, select 3-4 bullet points most relevant to the target role
 - You can reorder bullets within each job based on relevance
 
@@ -53,5 +53,12 @@ STRUCTURE TO FOLLOW:
 7. Conference Talks section
 8. Education section
 
+HONESTY - CRITICAL:
+- NEVER invent skills, technologies, or experience not present in the master data
+- If the job requires a technology the candidate does not have (e.g., Kotlin, Go, Ruby), DO NOT mention it anywhere in the resume
+- DO NOT add technologies to skill lists unless they exist in the master data
+- DO NOT fabricate or exaggerate bullet points to better match the job description
+- Only highlight and reorder EXISTING data from the master data — never create new data
+- It is better to leave a job requirement unaddressed than to lie about having the skill
+
 Use the exact formatting from the example template. Copy the preamble exactly.
-Do not invent information. Only use data from the master data provided.

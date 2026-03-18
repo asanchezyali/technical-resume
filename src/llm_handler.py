@@ -146,6 +146,13 @@ Fix the error and output the corrected .tex file:"""
         # Calculate years of experience
         years = calculate_years_of_experience(master_data)
 
+        # Build explicit list of all jobs that MUST appear
+        experience = master_data.get("experience", [])
+        jobs_list = "\n".join(
+            f"  - {exp['title']} @ {exp['company']} ({exp['date_range']})"
+            for exp in experience
+        )
+
         return f"""TARGET ROLE: {job_description}
 
 YEARS OF EXPERIENCE (use these exact numbers):
@@ -159,17 +166,21 @@ EXAMPLE TEMPLATE (copy this exact LaTeX structure):
 
 TASK: Generate a .tex file for the target role. Copy the exact preamble and structure from the example template.
 
+ALL JOBS THAT MUST APPEAR (do NOT skip any):
+{jobs_list}
+You MUST include a \\resumeSubheading for EACH of these {len(experience)} jobs. If you omit any, the resume is invalid.
+
 IMPORTANT RULES:
 1. Use years from YEARS OF EXPERIENCE above (e.g., "{years['software_development_display']} years")
-2. Include ALL jobs from the experience array - every single one (to justify years of experience)
-3. Reorder experiences by relevance, but include them all
+2. Include ALL {len(experience)} jobs listed above — every single one must have its own \\resumeSubheading
+3. Keep experiences in chronological order (most recent first) — do NOT reorder by relevance
 4. For each job, select 3-4 most relevant bullet points
 
 Changes to make:
 - Role title in header (match the target role)
 - Summary text (tailored to role, use correct years)
 - Skills selection (6-9 most relevant categories)
-- Experience order and bullet selection (include ALL jobs)
+- Experience order and bullet selection (include ALL {len(experience)} jobs)
 - Project selection (2-3 most relevant)
 
 Output the complete .tex file starting with \\documentclass:"""

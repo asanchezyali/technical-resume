@@ -1,0 +1,18 @@
+Senior AI-Native Full-Stack Engineer - Healthcare
+
+We're looking for a Senior AI-Native Full-Stack Engineer to join our mission-driven healthcare team. In this role, you'll lead high-impact automation projects that solve real-world challenges for underserved communities.
+
+Key Responsibilities:
+- Own AI-driven automation projects end-to-end, from initial problem definition and stakeholder research to final deployment.
+- Leverage LLMs and AI coding tools (like Cursor and Claude Code) to architect, write, and debug software with high velocity.
+- Identify and resolve friction points across patient workflows, system architecture, and QA processes to enhance the overall patient experience.
+- Collaborate closely with US-based stakeholders to enable fast iteration, proactively sharing progress and constructively challenging ideas to guide technical decisions.
+
+What we are looking for:
+- 5+ years of experience as a full-stack software engineer building production-grade applications.
+- Deep hands-on experience with AI-native development, specifically using LLMs and tools like Cursor or Claude Code to accelerate delivery.
+- Strong system design skills and the ability to translate ambiguous healthcare challenges into clear, scalable technical solutions.
+- A high-autonomy mindset, someone who takes full ownership of features and prioritizes product outcomes over specific languages.
+- Bonus: Experience with TypeScript and a background in healthcare, health tech, or regulated environments.
+
+The monthly salary range for this position is between $4,000 - $7,500 USD depending on seniority and technical expertise.
