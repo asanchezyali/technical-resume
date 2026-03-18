@@ -1191,7 +1191,7 @@
           ]
         },
         {
-          "text": "Drove architectural decisions for the AI platform, selecting technology stacks and defining system boundaries for scalable, maintainable solutions",
+          "text": "Made key architectural decisions for the educational platform, designing the integration between LLM services, ElevenLabs voice synthesis, and real-time communication layers",
           "categories": [
             "architecture",
             "design",
@@ -1761,6 +1761,122 @@
           "categories": [
             "frontend",
             "testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plixiq",
+      "name": "Plixiq -- AI-Powered WhatsApp Agent Platform",
+      "url": "https://plixiq.com/",
+      "categories": [
+        "ai",
+        "llm",
+        "saas",
+        "fullstack",
+        "backend",
+        "frontend"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "LiteLLM",
+        "WhatsApp Cloud API",
+        "Docker",
+        "Railway"
+      ],
+      "highlights": [
+        {
+          "text": "Built a multi-tenant SaaS platform enabling businesses to deploy AI-powered WhatsApp agents with automatic human escalation",
+          "categories": [
+            "ai",
+            "llm",
+            "saas",
+            "backend"
+          ]
+        },
+        {
+          "text": "Designed a modular monolith with DDD bounded contexts (Identity, AgentConfig, Conversation, Escalation, Messaging) and event-driven architecture",
+          "categories": [
+            "architecture",
+            "backend",
+            "design"
+          ]
+        },
+        {
+          "text": "Implemented real-time conversation monitoring via SSE, role-based access control, and multi-provider LLM integration with LiteLLM",
+          "categories": [
+            "fullstack",
+            "backend",
+            "ai"
+          ]
+        },
+        {
+          "text": "3 months in production with background job processing (ARQ), Redis caching, and PostgreSQL with async migrations",
+          "categories": [
+            "backend",
+            "devops",
+            "database"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vitastock",
+      "name": "VitaStock -- Medical Supply Chain Management System",
+      "url": "https://github.com/Pi-Agents/vitastock",
+      "categories": [
+        "fullstack",
+        "saas",
+        "backend",
+        "frontend",
+        "healthcare"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Effect.js",
+        "Docker",
+        "Railway"
+      ],
+      "highlights": [
+        {
+          "text": "Built a full-stack medical supply chain platform for clinics managing inventory, procurement, surgical planning, and supplier relationships",
+          "categories": [
+            "fullstack",
+            "saas",
+            "healthcare"
+          ]
+        },
+        {
+          "text": "Designed clean architecture backend with DDD, role-based access control (Admin, Pharmacist, Doctor, Operating Room, Management), and async PostgreSQL",
+          "categories": [
+            "architecture",
+            "backend",
+            "design"
+          ]
+        },
+        {
+          "text": "Implemented procurement workflow (quotation requests, purchase orders, receptions) with lot tracking and controlled storage",
+          "categories": [
+            "backend",
+            "fullstack"
+          ]
+        },
+        {
+          "text": "5 months in production deployed on Railway with CI/CD, multilingual support (ES/EN), and PDF report generation",
+          "categories": [
+            "devops",
+            "fullstack"
           ]
         }
       ]
