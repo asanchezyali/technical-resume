@@ -537,6 +537,33 @@
         "start_year": 2024
       },
       {
+        "name": "Claude Code",
+        "years": 1,
+        "level": "advanced",
+        "categories": [
+          "ai",
+          "llm",
+          "agentic-development",
+          "developer-tooling"
+        ],
+        "display": "Claude Code (1.5+ years, daily professional use)",
+        "start_year": 2024,
+        "note": "Primary day-to-day development workflow for 1.5+ years on live, production projects"
+      },
+      {
+        "name": "Agentic Development",
+        "years": 1,
+        "level": "advanced",
+        "categories": [
+          "ai",
+          "llm",
+          "agentic-development",
+          "developer-tooling"
+        ],
+        "display": "Agentic Development (LLM-assisted coding)",
+        "start_year": 2024
+      },
+      {
         "name": "WhatsApp Cloud API",
         "years": 2,
         "level": "intermediate",
@@ -1254,6 +1281,25 @@
       ],
       "highlights": [
         {
+          "text": "Use Claude Code as primary day-to-day development workflow (1.5+ years, daily) on live production projects, steering the LLM to break down problems, catch edge cases, and critically review generated output to ship high-quality, end-to-end features in a fraction of the usual time",
+          "categories": [
+            "ai",
+            "agentic-development",
+            "productivity",
+            "llm"
+          ]
+        },
+        {
+          "text": "Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model",
+          "categories": [
+            "ai",
+            "llm",
+            "architecture",
+            "backend",
+            "fullstack"
+          ]
+        },
+        {
           "text": "Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities",
           "categories": [
             "ai",
@@ -1612,6 +1658,355 @@
   ],
   "projects": [
     {
+      "id": "plixiq",
+      "name": "Plixiq -- AI-Powered WhatsApp Agent Platform",
+      "url": "https://plixiq.com/",
+      "categories": [
+        "ai",
+        "llm",
+        "saas",
+        "fullstack",
+        "backend",
+        "frontend"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "SQLModel",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Effect",
+        "PostgreSQL",
+        "Redis",
+        "ARQ",
+        "LiteLLM",
+        "Groq",
+        "OpenAI",
+        "RAG",
+        "WhatsApp Cloud API",
+        "SSE",
+        "Docker",
+        "Railway"
+      ],
+      "highlights": [
+        {
+          "text": "Sole architect and engineer of a multi-tenant SaaS that lets businesses run AI agents on WhatsApp, resolving routine inquiries in about 2 seconds and escalating the rest to human operators with full conversation context",
+          "categories": [
+            "ai",
+            "llm",
+            "saas",
+            "product",
+            "backend"
+          ]
+        },
+        {
+          "text": "Designed a modular monolith with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, keeping a one-person codebase clean without the operational cost of microservices",
+          "categories": [
+            "architecture",
+            "backend",
+            "design",
+            "decision-making"
+          ]
+        },
+        {
+          "text": "Built a multi-provider LLM layer with LiteLLM (Groq by default, OpenAI as fallback), making a provider change a configuration change rather than a refactor",
+          "categories": [
+            "ai",
+            "llm",
+            "architecture",
+            "decision-making"
+          ]
+        },
+        {
+          "text": "Implemented automatic frustration and keyword detection for escalation, multilingual agents (ES/EN), and a real-time operator dashboard over Server-Sent Events, chosen over WebSockets because traffic is one-way",
+          "categories": [
+            "ai",
+            "fullstack",
+            "frontend",
+            "real-time",
+            "decision-making"
+          ]
+        },
+        {
+          "text": "Shipped ~40,000 lines of backend and frontend to a near-complete MVP in 4 months part-time, running at $60-80/month because cost scales with LLM usage rather than infrastructure",
+          "categories": [
+            "product",
+            "delivery",
+            "devops",
+            "cost"
+          ]
+        },
+        {
+          "text": "Engineered async PostgreSQL with migrations, Redis caching, ARQ background jobs, idempotent webhook processing, and role-based access control across tenants",
+          "categories": [
+            "backend",
+            "database",
+            "devops",
+            "saas"
+          ]
+        }
+      ],
+      "role": "Sole architect and engineer",
+      "status": "In production"
+    },
+    {
+      "id": "aluna",
+      "name": "Aluna -- AI Recruitment Platform for Staffing Agencies",
+      "url": "https://www.aluna.works",
+      "role": "Lead Engineer",
+      "status": "Built and verified end to end; production environment provisioned, not yet carrying live traffic",
+      "scale": "336 source files across 4 packages, 26 PostgreSQL tables, 11 external providers",
+      "categories": [
+        "ai",
+        "llm",
+        "saas",
+        "fullstack",
+        "backend",
+        "architecture",
+        "product"
+      ],
+      "technologies": [
+        "Next.js 15",
+        "FastAPI",
+        "LiteLLM",
+        "TypeScript",
+        "Python",
+        "PostgreSQL (Neon)",
+        "Redis (Upstash)",
+        "Inngest",
+        "Cloudflare R2",
+        "Anthropic Claude",
+        "Google Gemini",
+        "WhatsApp Cloud API",
+        "better-auth",
+        "SSE",
+        "Railway"
+      ],
+      "highlights": [
+        {
+          "text": "Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application that owns all domain state and a stateless FastAPI service that owns model calls and the WhatsApp channel",
+          "categories": [
+            "architecture",
+            "ai",
+            "backend",
+            "fullstack",
+            "design"
+          ]
+        },
+        {
+          "text": "Designed a durable CV analysis pipeline on Inngest: 9 checkpointed steps with 3 retries, early exits for revoked consent, and deduplication placed before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call",
+          "categories": [
+            "backend",
+            "ai",
+            "architecture",
+            "cost",
+            "decision-making"
+          ]
+        },
+        {
+          "text": "Built one conversational screening engine serving three transports -- WhatsApp, signed-link web chat and email -- so the conversation logic has a single implementation regardless of channel",
+          "categories": [
+            "ai",
+            "llm",
+            "architecture",
+            "design"
+          ]
+        },
+        {
+          "text": "Routed each agent to a deliberately chosen model through LiteLLM (Gemini for document analysis and drafting, Claude Sonnet for conversation, Claude Haiku for the vacancy assistant), overridable per agent at runtime from the database with environment fallback",
+          "categories": [
+            "ai",
+            "llm",
+            "decision-making",
+            "architecture"
+          ]
+        },
+        {
+          "text": "Implemented multi-tenant access control with better-auth organizations: four cumulative roles resolved from a single policy source, privilege escalation blocked by design, and a platform super-admin whose impersonations are written to an audit log",
+          "categories": [
+            "backend",
+            "security",
+            "design",
+            "saas"
+          ]
+        },
+        {
+          "text": "Engineered Colombian data protection compliance (Ley 1581/2012) into the data model -- consent records written in the same transaction as the application, deletion receipts and audit logs -- so a revoked consent permanently blocks re-analysis",
+          "categories": [
+            "backend",
+            "compliance",
+            "security",
+            "design"
+          ]
+        },
+        {
+          "text": "Built token-by-token SSE streaming for the AI vacancy assistant, proxying model deltas through a TransformStream that measures usage without buffering the stream",
+          "categories": [
+            "frontend",
+            "backend",
+            "real-time",
+            "ai"
+          ]
+        },
+        {
+          "text": "Combined CV and interview signals into a shortlist score (0.6 x CV + 0.4 x conversation) against a per-vacancy threshold, with recomposition that never removes a candidate the recruiter added by hand",
+          "categories": [
+            "product",
+            "backend",
+            "ai",
+            "design"
+          ]
+        },
+        {
+          "text": "Wrote the system's technical documentation verified line by line against a specific commit, stating explicitly what could not be verified rather than assuming it",
+          "categories": [
+            "documentation",
+            "communication",
+            "leadership",
+            "quality"
+          ]
+        }
+      ],
+      "start_date": "2026-06-01",
+      "end_date": null,
+      "date_range": "Jun 2026 -- Present",
+      "duration": "3 months",
+      "engagement": "Contracted lead engineer, via independent consulting"
+    },
+    {
+      "id": "vitastock",
+      "name": "VitaStock -- Medical Supply Chain Management System",
+      "url": "https://github.com/Pi-Agents/vitastock",
+      "categories": [
+        "fullstack",
+        "saas",
+        "backend",
+        "frontend",
+        "healthcare"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Effect.js",
+        "Docker",
+        "Railway"
+      ],
+      "highlights": [
+        {
+          "text": "Sole architect and engineer of a surgical supply chain platform for private clinics in Colombia -- 12 modules and 5 user roles replacing spreadsheet-based inventory and procurement",
+          "categories": [
+            "fullstack",
+            "saas",
+            "healthcare",
+            "product",
+            "architecture"
+          ]
+        },
+        {
+          "text": "Built the full procurement workflow (quotation requests, supplier price comparison, purchase orders, receptions) with lot-level tracking, expiry alerts and controlled storage",
+          "categories": [
+            "backend",
+            "fullstack",
+            "product"
+          ]
+        },
+        {
+          "text": "Implemented surgery scheduling with surgical supply baskets and real-time consumption tracking, deducting inventory automatically and exposing true per-patient cost through a cardex",
+          "categories": [
+            "backend",
+            "product",
+            "healthcare",
+            "data"
+          ]
+        },
+        {
+          "text": "Added a read-only AI assistant that answers questions about clinic data in Spanish and navigates users to the relevant view",
+          "categories": [
+            "ai",
+            "llm",
+            "fullstack",
+            "product"
+          ]
+        },
+        {
+          "text": "Designed a clean-architecture backend with DDD, role-based access control (Admin, Pharmacist, Doctor, Operating Room, Management) and async PostgreSQL",
+          "categories": [
+            "architecture",
+            "backend",
+            "design",
+            "database"
+          ]
+        },
+        {
+          "text": "Ran 5 months in production on Railway with CI/CD, bilingual UI (ES/EN) and PDF report generation",
+          "categories": [
+            "devops",
+            "fullstack",
+            "delivery"
+          ]
+        }
+      ],
+      "role": "Sole architect and engineer",
+      "status": "In production"
+    },
+    {
+      "id": "digital-human",
+      "name": "Digital Human -- Interactive AI Avatar",
+      "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
+      "categories": [
+        "ai",
+        "llm",
+        "frontend",
+        "fullstack",
+        "3d"
+      ],
+      "technologies": [
+        "React",
+        "Three.js",
+        "React Three Fiber",
+        "OpenAI GPT",
+        "Whisper",
+        "Eleven Labs",
+        "Tailwind CSS"
+      ],
+      "stars": 464,
+      "highlights": [
+        {
+          "text": "Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs",
+          "categories": [
+            "ai",
+            "llm"
+          ]
+        },
+        {
+          "text": "Implemented real-time data processing and lip synchronization",
+          "categories": [
+            "ai",
+            "real-time"
+          ]
+        },
+        {
+          "text": "Created interactive 3D experiences using Three.js and React Three Fiber",
+          "categories": [
+            "frontend",
+            "3d"
+          ]
+        },
+        {
+          "text": "Implemented responsive design patterns with Tailwind CSS and built comprehensive test coverage (Vitest, TDD)",
+          "categories": [
+            "frontend",
+            "testing"
+          ]
+        }
+      ]
+    },
+    {
       "id": "morpheus",
       "name": "Morpheus -- AI Image Generation Platform",
       "url": "https://github.com/Monadical-SAS/Morpheus",
@@ -1631,7 +2026,7 @@
         "Docker",
         "AWS"
       ],
-      "stars": 150,
+      "stars": 29,
       "highlights": [
         {
           "text": "Full stack open-source platform for AI image generation using Python, React, and stable diffusion models",
@@ -1712,176 +2107,97 @@
           ]
         }
       ]
-    },
-    {
-      "id": "digital-human",
-      "name": "Digital Human -- Interactive AI Avatar",
-      "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
-      "categories": [
-        "ai",
-        "llm",
-        "frontend",
-        "fullstack",
-        "3d"
-      ],
-      "technologies": [
-        "React",
-        "Three.js",
-        "React Three Fiber",
-        "OpenAI GPT",
-        "Whisper",
-        "Eleven Labs",
-        "Tailwind CSS"
-      ],
-      "stars": 320,
-      "highlights": [
-        {
-          "text": "Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs",
-          "categories": [
-            "ai",
-            "llm"
-          ]
-        },
-        {
-          "text": "Implemented real-time data processing and lip synchronization",
-          "categories": [
-            "ai",
-            "real-time"
-          ]
-        },
-        {
-          "text": "Created interactive 3D experiences using Three.js and React Three Fiber",
-          "categories": [
-            "frontend",
-            "3d"
-          ]
-        },
-        {
-          "text": "Implemented responsive design patterns with Tailwind CSS and built comprehensive test coverage (Vitest, TDD)",
-          "categories": [
-            "frontend",
-            "testing"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "plixiq",
-      "name": "Plixiq -- AI-Powered WhatsApp Agent Platform",
-      "url": "https://plixiq.com/",
-      "categories": [
-        "ai",
-        "llm",
-        "saas",
-        "fullstack",
-        "backend",
-        "frontend"
-      ],
-      "technologies": [
-        "Python",
-        "FastAPI",
-        "Next.js",
-        "React",
-        "TypeScript",
-        "PostgreSQL",
-        "Redis",
-        "LiteLLM",
-        "WhatsApp Cloud API",
-        "Docker",
-        "Railway"
-      ],
-      "highlights": [
-        {
-          "text": "Built a multi-tenant SaaS platform enabling businesses to deploy AI-powered WhatsApp agents with automatic human escalation",
-          "categories": [
-            "ai",
-            "llm",
-            "saas",
-            "backend"
-          ]
-        },
-        {
-          "text": "Designed a modular monolith with DDD bounded contexts (Identity, AgentConfig, Conversation, Escalation, Messaging) and event-driven architecture",
-          "categories": [
-            "architecture",
-            "backend",
-            "design"
-          ]
-        },
-        {
-          "text": "Implemented real-time conversation monitoring via SSE, role-based access control, and multi-provider LLM integration with LiteLLM",
-          "categories": [
-            "fullstack",
-            "backend",
-            "ai"
-          ]
-        },
-        {
-          "text": "3 months in production with background job processing (ARQ), Redis caching, and PostgreSQL with async migrations",
-          "categories": [
-            "backend",
-            "devops",
-            "database"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "vitastock",
-      "name": "VitaStock -- Medical Supply Chain Management System",
-      "url": "https://github.com/Pi-Agents/vitastock",
-      "categories": [
-        "fullstack",
-        "saas",
-        "backend",
-        "frontend",
-        "healthcare"
-      ],
-      "technologies": [
-        "Python",
-        "FastAPI",
-        "Next.js",
-        "React",
-        "TypeScript",
-        "PostgreSQL",
-        "Effect.js",
-        "Docker",
-        "Railway"
-      ],
-      "highlights": [
-        {
-          "text": "Built a full-stack medical supply chain platform for clinics managing inventory, procurement, surgical planning, and supplier relationships",
-          "categories": [
-            "fullstack",
-            "saas",
-            "healthcare"
-          ]
-        },
-        {
-          "text": "Designed clean architecture backend with DDD, role-based access control (Admin, Pharmacist, Doctor, Operating Room, Management), and async PostgreSQL",
-          "categories": [
-            "architecture",
-            "backend",
-            "design"
-          ]
-        },
-        {
-          "text": "Implemented procurement workflow (quotation requests, purchase orders, receptions) with lot tracking and controlled storage",
-          "categories": [
-            "backend",
-            "fullstack"
-          ]
-        },
-        {
-          "text": "5 months in production deployed on Railway with CI/CD, multilingual support (ES/EN), and PDF report generation",
-          "categories": [
-            "devops",
-            "fullstack"
-          ]
-        }
-      ]
     }
   ],
+  "open_source": {
+    "last_verified": "2026-09-01",
+    "verify_command": "curl -s https://api.github.com/users/asanchezyali && curl -s https://api.github.com/repos/asanchezyali/talking-avatar-with-ai",
+    "sources": {
+      "github_api": "https://api.github.com/users/asanchezyali",
+      "github_profile": "https://github.com/asanchezyali",
+      "gitranks": "https://gitranks.com/profile/asanchezyali"
+    },
+    "usage_note": "Use only the strings in cv_highlights. Figures in excluded_from_cv are technically true but misleading or low-signal; never place them on a CV or in an application. Re-verify with verify_command before reusing any number: star counts drift.",
+    "profile": {
+      "handle": "asanchezyali",
+      "member_since": 2017,
+      "public_repos": 36,
+      "followers": 43,
+      "total_stars_own_projects": 486
+    },
+    "rankings": {
+      "provider": "GitRanks",
+      "own_projects_percentile": "Top 4.9% of ranked GitHub profiles",
+      "oss_contributions_percentile": "Top 2.4% of ranked GitHub profiles",
+      "tier": "Master 2",
+      "persona": "Creator",
+      "global_rank": 78775
+    },
+    "top_repositories": [
+      {
+        "name": "talking-avatar-with-ai",
+        "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
+        "role": "author",
+        "stars": 464,
+        "forks": 110,
+        "language": "JavaScript",
+        "description": "Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js"
+      },
+      {
+        "name": "ai-avatar",
+        "url": "https://github.com/asanchezyali/ai-avatar",
+        "role": "author",
+        "stars": 27,
+        "forks": 10,
+        "language": "TypeScript",
+        "description": "Zippy talking avatar built with Next.js, Azure Cognitive Services and the OpenAI API"
+      },
+      {
+        "name": "optrees",
+        "url": "https://github.com/asanchezyali/optrees",
+        "role": "author",
+        "stars": 2,
+        "forks": 0,
+        "language": "Python",
+        "description": "Optimal tree search algorithms: minimum cost trees, arborescences, shortest path and minimal cut trees"
+      }
+    ],
+    "contributions": [
+      {
+        "repository": "Monadical-SAS/Morpheus",
+        "url": "https://github.com/Monadical-SAS/Morpheus",
+        "pull_requests": 19,
+        "repository_stars": 29,
+        "description": "Open-source AI image generation platform: FastAPI backend, React frontend, Stable Diffusion integration"
+      },
+      {
+        "repository": "timlrx/tailwind-nextjs-starter-blog",
+        "url": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+        "pull_requests": 1,
+        "repository_stars": 10545,
+        "description": "Single small PR to a widely used Next.js blog template"
+      }
+    ],
+    "cv_highlights": [
+      "Author of an open-source conversational AI avatar with 464 stars and 110 forks (OpenAI GPT, Whisper, ElevenLabs, Three.js)",
+      "486 GitHub stars across own open-source projects -- top 4.9% of ranked GitHub profiles (GitRanks)",
+      "Open-source contributor: 19 pull requests to Morpheus, an AI image generation platform (FastAPI, React, Stable Diffusion)"
+    ],
+    "excluded_from_cv": [
+      {
+        "claim": "Contributed to repositories with 10.6K combined stars",
+        "reason": "Dominated by a single small PR to a popular blog template; overstates the contribution"
+      },
+      {
+        "claim": "Global rank #78,775 / tier Master 2 / persona Creator",
+        "reason": "Vanity metrics with no hiring signal; the percentile lines in cv_highlights carry the same idea better"
+      },
+      {
+        "claim": "Morpheus star count",
+        "reason": "29 stars adds nothing; cite the 19 pull requests and the technical scope instead"
+      }
+    ]
+  },
   "blog_posts": [
     {
       "id": "zero-shot",
@@ -1971,14 +2287,14 @@
     }
   ],
   "summary_templates": {
-    "fullstack": "Full Stack Engineer with 7+ years of experience designing, architecting, and building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in system design, technical decision-making, integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
-    "ai": "Machine Learning Engineer and Data Scientist with 7+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
-    "frontend": "Frontend Engineer with 7+ years of experience designing and building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record in UI/UX design decisions, delivering production-ready interfaces, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
-    "backend": "Backend Engineer with 7+ years of experience designing, architecting, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record in system design, technical decision-making, building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
-    "node": "Full Stack Software Engineer with 7+ years of experience designing, architecting, and building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability in technical decision-making, delivering production-ready APIs, integrating LLMs, and leading technical teams in multidisciplinary environments.",
-    "blockchain": "Full Stack Engineer with 7+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record designing decentralized architectures, building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in technical decision-making, cloud infrastructure, and data analytics.",
-    "enterprise": "Full Stack Engineer with 7+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
-    "senior_node": "Senior Fullstack Engineer with 7+ years of experience designing, architecting, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in architectural decision-making, code reviews, refactoring, and mentoring junior engineers. Advanced English communication skills and experience working with distributed teams.",
-    "ai_specialist": "AI Specialist with 7+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
+    "fullstack": "Full Stack Engineer with 8+ years of experience designing, architecting, and building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in system design, technical decision-making, integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
+    "ai": "Machine Learning Engineer and Data Scientist with 8+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
+    "frontend": "Frontend Engineer with 8+ years of experience designing and building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record in UI/UX design decisions, delivering production-ready interfaces, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
+    "backend": "Backend Engineer with 8+ years of experience designing, architecting, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record in system design, technical decision-making, building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
+    "node": "Full Stack Software Engineer with 8+ years of experience designing, architecting, and building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability in technical decision-making, delivering production-ready APIs, integrating LLMs, and leading technical teams in multidisciplinary environments.",
+    "blockchain": "Full Stack Engineer with 8+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record designing decentralized architectures, building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in technical decision-making, cloud infrastructure, and data analytics.",
+    "enterprise": "Full Stack Engineer with 8+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
+    "senior_node": "Senior Fullstack Engineer with 8+ years of experience designing, architecting, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in architectural decision-making, code reviews, refactoring, and mentoring junior engineers. Advanced English communication skills and experience working with distributed teams.",
+    "ai_specialist": "AI Specialist with 8+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
   }
 }
