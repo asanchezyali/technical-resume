@@ -1,6 +1,6 @@
 # Alejandro Sánchez Yalí
 
-**Full Stack Engineer & AI Specialist**
+**AI Full Stack Engineer · Mathematician**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-asanchezyali-blue?logo=linkedin)](https://www.linkedin.com/in/asanchezyali)
 [![GitHub](https://img.shields.io/badge/GitHub-asanchezyali-black?logo=github)](https://github.com/asanchezyali)
@@ -8,221 +8,124 @@
 [![Email](https://img.shields.io/badge/Email-asanchezyali%40gmail.com-red?logo=gmail)](mailto:asanchezyali@gmail.com)
 [![Schedule](https://img.shields.io/badge/Schedule-Book%20a%20Call-orange)](https://cal.com/asanchezyali/full-time-opportunities)
 
+I spent eleven years teaching mathematics and machine learning at Universidad de Antioquia, then eight
+building production software. For the last two years I have been designing and shipping LLM-powered
+products end to end — architecture, backend, frontend and deploy — mostly on my own.
+
+Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
+
 ---
 
-## About Me
+## Products
 
-Machine Learning Engineer and Data Scientist with 7+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.
+**[Plixiq](https://plixiq.com) — AI customer support on WhatsApp**
+Multi-tenant SaaS where AI agents resolve routine inquiries in about two seconds and escalate the rest
+to human operators with the full conversation intact. Sole architect and engineer: a modular monolith
+with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, and a multi-provider
+LLM layer through LiteLLM so switching providers is a configuration change. ~40,000 lines to a
+near-complete MVP in four months part-time, running at $60–80/month.
+`Python` `FastAPI` `LiteLLM` `RAG` `PostgreSQL` `Redis` `ARQ` `Next.js` `SSE`
+
+**[Aluna](https://www.aluna.works) — AI recruitment platform for staffing agencies**
+CVs are scored automatically, an agent interviews candidates over WhatsApp or web chat, and the
+recruiter gets a shortlist and a client-ready report. Lead engineer; built in three months: 336 source
+files across 4 packages, 26 tables, 11 external providers. Two services with one responsibility each —
+a Next.js 15 application that owns all domain state, and a stateless FastAPI service that owns model
+calls and the WhatsApp channel.
+`Next.js 15` `FastAPI` `LiteLLM` `Inngest` `Claude` `Gemini` `PostgreSQL` `WhatsApp Cloud API`
+
+**[VitaStock](https://vitastock.piagents.dev) — surgical supply chain for private clinics**
+Twelve modules and five roles replacing spreadsheet-based inventory and procurement in Colombian
+surgical clinics. Surgery scheduling with supply baskets and real-time consumption tracking, lot-level
+traceability with expiry alerts, and true per-patient cost through a cardex. Five months in production.
+`Python` `FastAPI` `Next.js` `TypeScript` `PostgreSQL` `Docker` `Railway`
+
+---
+
+## Experience
+
+**AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Present*
+- Lead member of the AI Committee, standardising how the organisation builds with AI
+- Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
+- Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
+
+**Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
+- Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
+- Led technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
+- Designed the database architecture for ROCKET CODE's workflow automation platform and served as code reviewer for their team
+
+**Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
+- Three years on a distributed team across Canada, the US and Latin America
+- Built full stack applications in Python (Django, FastAPI) and TypeScript (React, Next.js), with REST and GraphQL APIs
+- Led frontend architecture and testing strategy (Vitest, Jest, TDD); reviewed code and mentored engineers
+
+**Full Stack Engineer** · BCFort · Medellín, Colombia · *Aug 2018 – Oct 2020*
+- Designed system architecture for blockchain and analytics platforms: smart contract patterns, data models, service boundaries
+- Built decentralised applications and NFT marketplaces with React, Web3.js, Ethereum and Hyperledger
+
+**Professor of Mathematics & Machine Learning** · Universidad de Antioquia · *Jan 2010 – Oct 2021*
+- Taught Machine Learning, Data Science and Mathematics with Python, NumPy, Pandas, TensorFlow and PyTorch
+- Built the AI/ML elective curriculum for the Mathematics Institute and mentored student research
 
 ---
 
 ## Technical Skills
 
-### Languages
-| Technology | Experience |
-|------------|------------|
-| Python | 8+ years |
-| JavaScript | 6+ years |
-| TypeScript | 6+ years |
-| SQL | 6+ years |
-| Rust | 2 years |
-| C | 3 years |
-| HTML5 | 7+ years |
-| CSS3 | 7+ years |
-
-### Frontend
-- **Frameworks:** React.js (7+ years), Next.js (6+ years), Svelte
-- **Styling:** Tailwind CSS, SASS, Shadcn UI, Ant Design
-- **State Management:** Redux, Zustand
-- **3D/Graphics:** Three.js, React Three Fiber
-- **Tools:** Vite, Webpack, Zod
-
-### Backend
-- **Python:** Django, Django REST Framework, FastAPI, Flask
-- **Node.js:** Node.js (5+ years), Express, NestJS
-- **APIs:** RESTful APIs, GraphQL, Microservices
-- **Payments:** Stripe
-
-### AI/ML
-- **Deep Learning:** TensorFlow, PyTorch, JAX, Flax
-- **Data Science:** Scikit-learn, Pandas, NumPy
-- **LLMs:** LangChain, LangGraph, OpenAI API, LiteLLM, RAG, MCP
-- **Speech:** Whisper, ElevenLabs API, Azure Cognitive Services
-- **Automation:** n8n, WhatsApp Cloud API
-
-### Databases
-PostgreSQL, MongoDB, MySQL, DynamoDB, Firebase Realtime Database
-
-### Cloud & DevOps
-- **Cloud:** AWS, GCP, IBM Cloud
-- **Containers:** Docker
-- **CI/CD:** GitHub Actions, CI/CD pipelines
-
-### Blockchain
-Web3.js, Ethereum, Solidity, Hyperledger
-
-### Testing
-Vitest, Jest, React Testing Library, TDD, Unit Testing, Integration Testing
-
-### Software Engineering
-Clean Architecture, SOLID principles, DRY, Git, Performance Optimization, Scalability, Screaming Architecture
-
-### Mathematics
-Category Theory, Linear Algebra, Probability Theory, Statistical Inference
+| | |
+|---|---|
+| **Languages** | Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL |
+| **AI & LLMs** | LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, agentic development |
+| **ML & Mathematics** | PyTorch, TensorFlow, Scikit-learn, JAX, Flax, NumPy, Pandas, linear algebra, probability, statistical inference |
+| **Backend** | FastAPI, Django, Django REST Framework, Flask, NestJS, Node.js, Express, REST, GraphQL, microservices |
+| **Frontend** | React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, Three.js |
+| **Data & Infrastructure** | PostgreSQL, Redis, MongoDB, MySQL, Docker, AWS, GCP, GitHub Actions, CI/CD |
+| **Engineering** | Clean architecture, DDD, SOLID, modular monolith, TDD, Vitest, Jest, code review |
 
 ---
 
-## Professional Experience
+## Open Source
 
-### AI Specialist @ Lapzo
-**Aug 2025 -- Present** | Remote, Mexico
-
-*Technologies: Python, LangChain, LangGraph, n8n, Next.js, NestJS, Firebase Realtime, ElevenLabs API, TypeScript*
-
-- Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization
-- Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation
-- Designed and built a Digital Professor system that engages users in real-time conversations and explains course content through interactive slides
-- Made key architectural decisions for the educational platform, designing the integration between LLM services, ElevenLabs voice synthesis, and real-time communication layers
-- Implemented real-time communication features using Next.js, NestJS, and Firebase Realtime Database
-- Integrated ElevenLabs API for natural text-to-speech synthesis in the Digital Professor application
+- **[talking-avatar-with-ai](https://github.com/asanchezyali/talking-avatar-with-ai)** — 464 stars, 110 forks.
+  Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
+- **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
+  Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+- 486 GitHub stars across own open-source projects — top 4.9% of ranked GitHub profiles
 
 ---
 
-### Independent IT Consultant @ Freelance
-**Aug 2024 -- Present** | Remote
+## Talks & Writing
 
-*Technologies: Python, FastAPI, Django, React.js, Next.js, Node.js, NestJS, TypeScript, Docker, AWS, LangChain, LiteLLM, LLMs, WhatsApp Cloud API, RAG, MCP, NX*
+- **[Scaling Learning Models: Parallelism Strategies in JAX with Flax](https://www.youtube.com/watch?v=m4hP1soE414)** — PyCon Colombia, 2024
+- [Building Plixiq: a multi-tenant WhatsApp AI support platform](https://asanchezyali.com) — architecture case study
+- [Pre-training: the idea behind every LLM](https://asanchezyali.com)
+- [Neural Networks as DAGs of Parameterized Computational Programs](https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms)
+- [Revolutionizing Animation: Building Digital Humans with LLMs](https://monadical.com/posts/build-a-digital-human-with-large-language-models.html)
 
-- Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities
-- Designed database architecture and system design for ROCKET CODE's orbit-control platform (workflow automation similar to n8n) using Screaming Architecture in a multi-repo setup with NX
-- Served as code reviewer for the development team at ROCKET CODE, ensuring code quality and best practices
-- Led technical design sessions with clients, translating business requirements into system architectures and making key technology decisions for each project
-- Delivered end-to-end web applications for business clients, including frontend (React.js, Next.js, TypeScript) and backend (Python, FastAPI, Django, Node.js, NestJS)
-- Developed and deployed solutions for sports club management, medical scheduling, and AI-powered learning platforms
-- Developed AI agents and technical English learning platforms leveraging Python and LLMs
-- Integrated LLMs and AI APIs into robust backend services and user-facing features
-- Deployed solutions on AWS (EC2, S3, Docker), configured infrastructure, and managed CI/CD pipelines
-- Implemented payment integrations (Stripe), containerization (Docker), and CI/CD pipelines
-- Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security
-- Mentored junior engineers, supporting their technical growth and ensuring code quality
-
----
-
-### Full Stack Engineer @ Monadical
-**Apr 2021 -- Aug 2024** | Remote, Canada/US
-
-*Technologies: Python, Django, FastAPI, React.js, Next.js, TypeScript, Node.js, Express, LangChain, LLMs, Whisper, PostgreSQL, MongoDB, Docker, AWS, GCP*
-
-- Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability, and maintainability
-- Built and maintained full stack applications using Python (Django, FastAPI), JavaScript/TypeScript (React.js, Next.js)
-- Designed and implemented RESTful and GraphQL APIs, scalable backend systems, and modern frontend interfaces
-- Integrated AI/ML services and LLMs into production web apps
-- Built and integrated AI services for information retrieval using large language models (OpenAI, LangChain, Whisper)
-- Led frontend architecture, reusable component libraries, and advanced testing strategies (Vitest, Jest, TDD)
-- Built and scaled microservices architectures for AI/ML and data-intensive applications
-- Designed ETL pipelines and custom Django ORM extensions in Python
-- Managed cloud deployments on AWS and GCP, using Docker and CI/CD
-- Led code reviews, mentored team members, and promoted best practices in testing and code quality
-
----
-
-### Full Stack Engineer @ BCFort
-**Aug 2018 -- Oct 2020** | Medellín, Colombia
-
-*Technologies: Python, Django, Node.js, React, Web3.js, Ethereum, Solidity, PostgreSQL, MongoDB, AWS, GCP, IBM Cloud*
-
-- Designed system architecture for blockchain platforms, making key decisions on smart contract patterns, data models, and service boundaries
-- Developed blockchain and analytics platforms with Python (Django), Node.js, React, and Web3.js
-- Built decentralized app frontends, implemented smart contracts, and managed cloud infrastructure (AWS, GCP, IBM Cloud)
-- Led development of blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces
-- Led data analytics and visualization solutions for blockchain transactions
-- Developed and integrated RESTful APIs and microservices for analytics and blockchain platforms
-- Managed cloud infrastructure (AWS, GCP, IBM Cloud) and database integrations
-
----
-
-### Professor @ Universidad de Antioquia
-**Jan 2010 -- Oct 2021** | Medellín, Colombia
-
-*Technologies: Python, NumPy, Pandas, TensorFlow, PyTorch, Scikit-learn*
-
-- Taught advanced courses in Machine Learning, Data Science, and Mathematics using Python, NumPy, Pandas, TensorFlow, PyTorch, and Scikit-learn
-- Mentored research and student projects in ML, data analysis, and software development
-- Developed curriculum for programming, mathematics, and ML
-- Taught advanced mathematics courses and developed elective AI/ML curriculum for Mathematics Institute (1.5 years)
-
----
-
-## Featured Projects
-
-### [Morpheus -- AI Image Generation Platform](https://github.com/Monadical-SAS/Morpheus)
-*Python, FastAPI, React, Stable Diffusion, Docker, AWS*
-
-Full stack open-source platform for AI image generation using Python, React, and stable diffusion models
-Implemented RESTful APIs, ML model integrations, and cloud infrastructure with Docker and AWS
-
----
-
-### [Zippy -- Interactive AI Avatar](https://github.com/asanchezyali/ai-avatar)
-*Next.js, TypeScript, Python, OpenAI API, Azure Cognitive Services, SASS*
-
-Built a Next.js-based talking avatar integrating OpenAI API and Azure Cognitive Services
-Developed TTS synthesis and seamless backend-frontend integration in Python and TypeScript
-
----
-
-### [Digital Human -- Interactive AI Avatar](https://github.com/asanchezyali/talking-avatar-with-ai)
-*React, Three.js, React Three Fiber, OpenAI GPT, Whisper, Eleven Labs, Tailwind CSS*
-
-Engineered a conversational AI system with OpenAI GPT, Whisper, and Eleven Labs
-Implemented real-time data processing and lip synchronization
-
----
-
-### [Plixiq -- AI-Powered WhatsApp Agent Platform](https://plixiq.com/)
-*Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, LiteLLM, WhatsApp Cloud API, Docker, Railway*
-
-Built a multi-tenant SaaS platform enabling businesses to deploy AI-powered WhatsApp agents with automatic human escalation
-Designed a modular monolith with DDD bounded contexts (Identity, AgentConfig, Conversation, Escalation, Messaging) and event-driven architecture
-
----
-
-### [VitaStock -- Medical Supply Chain Management System](https://github.com/Pi-Agents/vitastock)
-*Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Effect.js, Docker, Railway*
-
-Built a full-stack medical supply chain platform for clinics managing inventory, procurement, surgical planning, and supplier relationships
-Designed clean architecture backend with DDD, role-based access control (Admin, Pharmacist, Doctor, Operating Room, Management), and async PostgreSQL
-
----
-
-## Talks & Publications
-
-### Conference Talks
-- **[Scaling Learning Models: Parallelism Strategies in JAX with Flax -- PyCon](https://www.youtube.com/watch?v=m4hP1soE414)** -- PyCon Colombia 2024
-
-### Blog Posts
-- [Zero-Shot Text Classification](https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot) -- Sep 2024
-- [Neural Networks as DAGs of Parameterized Computational Programs](https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms) -- Aug 2024
-- [Revolutionizing Animation: Building Digital Humans with LLMs](https://monadical.com/posts/build-a-digital-human-with-large-language-models.html) -- Jul 2024
+I also host a weekly study group in Spanish on mathematics, software engineering and AI.
 
 ---
 
 ## Education
 
-**Master in Mathematics**
-Universidad de Antioquia | Medellín, Colombia | Aug 2010 - Sep 2013
+**M.Sc. in Mathematics** · Universidad de Antioquia · 2010 – 2013
+**B.Sc. in Teaching Mathematics and Physics** · Universidad de Antioquia · 2004 – 2009
 
-**B.Sc. in Teaching Mathematics and Physics**
-Universidad de Antioquia | Medellín, Colombia | Jan 2004 - Oct 2009
+---
+
+## About this repository
+
+`data/resume-master.json` is the single source of truth. `variants/` holds four curated CVs —
+AI Engineer, AI Full Stack, Product Engineer and Senior Full Stack — each a self-contained LaTeX
+file compiled with `uv run python agent.py compile variants/<name>.tex`. The AI Full Stack variant
+is published as a PDF on the [`technical-resume`](../../tree/technical-resume) branch.
 
 ---
 
 ## Let's Connect
 
-I'm always open to discussing new opportunities, collaborations, or interesting projects.
+I'm open to full-time remote roles in AI and full stack engineering.
 
-- [Schedule a Call](https://cal.com/asanchezyali/full-time-opportunities)
-- [LinkedIn](https://www.linkedin.com/in/asanchezyali)
-- [GitHub](https://github.com/asanchezyali)
-- [Website](https://asanchezyali.com)
-- Email: asanchezyali@gmail.com
+[Schedule a call](https://cal.com/asanchezyali/full-time-opportunities) ·
+[LinkedIn](https://www.linkedin.com/in/asanchezyali) ·
+[Website](https://asanchezyali.com) ·
+asanchezyali@gmail.com
