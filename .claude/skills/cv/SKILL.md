@@ -39,6 +39,26 @@ people find without being sent it. It gets the same editorial standard as the fo
 beginner-level skills, no bullet dumps, no unreviewed regeneration. When the data changes in a way
 that matters, update it by hand like any other variant.
 
+## Where each CV lives
+
+- `variants/` — few, stable, maintained. Positioning, not postings. Never written to while
+  tailoring; treat them as read-only during a `/cv` run.
+- `generated/` — one file per application, named `YYYYMMDD_<company>_<role>.tex`. Written once,
+  compiled, and left alone. It is the record of what was actually sent, which matters when a
+  recruiter calls three weeks later.
+
+**When to add a fifth variant:** only when the same adaptation has been made three times. Two
+adaptations are a coincidence; three is a role type worth maintaining. Until then, adapt.
+
+**Why not more variants:** they do not update themselves. Every new product or metric in
+`resume-master.json` means reviewing each variant by hand. Four is a maintainable number; eight
+becomes a set of CVs that quietly go stale.
+
+**Syncing after a data change:** when `resume-master.json` changes materially — a new project, a
+corrected metric, a status change — review all five CVs (the four variants plus `README.md`) in
+one pass rather than fixing whichever one is next needed. Report which ones you changed and which
+you deliberately left alone.
+
 ## Workflow
 
 1. Read the job description. If given a URL, fetch it.
