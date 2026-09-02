@@ -1,0 +1,163 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.55in,top=0.45in,right=0.55in,bottom=0.45in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, filecolor=linkcolor, urlcolor=linkcolor}
+
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+\newcommand{\normalfaYoutube}{{\mdseries\faYoutube}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE Alejandro S\'anchez Yal\'i}\\[0.2em]
+\textbf{\Large AI Engineer}\\[0.4em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{0.5em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+
+\section{Summary}
+AI Engineer and mathematician with 8+ years building production software and 3+ years shipping LLM-powered systems end to end. M.Sc. in Mathematics and 11 years teaching machine learning before moving into industry. Designs and operates multi-tenant AI products: RAG pipelines, multi-provider LLM gateways with fallback, agent orchestration, and real-time conversational systems -- owning the architecture as well as the code.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, agentic development with Claude Code
+  \item \textbf{ML \& Mathematics:} PyTorch, TensorFlow, Scikit-learn, JAX, Flax, NumPy, Pandas, linear algebra, probability, statistical inference
+  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
+  \item \textbf{Backend:} FastAPI, Django, Flask, NestJS, Node.js, RESTful APIs, microservices, event-driven design
+  \item \textbf{Data \& Infrastructure:} PostgreSQL, Redis, MongoDB, Docker, AWS, GCP, GitHub Actions, CI/CD
+  \item \textbf{Architecture:} Clean architecture, DDD, SOLID, modular monolith, screaming architecture
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
+\resumeSubheading
+{AI Specialist}{Aug 2025 -- Present}
+{Lapzo}{Remote, Mexico}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Lead member of the AI Committee, standardising AI development practices and project guidelines across the organisation
+    \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides
+    \item Owned the architecture connecting LLM services, ElevenLabs voice synthesis and the real-time communication layer
+    \item Built an AI-powered educational content generator with LangChain, LangGraph and n8n workflow automation
+\end{itemize}
+\resumeSubheading
+{Independent Software \& AI Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Lead engineer of Aluna (AI recruitment platform, see below) and builder of a multi-tenant AI customer service agent for CREARIA (Colombia) on WhatsApp Cloud API, LiteLLM, RAG and MCP with automatic human escalation
+    \item Led technical design sessions with clients, translating business requirements into system architectures and naming the trade-off behind each technology decision
+    \item Use Claude Code daily on live production projects, steering and critically reviewing generated output to ship end-to-end features without eroding architectural boundaries
+    \item Designed database architecture for ROCKET CODE's workflow automation platform and served as code reviewer for their team
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote, Canada/US}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Built and integrated AI services for information retrieval with large language models (OpenAI, LangChain, Whisper) in production web applications
+    \item Participated in system design and architectural decisions, evaluating trade-offs across performance, scalability and maintainability
+    \item Built and scaled microservices for AI/ML and data-intensive applications; designed ETL pipelines and custom Django ORM extensions
+    \item Led code reviews and mentored engineers on a distributed team across Canada, the US and Latin America
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed system architecture for blockchain platforms: smart contract patterns, data models and service boundaries
+    \item Developed blockchain and analytics platforms with Python (Django), Node.js, React and Web3.js on AWS, GCP and IBM Cloud
+\end{itemize}
+\resumeSubheading
+{Professor of Mathematics \& Machine Learning}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Taught Machine Learning, Data Science and Mathematics with Python, NumPy, Pandas, TensorFlow, PyTorch and Scikit-learn
+    \item Developed the AI/ML elective curriculum for the Mathematics Institute and mentored student research in ML and data analysis
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, RAG, PostgreSQL, Redis, Next.js}
+    \begin{itemize}[itemsep=0pt]
+        \item Sole architect and engineer of a multi-tenant SaaS where AI agents resolve routine customer inquiries in about 2 seconds and escalate the rest to human operators with full conversation context
+        \item Modular monolith with 10 DDD bounded contexts enforced by a lint rule in CI; multi-provider LLM layer (Groq default, OpenAI fallback) so switching providers is a config change
+    \end{itemize}
+    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
+    \begin{itemize}[itemsep=0pt]
+        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
+        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
+    \end{itemize}
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}
+    \begin{itemize}[itemsep=0pt]
+        \item Open-source conversational avatar with 464 stars and 110 forks: real-time speech-to-text, generation, voice synthesis and lip synchronisation
+        \item The engineering problem was latency budgeting across four services, since a human notices any pause in a conversation
+    \end{itemize}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{talking-avatar-with-ai \normalfaExternalLink}} -- 464 stars, 110 forks. Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Monadical-SAS/Morpheus \normalfaExternalLink}} -- 19 pull requests. Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+    \item 486 GitHub stars across own open-source projects -- top 4.9\% of ranked GitHub profiles (GitRanks)
+\end{itemize}
+
+\section{Conference Talks}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Scaling Learning Models: Parallelism Strategies in JAX with Flax \normalfaYoutube}} -- PyCon Colombia, 2024
+\end{itemize}
+
+\section{Technical Writing}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \href{https://www.asanchezyali.com}{Pre-training: the Idea Behind Every LLM} (2026)
+    \item \href{https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms}{Neural Networks as DAGs of Parameterized Computational Programs} (2024)
+    \item \href{https://monadical.com/posts/build-a-digital-human-with-large-language-models.html}{Revolutionizing Animation: Building Digital Humans with LLMs} (2024)
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{M.Sc. in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\end{itemize}
+
+\end{document}

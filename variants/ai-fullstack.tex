@@ -1,0 +1,156 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.55in,top=0.45in,right=0.55in,bottom=0.45in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, filecolor=linkcolor, urlcolor=linkcolor}
+
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+\newcommand{\normalfaYoutube}{{\mdseries\faYoutube}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE Alejandro S\'anchez Yal\'i}\\[0.2em]
+\textbf{\Large AI Full Stack Engineer}\\[0.4em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{0.5em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+
+\section{Summary}
+AI Full Stack Engineer with 8+ years designing and shipping web applications end to end and 3+ years integrating LLMs into production products. Sole architect and engineer of three live systems -- an AI WhatsApp support platform, an AI-assisted recruitment platform and a surgical supply chain system -- spanning Python/FastAPI backends, Next.js/TypeScript frontends, PostgreSQL and cloud deployment. M.Sc. in Mathematics and 11 years teaching, which shows up in design docs, code review and mentoring.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
+  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, Effect, Three.js
+  \item \textbf{Backend:} FastAPI, Django, Django REST Framework, Flask, NestJS, Node.js, Express, RESTful APIs, GraphQL, microservices
+  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, PyTorch, TensorFlow
+  \item \textbf{Databases \& Infra:} PostgreSQL, Redis, MongoDB, MySQL, Firebase, Docker, AWS, GCP, GitHub Actions, CI/CD
+  \item \textbf{Engineering:} Clean architecture, DDD, SOLID, TDD, Vitest, Jest, React Testing Library, code review
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
+\resumeSubheading
+{AI Specialist}{Aug 2025 -- Present}
+{Lapzo}{Remote, Mexico}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides
+    \item Owned the architecture connecting LLM services, ElevenLabs voice synthesis and the real-time layer built with Next.js, NestJS and Firebase Realtime Database
+    \item Lead member of the AI Committee, standardising AI development practices across the organisation
+\end{itemize}
+\resumeSubheading
+{Independent Software \& AI Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Delivered end-to-end web applications for business clients across both halves of the stack: React.js/Next.js/TypeScript on the front, Python/FastAPI/Django and Node.js/NestJS behind it
+    \item Lead engineer of Aluna (AI recruitment platform, see below) and builder of a multi-tenant AI customer service agent for CREARIA (Colombia) on WhatsApp Cloud API, LiteLLM, RAG and MCP with human escalation
+    \item Led technical design sessions with clients and made the technology decisions for each project; code reviewer for ROCKET CODE's development team
+    \item Deployed on AWS (EC2, S3, Docker) with CI/CD pipelines and Stripe payment integrations
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote, Canada/US}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Built and maintained full stack applications in Python (Django, FastAPI) and TypeScript (React.js, Next.js), including RESTful and GraphQL APIs
+    \item Led frontend architecture, reusable component libraries and testing strategy (Vitest, Jest, TDD)
+    \item Integrated AI/ML services and LLMs (OpenAI, LangChain, Whisper) into production web apps
+    \item Led code reviews and mentored engineers on a distributed team across Canada, the US and Latin America
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed system architecture for blockchain platforms and built decentralised app frontends with React and Web3.js
+    \item Developed analytics platforms with Python (Django) and Node.js, managing cloud infrastructure on AWS, GCP and IBM Cloud
+\end{itemize}
+\resumeSubheading
+{Professor of Mathematics \& Machine Learning}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Taught Machine Learning, Data Science and Mathematics with Python, NumPy, Pandas, TensorFlow and PyTorch
+    \item Developed the AI/ML elective curriculum for the Mathematics Institute and mentored student research projects
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, RAG, PostgreSQL, Redis, Next.js}
+    \begin{itemize}[itemsep=0pt]
+        \item Sole architect and engineer of a multi-tenant SaaS where AI agents resolve routine customer inquiries in about 2 seconds and escalate the rest to human operators with full conversation context
+        \item Modular monolith with 10 DDD bounded contexts enforced by a lint rule in CI; multi-provider LLM layer (Groq default, OpenAI fallback) so switching providers is a config change
+    \end{itemize}
+    \item \textbf{\href{https://vitastock.piagents.dev}{VitaStock -- Surgical Supply Chain for Clinics \normalfaExternalLink}} \textit{-- Python, FastAPI, Next.js, TypeScript, PostgreSQL, Docker, Railway}
+    \begin{itemize}[itemsep=0pt]
+        \item Sole architect and engineer of a platform for private surgical clinics in Colombia -- 12 modules, 5 user roles, replacing spreadsheet-based inventory and procurement
+        \item Surgery scheduling with supply baskets and real-time consumption tracking, lot-level traceability with expiry alerts, and true per-patient cost through a cardex
+    \end{itemize}
+    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
+    \begin{itemize}[itemsep=0pt]
+        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
+        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
+    \end{itemize}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{talking-avatar-with-ai \normalfaExternalLink}} -- 464 stars, 110 forks. Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Monadical-SAS/Morpheus \normalfaExternalLink}} -- 19 pull requests. Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+    \item 486 GitHub stars across own open-source projects -- top 4.9\% of ranked GitHub profiles (GitRanks)
+\end{itemize}
+
+\section{Talks \& Writing}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Scaling Learning Models: Parallelism Strategies in JAX with Flax \normalfaYoutube}} -- PyCon Colombia, 2024
+    \item \href{https://www.asanchezyali.com}{Building Plixiq: a Multi-Tenant WhatsApp AI Support Platform} -- architecture case study (2026)
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{M.Sc. in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,154 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.55in,top=0.45in,right=0.55in,bottom=0.45in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, filecolor=linkcolor, urlcolor=linkcolor}
+
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+\newcommand{\normalfaYoutube}{{\mdseries\faYoutube}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE Alejandro S\'anchez Yal\'i}\\[0.2em]
+\textbf{\Large Product Engineer}\\[0.4em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{0.5em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+
+\section{Summary}
+Product Engineer who takes products from zero to production alone. In the last two years shipped three live products -- Plixiq (AI customer support on WhatsApp), Aluna (AI-assisted recruitment) and VitaStock (surgical supply chain for private clinics) -- owning discovery with users, architecture, backend, frontend and deploy. 8+ years of engineering, an M.Sc. in Mathematics and 11 years teaching, which is why the hardest parts of the job -- explaining a system and deciding what not to build -- come naturally.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textbf{Ship the whole thing:} Python, FastAPI, Django, TypeScript, Next.js, React, Node.js, NestJS, PostgreSQL, Redis, Docker, Railway, AWS
+  \item \textbf{AI in products:} LLMs, LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, WhatsApp Cloud API
+  \item \textbf{Decide well:} Clean architecture, DDD, SOLID, modular monolith, event-driven design, trade-off analysis, technical design sessions
+  \item \textbf{Keep it alive:} GitHub Actions, CI/CD, Docker, background jobs, real-time dashboards, TDD, Vitest, Jest, code review
+\end{itemize}
+
+\section{Products Shipped}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, PostgreSQL, Next.js, Railway}
+    \begin{itemize}[itemsep=0pt]
+        \item Took the product from zero to production alone: discovery, architecture, backend, frontend and deploy
+        \item About 40,000 lines to a near-complete MVP in 4 months part-time, running at \$60--80/month because cost scales with LLM usage rather than infrastructure
+    \end{itemize}
+    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
+    \begin{itemize}[itemsep=0pt]
+        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months: CVs are scored automatically, an agent interviews candidates over WhatsApp or web chat, and the recruiter gets a shortlist and a client-ready report
+        \item Deliberate model routing through LiteLLM (Gemini to read documents, Claude to converse), multi-tenant roles from a single policy source, and Ley 1581/2012 consent, deletion receipts and audit logs built into the data model
+    \end{itemize}
+    \item \textbf{\href{https://vitastock.piagents.dev}{VitaStock -- Surgical Supply Chain for Clinics \normalfaExternalLink}} \textit{-- Python, FastAPI, Next.js, TypeScript, PostgreSQL, Docker, Railway}
+    \begin{itemize}[itemsep=0pt]
+        \item Sole architect and engineer of a platform for private surgical clinics in Colombia -- 12 modules, 5 user roles, replacing spreadsheet-based inventory and procurement
+        \item Surgery scheduling with supply baskets and real-time consumption tracking, lot-level traceability with expiry alerts, and true per-patient cost through a cardex
+    \end{itemize}
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
+\resumeSubheading
+{Independent Software \& AI Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Shipped three products to production in two years, each owned end to end -- from the first conversation with the customer to the deploy that serves them
+    \item Led technical design sessions with clients, turning vague business problems into architectures and naming the trade-off behind every technology choice
+    \item Use Claude Code daily on live production projects, which raised throughput enough that review and taste became the constraint rather than typing
+    \item Code reviewer for ROCKET CODE's development team and architect of their workflow automation platform's database design
+\end{itemize}
+\resumeSubheading
+{AI Specialist}{Aug 2025 -- Present}
+{Lapzo}{Remote, Mexico}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Lead member of the AI Committee, setting how an entire organisation builds with AI rather than shipping features in isolation
+    \item Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
+    \item Made the key architectural calls: which LLM orchestration stack, how voice synthesis plugs into the conversation, where the service boundaries go
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote, Canada/US}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Three years on a distributed team across Canada, the US and Latin America, shipping full stack products in Python and TypeScript
+    \item Participated in system design and architectural decisions, weighing performance, scalability and maintainability
+    \item Led frontend architecture and testing strategy; reviewed code and mentored engineers
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed system architecture for blockchain and analytics platforms, from smart contract patterns to service boundaries
+    \item Built decentralised applications and NFT marketplaces with React, Web3.js, Ethereum and Hyperledger
+\end{itemize}
+\resumeSubheading
+{Professor of Mathematics \& Machine Learning}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Eleven years teaching Machine Learning, Data Science and Mathematics, and building the AI/ML elective curriculum for the Mathematics Institute
+    \item Mentored student research projects -- the same work that later became code review and design docs
+\end{itemize}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{talking-avatar-with-ai \normalfaExternalLink}} -- 464 stars, 110 forks. Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Monadical-SAS/Morpheus \normalfaExternalLink}} -- 19 pull requests. Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+    \item 486 GitHub stars across own open-source projects -- top 4.9\% of ranked GitHub profiles (GitRanks)
+\end{itemize}
+
+\section{Talks \& Writing}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Scaling Learning Models: Parallelism Strategies in JAX with Flax \normalfaYoutube}} -- PyCon Colombia, 2024
+    \item \href{https://www.asanchezyali.com}{Building Plixiq: a Multi-Tenant WhatsApp AI Support Platform} -- architecture case study (2026)
+    \item \href{https://monadical.com/posts/build-a-digital-human-with-large-language-models.html}{Revolutionizing Animation: Building Digital Humans with LLMs} (2024)
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{M.Sc. in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\end{itemize}
+
+\end{document}

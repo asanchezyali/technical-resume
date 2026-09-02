@@ -1,0 +1,156 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.55in,top=0.45in,right=0.55in,bottom=0.45in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\definecolor{linkcolor}{HTML}{2b6cb0}
+\definecolor{sectioncolor}{HTML}{1a365d}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, filecolor=linkcolor, urlcolor=linkcolor}
+
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{\uppercase}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item[]
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\normalfaCalendar}{{\mdseries\faCalendar}}
+\newcommand{\normalfaEnvelope}{{\mdseries\faEnvelope}}
+\newcommand{\normalfaLinkedin}{{\mdseries\faLinkedin}}
+\newcommand{\normalfaGithub}{{\mdseries\faGithub}}
+\newcommand{\normalfaGlobe}{{\mdseries\faGlobe}}
+\newcommand{\normalfaExternalLink}{{\mdseries\faExternalLink}}
+\newcommand{\normalfaYoutube}{{\mdseries\faYoutube}}
+
+\clubpenalty=1000
+\widowpenalty=1000
+
+\begin{document}
+
+\begin{center}
+\textbf{\LARGE Alejandro S\'anchez Yal\'i}\\[0.2em]
+\textbf{\Large Senior Full Stack Engineer}\\[0.4em]
+\small
+\normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
+
+\vspace{0.5em}
+\normalfaEnvelope\ \href{mailto:asanchezyali@gmail.com}{asanchezyali@gmail.com}  ~|~
+\normalfaLinkedin\ \href{https://www.linkedin.com/in/asanchezyali}{asanchezyali} ~|~
+\normalfaGithub\ \href{https://github.com/asanchezyali}{asanchezyali}  ~|~
+\normalfaGlobe\ \href{https://asanchezyali.com}{asanchezyali.com}
+\end{center}
+
+
+\section{Summary}
+Senior Full Stack Engineer with 8+ years building and maintaining scalable web applications in Python and TypeScript. Three years on a distributed team across Canada, the US and Latin America leading frontend architecture, reviewing code and mentoring engineers, followed by two years as an independent consultant designing systems for clients and shipping three products to production. M.Sc. in Mathematics. Strong bias toward clean architecture, testing, and decisions that survive their second year.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
+  \item \textbf{Backend:} Django, Django REST Framework, FastAPI, Flask, Node.js, Express, NestJS, RESTful APIs, GraphQL, microservices
+  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, SASS
+  \item \textbf{Databases:} PostgreSQL, MongoDB, MySQL, Redis, Firebase
+  \item \textbf{Cloud \& DevOps:} AWS, GCP, Docker, GitHub Actions, CI/CD pipelines
+  \item \textbf{Engineering:} Clean architecture, DDD, SOLID, DRY, TDD, Vitest, Jest, React Testing Library, code review, mentoring
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
+\resumeSubheading
+{Full Stack Engineer}{Apr 2021 -- Aug 2024}
+{Monadical}{Remote, Canada/US}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability and maintainability
+    \item Built and maintained full stack applications in Python (Django, FastAPI) and TypeScript (React.js, Next.js), with RESTful and GraphQL APIs
+    \item Led frontend architecture, reusable component libraries and advanced testing strategy (Vitest, Jest, TDD)
+    \item Designed ETL pipelines and custom Django ORM extensions; managed deployments on AWS and GCP with Docker and CI/CD
+    \item Led code reviews and mentored team members across a distributed team in three countries
+\end{itemize}
+\resumeSubheading
+{Independent Software \& AI Consultant}{Aug 2024 -- Present}
+{Freelance}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed and delivered three products end to end, owning architecture, backend, frontend and deploy for each
+    \item Designed the database architecture for ROCKET CODE's workflow automation platform in an NX multi-repo, and served as code reviewer for their team
+    \item Led technical design sessions with clients, translating business requirements into system architectures
+    \item Refactored legacy codebases and implemented practices for scalability and security; mentored junior engineers
+\end{itemize}
+\resumeSubheading
+{AI Specialist}{Aug 2025 -- Present}
+{Lapzo}{Remote, Mexico}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Lead member of the AI Committee, standardising development practices and project guidelines across the organisation
+    \item Made the key architectural decisions for an educational platform, designing the integration between services and the real-time communication layer
+    \item Implemented real-time features with Next.js, NestJS and Firebase Realtime Database
+\end{itemize}
+\resumeSubheading
+{Full Stack Engineer}{Aug 2018 -- Oct 2020}
+{BCFort}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed system architecture for blockchain and analytics platforms: data models, service boundaries and smart contract patterns
+    \item Built platforms with Python (Django), Node.js, React and Web3.js; managed infrastructure on AWS, GCP and IBM Cloud
+\end{itemize}
+\resumeSubheading
+{Professor of Mathematics \& Machine Learning}{Jan 2010 -- Oct 2021}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Taught Machine Learning, Data Science and Mathematics with Python and the scientific stack
+    \item Developed curriculum for programming, mathematics and ML, and mentored student research projects
+\end{itemize}
+\end{itemize}
+
+\section{Featured Projects}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\href{https://vitastock.piagents.dev}{VitaStock -- Surgical Supply Chain for Clinics \normalfaExternalLink}} \textit{-- Python, FastAPI, Next.js, TypeScript, PostgreSQL, Docker, Railway}
+    \begin{itemize}[itemsep=0pt]
+        \item Sole architect and engineer of a platform for private surgical clinics in Colombia -- 12 modules, 5 user roles, replacing spreadsheet-based inventory and procurement
+        \item Surgery scheduling with supply baskets and real-time consumption tracking, lot-level traceability with expiry alerts, and true per-patient cost through a cardex
+    \end{itemize}
+    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, PostgreSQL, Next.js, Railway}
+    \begin{itemize}[itemsep=0pt]
+        \item Took the product from zero to production alone: discovery, architecture, backend, frontend and deploy
+        \item About 40,000 lines to a near-complete MVP in 4 months part-time, running at \$60--80/month because cost scales with LLM usage rather than infrastructure
+    \end{itemize}
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}
+    \begin{itemize}[itemsep=0pt]
+        \item Open-source conversational avatar with 464 stars and 110 forks: real-time speech-to-text, generation, voice synthesis and lip synchronisation
+        \item The engineering problem was latency budgeting across four services, since a human notices any pause in a conversation
+    \end{itemize}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{talking-avatar-with-ai \normalfaExternalLink}} -- 464 stars, 110 forks. Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
+    \item \textbf{\href{https://github.com/Monadical-SAS/Morpheus}{Monadical-SAS/Morpheus \normalfaExternalLink}} -- 19 pull requests. Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+    \item 486 GitHub stars across own open-source projects -- top 4.9\% of ranked GitHub profiles (GitRanks)
+\end{itemize}
+
+\section{Talks \& Writing}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item \textbf{\href{https://www.youtube.com/watch?v=m4hP1soE414}{Scaling Learning Models: Parallelism Strategies in JAX with Flax \normalfaYoutube}} -- PyCon Colombia, 2024
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}]
+\resumeSubheading
+{M.Sc. in Mathematics}{Aug 2010 - Sep 2013}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\resumeSubheading
+{B.Sc. in Teaching Mathematics and Physics}{Jan 2004 - Oct 2009}
+{Universidad de Antioquia}{Medell\'in, Colombia}
+\end{itemize}
+
+\end{document}
