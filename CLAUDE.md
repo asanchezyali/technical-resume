@@ -14,8 +14,14 @@ job posting is done by the Claude skills in `.claude/skills/`, not by a code gen
 # Install dependencies
 uv sync
 
-# Compile a CV variant to PDF
-uv run python agent.py compile variants/ai-fullstack.tex
+# Build all four variants into generated/ under their recruiter-facing names
+uv run python agent.py build
+
+# Build one variant with a company suffix -> AlejandroSanchezYaliAIEngineerACME.pdf
+uv run python agent.py build -v ai-engineer -c ACME
+
+# Compile a single .tex in place (used for CVs tailored to a posting)
+uv run python agent.py compile generated/AlejandroSanchezYaliAIEngineerACME.tex
 
 # Lint
 uv run ruff check .
@@ -30,15 +36,21 @@ data/resume-master.json          single source of truth
         v
 variants/*.tex  +  README.md     five curated CVs
         |
-        v  agent.py compile (pdflatex twice, cleans aux files)
-variants/*.pdf
+        v  agent.py build (pdflatex twice, cleans aux files)
+generated/AlejandroSanchezYali<Variant>[<Company>].pdf
         |
         v  .github/workflows/latex.yml on push to main
 technical-resume branch          published PDF + README
 ```
 
+**Directories:**
+- `variants/` — the four curated CVs. Sources of positioning; never overwritten while tailoring
+- `generated/` — recruiter-facing PDFs, `AlejandroSanchezYali<Variant><Company>.pdf`
+- `jobs/` — application archive: the posting and the submitted answers, `YYYYMMDD_<company>_<role>`
+- `interview-prep/` — the master playbook plus company-specific supplements
+
 **Modules:**
-- `agent.py` — CLI with a single command: `compile`
+- `agent.py` — `compile` (one file in place) and `build` (all variants into `generated/`)
 - `src/latex_compiler.py` — `LatexCompiler`: runs `pdflatex` twice, captures errors, cleans aux files
 
 There is deliberately no LaTeX or Markdown generator. Selection and wording are editorial judgement,

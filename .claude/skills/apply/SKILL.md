@@ -30,6 +30,20 @@ no marketing adjectives.
 4. Open with the logistics block, then one section per question in the original order.
 5. Tell him at the end which answers are weakest and why.
 
+## What lives in jobs/
+
+`jobs/` is the archive of every application, named for him rather than for a recruiter:
+
+- `YYYYMMDD_<company>_<role>.md` — the posting itself, saved when it arrives. Job ads disappear, and
+  three weeks later an interview invitation arrives for a role nobody can re-read.
+- `YYYYMMDD_<company>_<role>_answers.md` — the answers submitted with that application.
+
+Dates lead here because this directory is chronological working memory. The recruiter-facing
+filenames live in `generated/` instead, where they follow `AlejandroSanchezYali<Variant><Company>`.
+
+Save the posting even when only answering questions. It costs one file and it is the difference
+between preparing for an interview and guessing.
+
 ## Logistics block — same every time
 
 - Legal name: Alejandro Sánchez Yalí · asanchezyali@gmail.com
