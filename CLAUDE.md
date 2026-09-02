@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI-powered resume generator CLI that takes job descriptions and produces tailored LaTeX resumes via Claude AI (LiteLLM). Single source of truth is `data/resume-master.json`; all resume variants are generated from it.
+Alejandro's CV toolkit. Single source of truth is `data/resume-master.json`; five curated CVs are
+derived from it — four LaTeX variants in `variants/` and the `README.md`. Tailoring for a specific
+job posting is done by the Claude skills in `.claude/skills/`, not by a code generator.
 
 ## Commands
 
@@ -12,59 +14,35 @@ AI-powered resume generator CLI that takes job descriptions and produces tailore
 # Install dependencies
 uv sync
 
-# Generate resume for a single job
-uv run python agent.py generate -f jobs/job.txt -o my-resume -m anthropic/claude-sonnet-4-20250514
-
-# Interactive refinement loop (generate → review → adjust)
-uv run python agent.py interactive
-
-# Batch process all .txt/.md files in a directory
-uv run python agent.py batch -d jobs/
-
-# Compile existing .tex file
-uv run python agent.py compile path/to/file.tex
-
-# Generate complete CV (no LLM, all data included)
-uv run python agent.py complete -o output-name
-
-# Generate README.md from master data
-uv run python agent.py readme
+# Compile a CV variant to PDF
+uv run python agent.py compile variants/ai-fullstack.tex
 
 # Lint
 uv run ruff check .
-
-# Run tests
-uv run pytest tests/ -v
 ```
 
 ## Architecture
 
 ```
-Job Description + resume-master.json + templates/
-        ↓
-  Claude AI via LiteLLM (src/llm_handler.py)
-        ↓
-  Raw LaTeX output
-        ↓
-  pdflatex compilation (src/latex_compiler.py, runs twice for refs)
-        ↓  on error → Claude auto-fix → retry (up to 3x)
-        ↓
-  generated/{name}.pdf
+data/resume-master.json          single source of truth
+        |
+        |  by hand, or via .claude/skills/cv
+        v
+variants/*.tex  +  README.md     five curated CVs
+        |
+        v  agent.py compile (pdflatex twice, cleans aux files)
+variants/*.pdf
+        |
+        v  .github/workflows/latex.yml on push to main
+technical-resume branch          published PDF + README
 ```
 
-**Key modules:**
-- `agent.py` — CLI entry point (Click). Commands: generate, interactive, batch, compile, complete, readme
-- `src/llm_handler.py` — `LLMHandler` class: `generate_resume()`, `fix_latex_error()`, `adjust_resume()`. Calls Claude via `litellm.completion()`
-- `src/data_loader.py` — Loads `resume-master.json`, computes skill years from `start_year`, loads templates/prompts
-- `src/latex_compiler.py` — `LatexCompiler` class: runs `pdflatex` twice, captures errors, cleans aux files
-- `src/latex_generator.py` — `generate_complete_cv()`: direct LaTeX from master data (no LLM)
-- `src/markdown_generator.py` — `generate_readme()`: generates README.md from master data
+**Modules:**
+- `agent.py` — CLI with a single command: `compile`
+- `src/latex_compiler.py` — `LatexCompiler`: runs `pdflatex` twice, captures errors, cleans aux files
 
-**Data flow:** `data/resume-master.json` → data_loader (with computed years) → llm_handler (builds prompt with job desc + data + template) → Claude returns raw LaTeX → latex_compiler → PDF
-
-**Templates:**
-- `templates/example.tex` — Reference LaTeX structure (preamble, custom commands like `\resumeSubheading`)
-- `templates/prompts/system_prompt.txt` — System prompt instructing Claude to output raw LaTeX only
+There is deliberately no LaTeX or Markdown generator. Selection and wording are editorial judgement,
+and that judgement lives in `.claude/skills/cv/SKILL.md` so it exists in exactly one place.
 
 ## Code Style
 
@@ -73,11 +51,23 @@ Job Description + resume-master.json + templates/
 - Line length: 100 chars (ruff, E501 ignored)
 - Linter: ruff with rules E, F, I, W
 - Use `rich` for all CLI output formatting
-- Use Pydantic for data validation
 
 ## LaTeX Escaping (Critical)
 
 Always escape these characters before inserting into LaTeX: `& → \&`, `% → \%`, `$ → \$`, `# → \#`, `_ → \_`
+
+## Claude Skills
+
+`.claude/skills/` holds the recurring workflows. They carry the editorial judgement that used to
+live in prompt files and generator code:
+
+- `cv` — adapt a base variant to a job posting; writes to `generated/`, never over `variants/`
+- `apply` — answer application forms into `jobs/`
+- `interview` — build a company-specific supplement to `interview-prep/interview-simulation.md`
+
+Rules worth knowing before touching CV content: beginner-level skills stay out of CVs, GitHub
+figures come only from `open_source.cv_highlights`, years are recomputed from `start_year` rather
+than copied, and a project's `status` is checked before describing it as live.
 
 ## Git Conventions
 
@@ -87,8 +77,12 @@ Conventional Commits with emojis: `✨ feat:`, `🐛 fix:`, `📝 docs:`, `♻�
 
 ## CI/CD
 
-GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that modify `data/`, `src/`, `templates/`, or the workflow file. It generates the complete CV PDF and README, then pushes them to the `technical-resume` orphan branch.
+GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that modify `variants/`,
+`README.md`, or the workflow file. It compiles the variant named in `PUBLISHED_VARIANT`
+(currently `ai-fullstack`) and pushes the PDF plus `README.md` to the `technical-resume` orphan branch.
+Nothing is generated from the data at build time — the CI publishes files a human already reviewed.
 
 ## Environment
 
-Requires `ANTHROPIC_API_KEY` in `.env`. Optional: `LITELLM_LOG=DEBUG`, `DEFAULT_MODEL`.
+No API keys or `.env` required. Needs Python 3.11+ and a TeX distribution providing `pdflatex`
+with the `fontawesome` package.
