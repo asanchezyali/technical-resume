@@ -90,9 +90,16 @@ Conventional Commits with emojis: `✨ feat:`, `🐛 fix:`, `📝 docs:`, `♻�
 ## CI/CD
 
 GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that modify `variants/`,
-`README.md`, or the workflow file. It compiles the variant named in `PUBLISHED_VARIANT`
-(currently `ai-fullstack`) and pushes the PDF plus `README.md` to the `technical-resume` orphan branch.
-Nothing is generated from the data at build time — the CI publishes files a human already reviewed.
+`README.md`, or the workflow file. It:
+
+1. Compiles all four variants.
+2. Refreshes `generated/*.pdf` and commits them back to `main` if they changed — so editing a
+   variant without running `agent.py build` cannot leave a stale PDF in the repo.
+3. Publishes the variant named in `PUBLISHED_VARIANT` (currently `ai-fullstack`) plus `README.md`
+   to the `technical-resume` orphan branch, as `AlejandroSanchezYaliAIFullStack.pdf` and a
+   `technical_resume.pdf` copy for links already shared.
+
+Nothing is generated *from the data* at build time — the CI only compiles files a human wrote.
 
 ## Environment
 

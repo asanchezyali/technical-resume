@@ -28,9 +28,8 @@ venv/
 ENV/
 env/
 
-# uv
+# uv (uv.lock is committed on purpose: it pins the toolchain)
 .uv/
-uv.lock
 
 # =========================
 # LaTeX

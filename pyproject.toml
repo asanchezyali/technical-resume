@@ -14,8 +14,6 @@ dev = [
     "ruff>=0.4.0",
 ]
 
-[project.scripts]
-resume-agent = "agent:cli"
 
 [tool.ruff]
 line-length = 100

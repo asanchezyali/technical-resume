@@ -9,10 +9,11 @@ on:
       - '.github/workflows/latex.yml'
   workflow_dispatch:
 
-# The published CV is variants/ai-fullstack.tex — a hand-curated file, not generated output.
-# Change PUBLISHED_VARIANT to publish a different one.
+# The published CV is a hand-curated file in variants/, never generated from the data at
+# build time. Change PUBLISHED_VARIANT to publish a different one.
 env:
   PUBLISHED_VARIANT: ai-fullstack
+  PUBLISHED_NAME: AlejandroSanchezYaliAIFullStack
 
 jobs:
   publish:
@@ -26,23 +27,51 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Compile CV to PDF
+      - name: Compile every variant
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: ${{ env.PUBLISHED_VARIANT }}.tex
           working_directory: variants
+          root_file: |
+            ai-engineer.tex
+            ai-fullstack.tex
+            product-engineer.tex
+            senior-fullstack.tex
+
+      - name: Copy PDFs to generated/ under their recruiter-facing names
+        run: |
+          mkdir -p generated
+          cp variants/ai-engineer.pdf      generated/AlejandroSanchezYaliAIEngineer.pdf
+          cp variants/ai-fullstack.pdf     generated/AlejandroSanchezYaliAIFullStack.pdf
+          cp variants/product-engineer.pdf generated/AlejandroSanchezYaliProductEngineer.pdf
+          cp variants/senior-fullstack.pdf generated/AlejandroSanchezYaliSeniorFullStack.pdf
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
-      - name: Publish PDF and README to technical-resume branch
+      # Keeps generated/ in sync when a variant is edited without running `agent.py build`
+      - name: Commit refreshed PDFs to main
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          cp "variants/${PUBLISHED_VARIANT}.pdf" /tmp/AlejandroSanchezYaliAIFullStack.pdf
+          if git diff --quiet -- generated/; then
+            echo "generated/ already up to date"
+          else
+            git add generated/
+            git commit -m "🔧 chore: refresh CV PDFs - ${{ steps.date.outputs.date }}"
+            git push origin main
+          fi
+
+      - name: Stage files for the published branch
+        run: |
+          cp "variants/${PUBLISHED_VARIANT}.pdf" "/tmp/${PUBLISHED_NAME}.pdf"
           cp README.md /tmp/README.md
+
+      - name: Publish to technical-resume branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
           git clean -fdx
           git checkout -- .
@@ -54,17 +83,17 @@ jobs:
             git rm -rf .
           fi
 
-          cp /tmp/AlejandroSanchezYaliAIFullStack.pdf ./AlejandroSanchezYaliAIFullStack.pdf
+          cp "/tmp/${PUBLISHED_NAME}.pdf" "./${PUBLISHED_NAME}.pdf"
           # Kept so links already shared in applications do not break
-          cp /tmp/AlejandroSanchezYaliAIFullStack.pdf ./technical_resume.pdf
+          cp "/tmp/${PUBLISHED_NAME}.pdf" ./technical_resume.pdf
           cp /tmp/README.md ./README.md
 
-          git add AlejandroSanchezYaliAIFullStack.pdf technical_resume.pdf README.md
+          git add "${PUBLISHED_NAME}.pdf" technical_resume.pdf README.md
           git commit -m "🚀 Update resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push origin technical-resume
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Technical Resume
+          name: ${{ env.PUBLISHED_NAME }}
           path: variants/${{ env.PUBLISHED_VARIANT }}.pdf
