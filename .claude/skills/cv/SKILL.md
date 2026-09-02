@@ -95,6 +95,15 @@ you deliberately left alone.
   built and verified end to end but its production environment carries no real traffic yet.
   Marketing copy on a product's own website may describe the business, not the software.
 
+## Naming third parties
+
+- **Employers** appear by name: Monadical, Lapzo, BCFort, Universidad de Antioquia.
+- **His own products** appear by name: Plixiq, Aluna, VitaStock.
+- **Consulting clients** appear by name too, with one exception: the workflow-automation client —
+  the orbit-control platform in an NX multi-repo, where he did the database architecture and acted
+  as code reviewer — must never be named. Write "a client" there. Do not restore that name from an
+  older CV, an application answer or a git commit.
+
 ## How to write a bullet
 
 Decision or outcome first, number inside, technology last. Not "Built X using Y".
