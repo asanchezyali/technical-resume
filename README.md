@@ -52,7 +52,7 @@ traceability with expiry alerts, and true per-patient cost through a cardex. Fiv
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
 - Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
 - Led technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
-- Designed the database architecture for ROCKET CODE's workflow automation platform and served as code reviewer for their team
+- Designed the database architecture for a client's workflow automation platform and served as code reviewer for their development team
 
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
 - Three years on a distributed team across Canada, the US and Latin America
