@@ -88,12 +88,10 @@ Thumbs.db
 *.local
 
 # =========================
-# Generated files
+# Build output
 # =========================
-# Keep generated/ directory but ignore its contents locally
-# Uncomment below if you don't want to track generated files:
-# generated/*.pdf
-# generated/*.tex
+# variants/*.pdf are intermediates; the shareable PDFs are committed in generated/
+variants/*.pdf
 
 # =========================
 # Misc
