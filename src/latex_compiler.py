@@ -1,5 +1,12 @@
+import os
 import subprocess
 from pathlib import Path
+
+# pdflatex stamps a build timestamp into the PDF, so the same .tex would otherwise produce a
+# different file on every run and put committed PDFs in every diff. Pinning SOURCE_DATE_EPOCH to a
+# constant makes the output depend only on the source, so a PDF changes when — and only when — its
+# .tex does, and a CI build matches a local one byte for byte. CI sets the same value.
+SOURCE_DATE_EPOCH = "1577836800"  # 2020-01-01, arbitrary and deliberately fixed
 
 class LatexCompiler:
     def __init__(self, output_dir: str = "generated"):
@@ -16,6 +23,12 @@ class LatexCompiler:
         # Write .tex file
         tex_path.write_text(tex_content, encoding="utf-8")
 
+        env = {
+            **os.environ,
+            "SOURCE_DATE_EPOCH": SOURCE_DATE_EPOCH,
+            "FORCE_SOURCE_DATE": "1",
+        }
+
         # Run pdflatex twice (for references)
         try:
             for _ in range(2):
@@ -27,7 +40,8 @@ class LatexCompiler:
                         str(tex_path)
                     ],
                     capture_output=True,
-                    timeout=60
+                    timeout=60,
+                    env=env,
                 )
         except subprocess.TimeoutExpired:
             return False, "Compilation timed out after 60 seconds"

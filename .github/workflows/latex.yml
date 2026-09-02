@@ -14,6 +14,10 @@ on:
 env:
   PUBLISHED_VARIANT: ai-fullstack
   PUBLISHED_NAME: AlejandroSanchezYaliAIFullStack
+  # Must match SOURCE_DATE_EPOCH in src/latex_compiler.py so CI and local builds
+  # produce byte-identical PDFs and generated/ stays out of the diff
+  SOURCE_DATE_EPOCH: "1577836800"
+  FORCE_SOURCE_DATE: "1"
 
 jobs:
   publish:
