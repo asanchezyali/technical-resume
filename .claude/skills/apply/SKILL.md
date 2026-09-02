@@ -54,6 +54,15 @@ between preparing for an interview and guessing.
 - Availability: right away, full time
 - Rate: ~$7,500/month full-time; $63/hour consulting. Ask for their range first when possible.
 
+## Naming third parties
+
+- **Employers** appear by name: Monadical, Lapzo, BCFort, Universidad de Antioquia.
+- **His own products** appear by name: Plixiq, Aluna, VitaStock.
+- **Consulting clients** appear by name too, with one exception: the workflow-automation client —
+  the orbit-control platform in an NX multi-repo, where he did the database architecture and acted
+  as code reviewer — must never be named. Write "a client" there. Do not restore that name from an
+  older CV, an application answer or a git commit.
+
 ## How to answer
 
 - Lead with the specific system, then what he personally owned, then the trade-off he chose.
