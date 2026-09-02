@@ -55,8 +55,10 @@ adaptations are a coincidence; three is a role type worth maintaining. Until the
 `resume-master.json` means reviewing each variant by hand. Four is a maintainable number; eight
 becomes a set of CVs that quietly go stale.
 
-**Rebuilding the base PDFs:** `uv run python agent.py build` compiles all four variants and copies
-each PDF into `generated/` under its recruiter-facing name. Run it after editing any variant.
+**Rebuilding the base PDFs:** `uv run python agent.py build` compiles all four variants into
+`generated/` under their recruiter-facing names. Use it to preview a change or to produce a
+company-suffixed CV. Do not commit the four base PDFs by hand — CI recompiles and commits them, and
+a locally built PDF differs by a few bytes across TeX versions.
 
 **Syncing after a data change:** when `resume-master.json` changes materially — a new project, a
 corrected metric, a status change — review all five CVs (the four variants plus `README.md`) in

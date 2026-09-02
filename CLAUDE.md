@@ -94,7 +94,10 @@ GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that
 
 1. Compiles all four variants.
 2. Refreshes `generated/*.pdf` and commits them back to `main` if they changed — so editing a
-   variant without running `agent.py build` cannot leave a stale PDF in the repo.
+   variant without running `agent.py build` cannot leave a stale PDF in the repo. **CI owns those
+   four PDFs.** Builds are reproducible within an environment but differ by a few bytes across TeX
+   versions, so a locally built PDF committed by hand just gets rewritten on the next run. Use
+   `agent.py build` to preview, or to produce a company-suffixed CV — not to update `generated/`.
 3. Publishes the variant named in `PUBLISHED_VARIANT` (currently `ai-fullstack`) plus `README.md`
    to the `technical-resume` orphan branch, as `AlejandroSanchezYaliAIFullStack.pdf` and a
    `technical_resume.pdf` copy for links already shared.

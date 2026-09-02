@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -48,6 +48,13 @@ jobs:
           cp variants/ai-fullstack.pdf     generated/AlejandroSanchezYaliAIFullStack.pdf
           cp variants/product-engineer.pdf generated/AlejandroSanchezYaliProductEngineer.pdf
           cp variants/senior-fullstack.pdf generated/AlejandroSanchezYaliSeniorFullStack.pdf
+
+      # Must run before the branch switch below: variants/ does not exist on technical-resume
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: ${{ env.PUBLISHED_NAME }}
+          path: generated/${{ env.PUBLISHED_NAME }}.pdf
 
       - name: Get current date
         id: date
@@ -95,9 +102,3 @@ jobs:
           git add "${PUBLISHED_NAME}.pdf" technical_resume.pdf README.md
           git commit -m "🚀 Update resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push origin technical-resume
-
-      - name: Upload PDF as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ env.PUBLISHED_NAME }}
-          path: variants/${{ env.PUBLISHED_VARIANT }}.pdf
