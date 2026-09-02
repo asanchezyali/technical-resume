@@ -43,9 +43,10 @@ that matters, update it by hand like any other variant.
 
 - `variants/` — few, stable, maintained. Positioning, not postings. Never written to while
   tailoring; treat them as read-only during a `/cv` run.
-- `generated/` — one file per application, named `YYYYMMDD_<company>_<role>.tex`. Written once,
-  compiled, and left alone. It is the record of what was actually sent, which matters when a
-  recruiter calls three weeks later.
+- `generated/` — recruiter-facing PDFs. Filenames follow
+  `AlejandroSanchezYali<Variant><Company>` — e.g. `AlejandroSanchezYaliAIEngineerACME.pdf`. This is
+  the name that shows up in someone's inbox, so it carries his name and the role, never a date or a
+  slug. The four base PDFs live here without a company suffix, rebuilt with `agent.py build`.
 
 **When to add a fifth variant:** only when the same adaptation has been made three times. Two
 adaptations are a coincidence; three is a role type worth maintaining. Until then, adapt.
@@ -53,6 +54,9 @@ adaptations are a coincidence; three is a role type worth maintaining. Until the
 **Why not more variants:** they do not update themselves. Every new product or metric in
 `resume-master.json` means reviewing each variant by hand. Four is a maintainable number; eight
 becomes a set of CVs that quietly go stale.
+
+**Rebuilding the base PDFs:** `uv run python agent.py build` compiles all four variants and copies
+each PDF into `generated/` under its recruiter-facing name. Run it after editing any variant.
 
 **Syncing after a data change:** when `resume-master.json` changes materially — a new project, a
 corrected metric, a status change — review all five CVs (the four variants plus `README.md`) in
@@ -66,8 +70,11 @@ you deliberately left alone.
 3. Read that `.tex` and `data/resume-master.json`.
 4. Adapt — and adapting means **reordering and swapping in bullets that already exist in the
    JSON**, plus rewriting the summary for this role. Nothing else.
-5. Write to `generated/<YYYYMMDD>_<company>_<role>.tex`.
-6. Compile: `uv run python agent.py compile generated/<name>.tex` (the only CLI command that exists)
+5. Write to `generated/AlejandroSanchezYali<Variant><Company>.tex` — Variant is one of AIEngineer,
+   AIFullStack, ProductEngineer, SeniorFullStack; Company is the company name in PascalCase with no
+   spaces or punctuation.
+6. Compile: `uv run python agent.py compile generated/<name>.tex` — the PDF lands beside it under
+   the same name.
 7. If it fails, read the error, fix the LaTeX, recompile. Escaping is the usual culprit.
 8. Report: variant used, what changed, what the posting asked for that he does not have.
 

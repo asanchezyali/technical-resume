@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          cp "variants/${PUBLISHED_VARIANT}.pdf" /tmp/technical_resume.pdf
+          cp "variants/${PUBLISHED_VARIANT}.pdf" /tmp/AlejandroSanchezYaliAIFullStack.pdf
           cp README.md /tmp/README.md
 
           git clean -fdx
@@ -54,10 +54,12 @@ jobs:
             git rm -rf .
           fi
 
-          cp /tmp/technical_resume.pdf ./technical_resume.pdf
+          cp /tmp/AlejandroSanchezYaliAIFullStack.pdf ./AlejandroSanchezYaliAIFullStack.pdf
+          # Kept so links already shared in applications do not break
+          cp /tmp/AlejandroSanchezYaliAIFullStack.pdf ./technical_resume.pdf
           cp /tmp/README.md ./README.md
 
-          git add technical_resume.pdf README.md
+          git add AlejandroSanchezYaliAIFullStack.pdf technical_resume.pdf README.md
           git commit -m "🚀 Update resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push origin technical-resume
 
