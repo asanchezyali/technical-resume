@@ -1,17 +1,21 @@
-name: Build CV and Generate README
+name: Publish CV
 
 on:
   push:
     branches: [main]
     paths:
-      - 'data/resume-master.json'
-      - 'src/**'
-      - 'templates/**'
+      - 'variants/**'
+      - 'README.md'
       - '.github/workflows/latex.yml'
   workflow_dispatch:
 
+# The published CV is variants/ai-fullstack.tex — a hand-curated file, not generated output.
+# Change PUBLISHED_VARIANT to publish a different one.
+env:
+  PUBLISHED_VARIANT: ai-fullstack
+
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,68 +26,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v4
-        with:
-          version: "latest"
-
-      - name: Set up Python
-        run: uv python install 3.11
-
-      - name: Install dependencies
-        run: uv sync
-
-      - name: Generate README.md
-        run: uv run python agent.py readme
-
-      - name: Generate complete CV LaTeX
-        run: uv run python agent.py complete -o technical-resume
-
-      - name: Compile LaTeX to PDF
+      - name: Compile CV to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: technical-resume.tex
-          working_directory: generated
+          root_file: ${{ env.PUBLISHED_VARIANT }}.tex
+          working_directory: variants
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
-      - name: List generated files
-        run: |
-          echo "=== Root directory ==="
-          ls -la
-          echo "=== Generated directory ==="
-          ls -la generated/
-
-      - name: Commit README.md to main
+      - name: Publish PDF and README to technical-resume branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Check if README.md changed
-          if git diff --quiet README.md; then
-            echo "No changes to README.md"
-          else
-            git add README.md
-            git commit -m "📄 Update README.md - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
-            git push origin main
-          fi
-
-      - name: Upload PDF and README to technical-resume branch
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          # Save files to temp
-          cp generated/technical-resume.pdf /tmp/technical_resume.pdf
+          cp "variants/${PUBLISHED_VARIANT}.pdf" /tmp/technical_resume.pdf
           cp README.md /tmp/README.md
 
-          # Clean up untracked/ignored files before switching branches
           git clean -fdx
           git checkout -- .
 
-          # Switch to technical-resume branch
           if git show-ref --verify --quiet refs/remotes/origin/technical-resume; then
             git checkout technical-resume
           else
@@ -91,11 +54,9 @@ jobs:
             git rm -rf .
           fi
 
-          # Copy files back
           cp /tmp/technical_resume.pdf ./technical_resume.pdf
           cp /tmp/README.md ./README.md
 
-          # Commit and push
           git add technical_resume.pdf README.md
           git commit -m "🚀 Update resume - ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push origin technical-resume
@@ -104,4 +65,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Technical Resume
-          path: generated/technical-resume.pdf
+          path: variants/${{ env.PUBLISHED_VARIANT }}.pdf
