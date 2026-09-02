@@ -131,7 +131,7 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 ### Story G — "Nineteen PRs and a code review culture" (collaboration)
 1. At Monadical I worked three-plus years on a distributed team across Canada, the US and Latin America — async by default.
 2. I contributed 19 PRs to Morpheus, our open-source AI image platform (Python/FastAPI + React + Stable Diffusion), led the frontend architecture and component library, and pushed testing discipline — Vitest, Jest, TDD.
-3. Later, as a consultant at ROCKET CODE, I was the code reviewer for their team and designed the database architecture for their orbit-control workflow platform in an NX multi-repo with Screaming Architecture.
+3. Later, as a consultant, I was the code reviewer for a client's team and designed the database architecture for their orbit-control workflow platform in an NX multi-repo with Screaming Architecture.
 4. I mentor. It's the part of teaching I got to keep.
 5. Lesson: I've never believed the reviewer's job is to find mistakes. It's to make the next person's version easier to write.
 > 🎯 Coach: this counters the biggest risk in your profile — "he's been solo for two years, can he work in a team?" Get this story out early and unprompted in HR rounds.
@@ -188,7 +188,7 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 
 **Q4. Tell me about a conflict with a teammate or a client.**
 
-> "At ROCKET CODE I was reviewing for a team that was moving fast on a workflow-automation platform. One developer kept opening large PRs that mixed a feature with refactors across the whole repo — genuinely good work, impossible to review honestly.
+> "At one consulting client I was reviewing for a team that was moving fast on a workflow-automation platform. One developer kept opening large PRs that mixed a feature with refactors across the whole repo — genuinely good work, impossible to review honestly.
 >
 > I'd been leaving comments and it wasn't landing, so I stopped commenting and asked for a call. I said something like: I'm not blocking you on style, I'm blocking myself — I can't give you a real review on 900 lines that touch four contexts, so I'm either rubber-stamping it or holding you up for days, and both are bad for you. We agreed to split refactors into their own PRs.
 >
@@ -491,7 +491,7 @@ You have HackerRank practice in your repos; the risk isn't the algorithm, it's g
 > "That's true — my degrees are in mathematics, and I taught ML and math for eleven years before moving into industry. In practice the gap that matters would be things like operating systems and compilers, and where I've needed them I've gone and learned them — I've done systems work in C and I'm learning Rust. What the math degree gave me instead is the part people usually find harder to acquire: I can read the papers, I understand the linear algebra and probability under the models, and I'm comfortable with abstraction. Eight years of production systems covered the rest."
 
 **"Your recent work is mostly solo. Can you work in a team?"**
-> "The last two years are consulting, yes — but before that I spent three-plus years at Monadical on a distributed team across three countries, leading frontend architecture, reviewing code, and mentoring. And even as a consultant I've been the code reviewer for ROCKET CODE's team and I'm on Lapzo's AI committee, which is fundamentally a group-alignment job — standardizing how a whole organization builds with AI. Solo work sharpened my ownership. It didn't replace my collaboration."
+> "The last two years are consulting, yes — but before that I spent three-plus years at Monadical on a distributed team across three countries, leading frontend architecture, reviewing code, and mentoring. And even as a consultant I've been the code reviewer for a client's development team and I'm on Lapzo's AI committee, which is fundamentally a group-alignment job — standardizing how a whole organization builds with AI. Solo work sharpened my ownership. It didn't replace my collaboration."
 
 **"Rust — beginner. Why is it on your résumé?"**
 > "Because it's honest — it's listed at the level I'm actually at. I've been learning it for about two years on side projects, including a small chatbot. I'd be productive in it in weeks, not days, and I'd want review from someone who knows it well. I'd rather tell you that now than discover it in the first sprint."

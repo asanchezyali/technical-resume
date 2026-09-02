@@ -75,6 +75,6 @@ between preparing for an interview and guessing.
   rate as a quality proxy. He has not built formal offline evals or LLM-as-judge yet.
   Answer with what exists plus what he would build first.
 - **Team vs solo**: three years on Monadical's distributed team, code reviewer for
-  ROCKET CODE, AI Committee at Lapzo. The last two years being solo is deliberate range,
+  a client's development team, AI Committee at Lapzo. The last two years being solo is deliberate range,
   not isolation.
 - **Kubernetes / Terraform / Airflow / Spark**: he has not used them. Say so.
