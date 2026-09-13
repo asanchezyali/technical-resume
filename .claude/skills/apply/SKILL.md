@@ -52,7 +52,8 @@ between preparing for an interview and guessing.
 - Location: Colombia (COT, UTC-5) — full working day of overlap with US Eastern
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
-- Rate: ~$7,500/month full-time; $63/hour consulting. Ask for their range first when possible.
+- Rate: ~USD 7,500/month full-time; USD 63/hour consulting. Ask for their range first when possible.
+  (Written without a dollar sign on purpose: `$7` is read as a positional argument when the skill runs.)
 
 ## Naming third parties
 
@@ -67,7 +68,7 @@ between preparing for an interview and guessing.
 
 - Lead with the specific system, then what he personally owned, then the trade-off he chose.
   A good answer names one decision and why the alternative lost.
-- Use real numbers from the JSON: 3 products in production, 10 DDD bounded contexts,
+- Use real numbers from the JSON: 3 products built and deployed, 10 DDD bounded contexts,
   ~40k LOC in 4 months part-time, $60-80/month infra, 12 modules and 5 roles in VitaStock,
   ~2 second responses in Plixiq, 464 stars / 110 forks, 19 PRs to Morpheus, 5 LATAM markets.
 - 150-250 words for an open question. Longer reads as padding.
@@ -77,8 +78,9 @@ between preparing for an interview and guessing.
 
 ## Recurring questions, settled answers
 
-- **Scale**: he has built multi-tenant products with real business users, not
-  high-traffic systems. Say that plainly rather than dodging.
+- **Scale and usage**: none of the three products has real users yet — all are built and deployed,
+  and VitaStock was commissioned by a clinic that has not started operating it. Say so plainly and
+  early; the strength is delivery speed and defensible decisions, not traction.
 - **Evals / LLM observability**: he logs interactions with inputs, retrieved context
   and output, keeps a regression set of real broken conversations, and uses escalation
   rate as a quality proxy. He has not built formal offline evals or LLM-as-judge yet.

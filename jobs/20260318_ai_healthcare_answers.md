@@ -21,7 +21,7 @@ No
 
 At Lapzo, I designed and built a Digital Professor system — an AI-powered platform that engages users in real-time conversations and explains educational content through interactive slides. I used LangChain and LangGraph for the conversational AI pipeline, integrated ElevenLabs API for natural text-to-speech synthesis, and built the real-time layer with Next.js, NestJS, and Firebase Realtime Database. I personally owned the architectural decisions: selecting the LLM orchestration stack, designing how voice synthesis integrates with the conversation flow, and defining the system boundaries between services. I also built the AI-powered content generator using n8n for workflow automation.
 
-Separately, as an independent consultant, I built Plixiq (plixiq.com) — a multi-tenant SaaS platform that lets businesses deploy AI-powered WhatsApp agents. It uses LiteLLM for multi-provider LLM support with fallback, RAG for context retrieval, and an automatic escalation system that routes conversations to human agents based on configurable triggers. I designed the full architecture as a modular monolith with DDD bounded contexts. It's been in production for 3 months.
+Separately, as an independent consultant, I built Plixiq (plixiq.com) — a multi-tenant SaaS platform that lets businesses deploy AI-powered WhatsApp agents. It uses LiteLLM for multi-provider LLM support with fallback, RAG for context retrieval, and an automatic escalation system that routes conversations to human agents based on configurable triggers. I designed the full architecture as a modular monolith with DDD bounded contexts. It is built and deployed, without real customer traffic yet.
 
 ---
 
@@ -37,7 +37,7 @@ The main challenges were: (1) managing conversation state across async WhatsApp 
 
 VitaStock — a medical supply chain management system I built for clinics. The frontend is Next.js with React, TypeScript, Tailwind CSS, and shadcn/ui components. I personally handled the full frontend: role-based dashboards (Admin, Pharmacist, Doctor, Operating Room, Management), procurement workflows (quotation requests, purchase orders, receptions with lot tracking), and multilingual support (ES/EN) using next-intl.
 
-For deployment, I containerized both the FastAPI backend and Next.js frontend with Docker and deployed on Railway with CI/CD pipelines. The build process uses standard Next.js production builds. The app has been in production for 5 months serving real clinic operations, including PDF report generation for inventory and procurement documents.
+For deployment, I containerized both the FastAPI backend and Next.js frontend with Docker and deployed on Railway with CI/CD pipelines. The build process uses standard Next.js production builds. The clinic commissioned it and their pharmacist shaped the domain model; it is deployed, though they have not started operating it, including PDF report generation for inventory and procurement documents.
 
 ---
 

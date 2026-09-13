@@ -22,7 +22,7 @@ Three pillars you keep returning to, no matter the question:
 
 | Pillar | Evidence you can name in one breath |
 |---|---|
-| **I ship whole products, alone** | Plixiq (~40k LOC in 4 months part-time, in production), Aluna (336 files, 26 tables, 11 providers, in 3 months), VitaStock (5 months in production in real clinics) |
+| **I ship whole products, alone** | Plixiq (~40k LOC in 4 months part-time), Aluna (336 files, 26 tables, 11 providers, in 3 months), VitaStock (12 modules, commissioned by a clinic) — all built and deployed, none carrying real traffic yet |
 | **I make architecture decisions and defend them** | Modular monolith with 10 DDD bounded contexts enforced in CI; SSE over WebSockets; dedup before quota so a re-analysis costs nothing; one conversation engine across three transports |
 | **I think in structure because of the math** | M.Sc. Mathematics, category theory / linear algebra / probability; PyCon talk on JAX+Flax parallelism; essays on neural nets as DAGs of differentiable programs |
 
@@ -48,9 +48,9 @@ Use these. They're checked against live sources today.
 - B.Sc. Teaching Mathematics and Physics, Universidad de Antioquia (2004–2009).
 
 **Products owned end to end**
-- **Plixiq** — plixiq.com. AI customer support on WhatsApp. ~40k lines to a near-complete MVP in 4 months part-time, ~2 second responses, 10 DDD bounded contexts enforced by a CI lint rule, $60–80/month infra. In production.
+- **Plixiq** — plixiq.com. AI customer support on WhatsApp. ~40k lines to a near-complete MVP in 4 months part-time, ~2 second responses, 10 DDD bounded contexts enforced by a CI lint rule, $60–80/month infra. Deployed; no real customer traffic yet.
 - **Aluna** — aluna.works. AI recruitment platform for staffing agencies. Lead engineer, Jun 2026 → present (**3 months**). 336 source files across 4 packages, 26 tables, 11 external providers. Two services: Next.js 15 owns all domain state, a stateless FastAPI service owns model calls and the WhatsApp channel. ⚠️ **Production is provisioned but carries no real traffic yet — say this before they ask.**
-- **VitaStock** — vitastock.piagents.dev. Surgical supply chain for private clinics in Colombia. 12 modules, 5 roles, lot tracking with expiry alerts, per-patient cost cardex, read-only AI assistant in Spanish. 5 months in production.
+- **VitaStock** — vitastock.piagents.dev. Surgical supply chain, **commissioned by a private surgical clinic in Colombia whose pharmacist shaped the domain model**. 12 modules, 5 roles, lot tracking with expiry alerts, per-patient cost cardex, read-only AI assistant in Spanish. Deployed; the clinic has not started operating it.
 
 **GitHub (live, verified)**
 - `talking-avatar-with-ai` (Digital Human): **464 stars, 110 forks**. (Résumé corrected from 320 → 464.)
@@ -84,7 +84,7 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 1. **Situation.** Plixiq: businesses want AI agents on WhatsApp, but they can't staff support 24/7. I was building it essentially alone, part-time.
 2. **Tension.** The clean answer was microservices — ten separate domains, Identity, AgentConfig, Conversation, Escalation, Messaging. The honest answer was that one person cannot operate ten services.
 3. **Decision.** Modular monolith: one deployable, ten bounded contexts, and — the part I care about — **the boundaries are enforced by a lint rule in CI.** A rule you don't enforce is a suggestion.
-4. **Result.** ~40k lines, near-complete MVP in four months part-time, in production, running at $60–80/month because the cost scales with LLM usage, not infrastructure.
+4. **Result.** ~40k lines, near-complete MVP in four months part-time, deployed and running at $60–80/month because the cost scales with LLM usage, not infrastructure. No real customer traffic yet — say so yourself.
 5. **Lesson.** I optimize for the team that exists, not the team on the org chart. And I make the architecture defend itself, because I know future-me will be in a hurry.
 > 🎯 Coach: this is your best story for senior/staff roles. The CI-enforced boundaries detail is what separates you from someone who just read a blog post about DDD. Expect: *"how do you migrate out of the monolith later?"* → answer: the bounded contexts are already the seams; extraction means replacing an in-process call with an HTTP or queue call, and the event-driven design means several of them already talk asynchronously.
 
@@ -114,9 +114,9 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 
 ### Story E — "VitaStock and the boring domain" (product maturity)
 1. Clinics manage surgical supplies in spreadsheets. Getting it wrong means a surgery starts without an implant.
-2. I built VitaStock: FastAPI + async PostgreSQL, clean architecture with DDD, five real roles (Admin, Pharmacist, Doctor, Operating Room, Management), full procurement flow — quotation requests → purchase orders → receptions — with lot tracking and controlled storage.
+2. A private clinic commissioned it. I built VitaStock: FastAPI + async PostgreSQL, clean architecture with DDD, five real roles (Admin, Pharmacist, Doctor, Operating Room, Management), full procurement flow — quotation requests → purchase orders → receptions — with lot tracking and controlled storage.
 3. Next.js frontend, bilingual ES/EN, PDF reports, Docker on Railway with CI/CD.
-4. **Five months in production in real clinic operations.**
+4. **The clinic commissioned it** — deployed, though they have not started operating it. Say that before it is asked.
 5. Lesson: the interesting engineering was the domain modeling, not the tech. Roles and lot tracking are where the real complexity lives, and I got that by sitting with the pharmacist, not by reading a spec.
 > 🎯 Coach: use this whenever the interviewer's product is unglamorous (fintech ops, logistics, healthcare, internal tools). It proves you don't only chase shiny AI.
 
@@ -160,7 +160,7 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 >
 > I moved into industry in 2018, starting with blockchain platforms at BCFort in Medellín, then three-plus years at Monadical, a distributed company across Canada and the US, doing full-stack Python and TypeScript and integrating LLMs into production apps. For the last two years I've been consulting independently and, since last August, working as an AI Specialist at Lapzo, where I'm on the AI committee that sets how the company builds with AI.
 >
-> The thread through all of it is that I like owning a system end to end. My most recent product, Plixiq, is a multi-tenant SaaS that lets businesses run AI agents on WhatsApp — I designed the architecture, wrote the backend and the frontend, and it's been running in production for months. That's the kind of ownership I'm looking for next, ideally with a team I can also teach and learn from, because the teaching part never really left me."
+> The thread through all of it is that I like owning a system end to end. My most recent product, Plixiq, is a multi-tenant SaaS that lets businesses run AI agents on WhatsApp — I designed the architecture, wrote the backend and the frontend, and deployed it. That's the kind of ownership I'm looking for next, ideally with a team I can also teach and learn from, because the teaching part never really left me."
 
 > 🎯 Coach: 75 seconds. Three moves — where you come from, what you've done, what you want. End on what you want, so the conversation opens instead of closing.
 
@@ -501,10 +501,12 @@ You have HackerRank practice in your repos; the risk isn't the algorithm, it's g
 **"Morpheus has 29 stars, not 150."** *(Corrected in the résumé, so this shouldn't come up. If an old PDF is in play:)*
 > "You're right — that number was stale in an older version of my résumé. What I'd stand behind on Morpheus is the work: I contributed 19 PRs to it, on the FastAPI backend, the ML model integration and the React frontend. The starred project that's actually mine is the digital human, at 464."
 
-**"Aluna's production environment is empty. Nobody has actually used it."**
-> "That's right, and I'd rather say it than have you discover it. Production is provisioned but carries no real traffic yet — everything has been verified end to end in development. What I can defend is every decision inside the system, and I wrote its architecture documentation verified line by line against a specific commit, including an explicit section on what I couldn't verify. If you want to judge my engineering rather than my luck with launches, that document is the best thing I can hand you."
+**"None of your three products actually has users."** *(The most important answer in this document.)*
+> "Correct, and I'd rather say it up front than have you find it. All three are built and deployed: Plixiq is live, Aluna's production environment is provisioned and verified end to end, and VitaStock was commissioned by a private clinic that hasn't started operating it yet. What none of them has is real traffic.
+>
+> So judge me on what that does demonstrate. I can take a vague business problem and come back with a working system — 40,000 lines in four months part-time; 336 files, 26 tables and 11 integrated providers in three months; a clinic's pharmacist sitting with me to model lot traceability. And I can defend every decision inside them. What I haven't earned yet is the second year — watching which of those decisions survives a thousand users. That's a real gap, and it's exactly what I want next."
 
-> 🎯 Coach: volunteer this before anyone asks. Conceding a real limitation first is what makes everything else you say credible — and the documentation detail turns the concession into evidence.
+> 🎯 Coach: **rehearse this until it comes out level, not apologetic.** Volunteer it before anyone asks; the moment they find it themselves, every number you gave becomes suspect. Said first, it reads as calibration — which is rarer than the experience they were testing for. Your strongest follow-up is the Aluna architecture doc, verified line by line against a commit, with its own section on what could not be verified.
 
 **"Why should we hire you over someone with FAANG experience?"**
 > "If you need someone who's operated at a scale I haven't, hire them — I've built products with hundreds of users and tenants, not hundreds of millions. What I bring instead is range and ownership: I can take a vague business problem, design the system, build both halves of it, deploy it, and keep it alive, without four handoffs. For a team where the constraint is 'we need this shipped and shipped well,' that's usually worth more than scale experience you won't use for two years."

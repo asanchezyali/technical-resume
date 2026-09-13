@@ -23,7 +23,7 @@ Multi-tenant SaaS where AI agents resolve routine inquiries in about two seconds
 to human operators with the full conversation intact. Sole architect and engineer: a modular monolith
 with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, and a multi-provider
 LLM layer through LiteLLM so switching providers is a configuration change. ~40,000 lines to a
-near-complete MVP in four months part-time, running at $60–80/month.
+near-complete MVP in four months part-time, deployed and running at $60–80/month.
 `Python` `FastAPI` `LiteLLM` `RAG` `PostgreSQL` `Redis` `ARQ` `Next.js` `SSE`
 
 **[Aluna](https://www.aluna.works) — AI recruitment platform for staffing agencies**
@@ -35,9 +35,10 @@ calls and the WhatsApp channel.
 `Next.js 15` `FastAPI` `LiteLLM` `Inngest` `Claude` `Gemini` `PostgreSQL` `WhatsApp Cloud API`
 
 **[VitaStock](https://vitastock.piagents.dev) — surgical supply chain for private clinics**
-Twelve modules and five roles replacing spreadsheet-based inventory and procurement in Colombian
-surgical clinics. Surgery scheduling with supply baskets and real-time consumption tracking, lot-level
-traceability with expiry alerts, and true per-patient cost through a cardex. Five months in production.
+Twelve modules and five roles designed to replace spreadsheet-based inventory and procurement in a
+Colombian surgical clinic. Surgery scheduling with supply baskets and real-time consumption tracking, lot-level
+traceability with expiry alerts, and true per-patient cost through a cardex. Commissioned by a private
+clinic whose pharmacist shaped the domain model; deployed, not yet in daily operation.
 `Python` `FastAPI` `Next.js` `TypeScript` `PostgreSQL` `Docker` `Railway`
 
 ---

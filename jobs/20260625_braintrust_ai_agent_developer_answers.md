@@ -32,7 +32,7 @@ Attach: generated/AlejandroSanchezYaliAIEngineer.pdf (or your latest AI Engineer
 
 ## Q1: Describe an AI-powered application or product that you personally built and deployed for real-world commercial use. Provide links to relevant work.
 
-I built and deployed **Plixiq** (https://plixiq.com) — a multi-tenant SaaS platform that lets businesses deploy AI-powered WhatsApp agents with automatic human escalation. It's been in production for 3 months serving real business clients.
+I built and deployed **Plixiq** (https://plixiq.com) — a multi-tenant SaaS platform that lets businesses deploy AI-powered WhatsApp agents with automatic human escalation. It is built and deployed; it has not started carrying real customer traffic yet.
 
 I personally owned the full architecture and implementation. The backend is a modular monolith in Python/FastAPI structured with DDD bounded contexts (Identity, AgentConfig, Conversation, Escalation, Messaging) and an event-driven design. Each incoming WhatsApp message flows through an LLM pipeline with RAG for business-specific context; when the agent can't confidently resolve a request, an escalation workflow routes the conversation to a human operator. I integrated multiple LLM providers through LiteLLM (with fallback), built real-time conversation monitoring over SSE, role-based access control, background job processing with ARQ, Redis caching, and async PostgreSQL with migrations. The frontend is Next.js + React + TypeScript. Deployed with Docker on Railway with CI/CD.
 
@@ -62,7 +62,7 @@ All of them, professionally and in production:
 - **PostgreSQL** — 6+ years (async PostgreSQL with migrations on recent projects); also MongoDB, MySQL, Firebase, Redis
 - **REST APIs / Webhooks** — 6+ years building RESTful APIs (also GraphQL); webhook-driven integrations including WhatsApp Cloud API and Stripe
 
-I've delivered full-stack products end-to-end across all four layers — e.g., Plixiq and VitaStock (a medical supply-chain platform, 5 months in production) both span FastAPI backends, PostgreSQL, REST APIs/webhooks, and Next.js frontends that I built myself.
+I've delivered full-stack products end-to-end across all four layers — e.g., Plixiq and VitaStock (a medical supply-chain platform commissioned by a private clinic) both span FastAPI backends, PostgreSQL, REST APIs/webhooks, and Next.js frontends that I built myself.
 
 ---
 
