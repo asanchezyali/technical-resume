@@ -91,9 +91,12 @@ you deliberately left alone.
   (`open_source.last_verified`), re-check with `open_source.verify_command` before using them.
 - Recompute years, never copy them from a `.tex`. Engineering started **Aug 2018** and teaching
   **Jan 2010**; skills carry `start_year`. A CV written last year is already stale by one.
-- Check each project's `status` field before describing it. Not everything is live: Aluna is
-  built and verified end to end but its production environment carries no real traffic yet.
-  Marketing copy on a product's own website may describe the business, not the software.
+- **None of the three products has real users yet.** Plixiq is deployed, Aluna's production
+  environment is provisioned and verified, VitaStock was commissioned by a private clinic that has
+  not started operating it. Never write "in production", "serving customers", "X months in
+  production" or anything implying traffic. Write "built and deployed", "commissioned by", "shipped".
+  Check each project's `status` field before describing it, and remember that marketing copy on a
+  product's own website describes the business, not the software.
 
 ## Naming third parties
 
