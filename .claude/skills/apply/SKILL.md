@@ -49,7 +49,9 @@ between preparing for an interview and guessing.
 - Legal name: Alejandro Sánchez Yalí · asanchezyali@gmail.com
 - LinkedIn: https://www.linkedin.com/in/asanchezyali · Site: https://asanchezyali.com
 - Calendar: https://cal.com/asanchezyali/full-time-opportunities
-- Location: Colombia (COT, UTC-5) — full working day of overlap with US Eastern
+- Location: Colombia (COT, UTC-5) — full working day of overlap with US Eastern. For anything
+  about city, commuting or on-site/hybrid availability, read `private/profile.md` first and
+  never state a city from memory: earlier answers got this wrong.
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
 - Rate: ~USD 7,500/month full-time; USD 63/hour consulting. Ask for their range first when possible.

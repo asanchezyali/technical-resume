@@ -36,7 +36,7 @@ latency across four services, because people forgive nothing in a live conversat
 Healthcare is familiar ground too: I built VitaStock, a surgical supply chain platform for private
 clinics in Colombia — 12 modules, five roles, commissioned by a clinic whose pharmacist shaped the domain model.
 
-I'm in Medellín, so the hybrid setup works.
+I'm based in Venecia, Antioquia — about two hours from Medellín — and I'm in the city regularly with my own car. Hybrid can work depending on how many on-site days it needs; worth covering on the call.
 
 Easiest is to grab a slot: cal.com/asanchezyali/full-time-opportunities — or send me a couple of
 times that suit you and I'll make them work.

@@ -89,7 +89,7 @@ Un ejemplo claro es *VitaStock*, un sistema de cadena de suministro para clínic
 Creo que ahí me ayuda mucho haber sido profesor: buena parte de este trabajo es explicarle un sistema a alguien que no es técnico y ayudarle a decidir.
 
 *10. Dónde vivo*
-Vivo en Medellín, Colombia.
+Vivo en Venecia, Antioquia, a unas dos horas de Medellín, y voy a la ciudad con regularidad; tengo vehículo propio. Si la posición es presencial o híbrida, me gustaría entender cuántos días en sitio contempla para ver cómo lo coordinamos.
 
 *11. Aspiración salarial*
 [VER NOTA ABAJO — decidir antes de enviar]

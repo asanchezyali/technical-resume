@@ -105,3 +105,9 @@ variants/*.pdf
 **/CLAUDE.md
 !/CLAUDE.md
 !/.claude/**/CLAUDE.md
+
+# =========================
+# Personal context — never committed
+# =========================
+# Local-only profile, goals and plans. Read by Claude for decisions; never published.
+private/
