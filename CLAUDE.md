@@ -81,6 +81,14 @@ Rules worth knowing before touching CV content: beginner-level skills stay out o
 figures come only from `open_source.cv_highlights`, years are recomputed from `start_year` rather
 than copied, and a project's `status` is checked before describing it as live.
 
+## Private context
+
+`private/` is gitignored and never published. It holds personal context — goals, constraints,
+open decisions, plans — that informs advice about career, location, money and life. **Read
+`private/profile.md` before advising on any of those.** Nothing from `private/` is ever copied
+into public files: CVs, README, `jobs/`, skills. If it is missing, the directory was not synced
+to this machine; ask before assuming anything about his situation.
+
 ## Git Conventions
 
 Conventional Commits with emojis: `✨ feat:`, `🐛 fix:`, `📝 docs:`, `♻️ refactor:`, `⚡ perf:`, `✅ test:`, `🔧 chore:`
