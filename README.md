@@ -46,7 +46,6 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 ## Experience
 
 **AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Present*
-- Lead member of the AI Committee, standardising how the organisation builds with AI
 - Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
 - Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
 
@@ -90,7 +89,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
   Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
 - **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
   Open-source AI image generation platform: FastAPI, React, Stable Diffusion
-- 486 GitHub stars across own open-source projects — top 4.9% of ranked GitHub profiles
+- 493 GitHub stars across own open-source projects — top 4.8% of ranked GitHub profiles
 
 ---
 
