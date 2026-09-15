@@ -1192,14 +1192,6 @@
       ],
       "highlights": [
         {
-          "text": "Lead member of the AI Committee, helping standardize AI development practices and project guidelines across the organization",
-          "categories": [
-            "leadership",
-            "ai",
-            "architecture"
-          ]
-        },
-        {
           "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation",
           "categories": [
             "ai",
