@@ -46,7 +46,6 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 ## Experience
 
 **AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Present*
-- Lead member of the AI Committee, standardising how the organisation builds with AI
 - Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
 - Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
 

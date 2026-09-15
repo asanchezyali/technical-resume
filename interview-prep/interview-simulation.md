@@ -41,7 +41,7 @@ Use these. They're checked against live sources today.
 - BCFort (Medellín), Full Stack Engineer, Aug 2018 → Oct 2020 — blockchain/Web3, Ethereum, Hyperledger, NFT marketplaces.
 - Monadical (remote, Canada/US), Full Stack Engineer, Apr 2021 → Aug 2024 — 3+ years on a distributed international team.
 - Independent IT Consultant, Aug 2024 → present.
-- AI Specialist, Lapzo (remote, Mexico), Aug 2025 → present — lead member of the AI Committee.
+- AI Specialist, Lapzo (remote, Mexico), Aug 2025 → present.
 
 **Education**
 - M.Sc. Mathematics, Universidad de Antioquia (2010–2013).
@@ -158,7 +158,7 @@ Learn the beats. Improvise the words. Each one should land in 90 seconds and sur
 
 > "I'm a software engineer with a mathematics background — and the order matters, because I did the math first. I have an M.Sc. in Mathematics and I taught machine learning and math at Universidad de Antioquia for about eleven years, including building the AI/ML elective curriculum for the Mathematics Institute.
 >
-> I moved into industry in 2018, starting with blockchain platforms at BCFort in Medellín, then three-plus years at Monadical, a distributed company across Canada and the US, doing full-stack Python and TypeScript and integrating LLMs into production apps. For the last two years I've been consulting independently and, since last August, working as an AI Specialist at Lapzo, where I'm on the AI committee that sets how the company builds with AI.
+> I moved into industry in 2018, starting with blockchain platforms at BCFort in Medellín, then three-plus years at Monadical, a distributed company across Canada and the US, doing full-stack Python and TypeScript and integrating LLMs into production apps. For the last two years I've been consulting independently and, since last August, working as an AI Specialist at Lapzo, where I build conversational AI systems with real-time voice.
 >
 > The thread through all of it is that I like owning a system end to end. My most recent product, Plixiq, is a multi-tenant SaaS that lets businesses run AI agents on WhatsApp — I designed the architecture, wrote the backend and the frontend, and deployed it. That's the kind of ownership I'm looking for next, ideally with a team I can also teach and learn from, because the teaching part never really left me."
 
@@ -491,7 +491,7 @@ You have HackerRank practice in your repos; the risk isn't the algorithm, it's g
 > "That's true — my degrees are in mathematics, and I taught ML and math for eleven years before moving into industry. In practice the gap that matters would be things like operating systems and compilers, and where I've needed them I've gone and learned them — I've done systems work in C and I'm learning Rust. What the math degree gave me instead is the part people usually find harder to acquire: I can read the papers, I understand the linear algebra and probability under the models, and I'm comfortable with abstraction. Eight years of production systems covered the rest."
 
 **"Your recent work is mostly solo. Can you work in a team?"**
-> "The last two years are consulting, yes — but before that I spent three-plus years at Monadical on a distributed team across three countries, leading frontend architecture, reviewing code, and mentoring. And even as a consultant I've been the code reviewer for a client's development team and I'm on Lapzo's AI committee, which is fundamentally a group-alignment job — standardizing how a whole organization builds with AI. Solo work sharpened my ownership. It didn't replace my collaboration."
+> "The last two years are consulting, yes — but before that I spent three-plus years at Monadical on a distributed team across three countries, leading frontend architecture, reviewing code, and mentoring. And even as a consultant I've been the code reviewer for a client's development team and at Lapzo I gave the AI masterclass and mentored teams from sales, customer success and product through the company's first AI hackathon. Solo work sharpened my ownership. It didn't replace my collaboration."
 
 **"Rust — beginner. Why is it on your résumé?"**
 > "Because it's honest — it's listed at the level I'm actually at. I've been learning it for about two years on side projects, including a small chatbot. I'd be productive in it in weeks, not days, and I'd want review from someone who knows it well. I'd rather tell you that now than discover it in the first sprint."
