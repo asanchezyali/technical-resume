@@ -2103,7 +2103,7 @@
     }
   ],
   "open_source": {
-    "last_verified": "2026-09-01",
+    "last_verified": "2026-09-15",
     "verify_command": "curl -s https://api.github.com/users/asanchezyali && curl -s https://api.github.com/repos/asanchezyali/talking-avatar-with-ai",
     "sources": {
       "github_api": "https://api.github.com/users/asanchezyali",
@@ -2116,11 +2116,11 @@
       "member_since": 2017,
       "public_repos": 36,
       "followers": 43,
-      "total_stars_own_projects": 486
+      "total_stars_own_projects": 493
     },
     "rankings": {
       "provider": "GitRanks",
-      "own_projects_percentile": "Top 4.9% of ranked GitHub profiles",
+      "own_projects_percentile": "Top 4.8% of ranked GitHub profiles",
       "oss_contributions_percentile": "Top 2.4% of ranked GitHub profiles",
       "tier": "Master 2",
       "persona": "Creator",
@@ -2173,7 +2173,7 @@
     ],
     "cv_highlights": [
       "Author of an open-source conversational AI avatar with 464 stars and 110 forks (OpenAI GPT, Whisper, ElevenLabs, Three.js)",
-      "486 GitHub stars across own open-source projects -- top 4.9% of ranked GitHub profiles (GitRanks)",
+      "493 GitHub stars across own open-source projects -- top 4.8% of ranked GitHub profiles (GitRanks)",
       "Open-source contributor: 19 pull requests to Morpheus, an AI image generation platform (FastAPI, React, Stable Diffusion)"
     ],
     "excluded_from_cv": [

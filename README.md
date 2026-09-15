@@ -89,7 +89,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
   Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
 - **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
   Open-source AI image generation platform: FastAPI, React, Stable Diffusion
-- 486 GitHub stars across own open-source projects — top 4.9% of ranked GitHub profiles
+- 493 GitHub stars across own open-source projects — top 4.8% of ranked GitHub profiles
 
 ---
 
