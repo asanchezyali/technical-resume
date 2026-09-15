@@ -109,5 +109,5 @@ variants/*.pdf
 # =========================
 # Personal context — never committed
 # =========================
-# Local-only profile, goals and plans. Read by Claude for decisions; never published.
+# Personal context now lives in ../private (Own/private). Kept ignored in case it is ever recreated here.
 private/

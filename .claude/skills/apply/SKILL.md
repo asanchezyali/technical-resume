@@ -50,7 +50,7 @@ between preparing for an interview and guessing.
 - LinkedIn: https://www.linkedin.com/in/asanchezyali · Site: https://asanchezyali.com
 - Calendar: https://cal.com/asanchezyali/full-time-opportunities
 - Location: Colombia (COT, UTC-5) — full working day of overlap with US Eastern. For anything
-  about city, commuting or on-site/hybrid availability, read `private/profile.md` first and
+  about city, commuting or on-site/hybrid availability, read `../private/profile.md` (in `Own/private/`) first and
   never state a city from memory: earlier answers got this wrong.
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
