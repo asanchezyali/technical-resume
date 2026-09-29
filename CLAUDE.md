@@ -84,10 +84,10 @@ than copied, and a project's `status` is checked before describing it as live.
 ## Private context
 
 Personal context — goals, constraints, finances, open decisions, plans — lives **one level up**, in
-`../private/` (i.e. `Documents/Own/private/`), outside every repo and never published. **Read
-`../private/profile.md` before advising on career, location, money or life.** Nothing from there is
+`../kairos/` (i.e. `Documents/Own/kairos/`), outside every repo and never published. **Read
+`../kairos/profile.md` before advising on career, location, money or life.** Nothing from there is
 ever copied into public files: CVs, README, `jobs/`, skills. `Own/CLAUDE.md` describes the whole
-`Own/` workspace. If `../private/` is missing, it was not synced to this machine; ask before assuming
+`Own/` workspace. If `../kairos/` is missing, it was not synced to this machine; ask before assuming
 anything about his situation.
 
 ## Git Conventions
