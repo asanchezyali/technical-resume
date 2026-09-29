@@ -109,5 +109,6 @@ variants/*.pdf
 # =========================
 # Personal context — never committed
 # =========================
-# Personal context now lives in ../private (Own/private). Kept ignored in case it is ever recreated here.
+# Personal context now lives in ../kairos (Own/kairos, formerly Own/private). Kept ignored in case it is ever recreated here.
 private/
+kairos/
