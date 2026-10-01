@@ -73,7 +73,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 | | |
 |---|---|
-| **Languages** | Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL |
+| **Languages** | Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL, Rust (personal projects) |
 | **AI & LLMs** | LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, agentic development |
 | **ML & Mathematics** | PyTorch, TensorFlow, Scikit-learn, JAX, Flax, NumPy, Pandas, linear algebra, probability, statistical inference |
 | **Backend** | FastAPI, Django, Django REST Framework, Flask, NestJS, Node.js, Express, REST, GraphQL, microservices |
@@ -89,6 +89,8 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
   Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
 - **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
   Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+- **[kipux](https://github.com/asanchezyali/kipux)** — Collaborative-finance app in Rust (Axum, sqlx, PostgreSQL, HTMX, SSE, PWA)
+  with Claude-vision receipt parsing. Personal project, work in progress
 - 493 GitHub stars across own open-source projects — top 4.8% of ranked GitHub profiles
 
 ---
