@@ -1169,8 +1169,8 @@
       "company": "Lapzo",
       "location": "Remote, Mexico",
       "start_date": "2025-08-01",
-      "end_date": null,
-      "date_range": "Aug 2025 -- Present",
+      "end_date": "2026-09-30",
+      "date_range": "Aug 2025 -- Sep 2026",
       "categories": [
         "ai",
         "llm",
@@ -1188,11 +1188,18 @@
         "NestJS",
         "Firebase Realtime",
         "ElevenLabs API",
-        "TypeScript"
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "pgvector",
+        "htmx",
+        "AWS Cognito",
+        "Zoom API"
       ],
       "highlights": [
         {
           "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation",
+          "status": "In use with real users at Lapzo (confirmed by Alejandro, 29-sep-2026). The Digital Professor is not.",
           "categories": [
             "ai",
             "llm",
@@ -1234,8 +1241,74 @@
             "speech",
             "integration"
           ]
+        },
+        {
+          "text": "Built an HR Agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation; shipped to QA and staging with a runbook and a four-page handover",
+          "categories": [
+            "ai",
+            "llm",
+            "backend",
+            "agents"
+          ]
+        },
+        {
+          "text": "Migrated the course-vectorization system to a dedicated VM and integrated it with the back office; moved the embeddings pipeline from n8n into the platform, now powering Express courses",
+          "categories": [
+            "ai",
+            "backend",
+            "infrastructure"
+          ]
+        },
+        {
+          "text": "Designed the architecture of Express courses (fast course creation) for the learning platform",
+          "categories": [
+            "architecture",
+            "design"
+          ]
+        },
+        {
+          "text": "Built the audit system for courses and learning paths: change logs, exportable reports and permission-aware history",
+          "categories": [
+            "backend",
+            "fullstack"
+          ]
+        },
+        {
+          "text": "Hardened the LIA course assistant: scoped context to the current course, consistent recommendations, no web fallback for unvectorized content",
+          "categories": [
+            "ai",
+            "llm"
+          ]
+        },
+        {
+          "text": "Built Lapzo-Tools, internal tooling for reviewing implemented code and giving coding agents richer project context",
+          "categories": [
+            "ai",
+            "tooling",
+            "developer-experience"
+          ]
+        },
+        {
+          "text": "Delivered platform features end to end: Zoom granular authentication, automatic learning-path unenrollment, evaluation-attempt rules, bulk multi-destination enrollment, calendar-course participant management, transcription pipeline",
+          "categories": [
+            "fullstack",
+            "backend"
+          ]
+        },
+        {
+          "text": "Automated pre-invoicing workflows with n8n",
+          "categories": [
+            "automation"
+          ]
+        },
+        {
+          "text": "Closed 57 tasks and 6 epics in the first nine months of 2026 with a single production bug (per the team's ClickUp board)",
+          "categories": [
+            "delivery"
+          ]
         }
-      ]
+      ],
+      "exit_note": "Contract ended 30-sep-2026 (contractor via Ontop). Do not mention Vitally, Odoo or invoicing automation; say only 'pre-invoicing n8n flows'. Do not name Lapzo clients."
     },
     {
       "id": "freelance-2024",

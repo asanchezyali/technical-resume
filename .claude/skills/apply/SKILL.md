@@ -54,7 +54,7 @@ between preparing for an interview and guessing.
   never state a city from memory: earlier answers got this wrong.
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
-- Rate: ~USD 7,500/month full-time; USD 63/hour consulting. Ask for their range first when possible.
+- Rate (updated 30-sep-2026): from USD 4,000/month full-time, negotiable. USD 63/hour consulting. Ask for their range first when possible; if forced to give a number, say "from USD 4,000, depending on scope".
   (Written without a dollar sign on purpose: `$7` is read as a positional argument when the skill runs.)
 
 ## Naming third parties

@@ -125,7 +125,7 @@ trade-off, because that is what separates him from a candidate with the same sta
 - Three products live and owned end to end: Plixiq, Aluna, VitaStock.
 - 464★ / 110 forks on the open-source conversational AI avatar.
 - Colombia, UTC-5, full-day overlap with US Eastern. No sponsorship needed.
-- Rate anchors: ~$7,500/month full-time, $63/hour consulting.
+- Rate anchors (updated 30-sep-2026): from USD 4,000/month full-time, negotiable; USD 63/hour consulting (USD 90–100/h for new clients). Never state a ceiling.
 
 ## Known gaps — do not paper over them
 
