@@ -55,7 +55,7 @@
 
 
 \section{Summary}
-AI Engineer and mathematician with 8+ years building production software and 3+ years shipping LLM-powered systems end to end. M.Sc. in Mathematics and 11 years teaching machine learning before moving into industry. Designs and operates multi-tenant AI products: RAG pipelines, multi-provider LLM gateways with fallback, agent orchestration, and real-time conversational systems -- owning the architecture as well as the code.
+AI Engineer and mathematician with 8+ years building software and 3+ years shipping generative AI systems for clients end to end: RAG pipelines, document analysis with LLMs, multi-provider model gateways and agent workflows with LangChain and LangGraph. M.Sc. in Mathematics and 11 years teaching machine learning, which grounds the data science and statistics side of the work. Used to sitting with a client, turning the business problem into an architecture and shipping it.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
@@ -70,13 +70,12 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 \section{Experience}
 \begin{itemize}[leftmargin=0pt, itemindent=0pt, label={}, itemsep=1pt]
 \resumeSubheading
-{AI Specialist}{Aug 2025 -- Sep 2026}
+{AI Specialist}{Aug 2025 -- Present}
 {Lapzo}{Remote, Mexico}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Built an HR agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation; shipped to QA and staging with a runbook and a handover
-    \item Migrated the course-vectorization system to a dedicated VM and moved the embeddings pipeline from n8n into the platform; hardened the LLM course assistant (scoped context, consistent recommendations)
-    \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides (LLM services, ElevenLabs voice, real-time layer)
-    \item Built the audit system for courses and learning paths and an AI-powered educational content generator with LangChain, LangGraph and n8n
+    \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides
+    \item Owned the architecture connecting LLM services, ElevenLabs voice synthesis and the real-time communication layer
+    \item Built an AI-powered educational content generator with LangChain, LangGraph and n8n workflow automation
 \end{itemize}
 \resumeSubheading
 {Independent Software \& AI Consultant}{Aug 2024 -- Present}
@@ -114,15 +113,17 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 
 \section{Featured Projects}
 \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, TypeScript, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
+    \begin{itemize}[itemsep=0pt]
+        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
+        \item Durable CV analysis pipeline on Inngest: 9 checkpointed steps with 3 retries, early exits for revoked consent, and deduplication placed before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call
+        \item Routed each agent to a deliberately chosen model through LiteLLM (Gemini for document analysis, Claude Sonnet for conversation, Claude Haiku for the vacancy assistant), overridable per agent at runtime from the database
+        \item One conversational screening engine serving three transports -- WhatsApp, signed-link web chat and email -- so the conversation logic has a single implementation regardless of channel
+    \end{itemize}
     \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, RAG, PostgreSQL, Redis, Next.js}
     \begin{itemize}[itemsep=0pt]
         \item Sole architect and engineer of a multi-tenant SaaS where AI agents resolve routine customer inquiries in about 2 seconds and escalate the rest to human operators with full conversation context
         \item Modular monolith with 10 DDD bounded contexts enforced by a lint rule in CI; multi-provider LLM layer (Groq default, OpenAI fallback) so switching providers is a config change
-    \end{itemize}
-    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
-    \begin{itemize}[itemsep=0pt]
-        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
-        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
     \end{itemize}
     \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}
     \begin{itemize}[itemsep=0pt]
