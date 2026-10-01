@@ -2024,7 +2024,7 @@
       "id": "kipux",
       "name": "Kipux -- Collaborative Finance App in Rust",
       "url": "https://github.com/asanchezyali/kipux",
-      "status": "work in progress (personal project, started Jul 2026)",
+      "status": "open source (MIT), work in progress (personal project, started Jul 2026)",
       "categories": [
         "backend",
         "fullstack",
@@ -2049,7 +2049,7 @@
       ],
       "highlights": [
         {
-          "text": "Personal project to learn Rust by shipping a real app: a server-rendered, multi-tenant personal-finance platform (projects, invites with roles, accounts, categories, budgets) built with Axum, sqlx and Postgres, with CSRF protection, argon2 auth and Postgres-backed sessions",
+          "text": "Open-source project (MIT) to learn Rust by shipping a real app: a server-rendered, multi-tenant personal-finance platform (projects, invites with roles, accounts, categories, budgets) built with Axum, sqlx and Postgres, with CSRF protection, argon2 auth and Postgres-backed sessions",
           "categories": [
             "backend",
             "systems",
@@ -2078,7 +2078,8 @@
             "devops"
           ]
         }
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "digital-human",
