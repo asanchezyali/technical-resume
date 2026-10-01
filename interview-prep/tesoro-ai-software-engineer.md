@@ -12,8 +12,11 @@ the story is clear, and the logistics fit. Keep answers to about a minute. Spend
 
 - I'm a mathematician who became a software engineer. I taught math and machine learning at Universidad de
   Antioquia for eleven years, and I've been shipping production software since 2018.
-- These days I build AI systems end to end. At Lapzo I'm the AI Specialist: I built a Digital Professor that
-  holds real-time voice conversations with learners, with LLM services, ElevenLabs synthesis and a real-time layer.
+- These days I build AI systems end to end. For the last fourteen months I was the AI Specialist at Lapzo, an
+  education platform: I built a Digital Professor that holds real-time voice conversations with learners (LLM
+  services, ElevenLabs synthesis, a real-time layer), the vectorization pipelines for course search, and an HR
+  agent on LangGraph that answers policy questions with citations. That contract ended at the end of September,
+  so I'm available right away.
 - On the side I've led and built full products: Aluna, an AI recruitment platform, and Plixiq, AI customer
   support on WhatsApp. Mostly Python and FastAPI, with TypeScript on the front.
 - Healthcare isn't new to me either. A private surgical clinic commissioned VitaStock, a supply-chain system.
@@ -76,3 +79,26 @@ and a clinical system with a pharmacist. It's rare to find a role that asks for 
 4. What's the salary range for the role?
 5. When you say voice infrastructure, is it real-time telephony, or speech inside the product?
 6. What are the next steps after this call, and is there a technical test?
+
+## Update 1 Oct 2026 (the night before)
+
+**Status change.** Lapzo ended on 30 Sep 2026. Say it in the intro, in one line, and move on. If asked why:
+
+> It was a contractor engagement; it ended at the end of September. We parted on good terms and I handed the
+> HR agent over with documentation. I'm fully available now, which is why I could take this call on a Friday morning.
+
+Don't volunteer that it was their decision; don't lie if asked directly ("the company ended the contract; I
+disagreed with the reason, but that's their call, and I'd rather talk about the work").
+
+**Salary rule changed (30 Sep): ask the range first; if forced, "from USD 4,000 a month, depending on scope".**
+In pesos at today's rate (TRM ~3,313) that is about COP 13.5M. The 10–16M note from 8 Sep: 10M is below the
+floor, 16M is above it. Don't accept below 13M; don't anchor high.
+
+**Location, unchanged:** "I'm based in Antioquia, about two hours from Medellín, and I'm moving to the city in
+January. Until then I can be on site a couple of days when it's planned ahead." Never say "I live in Medellín".
+
+**Logistics.** Fri 2 Oct, 9:00–9:30 COT, Google Meet pep-txsi-dco (reminder email 1 Oct 9:00). Test camera and
+mic at 8:45. He is in Medellín (Airbnb in Laureles) until Saturday: good connection, quiet room, headphones.
+
+**One new story available (optional):** Kipux, a Rust finance app with a Claude-vision receipt parser, open
+source. Only if they ask what you build for fun. Not a healthcare or voice story.
