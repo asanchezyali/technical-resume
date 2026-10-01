@@ -2021,6 +2021,66 @@
       "engagement": "Commissioned by a private surgical clinic; their pharmacist worked with me on the domain model"
     },
     {
+      "id": "kipux",
+      "name": "Kipux -- Collaborative Finance App in Rust",
+      "url": "https://github.com/asanchezyali/kipux",
+      "status": "work in progress (personal project, started Jul 2026)",
+      "categories": [
+        "backend",
+        "fullstack",
+        "systems",
+        "ai",
+        "personal"
+      ],
+      "technologies": [
+        "Rust",
+        "Axum",
+        "sqlx",
+        "PostgreSQL",
+        "Maud",
+        "HTMX",
+        "Tailwind CSS",
+        "tokio",
+        "SSE",
+        "PWA",
+        "Claude Messages API",
+        "Shuttle",
+        "GitHub Actions"
+      ],
+      "highlights": [
+        {
+          "text": "Personal project to learn Rust by shipping a real app: a server-rendered, multi-tenant personal-finance platform (projects, invites with roles, accounts, categories, budgets) built with Axum, sqlx and Postgres, with CSRF protection, argon2 auth and Postgres-backed sessions",
+          "categories": [
+            "backend",
+            "systems",
+            "security"
+          ]
+        },
+        {
+          "text": "Real-time updates over Server-Sent Events on a tokio broadcast bus, a PWA with an offline transaction queue (service worker + IndexedDB), and multi-currency aggregation with Decimal money, never floats",
+          "categories": [
+            "backend",
+            "real-time",
+            "frontend"
+          ]
+        },
+        {
+          "text": "Receipt-by-photo: Claude vision parses a receipt into editable line items through the raw Messages API with a strict JSON schema, then creates one categorised expense per item",
+          "categories": [
+            "ai",
+            "llm"
+          ]
+        },
+        {
+          "text": "Integration tests on isolated migrated databases (#[sqlx::test]) and CI on GitHub Actions; deployable on Shuttle with managed Postgres",
+          "categories": [
+            "testing",
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
       "id": "digital-human",
       "name": "Digital Human -- Interactive AI Avatar",
       "url": "https://github.com/asanchezyali/talking-avatar-with-ai",
