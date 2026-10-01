@@ -90,7 +90,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 - **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
   Open-source AI image generation platform: FastAPI, React, Stable Diffusion
 - **[kipux](https://github.com/asanchezyali/kipux)** — Collaborative-finance app in Rust (Axum, sqlx, PostgreSQL, HTMX, SSE, PWA)
-  with Claude-vision receipt parsing. Personal project, work in progress
+  with Claude-vision receipt parsing. Open source (MIT), work in progress
 - 493 GitHub stars across own open-source projects — top 4.8% of ranked GitHub profiles
 
 ---
