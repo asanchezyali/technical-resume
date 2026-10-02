@@ -281,6 +281,19 @@
         "start_year": 2022
       },
       {
+        "name": "Celery",
+        "years": 1,
+        "level": "intermediate",
+        "categories": [
+          "backend",
+          "python",
+          "async-tasks",
+          "workers"
+        ],
+        "display": "Celery",
+        "start_year": 2025
+      },
+      {
         "name": "Flask",
         "years": 4,
         "level": "intermediate",
@@ -1192,6 +1205,7 @@
         "ElevenLabs API",
         "TypeScript",
         "FastAPI",
+        "Celery",
         "PostgreSQL",
         "pgvector",
         "htmx",
@@ -1200,7 +1214,7 @@
       ],
       "highlights": [
         {
-          "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation",
+          "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation, with Celery workers running the generation pipelines in the background",
           "status": "In use with real users at Lapzo (confirmed by Alejandro, 29-sep-2026). The Digital Professor is not.",
           "categories": [
             "ai",
