@@ -102,3 +102,45 @@ mic at 8:45. He is in Medellín (Airbnb in Laureles) until Saturday: good connec
 
 **One new story available (optional):** Kipux, a Rust finance app with a Claude-vision receipt parser, open
 source. Only if they ask what you build for fun. Not a healthcare or voice story.
+
+## Mock interview (written 1 Oct 2026, night before). Recruiter screen, 30 minutes, English.
+
+**V: Hi Alejandro, thanks for making the time. Could you start by telling me a bit about yourself?**
+Sure. I'm a mathematician who became a software engineer. I have a master's in mathematics and I taught math and machine learning at Universidad de Antioquia for eleven years, and I've been shipping production software since 2018. For the last fourteen months I was the AI Specialist at Lapzo, an education platform: I built a Digital Professor that holds real-time voice conversations with learners, the vectorization pipelines behind course search, and an HR agent on LangGraph that answers policy questions with citations. That contract ended at the end of September, so I'm available right away. On the side I've built full products end to end, mostly Python and FastAPI with TypeScript on the front: Plixiq, AI customer support on WhatsApp, and Aluna, an AI recruitment platform. And I've worked in healthcare: a private surgical clinic commissioned VitaStock, a supply-chain system I built with their pharmacist shaping the domain model.
+
+**V: Why did the Lapzo engagement end?**
+It was a contractor engagement and it closed at the end of September. We parted on good terms; I handed over the HR agent with full documentation and said goodbye to the team properly. I'm fully available now, which is why I could take a Friday-morning call.
+
+**V: The role involves voice infrastructure. What's your experience there?**
+Let me be precise, because "voice" can mean two things. What I've built is voice inside a product: real-time speech-to-text with Whisper, LLM generation, and ElevenLabs synthesis, both in the Digital Professor at Lapzo and in an open-source conversational avatar I maintain, which has about 460 stars. The hard problem there was never the model; it was budgeting latency across four services, because people notice every pause in a live conversation. What I haven't built is telephony: Twilio, SIP, barge-in on phone calls. If the role is phone infrastructure, that's new ground for me and I'd say so. Which of the two is it in this case?
+
+**V: It's more on the product side, with some real-time requirements. How do you approach reliability?**
+With mechanisms, not adjectives. In Plixiq, WhatsApp retries webhook deliveries, so processing is idempotent and a retried delivery never duplicates a write. Anything slow runs as a background job with retries. The LLM layer sits behind LiteLLM with provider fallback, so one provider outage doesn't stop every tenant. In Aluna I built a durable pipeline on Inngest: nine checkpointed steps, three retries, and deduplication placed before quota enforcement, so a re-analysed CV reuses its cached score instead of paying for another model call. I should be clear about one thing: those systems are built and deployed, but they don't carry real customer traffic yet. I've built the mechanisms that keep a system up; I haven't yet operated one at real scale. That's the gap I want to close next.
+
+**V: Tell me about your Python background.**
+Eight years. FastAPI and Django mostly, async PostgreSQL, Redis, background jobs with ARQ, and LangChain and LangGraph for the agent work. At Monadical, a distributed team across Canada, the US and Latin America, I built Python backends with REST and GraphQL APIs for three years and led code reviews. More recently everything I've built alone has a FastAPI core with a Next.js front end.
+
+**V: Have you worked with healthcare data or regulations like HIPAA?**
+Not HIPAA, and I won't pretend otherwise. What I have done is privacy by design under Colombian law, Ley 1581: in Aluna, consent is written in the same transaction as the candidate's data, and a revoked consent blocks any re-analysis. And in VitaStock I handled clinical operations data for a surgical clinic, with roles and permissions per user type. So I understand the discipline; the specific US framework I'd need to learn.
+
+**V: How do you work with teams, given that a lot of your recent work was solo?**
+The solo work was deliberate range, not isolation. I spent three years on Monadical's distributed team, where I led the frontend architecture and reviewed other people's code. I was code reviewer for a client's development team on an NX multi-repo. At Lapzo I worked in a product squad with a tech lead, designers and QA, and I documented blockers and decisions in ClickUp so the rest of the team could follow. Eleven years of teaching also help: explaining a system clearly is most of the job.
+
+**V: The company is US-based and the team speaks English. How comfortable are you?**
+Comfortable, as you can hear. I take weekly classes to keep sharpening it, I've worked with English-speaking teams for years, and most of my technical reading and writing is in English.
+
+**V: The position is based in Medellín with a hybrid setup. Does that work for you?**
+I'm based in Antioquia, about two hours from Medellín, and I'm moving to the city in January. Until then I can be on site a couple of days when it's planned ahead. How many days a week on site does the client expect, and where is the office?
+
+**V: What are your salary expectations?**
+I'd rather hear the range you have budgeted first, so we can see quickly if it makes sense to keep going.
+*(If she insists:)* From about four thousand dollars a month, depending on scope. If it's in pesos, roughly thirteen and a half million.
+
+**V: When could you start?**
+Right away. I have no notice period.
+
+**V: Do you have questions for me?**
+Yes, a few. Is the contract with the client directly, or with Tesoro AI? What part of healthcare is the company in, and can you share its name at this stage? What's the salary range for the role? And after this call, what are the next steps, and is there a technical test?
+
+**V: Thanks, Alejandro. We'll be in touch with next steps.**
+Thank you, Valeria. I appreciate the clarity. Talk soon.
