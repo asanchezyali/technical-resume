@@ -19,12 +19,12 @@ Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
 ## Products
 
 **[Plixiq](https://plixiq.com) — AI customer support on WhatsApp**
-Multi-tenant SaaS where AI agents resolve routine inquiries in about two seconds and escalate the rest
+Multi-tenant SaaS where AI agents answer routine inquiries, book appointments and escalate the rest
 to human operators with the full conversation intact. Sole architect and engineer: a modular monolith
-with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, and a multi-provider
-LLM layer through LiteLLM so switching providers is a configuration change. ~40,000 lines to a
-near-complete MVP in four months part-time, deployed and running at $60–80/month.
-`Python` `FastAPI` `LiteLLM` `RAG` `PostgreSQL` `Redis` `ARQ` `Next.js` `SSE`
+with 14 bounded contexts whose boundaries are enforced in CI, and a multi-provider
+LLM layer through LiteLLM so switching providers is a configuration change. ~43,000 lines, built
+part-time, launched in September 2026 and running at $60–80/month.
+`Python` `FastAPI` `LiteLLM` `PostgreSQL` `Redis` `Next.js` `WebSocket` `WhatsApp Cloud API`
 
 **[Aluna](https://www.aluna.works) — AI recruitment platform for staffing agencies**
 CVs are scored automatically, an agent interviews candidates over WhatsApp or web chat, and the
@@ -45,9 +45,10 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 ## Experience
 
-**AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Present*
+**AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Sep 2026*
 - Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
 - Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
+- Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
 
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
 - Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
@@ -73,7 +74,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 | | |
 |---|---|
-| **Languages** | Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL |
+| **Languages** | Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL, Rust (personal projects) |
 | **AI & LLMs** | LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, agentic development |
 | **ML & Mathematics** | PyTorch, TensorFlow, Scikit-learn, JAX, Flax, NumPy, Pandas, linear algebra, probability, statistical inference |
 | **Backend** | FastAPI, Django, Django REST Framework, Flask, NestJS, Node.js, Express, REST, GraphQL, microservices |
@@ -89,6 +90,8 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
   Open-source conversational AI avatar: OpenAI GPT, Whisper, ElevenLabs, Rhubarb lip-sync, Three.js
 - **[Monadical-SAS/Morpheus](https://github.com/Monadical-SAS/Morpheus)** — 19 pull requests.
   Open-source AI image generation platform: FastAPI, React, Stable Diffusion
+- **[kipux](https://github.com/asanchezyali/kipux)** — Collaborative-finance app in Rust (Axum, sqlx, PostgreSQL, HTMX, SSE, PWA)
+  with Claude-vision receipt parsing. Open source (MIT), work in progress
 - 493 GitHub stars across own open-source projects — top 4.8% of ranked GitHub profiles
 
 ---
