@@ -1154,6 +1154,8 @@
       {
         "name": "English",
         "level": "advanced",
+        "cefr": "B2",
+        "note": "Declare B2 (upper-intermediate) on every form and profile; never C1 or 'advanced'. His instruction, 2-oct-2026.",
         "categories": [
           "soft-skills",
           "language"
