@@ -45,9 +45,10 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 ## Experience
 
-**AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Present*
+**AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Sep 2026*
 - Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
 - Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
+- Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
 
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
 - Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
