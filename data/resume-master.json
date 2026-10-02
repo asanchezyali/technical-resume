@@ -1760,19 +1760,17 @@
         "Effect",
         "PostgreSQL",
         "Redis",
-        "ARQ",
         "LiteLLM",
         "Groq",
         "OpenAI",
-        "RAG",
         "WhatsApp Cloud API",
-        "SSE",
+        "WebSocket",
         "Docker",
         "Railway"
       ],
       "highlights": [
         {
-          "text": "Sole architect and engineer of a multi-tenant SaaS that lets businesses run AI agents on WhatsApp, resolving routine inquiries in about 2 seconds and escalating the rest to human operators with full conversation context",
+          "text": "Sole architect and engineer of a multi-tenant SaaS that lets businesses run AI agents on WhatsApp: they answer routine inquiries, book appointments, look up products and occupancy, and escalate the rest to human operators with full conversation context",
           "categories": [
             "ai",
             "llm",
@@ -1782,7 +1780,7 @@
           ]
         },
         {
-          "text": "Designed a modular monolith with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, keeping a one-person codebase clean without the operational cost of microservices",
+          "text": "Designed a modular monolith with 14 bounded contexts whose boundaries are enforced by import-linter and architecture tests in CI, keeping a one-person codebase clean without the operational cost of microservices",
           "categories": [
             "architecture",
             "backend",
@@ -1800,7 +1798,7 @@
           ]
         },
         {
-          "text": "Implemented automatic frustration and keyword detection for escalation, multilingual agents (ES/EN), and a real-time operator dashboard over Server-Sent Events, chosen over WebSockets because traffic is one-way",
+          "text": "Implemented escalation by keyword, model decision or failed output guard, multilingual agents (ES/EN), and a real-time operator dashboard over WebSockets authenticated with single-use Redis tickets, after outgrowing polling and Server-Sent Events",
           "categories": [
             "ai",
             "fullstack",
@@ -1810,7 +1808,7 @@
           ]
         },
         {
-          "text": "Shipped ~40,000 lines of backend and frontend to a near-complete MVP in 4 months part-time, deployed and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
+          "text": "Shipped ~43,000 lines of backend and frontend part-time, launched on plixiq.com in September 2026 and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
           "categories": [
             "product",
             "delivery",
@@ -1819,7 +1817,7 @@
           ]
         },
         {
-          "text": "Engineered async PostgreSQL with migrations, Redis caching, ARQ background jobs, idempotent webhook processing, and role-based access control across tenants",
+          "text": "Engineered async PostgreSQL with migrations, a two-level cache (in-process + Redis), Redis-backed timers, webhook deduplication by message id, and role-based access control across tenants",
           "categories": [
             "backend",
             "database",

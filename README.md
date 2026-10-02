@@ -19,12 +19,12 @@ Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
 ## Products
 
 **[Plixiq](https://plixiq.com) — AI customer support on WhatsApp**
-Multi-tenant SaaS where AI agents resolve routine inquiries in about two seconds and escalate the rest
+Multi-tenant SaaS where AI agents answer routine inquiries, book appointments and escalate the rest
 to human operators with the full conversation intact. Sole architect and engineer: a modular monolith
-with 10 DDD bounded contexts whose boundaries are enforced by a lint rule in CI, and a multi-provider
-LLM layer through LiteLLM so switching providers is a configuration change. ~40,000 lines to a
-near-complete MVP in four months part-time, deployed and running at $60–80/month.
-`Python` `FastAPI` `LiteLLM` `RAG` `PostgreSQL` `Redis` `ARQ` `Next.js` `SSE`
+with 14 bounded contexts whose boundaries are enforced in CI, and a multi-provider
+LLM layer through LiteLLM so switching providers is a configuration change. ~43,000 lines, built
+part-time, launched in September 2026 and running at $60–80/month.
+`Python` `FastAPI` `LiteLLM` `PostgreSQL` `Redis` `Next.js` `WebSocket` `WhatsApp Cloud API`
 
 **[Aluna](https://www.aluna.works) — AI recruitment platform for staffing agencies**
 CVs are scored automatically, an agent interviews candidates over WhatsApp or web chat, and the
