@@ -13,5 +13,5 @@ Applied 1-oct-2026 at https://careers.searchatlas.com/jobs/595729-senior-full-st
 
 ## Fit notes for the interview
 Stack match: Python, Django REST Framework, React, Next.js, TypeScript, PostgreSQL, Docker Compose, Claude Code daily.
-Gaps: Celery (he uses ARQ in Plixiq and Inngest in Aluna), Sentry + Grafana stack (not in data), GitLab CI (GitHub Actions). Say so if asked.
+Gaps: Sentry + Grafana stack (not in data), GitLab CI (GitHub Actions). Say so if asked. Celery: he has used it in production (said 2-oct); ARQ in Plixiq and Inngest in Aluna let him compare.
 Culture: intense pace, pods of 1 PM + 1 designer + 2–3 engineers, "one senior with Claude Code replaces a team".

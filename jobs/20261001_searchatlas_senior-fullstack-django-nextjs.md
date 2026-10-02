@@ -7,4 +7,4 @@ Own features end to end (schema → UI). Django APIs + React/Next.js UIs under p
 
 Looking for: Python 3, Django REST Framework, Celery; React, Next.js, TypeScript; PostgreSQL in production (no MySQL); daily fluency with Claude Code/Cursor; Sentry + Grafana stack (Loki, Grafana, Tempo, Mimir); Docker Compose; GitLab or equivalent CI/CD.
 
-Gaps: Celery (he uses ARQ), Grafana stack (not in data), GitLab (GitHub Actions).
+Gaps: Grafana stack (not in data), GitLab (GitHub Actions). Celery: he HAS used it (said 2-oct), being added to resume-master.json.
