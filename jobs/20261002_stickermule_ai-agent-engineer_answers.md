@@ -1,0 +1,14 @@
+# Sticker Mule · AI agent engineer · application (Ashby form)
+
+Prepared 2-oct-2026 ~6:30 am. Resume: generated/AlejandroSanchezYaliAIEngineer.pdf · Name Alejandro Sánchez Yalí · asanchezyali@gmail.com · Location "Medellín, Colombia (UTC-5)" · GitHub github.com/asanchezyali · Code sample github.com/asanchezyali/kipux · Heard about us: We Work Remotely.
+
+## What agents would you recommend building for Sticker Mule?
+
+Four, in the order I'd ship them. 1) A support agent on orders and artwork: it resolves the routine questions (status, reprints, file problems) with the order context in hand and hands anything ambiguous to a person with the full thread, not a summary. This is the pattern I built for Plixiq, and the escalation rule is the part to get right first. 2) An artwork preflight agent: it checks uploads for resolution, bleed, transparency and color mode and tells the customer exactly what to fix before the job hits production, so the factory never sees a bad file. 3) A production-ops agent that watches the order flow and flags jobs drifting past their SLA to the department lead, with the reason. 4) An internal data agent over Postgres with read-only, scoped queries, so department leads can ask questions without a ticket. Each one ships with a metric and a kill switch; the posting says to remove agents that don't deliver, and I agree with that.
+
+## What agents have you built?
+
+Plixiq (plixiq.com): a multi-tenant platform where AI agents handle customer support on WhatsApp. They resolve routine requests in about two seconds and escalate to a human with the full conversation when frustration or specific keywords are detected. LiteLLM routes across OpenAI, Anthropic and others with fallback and retries; webhook processing is idempotent because WhatsApp retries deliveries; a regression set of real failed conversations gates every prompt change. Built and deployed; no real customer traffic yet, so what I can show is the system and the decisions, not traction. At Lapzo (education platform, 14 months as AI Specialist): an HR agent on LangGraph, FastAPI and pgvector that answers policy questions with citations and executes requests only after human confirmation; course vectorization pipelines; and a real-time voice Digital Professor (Whisper, LLM, ElevenLabs). Aluna: an AI recruitment product with a durable CV-analysis pipeline on Inngest, nine checkpointed steps, multi-model routing. Stack: Python and TypeScript; GraphQL and Postgres at Monadical; GCP at Monadical and BCFort. I have not shipped Go in production; my closest systems-language work is Rust (github.com/asanchezyali/kipux).
+
+---
+Weakest point: Go and Grok are in their requirements and not in his data; said plainly. The salary band is far above his floor, so expect heavy competition; the answers lean on concrete mechanisms, not adjectives.
