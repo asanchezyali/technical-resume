@@ -54,6 +54,7 @@ between preparing for an interview and guessing.
   never state a city from memory: earlier answers got this wrong.
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
+- English level: **B2 (upper-intermediate)** on every form. Never C1 or "advanced" (his correction, 2-oct-2026). If a posting asks for C1+, apply anyway with B2 and tell him.
 - Rate: see private notes.
   (Written without a dollar sign on purpose: `$7` is read as a positional argument when the skill runs.)
 
