@@ -8,8 +8,8 @@
 [![Email](https://img.shields.io/badge/Email-asanchezyali%40gmail.com-red?logo=gmail)](mailto:asanchezyali@gmail.com)
 [![Schedule](https://img.shields.io/badge/Schedule-Book%20a%20Call-orange)](https://cal.com/asanchezyali/full-time-opportunities)
 
-I spent eleven years teaching mathematics and machine learning at Universidad de Antioquia, then eight
-building production software. For the last two years I have been designing and shipping LLM-powered
+I spent eleven years teaching mathematics and physics at Universidad de Antioquia (machine learning in the
+last year and a half), and I have eight years building production software. For the last two years I have been designing and shipping LLM-powered
 products end to end — architecture, backend, frontend and deploy — mostly on my own.
 
 Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
@@ -58,14 +58,14 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
 - Three years on a distributed team across Canada, the US and Latin America
 - Built full stack applications in Python (Django, FastAPI) and TypeScript (React, Next.js), with REST and GraphQL APIs
-- Led frontend architecture and testing strategy (Vitest, Jest, TDD); reviewed code and mentored engineers
+- Developed both frontend and backend, with tests (Vitest, Jest, TDD); did code reviews
 
 **Full Stack Engineer** · BCFort · Medellín, Colombia · *Aug 2018 – Oct 2020*
 - Designed system architecture for blockchain and analytics platforms: smart contract patterns, data models, service boundaries
 - Built decentralised applications and NFT marketplaces with React, Web3.js, Ethereum and Hyperledger
 
 **Professor of Mathematics & Machine Learning** · Universidad de Antioquia · *Jan 2010 – Oct 2021*
-- Taught Machine Learning, Data Science and Mathematics with Python, NumPy, Pandas, TensorFlow and PyTorch
+- Taught mathematics and physics; in the last year and a half also machine learning and data science with Python, NumPy, Pandas, TensorFlow and PyTorch
 - Built the AI/ML elective curriculum for the Mathematics Institute and mentored student research
 
 ---
