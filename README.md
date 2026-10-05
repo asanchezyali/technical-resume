@@ -58,7 +58,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
 - Three years on a distributed team across Canada, the US and Latin America
 - Built full stack applications in Python (Django, FastAPI) and TypeScript (React, Next.js), with REST and GraphQL APIs
-- Led frontend architecture and testing strategy (Vitest, Jest, TDD); reviewed code and mentored engineers
+- Led frontend architecture and testing strategy (Vitest, Jest, TDD); reviewed code
 
 **Full Stack Engineer** · BCFort · Medellín, Colombia · *Aug 2018 – Oct 2020*
 - Designed system architecture for blockchain and analytics platforms: smart contract patterns, data models, service boundaries
