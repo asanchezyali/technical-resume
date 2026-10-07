@@ -295,14 +295,14 @@
       },
       {
         "name": "Flask",
-        "years": 4,
+        "years": 5,
         "level": "intermediate",
         "categories": [
           "backend",
           "python"
         ],
         "display": "Flask",
-        "start_year": 2022
+        "start_year": 2018
       },
       {
         "name": "Node.js",
