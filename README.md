@@ -20,9 +20,9 @@ Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
 
 **[Plixiq](https://plixiq.com) — AI customer support on WhatsApp**
 Multi-tenant SaaS where AI agents answer routine inquiries, book appointments and escalate the rest
-to human operators with the full conversation intact. Sole architect and engineer: a modular monolith
-with 14 bounded contexts whose boundaries are enforced in CI, and a multi-provider
-LLM layer through LiteLLM so switching providers is a configuration change. ~43,000 lines, built
+to human operators with the full conversation intact. Architect and lead engineer: a modular monolith
+with 14 components plus a shared kernel, boundaries enforced in CI, and a LiteLLM layer
+with a primary and fallback provider per agent. ~46,000 lines and ~590 backend tests, built
 part-time, launched in September 2026 and running at $60–80/month.
 `Python` `FastAPI` `LiteLLM` `PostgreSQL` `Redis` `Next.js` `WebSocket` `WhatsApp Cloud API`
 
@@ -52,7 +52,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
 - Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
-- Led technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
+- Ran technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
 - Designed the database architecture for a client's workflow automation platform and served as code reviewer for their development team
 
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
