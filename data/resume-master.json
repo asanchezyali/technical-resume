@@ -1408,7 +1408,7 @@
           ]
         },
         {
-          "text": "Led technical design sessions with clients, translating business requirements into system architectures and making key technology decisions for each project",
+          "text": "Ran technical design sessions with clients, translating business requirements into system architectures and making key technology decisions for each project",
           "categories": [
             "architecture",
             "design",
@@ -1462,7 +1462,7 @@
           ]
         },
         {
-          "text": "Led code reviews, refactored legacy codebases, and implemented best practices for scalability and security",
+          "text": "Did code reviews, refactored legacy codebases, and implemented best practices for scalability and security",
           "categories": [
             "leadership",
             "architecture"
@@ -1638,7 +1638,7 @@
           ]
         },
         {
-          "text": "Led development of blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces",
+          "text": "Developed blockchain solutions with Ethereum, Hyperledger, and NFT marketplaces",
           "categories": [
             "blockchain",
             "web3",
@@ -1646,7 +1646,7 @@
           ]
         },
         {
-          "text": "Led data analytics and visualization solutions for blockchain transactions",
+          "text": "Built data analytics and visualization solutions for blockchain transactions",
           "categories": [
             "data",
             "blockchain",
@@ -1770,7 +1770,7 @@
       ],
       "highlights": [
         {
-          "text": "Sole architect and engineer of a multi-tenant SaaS that lets businesses run AI agents on WhatsApp: they answer routine inquiries, book appointments, look up products and occupancy, and escalate the rest to human operators with full conversation context",
+          "text": "Architect and lead engineer (about 80% of the commits) of a multi-tenant SaaS that lets businesses run AI agents on WhatsApp: they answer routine inquiries, book appointments, look up products and occupancy, and escalate the rest to human operators with full conversation context",
           "categories": [
             "ai",
             "llm",
@@ -1780,7 +1780,7 @@
           ]
         },
         {
-          "text": "Designed a modular monolith with 14 bounded contexts whose boundaries are enforced by import-linter and architecture tests in CI, keeping a one-person codebase clean without the operational cost of microservices",
+          "text": "Designed a modular monolith with 14 domain components plus a shared kernel, with boundaries enforced by import-linter and architecture tests in CI, keeping a small-team codebase clean without the operational cost of microservices",
           "categories": [
             "architecture",
             "backend",
@@ -1789,7 +1789,7 @@
           ]
         },
         {
-          "text": "Built a multi-provider LLM layer with LiteLLM (Groq by default, OpenAI as fallback), making a provider change a configuration change rather than a refactor",
+          "text": "Built a multi-provider LLM layer with LiteLLM where each agent has its own encrypted primary and fallback provider, so an outage or rate limit becomes a fallback rather than an incident",
           "categories": [
             "ai",
             "llm",
@@ -1808,7 +1808,7 @@
           ]
         },
         {
-          "text": "Shipped ~43,000 lines of backend and frontend part-time, launched on plixiq.com in September 2026 and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
+          "text": "Shipped ~46,000 lines of backend and frontend plus ~590 backend tests part-time, launched on plixiq.com in September 2026 and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
           "categories": [
             "product",
             "delivery",
@@ -1826,7 +1826,7 @@
           ]
         }
       ],
-      "role": "Sole architect and engineer",
+      "role": "Architect and lead engineer",
       "status": "Built and deployed; live, not yet carrying real customer traffic"
     },
     {
@@ -1977,7 +1977,7 @@
       ],
       "highlights": [
         {
-          "text": "Sole architect and engineer of a surgical supply chain platform commissioned by a private clinic in Colombia -- 12 modules and 5 user roles designed to replace spreadsheet-based inventory and procurement",
+          "text": "Architect and lead engineer of a surgical supply chain platform commissioned by a private clinic in Colombia -- 12 modules and 5 user roles designed to replace spreadsheet-based inventory and procurement",
           "categories": [
             "fullstack",
             "saas",
@@ -2030,7 +2030,7 @@
           ]
         }
       ],
-      "role": "Sole architect and engineer",
+      "role": "Architect and lead engineer",
       "status": "Built for a private surgical clinic that shaped the domain model; deployed, not yet in daily operation",
       "engagement": "Commissioned by a private surgical clinic; their pharmacist worked with me on the domain model"
     },
@@ -2429,13 +2429,13 @@
   ],
   "summary_templates": {
     "fullstack": "Full Stack Engineer with 8+ years of experience designing, architecting, and building robust, scalable web applications across frontend and backend. Strong background in mathematics and software engineering. Skilled in modern JavaScript/TypeScript frameworks (React, Next.js), Python (Django, FastAPI), and cloud infrastructure. Experienced in system design, technical decision-making, integrating AI/ML services, developing RESTful and GraphQL APIs, and delivering production-ready solutions with a focus on code quality, testing, and DevOps best practices.",
-    "ai": "Machine Learning Engineer and Data Scientist with 8+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and leading technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
+    "ai": "Machine Learning Engineer and Data Scientist with 8+ years of experience building scalable AI/ML solutions and production-ready web applications. Strong mathematical foundation and hands-on expertise in Python, LLMs, and cloud infrastructure. Proven track record integrating large language models, deploying ML systems, and taking technical projects from research to production. Experienced in full-stack development, DevOps, and technical writing.",
     "frontend": "Frontend Engineer with 8+ years of experience designing and building robust, responsive, and performant web applications. Specialized in React and Next.js, with strong skills in modern frontend architectures, Web3, and AI/ML integrations. Proven track record in UI/UX design decisions, delivering production-ready interfaces, reusable component libraries, and seamless integration of emerging technologies. Experienced collaborating in multidisciplinary teams and deploying solutions to cloud environments.",
     "backend": "Backend Engineer with 8+ years of experience designing, architecting, and maintaining scalable web applications. Expert in Python (Django REST Framework, FastAPI), Node.js, and microservices architecture. Proven track record in system design, technical decision-making, building robust APIs, integrating SQL/NoSQL databases, and delivering high-quality solutions in collaborative, agile teams. Strong focus on performance, testing, and professional growth.",
-    "node": "Full Stack Software Engineer with 8+ years of experience designing, architecting, and building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability in technical decision-making, delivering production-ready APIs, integrating LLMs, and leading technical teams in multidisciplinary environments.",
+    "node": "Full Stack Software Engineer with 8+ years of experience designing, architecting, and building robust, scalable applications across frontend and backend. Specialized in Node.js, Python, and modern JavaScript/TypeScript frameworks. Strong background in AI/ML integration, cloud infrastructure, and blockchain. Proven ability in technical decision-making, delivering production-ready APIs, integrating LLMs, and working in multidisciplinary teams.",
     "blockchain": "Full Stack Engineer with 8+ years of experience in blockchain and Web3 development. Expert in React, Node.js, Python, and smart contract development (Solidity, Ethereum). Proven track record designing decentralized architectures, building decentralized applications, NFT marketplaces, and analytics platforms. Strong background in technical decision-making, cloud infrastructure, and data analytics.",
     "enterprise": "Full Stack Engineer with 8+ years of experience designing, developing, and maintaining enterprise-level applications. Expert in Python, Node.js, React, Next.js, and AWS. Proven track record integrating LLMs and AI/ML APIs, building scalable architectures, and delivering robust solutions for complex business needs. Strong background in cloud deployments, database integration, and cross-functional collaboration.",
     "senior_node": "Senior Fullstack Engineer with 8+ years of experience designing, architecting, and maintaining scalable web applications. Specialized in Node.js and React, with a strong focus on clean, efficient, and reusable code following SOLID and DRY principles. Proven track record in architectural decision-making, code reviews, refactoring, and mentoring junior engineers. Advanced English communication skills and experience working with distributed teams.",
-    "ai_specialist": "AI Specialist with 8+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record leading AI initiatives, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
+    "ai_specialist": "AI Specialist with 8+ years of experience developing intelligent systems and LLM-powered applications. Expert in Python, LangChain, LangGraph, and modern AI frameworks. Proven track record delivering AI features, standardizing development practices, and building production-ready conversational AI systems. Strong background in full-stack development (Next.js, NestJS) with expertise in real-time applications and speech synthesis integration. Experienced in technical leadership and cross-functional collaboration."
   }
 }
