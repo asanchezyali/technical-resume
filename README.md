@@ -57,14 +57,14 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
 - Three years on a distributed team across Canada, the US and Latin America
-- Built full stack applications in Python (Django, FastAPI) and TypeScript (React, Next.js), with REST and GraphQL APIs
+- Worked on client products such as ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) with interest-based matching (Django, Django Channels, Twilio Video, React), and OddSlingers, an in-browser poker platform (Django, React, event-stream architecture)
 - Developed both frontend and backend, with tests (Vitest, Jest, TDD); did code reviews
 
 **Full Stack Engineer** · BCFort · Medellín, Colombia · *Aug 2018 – Oct 2020*
 - Designed system architecture for blockchain and analytics platforms: smart contract patterns, data models, service boundaries
 - Built decentralised applications and NFT marketplaces with React, Web3.js, Ethereum and Hyperledger
 
-**Professor of Mathematics & Physics** · Universidad de Antioquia · *Jan 2010 – Oct 2021*
+**Professor of Mathematics & Physics (part-time)** · Universidad de Antioquia · *Jan 2010 – Oct 2021*
 - Taught mathematics and physics; in the last year and a half also machine learning and data science with Python, NumPy, Pandas, TensorFlow and PyTorch
 - Built the AI/ML elective curriculum for the Mathematics Institute and mentored student research
 
