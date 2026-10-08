@@ -1523,6 +1523,21 @@
           ]
         },
         {
+          "text": "Built VC Tools, an LLM tool that retrieves and processes company information for investors (OpenAI, LangChain)",
+          "categories": [
+            "ai",
+            "llm",
+            "backend"
+          ]
+        },
+        {
+          "text": "Worked on blockchain integrations for Virtue Poker (decentralized poker) and Samurari-Army (NFT platform on Ethereum)",
+          "categories": [
+            "blockchain",
+            "fullstack"
+          ]
+        },
+        {
           "text": "Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability, and maintainability",
           "categories": [
             "architecture",
