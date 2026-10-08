@@ -1505,6 +1505,24 @@
       ],
       "highlights": [
         {
+          "text": "Worked on client products such as ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests, built with Django, Django Channels (WebSockets), Twilio Video and React",
+          "categories": [
+            "fullstack",
+            "backend",
+            "frontend",
+            "real-time"
+          ]
+        },
+        {
+          "text": "Worked on OddSlingers, an in-browser poker platform for desktop and mobile built with Django and React on an event-stream architecture",
+          "categories": [
+            "fullstack",
+            "backend",
+            "frontend",
+            "architecture"
+          ]
+        },
+        {
           "text": "Participated in system design and architectural decision-making for new features and services, evaluating trade-offs across performance, scalability, and maintainability",
           "categories": [
             "architecture",
@@ -1734,7 +1752,8 @@
             "ai"
           ]
         }
-      ]
+      ],
+      "employment_type": "part-time"
     }
   ],
   "projects": [
@@ -2031,7 +2050,7 @@
         }
       ],
       "role": "Architect and lead engineer",
-      "status": "Built for a private surgical clinic that shaped the domain model; deployed, not yet in daily operation",
+      "status": "Built and delivered; rollout at the clinic pending",
       "engagement": "Commissioned by a private surgical clinic; their pharmacist worked with me on the domain model"
     },
     {
