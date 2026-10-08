@@ -1505,7 +1505,7 @@
       ],
       "highlights": [
         {
-          "text": "Worked on client products such as ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests, built with Django, Django Channels (WebSockets), Twilio Video and React",
+          "text": "Full-stack engineer on ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests: React front end and Django back end, with Django Channels (WebSockets) and Twilio Video",
           "categories": [
             "fullstack",
             "backend",
@@ -1514,7 +1514,7 @@
           ]
         },
         {
-          "text": "Worked on OddSlingers, an in-browser poker platform for desktop and mobile built with Django and React on an event-stream architecture",
+          "text": "Full-stack engineer on OddSlingers, an in-browser poker platform for desktop and mobile: React front end and Django back end on an event-stream architecture",
           "categories": [
             "fullstack",
             "backend",
