@@ -40,6 +40,7 @@ jobs:
             ai-fullstack.tex
             product-engineer.tex
             senior-fullstack.tex
+            web3-fullstack.tex
 
       - name: Copy PDFs to generated/ under their recruiter-facing names
         run: |
@@ -48,6 +49,7 @@ jobs:
           cp variants/ai-fullstack.pdf     generated/AlejandroSanchezYaliAIFullStack.pdf
           cp variants/product-engineer.pdf generated/AlejandroSanchezYaliProductEngineer.pdf
           cp variants/senior-fullstack.pdf generated/AlejandroSanchezYaliSeniorFullStack.pdf
+          cp variants/web3-fullstack.pdf   generated/AlejandroSanchezYaliWeb3FullStack.pdf
 
       # Must run before the branch switch below: variants/ does not exist on technical-resume
       - name: Upload PDF as artifact

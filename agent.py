@@ -9,6 +9,7 @@ from src.latex_compiler import LatexCompiler
 console = Console()
 
 VARIANTS_DIR = Path("variants")
+PRIVATE_DIR = Path("../kairos/postulaciones/cvs")
 OUTPUT_DIR = Path("generated")
 
 # Recruiter-facing filenames. Add a line here when a new variant is promoted.
@@ -17,6 +18,7 @@ VARIANT_LABELS = {
     "ai-fullstack": "AIFullStack",
     "product-engineer": "ProductEngineer",
     "senior-fullstack": "SeniorFullStack",
+    "web3-fullstack": "Web3FullStack",
 }
 
 # AlejandroSanchezYaliAIEngineerACME.pdf -- company suffix omitted for the base variants
@@ -68,7 +70,10 @@ def build(company: str, variant: str):
             failed = True
             continue
 
-        target = OUTPUT_DIR / f"{output_name(name, company)}.pdf"
+        # Company-tailored CVs are private: they go to ../kairos, never into the public repo
+        out_dir = PRIVATE_DIR if company else OUTPUT_DIR
+        out_dir.mkdir(parents=True, exist_ok=True)
+        target = out_dir / f"{output_name(name, company)}.pdf"
         shutil.copy2(tex_path.with_suffix(".pdf"), target)
         console.print(f"[bold green]->[/] {target}")
 

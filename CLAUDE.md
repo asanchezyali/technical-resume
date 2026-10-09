@@ -4,8 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Alejandro's CV toolkit. Single source of truth is `data/resume-master.json`; five curated CVs are
-derived from it — four LaTeX variants in `variants/` and the `README.md`. Tailoring for a specific
+Alejandro's CV toolkit. Single source of truth is `data/resume-master.json`; six curated CVs are
+derived from it — five LaTeX variants in `variants/` and the `README.md`. Tailoring for a specific
 job posting is done by the Claude skills in `.claude/skills/`, not by a code generator.
 
 ## Commands
@@ -14,14 +14,14 @@ job posting is done by the Claude skills in `.claude/skills/`, not by a code gen
 # Install dependencies
 uv sync
 
-# Build all four variants into generated/ under their recruiter-facing names
+# Build all five variants into generated/ under their recruiter-facing names
 uv run python agent.py build
 
-# Build one variant with a company suffix -> AlejandroSanchezYaliAIEngineerACME.pdf
+# Build one variant with a company suffix -> ../kairos/postulaciones/cvs/AlejandroSanchezYaliAIEngineerACME.pdf
 uv run python agent.py build -v ai-engineer -c ACME
 
 # Compile a single .tex in place (used for CVs tailored to a posting)
-uv run python agent.py compile generated/AlejandroSanchezYaliAIEngineerACME.tex
+uv run python agent.py compile ../kairos/postulaciones/cvs/AlejandroSanchezYaliAIEngineerACME.tex
 
 # Lint
 uv run ruff check .
@@ -34,7 +34,7 @@ data/resume-master.json          single source of truth
         |
         |  by hand, or via .claude/skills/cv
         v
-variants/*.tex  +  README.md     five curated CVs
+variants/*.tex  +  README.md     six curated CVs
         |
         v  agent.py build (pdflatex twice, cleans aux files)
 generated/AlejandroSanchezYali<Variant>[<Company>].pdf
@@ -44,8 +44,9 @@ technical-resume branch          published PDF + README
 ```
 
 **Directories:**
-- `variants/` — the four curated CVs. Sources of positioning; never overwritten while tailoring
-- `generated/` — recruiter-facing PDFs, `AlejandroSanchezYali<Variant><Company>.pdf`
+- `variants/` — the five curated CVs (AI Engineer, AI Full Stack, Product Engineer, Senior Full Stack, Web3 Full Stack). Sources of positioning; never overwritten while tailoring
+- `generated/` — the five base PDFs only. Company-tailored CVs go to `../kairos/postulaciones/cvs/`
+  (private); `.gitignore` blocks any other file in `generated/`
 - Application archive and interview prep live in `../kairos/postulaciones/` (private). **This repo is
   public: never add postings, answers, salary figures or interview notes here.**
 
@@ -101,10 +102,10 @@ Conventional Commits with emojis: `✨ feat:`, `🐛 fix:`, `📝 docs:`, `♻�
 GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that modify `variants/`,
 `README.md`, or the workflow file. It:
 
-1. Compiles all four variants.
+1. Compiles all five variants.
 2. Refreshes `generated/*.pdf` and commits them back to `main` if they changed — so editing a
    variant without running `agent.py build` cannot leave a stale PDF in the repo. **CI owns those
-   four PDFs.** Builds are reproducible within an environment but differ by a few bytes across TeX
+   five PDFs.** Builds are reproducible within an environment but differ by a few bytes across TeX
    versions, so a locally built PDF committed by hand just gets rewritten on the next run. Use
    `agent.py build` to preview, or to produce a company-suffixed CV — not to update `generated/`.
 3. Publishes the variant named in `PUBLISHED_VARIANT` (currently `ai-fullstack`) plus `README.md`

@@ -42,7 +42,7 @@
 
 \begin{center}
 \textbf{\LARGE Alejandro S\'anchez Yal\'i}\\[0.2em]
-\textbf{\Large AI Full Stack Engineer}\\[0.4em]
+\textbf{\Large Senior Full Stack Engineer -- React, Next.js, TypeScript, Web3}\\[0.4em]
 \small
 \normalfaCalendar\ \href{https://cal.com/asanchezyali/full-time-opportunities}{\textsc{Let's Connect}}
 
@@ -55,16 +55,15 @@
 
 
 \section{Summary}
-AI Full Stack Engineer with 8+ years designing and shipping web applications end to end and 3+ years building LLM-powered products. Architect and lead engineer of three deployed systems -- an AI WhatsApp support platform, an AI-assisted recruitment platform and a surgical supply chain system -- spanning Python/FastAPI backends, Next.js/TypeScript frontends, PostgreSQL and cloud deployment. M.Sc. in Mathematics and 11 years teaching mathematics and physics, which shows up in design docs and code review.
+Senior engineer with 8+ years building web applications, 7+ of them in React and 6+ in Next.js and TypeScript. Started on blockchain: two years at BCFort designing Ethereum and Hyperledger platforms, implementing smart contracts and building the decentralized app frontends that talked to them with Web3.js. Since then, three years on a distributed team at Monadical, then consulting and a year at Lapzo shipping products end to end, including real-time interfaces. M.Sc. in Mathematics. I care about turning complex systems into interfaces people can trust.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
-  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, Effect, Three.js
-  \item \textbf{Backend:} FastAPI, Django, Django REST Framework, Celery, NestJS, Node.js, Express, RESTful APIs, GraphQL, microservices
-  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, PyTorch, TensorFlow
-  \item \textbf{Databases \& Infra:} PostgreSQL, Redis, MongoDB, Firebase, Docker, AWS, GCP, Terraform, GitHub Actions, CI/CD
-  \item \textbf{Engineering:} Clean architecture, DDD, TDD, Vitest, Jest, React Testing Library, code review
+  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), TypeScript (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, React Testing Library, Three.js / React Three Fiber
+  \item \textbf{Blockchain:} Ethereum, smart contracts, Web3.js, decentralized app frontends, NFT marketplaces, blockchain transaction analytics
+  \item \textbf{Real-time \& APIs:} WebSockets, Server-Sent Events, Firebase Realtime Database, RESTful and GraphQL APIs
+  \item \textbf{Backend:} Node.js, NestJS, Express, Python (Django, FastAPI), PostgreSQL, Redis, MongoDB
+  \item \textbf{Cloud \& Engineering:} AWS, GCP, Docker, Terraform, GitHub Actions, CI/CD, TDD (Vitest, Jest), code review, mentoring
 \end{itemize}
 
 \section{Experience}
@@ -73,24 +72,24 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
 {Independent AI Consultant}{Oct 2026 -- Present}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies (see below)
+    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model
 \end{itemize}
 \resumeSubheading
 {AI Specialist}{Aug 2025 -- Sep 2026}
 {Lapzo}{Remote, Mexico}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides
-    \item Owned the architecture connecting LLM services, ElevenLabs voice synthesis and the real-time layer built with Next.js, NestJS and Firebase Realtime Database
-    \item Built an HR agent (LangGraph, FastAPI, PostgreSQL) that answers policy questions with citations and executes HR requests with human confirmation
-    \item Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
+    \item Made the key architectural decisions for an educational platform, designing the integration between services and the real-time communication layer
+    \item Implemented real-time features with Next.js, NestJS and Firebase Realtime Database
+    \item Designed the architecture of Express courses (fast course creation) and built the audit system for courses and learning paths: change logs, exportable reports and permission-aware history
+    \item Built the content-generation pipelines now used by the platform's learners, with Celery workers running long jobs in the background
 \end{itemize}
 \resumeSubheading
 {Independent Software \& AI Consultant}{Aug 2024 -- Jul 2025}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item Designed the database architecture for a client's workflow automation platform in an NX multi-repo, and served as code reviewer for their team
     \item Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients
-    \item Delivered end-to-end web applications for business clients: React.js/Next.js/TypeScript on the front, Python/FastAPI/Django and Node.js/NestJS behind it, deployed on AWS with CI/CD and Stripe payments
-    \item Ran technical design sessions with clients and made the technology decisions for each project; code reviewer for a client's development team
+    \item Ran technical design sessions with clients, translating business requirements into system architectures
 \end{itemize}
 \resumeSubheading
 {Full Stack Engineer}{Apr 2021 -- Aug 2024}
@@ -98,40 +97,38 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
 \begin{itemize}[leftmargin=*, itemsep=0pt]
     \item Full-stack engineer on ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests and supports conferences of about 200 participants: React front end and Django back end, with Django Channels (WebSockets) and Twilio Video
     \item Full-stack engineer on Virtue Poker, a decentralized poker platform on Ethereum supporting up to 50 concurrent tables of 8 players: React front end, Django back end and smart-contract integration
-    \item Built VC Tools, an LLM tool that retrieves and processes company information for investors (OpenAI, LangChain)
-    \item Reviewed code on a distributed team across Canada, the US and Latin America
+    \item Took part in system design and architecture decisions for new features and services, weighing trade-offs across performance, scalability and maintainability
+    \item Designed ETL pipelines and custom Django ORM extensions; managed deployments on AWS and GCP with Docker and CI/CD
+    \item Reviewed code on a distributed team in three countries; wrote tests with Vitest and Jest
 \end{itemize}
 \resumeSubheading
 {Full Stack Engineer}{Aug 2018 -- Oct 2020}
 {BCFort}{Medell\'in, Colombia}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Built blockchain dApp frontends (React, Web3.js) and analytics platforms (Django, Node.js) on AWS, GCP and IBM Cloud
+    \item Led development of blockchain solutions with Ethereum and Hyperledger, including NFT marketplaces
+    \item Built decentralized app frontends and implemented smart contracts; developed platforms with React, Node.js, Python (Django) and Web3.js
+    \item Designed system architecture for blockchain platforms: smart contract patterns, data models and service boundaries; managed infrastructure on AWS, GCP and IBM Cloud
+    \item Mentored junior engineers, supporting their technical growth and code quality
 \end{itemize}
 \resumeSubheading
 {Professor of Mathematics \& Physics (part-time)}{Jan 2010 -- Oct 2021}
 {Universidad de Antioquia}{Medell\'in, Colombia}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Taught mathematics and physics; in the last year and a half also machine learning and data science with Python, NumPy, Pandas, TensorFlow and PyTorch
-    \item Developed the AI/ML elective curriculum for the Mathematics Institute and mentored student research projects
+    \item Taught mathematics and physics; in the last year and a half also machine learning and data science with Python and the scientific stack
 \end{itemize}
 \end{itemize}
 
 \section{Featured Projects}
 \begin{itemize}[leftmargin=*, itemsep=2pt]
-    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, PostgreSQL, Redis, Next.js, WebSocket}
-    \begin{itemize}[itemsep=0pt]
-        \item Architect and lead engineer of a multi-tenant SaaS where AI agents answer routine customer inquiries, book appointments and escalate the rest to human operators with full conversation context
-        \item Modular monolith (14 components plus a shared kernel) with boundaries enforced in CI; LiteLLM layer with a primary and fallback provider per agent, so an outage becomes a fallback
-    \end{itemize}
     \item \textbf{\href{https://vitastock.piagents.dev}{VitaStock -- Surgical Supply Chain for Clinics \normalfaExternalLink}} \textit{-- Python, FastAPI, Next.js, TypeScript, PostgreSQL, Docker, Railway}
     \begin{itemize}[itemsep=0pt]
         \item Architect and lead engineer of a platform commissioned by a private surgical clinic in Colombia -- 12 modules and 5 user roles designed to replace spreadsheet-based inventory and procurement; delivered, with rollout at the clinic pending
         \item Surgery scheduling with supply baskets and real-time consumption tracking, lot-level traceability with expiry alerts, and true per-patient cost through a cardex
     \end{itemize}
-    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
+    \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, PostgreSQL, Next.js, Railway}
     \begin{itemize}[itemsep=0pt]
-        \item Lead engineer of an AI recruitment platform for staffing agencies -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
-        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
+        \item Took the product from an idea to a deployed system as architect and lead engineer: discovery, architecture, backend, frontend and deploy
+        \item Shipped about 46,000 lines of backend and frontend plus about 590 backend tests, deployed on plixiq.com at \$60--80/month because cost scales with LLM usage rather than infrastructure
     \end{itemize}
 \end{itemize}
 

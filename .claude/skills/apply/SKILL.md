@@ -40,7 +40,7 @@ rather than for a recruiter. **Never write postings or answers into this repo: i
 - `YYYYMMDD_<company>_<role>_answers.md` — the answers submitted with that application.
 
 Dates lead here because this directory is chronological working memory. The recruiter-facing
-filenames live in `generated/` instead, where they follow `AlejandroSanchezYali<Variant><Company>`.
+filenames live in `../kairos/postulaciones/cvs/` instead, where they follow `AlejandroSanchezYali<Variant><Company>`.
 
 Save the posting even when only answering questions. It costs one file and it is the difference
 between preparing for an interview and guessing.

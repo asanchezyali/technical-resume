@@ -55,16 +55,16 @@
 
 
 \section{Summary}
-Senior Full Stack Engineer with 8+ years building and maintaining scalable web applications in Python and TypeScript. Three years on a distributed team across Canada, the US and Latin America building frontend and backend and reviewing code, followed by two years as an independent consultant designing systems for clients and building three products end to end. M.Sc. in Mathematics. Strong bias toward clean architecture, testing, and decisions that survive their second year.
+Senior Full Stack Engineer with 8+ years building and maintaining scalable web applications in Python and TypeScript. Three years on a distributed team across Canada, the US and Latin America building frontend and backend and reviewing code, then two years designing systems as an independent consultant and at Lapzo, including three products built end to end. M.Sc. in Mathematics. Strong bias toward clean architecture, testing, and decisions that survive their second year.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL, Rust (personal projects)
-  \item \textbf{Backend:} Django, Django REST Framework, FastAPI, Celery, Flask, Node.js, Express, NestJS, RESTful APIs, GraphQL, microservices
-  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, SASS
-  \item \textbf{Databases:} PostgreSQL, MongoDB, MySQL, Redis, Firebase
+  \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
+  \item \textbf{Backend:} Django, Django REST Framework, FastAPI, Celery, Node.js, Express, NestJS, RESTful APIs, GraphQL, microservices
+  \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod
+  \item \textbf{Databases:} PostgreSQL, MongoDB, Redis, Firebase
   \item \textbf{Cloud \& DevOps:} AWS, GCP, Docker, GitHub Actions, CI/CD pipelines
-  \item \textbf{Engineering:} Clean architecture, DDD, SOLID, DRY, TDD, Vitest, Jest, React Testing Library, code review, mentoring
+  \item \textbf{Engineering:} Clean architecture, DDD, TDD, Vitest, Jest, React Testing Library, code review, mentoring
 \end{itemize}
 
 \section{Experience}
@@ -73,7 +73,7 @@ Senior Full Stack Engineer with 8+ years building and maintaining scalable web a
 {Independent AI Consultant}{Oct 2026 -- Present}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies (see below)
+    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model
 \end{itemize}
 \resumeSubheading
 {AI Specialist}{Aug 2025 -- Sep 2026}
@@ -81,8 +81,8 @@ Senior Full Stack Engineer with 8+ years building and maintaining scalable web a
 \begin{itemize}[leftmargin=*, itemsep=0pt]
     \item Made the key architectural decisions for an educational platform, designing the integration between services and the real-time communication layer
     \item Implemented real-time features with Next.js, NestJS and Firebase Realtime Database
-    \item Closed 57 tasks and 6 epics in the first nine months of 2026 with a single production bug, per the team's board
-    \item Built the content-generation pipelines with Celery workers running long jobs in the background
+    \item Designed the architecture of Express courses (fast course creation) and built the audit system for courses and learning paths: change logs, exportable reports and permission-aware history
+    \item Built the content-generation pipelines now used by the platform's learners, with Celery workers running long jobs in the background
 \end{itemize}
 \resumeSubheading
 {Independent Software \& AI Consultant}{Aug 2024 -- Jul 2025}
@@ -98,9 +98,9 @@ Senior Full Stack Engineer with 8+ years building and maintaining scalable web a
 \begin{itemize}[leftmargin=*, itemsep=0pt]
     \item Full-stack engineer on ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests and supports conferences of about 200 participants: React front end and Django back end, with Django Channels (WebSockets) and Twilio Video
     \item Full-stack engineer on Virtue Poker, a decentralized poker platform on Ethereum supporting up to 50 concurrent tables of 8 players: React front end, Django back end and smart-contract integration
-    \item Developed both frontend and backend, including reusable components and tests (Vitest, Jest, TDD)
+    \item Took part in system design and architecture decisions for new features and services, weighing trade-offs across performance, scalability and maintainability
     \item Designed ETL pipelines and custom Django ORM extensions; managed deployments on AWS and GCP with Docker and CI/CD
-    \item Did code reviews on a distributed team in three countries
+    \item Reviewed code on a distributed team in three countries; wrote tests with Vitest and Jest
 \end{itemize}
 \resumeSubheading
 {Full Stack Engineer}{Aug 2018 -- Oct 2020}
@@ -128,15 +128,7 @@ Senior Full Stack Engineer with 8+ years building and maintaining scalable web a
     \item \textbf{\href{https://plixiq.com}{Plixiq -- AI Customer Support on WhatsApp \normalfaExternalLink}} \textit{-- Python, FastAPI, LiteLLM, PostgreSQL, Next.js, Railway}
     \begin{itemize}[itemsep=0pt]
         \item Took the product from an idea to a deployed system as architect and lead engineer: discovery, architecture, backend, frontend and deploy
-        \item Near-complete MVP in 4 months, covered by about 590 backend tests and CI on every pull request; infrastructure runs at \$60--80/month because cost scales with LLM usage
-    \end{itemize}
-    \item \textbf{\href{https://github.com/asanchezyali/kipux}{Kipux -- Collaborative Finance App in Rust \normalfaExternalLink}} \textit{-- Rust, Axum, sqlx, PostgreSQL, HTMX, SSE, Shuttle, MIT (work in progress)}
-    \begin{itemize}[itemsep=0pt]
-        \item Personal project to learn Rust by shipping a real app: multi-tenant projects with invites and roles, budgets, real-time updates over Server-Sent Events, and a PWA with an offline transaction queue
-    \end{itemize}
-    \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}
-    \begin{itemize}[itemsep=0pt]
-        \item Open-source conversational avatar with 464 stars and 110 forks: real-time speech-to-text, generation, voice synthesis and lip synchronisation
+        \item Shipped about 46,000 lines of backend and frontend plus about 590 backend tests, deployed on plixiq.com at \$60--80/month because cost scales with LLM usage rather than infrastructure
     \end{itemize}
 \end{itemize}
 

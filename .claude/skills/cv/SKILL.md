@@ -1,7 +1,7 @@
 ---
 name: cv
 description: |
-  Adapt Alejandro's CV to a specific job posting, starting from one of the four
+  Adapt Alejandro's CV to a specific job posting, starting from one of the five
   base variants. Use when given a job description, a job URL, or a request like
   "hazme un CV para esta oferta" / "adapt my CV for this role". Also use to update
   the base variants themselves when new data lands in resume-master.json.
@@ -18,10 +18,11 @@ allowed-tools:
 
 Single source of truth: `data/resume-master.json`. Never invent anything that is not in it.
 
-## The four base variants
+## The five base variants
 
 Each is a self-contained, hand-curated `.tex` file in `variants/`. They are artifacts, not
-generated output — read the closest one, adapt it, and save the result to `generated/`.
+generated output — read the closest one, adapt it, and save the result to `../kairos/postulaciones/cvs/`
+(private: this repo is public, and a company-named CV reveals where he applied).
 Never overwrite a file in `variants/` while tailoring for a posting.
 
 | File | Use when the posting says | Leads with |
@@ -30,12 +31,13 @@ Never overwrite a file in `variants/` while tailoring for a posting.
 | `variants/ai-fullstack.tex` | AI Full Stack, Full Stack + AI, AI Product Engineer | The three products end to end: FastAPI + Next.js + LLM |
 | `variants/product-engineer.tex` | Product Engineer, Founding Engineer, 0→1, early-stage startup | Products shipped alone, decisions, delivery speed |
 | `variants/senior-fullstack.tex` | Senior/Staff Full Stack, Backend, no AI component | Monadical team years, architecture, code review, mentoring |
+| `variants/web3-fullstack.tex` | Web3, blockchain, crypto, DeFi, smart contracts, frontend-heavy React/Next.js | BCFort (Ethereum, Hyperledger, NFTs), Virtue Poker, React/Next.js years |
 
 If a posting straddles two, pick the one matching the **title**, then pull one or two
 bullets from the other. Do not blend them into something that reads like neither.
 
 `README.md` at the repo root is the **fifth CV** — the public, web-shaped one, and the only one
-people find without being sent it. It gets the same editorial standard as the four variants: no
+people find without being sent it. It gets the same editorial standard as the five variants: no
 beginner-level skills, no bullet dumps, no unreviewed regeneration. When the data changes in a way
 that matters, update it by hand like any other variant.
 
@@ -43,25 +45,26 @@ that matters, update it by hand like any other variant.
 
 - `variants/` — few, stable, maintained. Positioning, not postings. Never written to while
   tailoring; treat them as read-only during a `/cv` run.
-- `generated/` — recruiter-facing PDFs. Filenames follow
+- `generated/` — **only the five base PDFs**, without a company suffix, rebuilt by CI.
+- `../kairos/postulaciones/cvs/` — company-tailored CVs (`.tex` + `.pdf`), private. Filenames follow
   `AlejandroSanchezYali<Variant><Company>` — e.g. `AlejandroSanchezYaliAIEngineerACME.pdf`. This is
   the name that shows up in someone's inbox, so it carries his name and the role, never a date or a
-  slug. The four base PDFs live here without a company suffix, rebuilt with `agent.py build`.
+  slug. Moved out of the public repo on 9-oct-2026; `.gitignore` blocks them in `generated/`.
 
-**When to add a fifth variant:** only when the same adaptation has been made three times. Two
+**When to add a sixth variant:** only when the same adaptation has been made three times. Two
 adaptations are a coincidence; three is a role type worth maintaining. Until then, adapt.
 
 **Why not more variants:** they do not update themselves. Every new product or metric in
-`resume-master.json` means reviewing each variant by hand. Four is a maintainable number; eight
+`resume-master.json` means reviewing each variant by hand. Five is a maintainable number; eight
 becomes a set of CVs that quietly go stale.
 
-**Rebuilding the base PDFs:** `uv run python agent.py build` compiles all four variants into
+**Rebuilding the base PDFs:** `uv run python agent.py build` compiles all five variants into
 `generated/` under their recruiter-facing names. Use it to preview a change or to produce a
-company-suffixed CV. Do not commit the four base PDFs by hand — CI recompiles and commits them, and
+company-suffixed CV. Do not commit the five base PDFs by hand — CI recompiles and commits them, and
 a locally built PDF differs by a few bytes across TeX versions.
 
 **Syncing after a data change:** when `resume-master.json` changes materially — a new project, a
-corrected metric, a status change — review all five CVs (the four variants plus `README.md`) in
+corrected metric, a status change — review all six CVs (the five variants plus `README.md`) in
 one pass rather than fixing whichever one is next needed. Report which ones you changed and which
 you deliberately left alone.
 
@@ -72,10 +75,10 @@ you deliberately left alone.
 3. Read that `.tex` and `data/resume-master.json`.
 4. Adapt — and adapting means **reordering and swapping in bullets that already exist in the
    JSON**, plus rewriting the summary for this role. Nothing else.
-5. Write to `generated/AlejandroSanchezYali<Variant><Company>.tex` — Variant is one of AIEngineer,
-   AIFullStack, ProductEngineer, SeniorFullStack; Company is the company name in PascalCase with no
+5. Write to `../kairos/postulaciones/cvs/AlejandroSanchezYali<Variant><Company>.tex` — Variant is one of
+   AIEngineer, AIFullStack, ProductEngineer, SeniorFullStack, Web3FullStack; Company is the company name in PascalCase with no
    spaces or punctuation.
-6. Compile: `uv run python agent.py compile generated/<name>.tex` — the PDF lands beside it under
+6. Compile: `uv run python agent.py compile ../kairos/postulaciones/cvs/<name>.tex` — the PDF lands beside it under
    the same name.
 7. If it fails, read the error, fix the LaTeX, recompile. Escaping is the usual culprit.
 8. Report: variant used, what changed, what the posting asked for that he does not have.

@@ -120,8 +120,8 @@ I also host a weekly study group in Spanish on mathematics, software engineering
 
 ## About this repository
 
-`data/resume-master.json` is the single source of truth. `variants/` holds four curated CVs —
-AI Engineer, AI Full Stack, Product Engineer and Senior Full Stack — each a self-contained LaTeX
+`data/resume-master.json` is the single source of truth. `variants/` holds five curated CVs —
+AI Engineer, AI Full Stack, Product Engineer, Senior Full Stack and Web3 Full Stack — each a self-contained LaTeX
 file compiled with `uv run python agent.py compile variants/<name>.tex`. The AI Full Stack variant
 is published as a PDF on the [`technical-resume`](../../tree/technical-resume) branch.
 
