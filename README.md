@@ -45,7 +45,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 ## Experience
 
-**Independent AI Consultant** · Remote · *Jun 2026 – Present* (part-time until Sep 2026)
+**Independent AI Consultant** · Remote · *Jun 2026 – Present*
 - Lead engineer of Aluna, an AI recruitment platform for staffing agencies
 - Lead engineer of an AI coaching agent that CREARIA delivers to one of its clients
 
