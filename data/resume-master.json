@@ -2413,6 +2413,18 @@
   },
   "blog_posts": [
     {
+      "id": "pre-training",
+      "title": "Pre-training: the Idea Behind Every LLM",
+      "url": "https://medium.com/@asanchezyali/pre-training-the-idea-behind-every-llm-adae91f0300f",
+      "date": "2026",
+      "categories": [
+        "ai",
+        "llm",
+        "ml"
+      ],
+      "description": "What next-token prediction at scale actually teaches a language model"
+    },
+    {
       "id": "zero-shot",
       "title": "Zero-Shot Text Classification",
       "url": "https://www.asanchezyali.com/blog/en/ai/20240917ZeroShot",
