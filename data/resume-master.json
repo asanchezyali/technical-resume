@@ -1543,7 +1543,7 @@
       ],
       "highlights": [
         {
-          "text": "Full-stack engineer on ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests: React front end and Django back end, with Django Channels (WebSockets) and Twilio Video",
+          "text": "Full-stack engineer on ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) that matches participants by mutual interests and supports conferences of about 200 participants: React front end and Django back end, with Django Channels (WebSockets) and Twilio Video",
           "categories": [
             "fullstack",
             "backend",
@@ -1569,7 +1569,7 @@
           ]
         },
         {
-          "text": "Worked on blockchain integrations for Virtue Poker (decentralized poker) and Samurari-Army (NFT platform on Ethereum)",
+          "text": "Full-stack engineer on Virtue Poker, a decentralized poker platform on Ethereum supporting up to 50 concurrent tables of 8 players: React front end, Django back end and smart-contract integration; also worked on Samurari-Army (NFT platform on Ethereum)",
           "categories": [
             "blockchain",
             "fullstack"

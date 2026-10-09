@@ -60,7 +60,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 **Full Stack Engineer** · Monadical · Remote, Canada/US · *Apr 2021 – Aug 2024*
 - Three years on a distributed team across Canada, the US and Latin America
-- Full-stack engineer (React front end, Django back end) on client products such as ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) with Django Channels and Twilio Video, and OddSlingers, an in-browser poker platform on an event-stream architecture
+- Full-stack engineer (React front end, Django back end) on client products such as ZoHuddle, a video conferencing app for scientific conferences (Neuromatch) supporting about 200 participants, Virtue Poker, a decentralized poker platform supporting up to 50 concurrent tables of 8 players, and OddSlingers, an in-browser poker platform on an event-stream architecture
 - Developed both frontend and backend, with tests (Vitest, Jest, TDD); did code reviews
 
 **Full Stack Engineer** · BCFort · Medellín, Colombia · *Aug 2018 – Oct 2020*
