@@ -1183,9 +1183,9 @@
       "title": "Independent AI Consultant",
       "company": "Freelance",
       "location": "Remote",
-      "start_date": "2026-06-01",
+      "start_date": "2026-10-01",
       "end_date": null,
-      "date_range": "Jun 2026 -- Present",
+      "date_range": "Oct 2026 -- Present",
       "categories": [
         "ai",
         "llm",
@@ -1211,14 +1211,6 @@
             "architecture",
             "backend",
             "fullstack"
-          ]
-        },
-        {
-          "text": "Lead engineer of an AI coaching agent that CREARIA delivers to one of its clients",
-          "categories": [
-            "ai",
-            "llm",
-            "leadership"
           ]
         }
       ]
@@ -1416,7 +1408,7 @@
           ]
         },
         {
-          "text": "Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context",
+          "text": "Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context; also led the AI coaching agent CREARIA delivers to one of its clients",
           "categories": [
             "ai",
             "llm",
