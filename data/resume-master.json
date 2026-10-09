@@ -1179,6 +1179,52 @@
   },
   "experience": [
     {
+      "id": "freelance-2026",
+      "title": "Independent AI Consultant",
+      "company": "Freelance",
+      "location": "Remote",
+      "employment_type": "part-time alongside Lapzo until Sep 2026, full-time since Oct 2026",
+      "start_date": "2026-06-01",
+      "end_date": null,
+      "date_range": "Jun 2026 -- Present",
+      "categories": [
+        "ai",
+        "llm",
+        "fullstack",
+        "leadership"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "TypeScript",
+        "LiteLLM",
+        "Inngest",
+        "PostgreSQL",
+        "WhatsApp Cloud API"
+      ],
+      "highlights": [
+        {
+          "text": "Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model",
+          "categories": [
+            "ai",
+            "llm",
+            "architecture",
+            "backend",
+            "fullstack"
+          ]
+        },
+        {
+          "text": "Lead engineer of an AI coaching agent that CREARIA delivers to one of its clients",
+          "categories": [
+            "ai",
+            "llm",
+            "leadership"
+          ]
+        }
+      ]
+    },
+    {
       "id": "lapzo-2025",
       "title": "AI Specialist",
       "company": "Lapzo",
@@ -1328,12 +1374,12 @@
     },
     {
       "id": "freelance-2024",
-      "title": "Independent IT Consultant",
+      "title": "Independent Software & AI Consultant",
       "company": "Freelance",
       "location": "Remote",
       "start_date": "2024-08-01",
-      "end_date": null,
-      "date_range": "Aug 2024 -- Present",
+      "end_date": "2025-07-31",
+      "date_range": "Aug 2024 -- Jul 2025",
       "categories": [
         "ai",
         "fullstack",
@@ -1371,17 +1417,7 @@
           ]
         },
         {
-          "text": "Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model",
-          "categories": [
-            "ai",
-            "llm",
-            "architecture",
-            "backend",
-            "fullstack"
-          ]
-        },
-        {
-          "text": "Built a multi-tenant AI customer service agent for CREARIA (Colombia) using WhatsApp Cloud API, LiteLLM, RAG, and MCP integrations with human escalation capabilities",
+          "text": "Lead engineer of a multi-tenant AI customer service agent for CREARIA (Colombia) on WhatsApp Cloud API, LiteLLM, RAG and MCP, with automatic human escalation",
           "categories": [
             "ai",
             "llm",
