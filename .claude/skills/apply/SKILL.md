@@ -4,7 +4,7 @@ description: |
   Answer a job application form or written screening questions for Alejandro.
   Use when given application questions, a Braintrust/Wellfound/Otta form, or a request
   like "responde estas preguntas de la aplicación" / "answer this application".
-  Produces a markdown file in jobs/ he can copy from.
+  Produces a markdown file in ../kairos/postulaciones/jobs/ he can copy from.
 allowed-tools:
   - Read
   - Write
@@ -17,8 +17,8 @@ allowed-tools:
 # Application Answers
 
 Source of truth: `data/resume-master.json`. Past examples of tone and depth:
-`jobs/20260625_braintrust_ai_agent_developer_answers.md` and
-`jobs/20260318_ai_healthcare_answers.md`. Match that voice — first person, concrete,
+`../kairos/postulaciones/jobs/20260625_braintrust_ai_agent_developer_answers.md` and
+`../kairos/postulaciones/jobs/20260318_ai_healthcare_answers.md`. Match that voice — first person, concrete,
 no marketing adjectives.
 
 ## Workflow
@@ -26,13 +26,14 @@ no marketing adjectives.
 1. Read the questions. Fetch the posting if given a URL.
 2. Read `data/resume-master.json` and, if the questions are technical, the relevant
    base CV in `variants/`.
-3. Write `jobs/<YYYYMMDD>_<company>_<role>_answers.md`.
+3. Write `../kairos/postulaciones/jobs/<YYYYMMDD>_<company>_<role>_answers.md`.
 4. Open with the logistics block, then one section per question in the original order.
 5. Tell him at the end which answers are weakest and why.
 
-## What lives in jobs/
+## Where the archive lives
 
-`jobs/` is the archive of every application, named for him rather than for a recruiter:
+`../kairos/postulaciones/jobs/` (private, local-only) is the archive of every application, named for him
+rather than for a recruiter. **Never write postings or answers into this repo: it is public.**
 
 - `YYYYMMDD_<company>_<role>.md` — the posting itself, saved when it arrives. Job ads disappear, and
   three weeks later an interview invitation arrives for a role nobody can re-read.
@@ -55,8 +56,8 @@ between preparing for an interview and guessing.
 - Work authorization: not authorized to work on-site in the US; no sponsorship required
 - Availability: right away, full time
 - English level: **B2 (upper-intermediate)** on every form. Never C1 or "advanced" (his correction, 2-oct-2026). If a posting asks for C1+, apply anyway with B2 and tell him.
-- Rate: see private notes.
-  (Written without a dollar sign on purpose: `$7` is read as a positional argument when the skill runs.)
+- Rate and salary: follow the rule in `../kairos/CLAUDE.md` (private). Ask for their range first.
+  **Never write figures, floors or rate rules in this repo: it is public.**
 
 ## Naming third parties
 

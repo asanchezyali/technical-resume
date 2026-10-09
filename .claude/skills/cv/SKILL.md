@@ -125,7 +125,7 @@ trade-off, because that is what separates him from a candidate with the same sta
 - Three products live and owned end to end: Plixiq, Aluna, VitaStock.
 - 464★ / 110 forks on the open-source conversational AI avatar.
 - Colombia, UTC-5, full-day overlap with US Eastern. No sponsorship needed.
-- Rate anchors: see private notes.
+- Rate and salary: never in a CV. The rule lives in `../kairos/CLAUDE.md` (private).
 
 ## Known gaps — do not paper over them
 

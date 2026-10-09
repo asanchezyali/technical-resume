@@ -46,8 +46,8 @@ technical-resume branch          published PDF + README
 **Directories:**
 - `variants/` — the four curated CVs. Sources of positioning; never overwritten while tailoring
 - `generated/` — recruiter-facing PDFs, `AlejandroSanchezYali<Variant><Company>.pdf`
-- `jobs/` — application archive: the posting and the submitted answers, `YYYYMMDD_<company>_<role>`
-- `interview-prep/` — the master playbook plus company-specific supplements
+- Application archive and interview prep live in `../kairos/postulaciones/` (private). **This repo is
+  public: never add postings, answers, salary figures or interview notes here.**
 
 **Modules:**
 - `agent.py` — `compile` (one file in place) and `build` (all variants into `generated/`)
@@ -74,8 +74,8 @@ Always escape these characters before inserting into LaTeX: `& → \&`, `% → \
 live in prompt files and generator code:
 
 - `cv` — adapt a base variant to a job posting; writes to `generated/`, never over `variants/`
-- `apply` — answer application forms into `jobs/`
-- `interview` — build a company-specific supplement to `interview-prep/interview-simulation.md`
+- `apply` — answer application forms into `../kairos/postulaciones/jobs/`
+- `interview` — build a company-specific supplement in `../kairos/postulaciones/interview-prep/`
 
 Rules worth knowing before touching CV content: beginner-level skills stay out of CVs, GitHub
 figures come only from `open_source.cv_highlights`, years are recomputed from `start_year` rather
@@ -86,7 +86,7 @@ than copied, and a project's `status` is checked before describing it as live.
 Personal context — goals, constraints, finances, open decisions, plans — lives **one level up**, in
 `../kairos/` (i.e. `Documents/Own/kairos/`), outside every repo and never published. **Read
 `../kairos/profile.md` before advising on career, location, money or life.** Nothing from there is
-ever copied into public files: CVs, README, `jobs/`, skills. `Own/CLAUDE.md` describes the whole
+ever copied into public files: CVs, README, skills. `Own/CLAUDE.md` describes the whole
 `Own/` workspace. If `../kairos/` is missing, it was not synced to this machine; ask before assuming
 anything about his situation.
 

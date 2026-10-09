@@ -112,3 +112,7 @@ variants/*.pdf
 # Personal context now lives in ../kairos (Own/kairos, formerly Own/private). Kept ignored in case it is ever recreated here.
 private/
 kairos/
+
+# Private: application archive and interview prep live in ../kairos/postulaciones/
+jobs/
+interview-prep/
