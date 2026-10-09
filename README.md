@@ -45,13 +45,17 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 
 ## Experience
 
+**Independent AI Consultant** · Remote · *Jun 2026 – Present* (part-time until Sep 2026)
+- Lead engineer of Aluna, an AI recruitment platform for staffing agencies
+- Lead engineer of an AI coaching agent that CREARIA delivers to one of its clients
+
 **AI Specialist** · Lapzo · Remote, Mexico · *Aug 2025 – Sep 2026*
 - Designed and built a Digital Professor that converses with learners in real time and teaches through interactive slides
 - Owned the architecture connecting LLM services, voice synthesis and the real-time communication layer
 - Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
 
-**Independent Software & AI Consultant** · Remote · *Aug 2024 – Present*
-- Lead engineer of Aluna; built a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
+**Independent Software & AI Consultant** · Remote · *Aug 2024 – Jul 2025*
+- Lead engineer of a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
 - Ran technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
 - Designed the database architecture for a client's workflow automation platform and served as code reviewer for their development team
 
