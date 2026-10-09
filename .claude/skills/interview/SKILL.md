@@ -49,4 +49,4 @@ rewrite it. Produce a short company-specific supplement instead.
   turns the concession into a strength. His unfair advantage is going one level below the API — pre-training,
   backprop as the chain rule over a DAG, embeddings, the JAX/Flax parallelism talk.
 - Weakest areas, do not paper over them: no large-scale traffic, no formal LLM evals in
-  production yet, no Kubernetes or Terraform, no tests in the public flagship repos.
+  production yet, no Kubernetes, no tests in the public flagship repos.

@@ -83,7 +83,7 @@ you deliberately left alone.
 ## Honesty rules — non-negotiable
 
 - Never add a technology, a role, a metric or a year that is not in `resume-master.json`.
-- If the posting requires something he lacks (Go, Kubernetes, Terraform, Airflow, Spark),
+- If the posting requires something he lacks (Go, Kubernetes, Airflow, Spark),
   leave it unaddressed. Do not imply it. Tell him about the gap in your report instead.
 - Only use GitHub numbers from `open_source.cv_highlights`. Everything in
   `open_source.excluded_from_cv` is off-limits, and the reasons are written there.
@@ -129,7 +129,7 @@ trade-off, because that is what separates him from a candidate with the same sta
 
 ## Known gaps — do not paper over them
 
-No Kubernetes, Terraform, Airflow, dbt or Spark. No large-scale traffic numbers. No formal
+No Kubernetes, Airflow, dbt or Spark. Terraform only from the CREARIA platform (AWS ECS). No large-scale traffic numbers. No formal
 LLM evaluation or observability tooling in production yet. Rust and Solidity are beginner
 level. When a posting centers on any of these, say so in your report rather than stretching
 the wording.

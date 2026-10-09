@@ -847,6 +847,17 @@
         "start_year": 2022
       },
       {
+        "name": "Terraform",
+        "years": 1,
+        "level": "intermediate",
+        "categories": [
+          "cloud",
+          "devops"
+        ],
+        "display": "Terraform",
+        "start_year": 2025
+      },
+      {
         "name": "Docker",
         "years": 5,
         "level": "advanced",

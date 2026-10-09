@@ -91,4 +91,5 @@ between preparing for an interview and guessing.
 - **Team vs solo**: three years on Monadical's distributed team, code reviewer for
   a client's development team, and a product team at Lapzo. The last two years being solo is deliberate range,
   not isolation.
-- **Kubernetes / Terraform / Airflow / Spark**: he has not used them. Say so.
+- **Terraform**: he used it on the CREARIA platform (AWS ECS infrastructure as code). Claim it at that level, not as a specialty.
+- **Kubernetes / Airflow / Spark**: he has not used them. Say so.
