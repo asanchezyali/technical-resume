@@ -102,7 +102,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 ## Talks & Writing
 
 - **[Scaling Learning Models: Parallelism Strategies in JAX with Flax](https://www.youtube.com/watch?v=m4hP1soE414)** — PyCon Colombia, 2024
-- [Building Plixiq: a multi-tenant WhatsApp AI support platform](https://asanchezyali.com) — architecture case study
+- Engineering case studies: [Plixiq](https://www.asanchezyali.com/blog/case-studies/plixiq) · [CREARIA Agent](https://www.asanchezyali.com/blog/case-studies/crearia-agent) · [Aluna](https://www.asanchezyali.com/blog/case-studies/aluna) — architecture and trade-offs behind each system
 - [Pre-training: the idea behind every LLM](https://asanchezyali.com)
 - [Neural Networks as DAGs of Parameterized Computational Programs](https://www.asanchezyali.com/blog/en/differentiable-programming/20240923DifferentiablePrograms)
 - [Revolutionizing Animation: Building Digital Humans with LLMs](https://monadical.com/posts/build-a-digital-human-with-large-language-models.html)
