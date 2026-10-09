@@ -22,8 +22,8 @@ Based in Colombia (UTC-5), which overlaps a full working day with US Eastern.
 Multi-tenant SaaS where AI agents answer routine inquiries, book appointments and escalate the rest
 to human operators with the full conversation intact. Architect and lead engineer: a modular monolith
 with 14 components plus a shared kernel, boundaries enforced in CI, and a LiteLLM layer
-with a primary and fallback provider per agent. ~46,000 lines and ~590 backend tests, built
-part-time, launched in September 2026 and running at $60–80/month.
+with a primary and fallback provider per agent. ~46,000 lines and ~590 backend tests, deployed and running
+at $60–80/month.
 `Python` `FastAPI` `LiteLLM` `PostgreSQL` `Redis` `Next.js` `WebSocket` `WhatsApp Cloud API`
 
 **[Aluna](https://www.aluna.works) — AI recruitment platform for staffing agencies**
@@ -55,7 +55,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 - Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
 
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Jul 2025*
-- Lead engineer of a multi-tenant AI customer service agent for CREARIA on WhatsApp Cloud API, LiteLLM, RAG and MCP
+- Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context
 - Ran technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
 - Designed the database architecture for a client's workflow automation platform and served as code reviewer for their development team
 
