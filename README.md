@@ -54,7 +54,7 @@ clinic whose pharmacist shaped the domain model; deployed, not yet in daily oper
 - Built the AI content-generation pipelines (LangChain, LangGraph, n8n), with Celery workers running generation in the background
 
 **Independent Software & AI Consultant** · Remote · *Aug 2024 – Jul 2025*
-- Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context; also led the AI coaching agent CREARIA delivers to one of its clients
+- Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also led the AI coaching agent CREARIA delivers to one of its clients
 - Ran technical design sessions with clients, turning business requirements into architectures and naming the trade-off behind each decision
 - Designed the database architecture for a client's workflow automation platform and served as code reviewer for their development team
 
