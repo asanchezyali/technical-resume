@@ -80,7 +80,7 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 {AI Specialist}{Aug 2025 -- Sep 2026}
 {Lapzo}{Remote, Mexico}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Built an HR agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation; shipped to QA and staging with a runbook and a handover
+    \item Built an HR agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation, delivered with a runbook and a handover
     \item Migrated the course-vectorization system to a dedicated VM and moved the embeddings pipeline from n8n into the platform; hardened the LLM course assistant (scoped context, consistent recommendations)
     \item Designed and built a Digital Professor that holds real-time conversations with learners and explains course content through interactive slides (LLM services, ElevenLabs voice, real-time layer)
     \item Closed 57 tasks and 6 epics in the first nine months of 2026 with a single production bug, per the team's board
@@ -90,7 +90,7 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 {Independent Software \& AI Consultant}{Aug 2024 -- Jul 2025}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of a multi-tenant AI customer service agent for CREARIA (Colombia) on WhatsApp Cloud API, LiteLLM, RAG and MCP, with automatic human escalation
+    \item Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context
     \item Designed database architecture for a client's workflow automation platform and served as code reviewer for their development team
     \item Ran technical design sessions with clients, translating business requirements into system architectures and naming the trade-off behind each technology decision
 \end{itemize}
@@ -126,7 +126,7 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
     \end{itemize}
     \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
     \begin{itemize}[itemsep=0pt]
-        \item Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
+        \item Lead engineer of an AI recruitment platform for staffing agencies -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
         \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
     \end{itemize}
     \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}

@@ -1304,7 +1304,7 @@
           ]
         },
         {
-          "text": "Built an HR Agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation; shipped to QA and staging with a runbook and a four-page handover",
+          "text": "Built an HR Agent (LangGraph, FastAPI, PostgreSQL) that answers company-policy questions with citations and executes HR requests with human confirmation, with per-tenant isolation, delivered with a runbook and a four-page handover",
           "categories": [
             "ai",
             "llm",
@@ -1416,7 +1416,7 @@
           ]
         },
         {
-          "text": "Lead engineer of a multi-tenant AI customer service agent for CREARIA (Colombia) on WhatsApp Cloud API, LiteLLM, RAG and MCP, with automatic human escalation",
+          "text": "Lead engineer of CREARIA's multi-tenant WhatsApp and email AI agent platform, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS, with RAG over pgvector, multi-provider routing through LiteLLM, AI lead scoring and human escalation with full context",
           "categories": [
             "ai",
             "llm",
@@ -1877,7 +1877,7 @@
           ]
         },
         {
-          "text": "Shipped ~46,000 lines of backend and frontend plus ~590 backend tests part-time, launched on plixiq.com in September 2026 and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
+          "text": "Shipped ~46,000 lines of backend and frontend plus ~590 backend tests, deployed on plixiq.com and running at $60-80/month because cost scales with LLM usage rather than infrastructure",
           "categories": [
             "product",
             "delivery",
@@ -1933,7 +1933,7 @@
       ],
       "highlights": [
         {
-          "text": "Lead engineer of an AI recruitment platform for staffing agencies, built in 3 months -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application that owns all domain state and a stateless FastAPI service that owns model calls and the WhatsApp channel",
+          "text": "Lead engineer of an AI recruitment platform for staffing agencies -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application that owns all domain state and a stateless FastAPI service that owns model calls and the WhatsApp channel",
           "categories": [
             "architecture",
             "ai",
