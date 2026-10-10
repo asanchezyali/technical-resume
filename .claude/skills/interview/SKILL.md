@@ -17,8 +17,8 @@ allowed-tools:
 
 # Interview Prep
 
-Master playbook: `../kairos/postulaciones/interview-prep/interview-simulation.md` (private; outdated since 8-oct-2026, prefer the
-mock interviews in `../kairos/empresas/simulacros/` for current facts) — positioning, seven story
+Master playbook: `../kairos/applications/interview-prep/interview-simulation.md` (private; outdated since 8-oct-2026, prefer the
+mock interviews in `../kairos/companies/mock-interviews/` for current facts) — positioning, seven story
 beats, HR and technical simulations, landmines, questions to ask. Read it first; do not
 rewrite it. Produce a short company-specific supplement instead.
 
@@ -27,7 +27,7 @@ rewrite it. Produce a short company-specific supplement instead.
 1. Research the company: their site, engineering blog, GitHub, the posting. Find at
    least one concrete detail he can name in the room.
 2. Read the playbook and `data/resume-master.json`.
-3. Write `../kairos/postulaciones/interview-prep/<company>-<role>.md` (never inside this public repo) with only what is specific to them:
+3. Write `../kairos/applications/interview-prep/<company>-<role>.md` (never inside this public repo) with only what is specific to them:
    - Which of the eight stories fits their product, and why
    - The three technical areas they are most likely to probe, with his angle on each
    - Where his profile is weak against *this* posting, and the honest answer for it

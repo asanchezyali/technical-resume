@@ -4,7 +4,7 @@ description: |
   Answer a job application form or written screening questions for Alejandro.
   Use when given application questions, a Braintrust/Wellfound/Otta form, or a request
   like "responde estas preguntas de la aplicación" / "answer this application".
-  Produces a markdown file in ../kairos/postulaciones/jobs/ he can copy from.
+  Produces a markdown file in ../kairos/applications/jobs/ he can copy from.
 allowed-tools:
   - Read
   - Write
@@ -17,8 +17,8 @@ allowed-tools:
 # Application Answers
 
 Source of truth: `data/resume-master.json`. Past examples of tone and depth:
-`../kairos/postulaciones/jobs/20260625_braintrust_ai_agent_developer_answers.md` and
-`../kairos/postulaciones/jobs/20260318_ai_healthcare_answers.md`. Match that voice — first person, concrete,
+`../kairos/applications/jobs/20260625_braintrust_ai_agent_developer_answers.md` and
+`../kairos/applications/jobs/20260318_ai_healthcare_answers.md`. Match that voice — first person, concrete,
 no marketing adjectives.
 
 ## Workflow
@@ -26,13 +26,13 @@ no marketing adjectives.
 1. Read the questions. Fetch the posting if given a URL.
 2. Read `data/resume-master.json` and, if the questions are technical, the relevant
    base CV in `variants/`.
-3. Write `../kairos/postulaciones/jobs/<YYYYMMDD>_<company>_<role>_answers.md`.
+3. Write `../kairos/applications/jobs/<YYYYMMDD>_<company>_<role>_answers.md`.
 4. Open with the logistics block, then one section per question in the original order.
 5. Tell him at the end which answers are weakest and why.
 
 ## Where the archive lives
 
-`../kairos/postulaciones/jobs/` (private, local-only) is the archive of every application, named for him
+`../kairos/applications/jobs/` (private, local-only) is the archive of every application, named for him
 rather than for a recruiter. **Never write postings or answers into this repo: it is public.**
 
 - `YYYYMMDD_<company>_<role>.md` — the posting itself, saved when it arrives. Job ads disappear, and
@@ -40,7 +40,7 @@ rather than for a recruiter. **Never write postings or answers into this repo: i
 - `YYYYMMDD_<company>_<role>_answers.md` — the answers submitted with that application.
 
 Dates lead here because this directory is chronological working memory. The recruiter-facing
-filenames live in `../kairos/postulaciones/cvs/` instead, where they follow `AlejandroSanchezYali<Variant><Company>`.
+filenames live in `../kairos/applications/cvs/` instead, where they follow `AlejandroSanchezYali<Variant><Company>`.
 
 Save the posting even when only answering questions. It costs one file and it is the difference
 between preparing for an interview and guessing.

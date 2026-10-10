@@ -9,7 +9,7 @@ from src.latex_compiler import LatexCompiler
 console = Console()
 
 VARIANTS_DIR = Path("variants")
-PRIVATE_DIR = Path("../kairos/postulaciones/cvs")
+PRIVATE_DIR = Path("../kairos/applications/cvs")
 OUTPUT_DIR = Path("generated")
 
 # Recruiter-facing filenames. Add a line here when a new variant is promoted.

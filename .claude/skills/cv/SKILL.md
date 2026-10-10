@@ -21,7 +21,7 @@ Single source of truth: `data/resume-master.json`. Never invent anything that is
 ## The five base variants
 
 Each is a self-contained, hand-curated `.tex` file in `variants/`. They are artifacts, not
-generated output — read the closest one, adapt it, and save the result to `../kairos/postulaciones/cvs/`
+generated output — read the closest one, adapt it, and save the result to `../kairos/applications/cvs/`
 (private: this repo is public, and a company-named CV reveals where he applied).
 Never overwrite a file in `variants/` while tailoring for a posting.
 
@@ -46,7 +46,7 @@ that matters, update it by hand like any other variant.
 - `variants/` — few, stable, maintained. Positioning, not postings. Never written to while
   tailoring; treat them as read-only during a `/cv` run.
 - `generated/` — **only the five base PDFs**, without a company suffix, rebuilt by CI.
-- `../kairos/postulaciones/cvs/` — company-tailored CVs (`.tex` + `.pdf`), private. Filenames follow
+- `../kairos/applications/cvs/` — company-tailored CVs (`.tex` + `.pdf`), private. Filenames follow
   `AlejandroSanchezYali<Variant><Company>` — e.g. `AlejandroSanchezYaliAIEngineerACME.pdf`. This is
   the name that shows up in someone's inbox, so it carries his name and the role, never a date or a
   slug. Moved out of the public repo on 9-oct-2026; `.gitignore` blocks them in `generated/`.
@@ -75,10 +75,10 @@ you deliberately left alone.
 3. Read that `.tex` and `data/resume-master.json`.
 4. Adapt — and adapting means **reordering and swapping in bullets that already exist in the
    JSON**, plus rewriting the summary for this role. Nothing else.
-5. Write to `../kairos/postulaciones/cvs/AlejandroSanchezYali<Variant><Company>.tex` — Variant is one of
+5. Write to `../kairos/applications/cvs/AlejandroSanchezYali<Variant><Company>.tex` — Variant is one of
    AIEngineer, AIFullStack, ProductEngineer, SeniorFullStack, Web3FullStack; Company is the company name in PascalCase with no
    spaces or punctuation.
-6. Compile: `uv run python agent.py compile ../kairos/postulaciones/cvs/<name>.tex` — the PDF lands beside it under
+6. Compile: `uv run python agent.py compile ../kairos/applications/cvs/<name>.tex` — the PDF lands beside it under
    the same name.
 7. If it fails, read the error, fix the LaTeX, recompile. Escaping is the usual culprit.
 8. Report: variant used, what changed, what the posting asked for that he does not have.

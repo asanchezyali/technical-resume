@@ -17,11 +17,11 @@ uv sync
 # Build all five variants into generated/ under their recruiter-facing names
 uv run python agent.py build
 
-# Build one variant with a company suffix -> ../kairos/postulaciones/cvs/AlejandroSanchezYaliAIEngineerACME.pdf
+# Build one variant with a company suffix -> ../kairos/applications/cvs/AlejandroSanchezYaliAIEngineerACME.pdf
 uv run python agent.py build -v ai-engineer -c ACME
 
 # Compile a single .tex in place (used for CVs tailored to a posting)
-uv run python agent.py compile ../kairos/postulaciones/cvs/AlejandroSanchezYaliAIEngineerACME.tex
+uv run python agent.py compile ../kairos/applications/cvs/AlejandroSanchezYaliAIEngineerACME.tex
 
 # Lint
 uv run ruff check .
@@ -45,9 +45,9 @@ technical-resume branch          published PDF + README
 
 **Directories:**
 - `variants/` — the five curated CVs (AI Engineer, AI Full Stack, Product Engineer, Senior Full Stack, Web3 Full Stack). Sources of positioning; never overwritten while tailoring
-- `generated/` — the five base PDFs only. Company-tailored CVs go to `../kairos/postulaciones/cvs/`
+- `generated/` — the five base PDFs only. Company-tailored CVs go to `../kairos/applications/cvs/`
   (private); `.gitignore` blocks any other file in `generated/`
-- Application archive and interview prep live in `../kairos/postulaciones/` (private). **This repo is
+- Application archive and interview prep live in `../kairos/applications/` (private). **This repo is
   public: never add postings, answers, salary figures or interview notes here.**
 
 **Modules:**
@@ -75,8 +75,8 @@ Always escape these characters before inserting into LaTeX: `& → \&`, `% → \
 live in prompt files and generator code:
 
 - `cv` — adapt a base variant to a job posting; writes to `generated/`, never over `variants/`
-- `apply` — answer application forms into `../kairos/postulaciones/jobs/`
-- `interview` — build a company-specific supplement in `../kairos/postulaciones/interview-prep/`
+- `apply` — answer application forms into `../kairos/applications/jobs/`
+- `interview` — build a company-specific supplement in `../kairos/applications/interview-prep/`
 
 Rules worth knowing before touching CV content: beginner-level skills stay out of CVs, GitHub
 figures come only from `open_source.cv_highlights`, years are recomputed from `start_year` rather

@@ -113,11 +113,11 @@ variants/*.pdf
 private/
 kairos/
 
-# Private: application archive and interview prep live in ../kairos/postulaciones/
+# Private: application archive and interview prep live in ../kairos/applications/
 jobs/
 interview-prep/
 
-# generated/ holds only the five base PDFs; company-tailored CVs live in ../kairos/postulaciones/cvs/
+# generated/ holds only the five base PDFs; company-tailored CVs live in ../kairos/applications/cvs/
 generated/*
 !generated/AlejandroSanchezYaliAIEngineer.pdf
 !generated/AlejandroSanchezYaliAIFullStack.pdf
