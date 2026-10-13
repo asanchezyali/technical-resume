@@ -15,7 +15,7 @@ env:
   PUBLISHED_VARIANT: ai-fullstack
   PUBLISHED_NAME: AlejandroSanchezYaliAIFullStack
   # Must match SOURCE_DATE_EPOCH in src/latex_compiler.py so CI and local builds
-  # produce byte-identical PDFs and generated/ stays out of the diff
+  # produce byte-identical PDFs
   SOURCE_DATE_EPOCH: "1577836800"
   FORCE_SOURCE_DATE: "1"
 
@@ -42,39 +42,16 @@ jobs:
             senior-fullstack.tex
             web3-fullstack.tex
 
-      - name: Copy PDFs to generated/ under their recruiter-facing names
-        run: |
-          mkdir -p generated
-          cp variants/ai-engineer.pdf      generated/AlejandroSanchezYaliAIEngineer.pdf
-          cp variants/ai-fullstack.pdf     generated/AlejandroSanchezYaliAIFullStack.pdf
-          cp variants/product-engineer.pdf generated/AlejandroSanchezYaliProductEngineer.pdf
-          cp variants/senior-fullstack.pdf generated/AlejandroSanchezYaliSeniorFullStack.pdf
-          cp variants/web3-fullstack.pdf   generated/AlejandroSanchezYaliWeb3FullStack.pdf
-
       # Must run before the branch switch below: variants/ does not exist on technical-resume
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v5
         with:
           name: ${{ env.PUBLISHED_NAME }}
-          path: generated/${{ env.PUBLISHED_NAME }}.pdf
+          path: variants/${{ env.PUBLISHED_VARIANT }}.pdf
 
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
-
-      # Keeps generated/ in sync when a variant is edited without running `agent.py build`
-      - name: Commit refreshed PDFs to main
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          if git diff --quiet -- generated/; then
-            echo "generated/ already up to date"
-          else
-            git add generated/
-            git commit -m "🔧 chore: refresh CV PDFs - ${{ steps.date.outputs.date }}"
-            git push origin main
-          fi
 
       - name: Stage files for the published branch
         run: |

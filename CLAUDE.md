@@ -45,8 +45,8 @@ technical-resume branch          published PDF + README
 
 **Directories:**
 - `variants/` — the five curated CVs (AI Engineer, AI Full Stack, Product Engineer, Senior Full Stack, Web3 Full Stack). Sources of positioning; never overwritten while tailoring
-- `generated/` — the five base PDFs only. Company-tailored CVs go to `../kairos/applications/cvs/`
-  (private); `.gitignore` blocks any other file in `generated/`
+- `generated/` — local build output only (git-ignored since 13-oct-2026). Company-tailored CVs go to
+  `../kairos/applications/cvs/` (private)
 - Application archive and interview prep live in `../kairos/applications/` (private). **This repo is
   public: never add postings, answers, salary figures or interview notes here.**
 
@@ -103,11 +103,8 @@ GitHub Actions (`.github/workflows/latex.yml`) triggers on pushes to `main` that
 `README.md`, or the workflow file. It:
 
 1. Compiles all five variants.
-2. Refreshes `generated/*.pdf` and commits them back to `main` if they changed — so editing a
-   variant without running `agent.py build` cannot leave a stale PDF in the repo. **CI owns those
-   five PDFs.** Builds are reproducible within an environment but differ by a few bytes across TeX
-   versions, so a locally built PDF committed by hand just gets rewritten on the next run. Use
-   `agent.py build` to preview, or to produce a company-suffixed CV — not to update `generated/`.
+2. Uploads the published variant as a build artifact. Since 13-oct-2026 `generated/` is **not**
+   committed: it is local output of `agent.py build` and `.gitignore` excludes the whole folder.
 3. Publishes the variant named in `PUBLISHED_VARIANT` (currently `ai-fullstack`) plus `README.md`
    to the `technical-resume` orphan branch, as `AlejandroSanchezYaliAIFullStack.pdf` and a
    `technical_resume.pdf` copy for links already shared.

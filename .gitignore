@@ -89,7 +89,7 @@ Thumbs.db
 # =========================
 # Build output
 # =========================
-# variants/*.pdf are intermediates; the shareable PDFs are committed in generated/
+# variants/*.pdf are build outputs; generated/ is no longer committed
 variants/*.pdf
 
 # =========================
@@ -117,10 +117,5 @@ kairos/
 jobs/
 interview-prep/
 
-# generated/ holds only the five base PDFs; company-tailored CVs live in ../kairos/applications/cvs/
-generated/*
-!generated/AlejandroSanchezYaliAIEngineer.pdf
-!generated/AlejandroSanchezYaliAIFullStack.pdf
-!generated/AlejandroSanchezYaliProductEngineer.pdf
-!generated/AlejandroSanchezYaliSeniorFullStack.pdf
-!generated/AlejandroSanchezYaliWeb3FullStack.pdf
+# generated/ is local output only (13-oct-2026); company-tailored CVs live in ../kairos/applications/cvs/
+generated/
