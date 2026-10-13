@@ -62,8 +62,8 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
   \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
   \item \textbf{Frontend:} React.js (7+ years), Next.js (6+ years), Tailwind CSS, Shadcn UI, Redux, Zustand, Zod, Effect, Three.js
   \item \textbf{Backend:} FastAPI, Django, Django REST Framework, Celery, NestJS, Node.js, Express, RESTful APIs, GraphQL, microservices
-  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, PyTorch, TensorFlow
-  \item \textbf{Databases \& Infra:} PostgreSQL, Redis, MongoDB, Firebase, Docker, AWS, GCP, Terraform, GitHub Actions, CI/CD
+  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG with pgvector, MCP, Claude (Anthropic API), OpenAI API, Gemini, Whisper, ElevenLabs, WhatsApp Cloud API
+  \item \textbf{Databases \& Infra:} PostgreSQL, pgvector, Redis, MongoDB, Firebase, Docker, AWS, GCP, Terraform, GitHub Actions, CI/CD
   \item \textbf{Engineering:} Clean architecture, DDD, TDD, Vitest, Jest, React Testing Library, code review
 \end{itemize}
 
@@ -73,7 +73,8 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
 {Independent AI Consultant}{Oct 2026 -- Present}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies (see below)
+    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies (\href{https://www.aluna.works}{aluna.works}): a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel; 336 source files, 26 tables, 11 external providers, Ley 1581/2012 compliance in the data model
+    \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
 \end{itemize}
 \resumeSubheading
 {AI Specialist}{Aug 2025 -- Sep 2026}
@@ -88,7 +89,7 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
 {Independent Software \& AI Consultant}{Aug 2024 -- Jul 2025}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15--20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients
+    \item Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15--20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing, ARQ (Redis) workers for email, Meta messaging and agent orchestration, and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients
     \item Delivered end-to-end web applications for business clients: React.js/Next.js/TypeScript on the front, Python/FastAPI/Django and Node.js/NestJS behind it, deployed on AWS with CI/CD and Stripe payments
     \item Ran technical design sessions with clients and made the technology decisions for each project; code reviewer for a client's development team
 \end{itemize}
@@ -105,7 +106,7 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
 {Full Stack Engineer}{Aug 2018 -- Oct 2020}
 {BCFort}{Medell\'in, Colombia}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Built blockchain dApp frontends (React, Web3.js) and analytics platforms (Django, Node.js) on AWS, GCP and IBM Cloud
+    \item Designed blockchain products from scratch; built dApp frontends (React, Web3.js) and analytics platforms (Django, Node.js) on AWS, GCP and IBM Cloud; mentored new developers and reviewed the team's code
 \end{itemize}
 \resumeSubheading
 {Professor of Mathematics \& Physics (part-time)}{Jan 2010 -- Oct 2021}
@@ -127,11 +128,6 @@ AI Full Stack Engineer with 8+ years designing and shipping web applications end
     \begin{itemize}[itemsep=0pt]
         \item Architect and lead engineer of a platform commissioned by a private surgical clinic in Colombia -- 12 modules and 5 user roles designed to replace spreadsheet-based inventory and procurement; delivered, with rollout at the clinic pending
         \item Surgery scheduling with supply baskets and real-time consumption tracking, lot-level traceability with expiry alerts, and true per-patient cost through a cardex
-    \end{itemize}
-    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
-    \begin{itemize}[itemsep=0pt]
-        \item Lead engineer of an AI recruitment platform for staffing agencies -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
-        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
     \end{itemize}
 \end{itemize}
 

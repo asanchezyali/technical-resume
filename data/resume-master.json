@@ -1211,7 +1211,10 @@
         "LiteLLM",
         "Inngest",
         "PostgreSQL",
-        "WhatsApp Cloud API"
+        "WhatsApp Cloud API",
+        "pgvector",
+        "Anthropic Claude",
+        "Google Gemini"
       ],
       "highlights": [
         {
@@ -1406,7 +1409,12 @@
         "WhatsApp Cloud API",
         "RAG",
         "MCP",
-        "NX"
+        "NX",
+        "pgvector",
+        "Anthropic Claude",
+        "Google Gemini",
+        "Redis",
+        "ARQ"
       ],
       "highlights": [
         {
@@ -1419,7 +1427,7 @@
           ]
         },
         {
-          "text": "Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15-20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients",
+          "text": "Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15-20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing, ARQ (Redis) workers for email, Meta messaging and agent orchestration, and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients",
           "categories": [
             "ai",
             "llm",
@@ -1684,7 +1692,7 @@
       ],
       "highlights": [
         {
-          "text": "Designed system architecture for blockchain platforms, making key decisions on smart contract patterns, data models, and service boundaries",
+          "text": "Designed blockchain products from scratch, making key decisions on smart contract patterns, data models, and service boundaries",
           "categories": [
             "architecture",
             "design",
@@ -1741,7 +1749,7 @@
           ]
         },
         {
-          "text": "Mentored junior engineers, supporting their technical growth and ensuring code quality",
+          "text": "Mentored new developers and acted as the team's code reviewer",
           "categories": [
             "leadership",
             "mentoring"
@@ -1838,7 +1846,10 @@
         "WhatsApp Cloud API",
         "WebSocket",
         "Docker",
-        "Railway"
+        "Railway",
+        "pgvector",
+        "Anthropic Claude",
+        "Google Gemini"
       ],
       "highlights": [
         {
@@ -1932,7 +1943,8 @@
         "WhatsApp Cloud API",
         "better-auth",
         "SSE",
-        "Railway"
+        "Railway",
+        "pgvector"
       ],
       "highlights": [
         {

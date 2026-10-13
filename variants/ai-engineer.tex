@@ -59,12 +59,12 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG, MCP, OpenAI API, Whisper, ElevenLabs, agentic development with Claude Code
-  \item \textbf{ML \& Mathematics:} PyTorch, TensorFlow, Scikit-learn, JAX, Flax, NumPy, Pandas, linear algebra, probability, statistical inference
+  \item \textbf{AI \& LLMs:} LangChain, LangGraph, LiteLLM, RAG with pgvector, MCP, Claude (Anthropic API), OpenAI API, Gemini, Whisper, ElevenLabs, WhatsApp Cloud API, agentic development with Claude Code
   \item \textbf{Languages:} Python (8+ years), TypeScript (6+ years), JavaScript (6+ years), SQL
-  \item \textbf{Backend:} FastAPI, Django, Celery, NestJS, Node.js, RESTful APIs, microservices, event-driven design
-  \item \textbf{Data \& Infrastructure:} PostgreSQL, Redis, MongoDB, Docker, AWS, GCP, Terraform, GitHub Actions, CI/CD
+  \item \textbf{Backend:} FastAPI, Django, NestJS, Node.js, Celery, ARQ, Inngest, RESTful APIs, microservices, event-driven design
+  \item \textbf{Data \& Infrastructure:} PostgreSQL, pgvector, Redis, MongoDB, Docker, AWS, GCP, Terraform, GitHub Actions, CI/CD
   \item \textbf{Architecture:} Clean architecture, DDD, modular monolith, screaming architecture
+  \item \textbf{ML \& Mathematics:} PyTorch, Scikit-learn, NumPy, Pandas, linear algebra, probability, statistical inference
 \end{itemize}
 
 \section{Experience}
@@ -73,7 +73,8 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 {Independent AI Consultant}{Oct 2026 -- Present}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies: two-service architecture (Next.js 15 + stateless FastAPI), durable analysis pipeline on Inngest, multi-model routing through LiteLLM, and Ley 1581/2012 compliance built into the data model
+    \item Lead engineer of Aluna, an AI recruitment platform for staffing agencies (\href{https://www.aluna.works}{aluna.works}): a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel; 336 source files, 26 tables, 11 external providers, Ley 1581/2012 compliance in the data model
+    \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
 \end{itemize}
 \resumeSubheading
 {AI Specialist}{Aug 2025 -- Sep 2026}
@@ -88,7 +89,7 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 {Independent Software \& AI Consultant}{Aug 2024 -- Jul 2025}
 {Freelance}{Remote}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15--20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users
+    \item Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15--20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing, ARQ (Redis) workers for email, Meta messaging and agent orchestration, and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients
     \item Designed database architecture for a client's workflow automation platform and served as code reviewer for their development team
     \item Ran technical design sessions with clients, translating business requirements into system architectures and naming the trade-off behind each technology decision
 \end{itemize}
@@ -106,7 +107,7 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
 {Full Stack Engineer}{Aug 2018 -- Oct 2020}
 {BCFort}{Medell\'in, Colombia}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-    \item Developed blockchain and analytics platforms with Python (Django), Node.js, React and Web3.js on AWS, GCP and IBM Cloud
+    \item Designed blockchain products from scratch and built them with Python (Django), Node.js, React and Web3.js on AWS, GCP and IBM Cloud; mentored new developers and reviewed the team's code
 \end{itemize}
 \resumeSubheading
 {Professor of Mathematics \& Physics (part-time)}{Jan 2010 -- Oct 2021}
@@ -122,11 +123,6 @@ AI Engineer and mathematician with 8+ years building production software and 3+ 
     \begin{itemize}[itemsep=0pt]
         \item Architect and lead engineer of a multi-tenant SaaS where AI agents answer routine customer inquiries, book appointments and escalate the rest to human operators with full conversation context
         \item Modular monolith (14 components plus a shared kernel) with boundaries enforced in CI; LiteLLM layer with a primary and fallback provider per agent, so an outage becomes a fallback
-    \end{itemize}
-    \item \textbf{\href{https://www.aluna.works}{Aluna -- AI Recruitment Platform for Staffing Agencies \normalfaExternalLink}} \textit{-- Next.js 15, FastAPI, LiteLLM, PostgreSQL, Inngest, Claude, Gemini, WhatsApp Cloud API}
-    \begin{itemize}[itemsep=0pt]
-        \item Lead engineer of an AI recruitment platform for staffing agencies -- 336 source files across 4 packages, 26 tables and 11 external providers -- split into a Next.js 15 application owning all domain state and a stateless FastAPI service owning model calls and the WhatsApp channel
-        \item Durable Inngest analysis pipeline (9 checkpointed steps, 3 retries) where deduplication runs before quota enforcement so a re-analysed CV reuses its cached score instead of paying for another model call; one screening engine serves WhatsApp, web chat and email
     \end{itemize}
     \item \textbf{\href{https://github.com/asanchezyali/talking-avatar-with-ai}{Digital Human -- Interactive AI Avatar \normalfaExternalLink}} \textit{-- React, Three.js, React Three Fiber, OpenAI GPT, Whisper, ElevenLabs}
     \begin{itemize}[itemsep=0pt]
