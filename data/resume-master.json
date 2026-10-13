@@ -1207,6 +1207,11 @@
         "name": "Voicebox",
         "since": "2026-10",
         "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
+      },
+      {
+        "name": "VoiceStudio",
+        "since": "2026-10",
+        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
       }
     ]
   },
