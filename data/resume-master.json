@@ -1262,7 +1262,7 @@
       ],
       "highlights": [
         {
-          "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation, with Celery workers running the generation pipelines in the background",
+          "text": "Developed an AI-powered educational content generator using LangChain, LangGraph, and n8n for workflow automation, with Celery workers running the generation pipelines in the background; it cut course creation from weeks to about 15 minutes, producing videos, slides and audiovisual resources, so content curation became the only manual step (Alejandro's figures, 13-oct-2026)",
           "status": "In use with real users at Lapzo (confirmed by Alejandro, 29-sep-2026). The Digital Professor is not.",
           "categories": [
             "ai",
@@ -1419,7 +1419,7 @@
           ]
         },
         {
-          "text": "Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency: led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients",
+          "text": "Lead engineer of CREARIA's multi-tenant AI support agent on WhatsApp, email and Instagram, in production with several client businesses including a real-estate agency. Support went from an 8-hour human shift to 24/7 and average response time from 15-20 minutes to seconds. Led a team of three across 5 FastAPI services and 2 Next.js dashboards on AWS ECS with Terraform, RAG over pgvector, 11 MCP tools scoped per tenant, LiteLLM fallback routing and human escalation; load-tested to 250 virtual users. Also designed the architecture of an AI coaching agent for one of CREARIA's clients",
           "categories": [
             "ai",
             "llm",
