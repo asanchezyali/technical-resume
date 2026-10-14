@@ -1186,33 +1186,6 @@
         ],
         "display": "English"
       }
-    ],
-    "learning": [
-      {
-        "name": "Go",
-        "since": "2026-10",
-        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
-      },
-      {
-        "name": "Kubernetes (GKE on GCP)",
-        "since": "2026-10",
-        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
-      },
-      {
-        "name": "Ragas",
-        "since": "2026-10",
-        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
-      },
-      {
-        "name": "Voicebox",
-        "since": "2026-10",
-        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
-      },
-      {
-        "name": "VoiceStudio",
-        "since": "2026-10",
-        "note": "In progress. Move to the main skills only after it ships in Aluna or Plixiq."
-      }
     ]
   },
   "experience": [
